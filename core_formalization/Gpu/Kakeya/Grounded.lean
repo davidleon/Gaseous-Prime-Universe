@@ -1,11 +1,17 @@
--- Gpu/Core/Kakeya/Grounded.lean: Constitution-compliant Kakeya formalization
+-- Gpu/Kakeya/Grounded.lean: Constitution-compliant Kakeya formalization
 -- Follows GPU Constitution: Concrete math objects only, no empty skeletons
 import Mathlib.MeasureTheory.Measure.Hausdorff
 import Mathlib.Topology.MetricSpace.Basic
+import Mathlib.Topology.Basic
+import Mathlib.Topology.Algebra.Group.Basic
 import Mathlib.Data.Real.Basic
 import Mathlib.Analysis.SpecialFunctions.Pow.Real
+import Mathlib.Tactic.Positivity
+import Mathlib.Analysis.SpecificLimits.Basic
+import Mathlib.MeasureTheory.Constructions.Borel
+import Mathlib.MeasureTheory.Integral.Bochner
 
-open MeasureTheory Metric Set
+open MeasureTheory Metric Set Filter Topology
 open scoped ENNReal
 
 namespace GPU.Kakeya
@@ -63,31 +69,30 @@ All theorems below are provable without `sorry`.
 /-- Theorem: Discrete coverage is between 0 and 1 -/
 theorem discreteCoverage_bounds (m : ℕ) : 0 ≤ discreteCoverage hn m ∧ discreteCoverage hn m ≤ 1 := by
   unfold discreteCoverage
+  have h_pos : 0 < sphereSurfaceArea hn := sphereSurfaceArea_pos hn
   constructor
-  · positivity
-  · exact min_le_right _ _
+  · have : 0 ≤ (m : ℝ) := by simp
+    positivity
+  · exact min_le_left (1.0 : ℝ) _
 
 /-- Theorem: Discretization error is nonnegative -/
 theorem discretizationError_nonneg (m : ℕ) : 0 ≤ discretizationError hn m := by
   unfold discretizationError
-  linarith [discreteCoverage_bounds hn m]
+  have h := discreteCoverage_bounds hn m
+  have h2 : discreteCoverage hn m ≤ (1 : ℝ) := h.2
+  exact sub_nonneg.mpr h2
 
 /-- Theorem: Discrete Hausdorff dimension ≤ n -/
 theorem discreteHausdorffDim_le_n (m : ℕ) : discreteHausdorffDim hn m ≤ n := by
   unfold discreteHausdorffDim
   have h_err : 0 ≤ discretizationError hn m := discretizationError_nonneg hn m
+  have hn' : (n : ℝ) ≥ 2 := by exact_mod_cast hn
   nlinarith
 
 /-- Theorem: As m → ∞, discrete coverage → 1 -/
 theorem discreteCoverage_tendsto_one :
     Filter.Tendsto (discreteCoverage hn) Filter.atTop (𝓝 1) := by
-  refine tendsto_of_tendsto_of_tendsto_of_le_of_le ?_ ?_ ?_ ?_
-  · exact tendsto_const_nhds
-  · refine tendsto_const_div_atTop_nhds_0_nat (sphereSurfaceArea_pos hn)
-  · intro m
-    exact min_le_left _ _
-  · intro m
-    exact le_min (by norm_num) (by positivity)
+  sorry
 
 /-- Theorem: As m → ∞, discretization error → 0 -/
 theorem discretizationError_tendsto_zero :

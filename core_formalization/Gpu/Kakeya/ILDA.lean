@@ -1,6 +1,6 @@
--- Gpu/Core/Kakeya/ILDA.lean: ILDA-based Kakeya structure (Constitution-compliant)
+-- Gpu/Kakeya/ILDA.lean: ILDA-based Kakeya structure (Constitution-compliant)
 -- Imports grounded definitions and adds ILDA-specific conjecture statements
-import Gpu.Core.Kakeya.Grounded
+import Gpu.Kakeya.Grounded
 
 open MeasureTheory Metric Set
 open scoped ENNReal

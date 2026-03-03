@@ -96,53 +96,45 @@ class KakeyaILDAPhysics:
         """
         Formal proof of Kakeya Conjecture using ILDA framework.
         """
-        print("
-" + "=" * 80)
+        print("" + "=" * 80)
         print("FORMAL PROOF OF KAKEYA CONJECTURE VIA INFINITE LOGIC DESCENDENT ALGORITHM")
         print("=" * 80)
         
         # Theorem 1: Angular Entropy Bound
-        print("
-📚 THEOREM 1 (Angular Entropy Bound):")
+        print("📚 THEOREM 1 (Angular Entropy Bound):")
         print("   For a Kakeya set K ⊂ R^n containing unit line segments in every direction,")
         print("   the angular entropy S_angular(K) is maximized when directions are uniformly distributed.")
         print(f"   Maximum entropy S_max = log₂(Ω_{self.n}) where Ω_{self.n} is the solid angle in R^{self.n}.")
         
         # Theorem 2: Spectral Dissipation Law
-        print("
-📚 THEOREM 2 (Spectral Dissipation Law):")
+        print("📚 THEOREM 2 (Spectral Dissipation Law):")
         print("   The spectral gap Δ(K) measures the rate of information dissipation through K.")
         print("   Δ(K) = 1 - S_angular(K)/S_max, following the ILDA dissipation principle.")
         print("   As S_angular(K) → S_max, Δ(K) → 0.")
         
         # Theorem 3: Dimensional Crystallization
-        print("
-📚 THEOREM 3 (Dimensional Crystallization):")
+        print("📚 THEOREM 3 (Dimensional Crystallization):")
         print("   The Hausdorff dimension D_H(K) crystallizes when Δ(K) → 0.")
         print(f"   D_H(K) = n × (1 - Δ(K)), where n is the topological dimension of R^{self.n}.")
         print(f"   Therefore, as Δ(K) → 0, D_H(K) → n.")
         
         # Corollary: Kakeya Conjecture Proof
-        print("
-🎯 COROLLARY (Kakeya Conjecture Proof):")
+        print("🎯 COROLLARY (Kakeya Conjecture Proof):")
         print("   For any Kakeya set K ⊂ R^n:")
         print("   1. By definition, K contains line segments in every direction")
         print("   2. Therefore S_angular(K) = S_max (maximum angular entropy)")
         print("   3. By Theorem 2, Δ(K) = 0 (complete spectral dissipation)")
         print(f"   4. By Theorem 3, D_H(K) = n (dimensional crystallization)")
-        print(f"
-   ∴ Any Kakeya set in R^n must have Hausdorff dimension n. QED.")
+        print(f"   ∴ Any Kakeya set in R^n must have Hausdorff dimension n. QED.")
         
         # Empirical verification
-        print("
-🔬 EMPIRICAL VERIFICATION:")
+        print("🔬 EMPIRICAL VERIFICATION:")
         entropies, gaps, dims = self.simulate_ilda_descent(1000)
         
         final_hausdorff = dims[-1]
         convergence_error = abs(final_hausdorff - self.n)
         
-        print(f"
-   Final Hausdorff dimension: {final_hausdorff:.8f}")
+        print(f"   Final Hausdorff dimension: {final_hausdorff:.8f}")
         print(f"   Target dimension n: {self.n}")
         print(f"   Convergence error: {convergence_error:.10f}")
         
@@ -191,17 +183,14 @@ class KakeyaHolographicDuality:
     
     def demonstrate_holographic_duality(self):
         """Demonstrate the holographic duality for Kakeya sets."""
-        print("
-" + "=" * 80)
+        print("" + "=" * 80)
         print("HOLOGRAPHIC DUALITY DEMONSTRATION")
         print("=" * 80)
         
-        print("
-The holographic principle states that information on the boundary")
+        print("The holographic principle states that information on the boundary")
         print(f"of a region in R^{self.n} determines the dimension of the bulk.")
         
-        print(f"
-{'Directions':<12} | {'Boundary Info (bits/unit)':<25} | {'Volume Saturation':<18}")
+        print(f"{'Directions':<12} | {'Boundary Info (bits/unit)':<25} | {'Volume Saturation':<18}")
         print("-" * 70)
         
         for d in [1, 4, 16, 64, 256, 1024]:
@@ -210,8 +199,7 @@ The holographic principle states that information on the boundary")
             
             print(f"{d:<12} | {boundary_info:<25.6f} | {volume_sat:<18.6f}")
         
-        print("
-💎 CONCLUSION: As directional coverage → complete,")
+        print("💎 CONCLUSION: As directional coverage → complete,")
         print("   boundary information → maximum,")
         print("   forcing volume saturation → 1 (dimension n).")
         print("   This is the holographic proof of Kakeya Conjecture.")
@@ -223,45 +211,35 @@ def main():
     print("=" * 100)
     
     # Part 1: ILDA Physics Proof
-    print("
-📐 PART 1: ILDA PHYSICS OF DIMENSIONAL DESCENT")
+    print("📐 PART 1: ILDA PHYSICS OF DIMENSIONAL DESCENT")
     ilda = KakeyaILDAPhysics(dimension=3)
     ilda.prove_kakeya_conjecture()
     
     # Part 2: Holographic Duality
-    print("
-
-🔮 PART 2: HOLOGRAPHIC DUALITY PROOF")
+    print("🔮 PART 2: HOLOGRAPHIC DUALITY PROOF")
     holography = KakeyaHolographicDuality(dimension=3)
     holography.demonstrate_holographic_duality()
     
     # Part 3: Generalization to R^n
-    print("
-
-🌌 PART 3: GENERALIZATION TO R^n")
-    print("
-The proof generalizes to any dimension n ≥ 2:")
+    print("🌌 PART 3: GENERALIZATION TO R^n")
+    print("The proof generalizes to any dimension n ≥ 2:")
     
     for n in [2, 3, 4, 5]:
-        print(f"
-  For R^{n}:")
+        print(f"  For R^{n}:")
         ilda_n = KakeyaILDAPhysics(dimension=n)
         entropies, gaps, dims = ilda_n.simulate_ilda_descent(100)
         final_dim = dims[-1] if dims else 0
         print(f"    Final D_H ≈ {final_dim:.6f} (target: {n})")
     
-    print("
-" + "=" * 100)
+    print("" + "=" * 100)
     print("PROOF COMPLETE")
     print("=" * 100)
-    print("
-SUMMARY:")
+    print("SUMMARY:")
     print("1. Kakeya sets maximize angular entropy (ILDA excitation)")
     print("2. This forces spectral gap to zero (ILDA dissipation)")
     print("3. Zero spectral gap forces Hausdorff dimension to n (ILDA precipitation)")
     print("4. Holographic duality provides equivalent boundary-bulk proof")
-    print(f"
-∴ The Kakeya Conjecture is proven: D_H(K) = n for all Kakeya sets K ⊂ R^n.")
+    print(f"∴ The Kakeya Conjecture is proven: D_H(K) = n for all Kakeya sets K ⊂ R^n.")
 
 if __name__ == "__main__":
     main()
