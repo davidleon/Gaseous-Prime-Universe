@@ -1,0 +1,367 @@
+[
+  {
+    "phase": "precipitation",
+    "sub_lemmas": [
+      {
+        "name": "omega_completeness_prime_exhaustiveness_prime_exhaustiveness",
+        "type": "completeness_theorem",
+        "component": "prime_exhaustiveness",
+        "difficulty": "medium",
+        "depends_on": [],
+        "prime_insight": "Completeness = Prime exhaustiveness (no more primes can be added)",
+        "proof_strategy": "Use bijection between primes and \u2115, apply prime density theorems",
+        "prime_grounding": {
+          "grounded": true,
+          "prime_insight": "|\u03a9| = |\u2119| = \u2135\u2080",
+          "density_insight": "Density(\u03a9) < Density(\u2115) (sparse)",
+          "completeness_insight": "\u03a9 is complete (union of all possible infinite axioms)",
+          "bijection_insight": "Perfect bijection between Omega axioms and primes",
+          "mathematical_evidence": "|\u03a9| = |\u2119| = \u2135\u2080"
+        },
+        "ready_for_proof": true
+      },
+      {
+        "name": "omega_completeness_prime_exhaustiveness_bijection_exists",
+        "type": "completeness_theorem",
+        "component": "bijection_exists",
+        "difficulty": "medium",
+        "depends_on": [
+          "prime_exhaustiveness"
+        ],
+        "prime_insight": "Completeness = Prime exhaustiveness (no more primes can be added)",
+        "proof_strategy": "Use bijection between primes and \u2115, apply prime density theorems",
+        "prime_grounding": {
+          "grounded": true,
+          "prime_insight": "|\u03a9| = |\u2119| = \u2135\u2080",
+          "density_insight": "Density(\u03a9) < Density(\u2115) (sparse)",
+          "completeness_insight": "\u03a9 is complete (union of all possible infinite axioms)",
+          "bijection_insight": "Perfect bijection between Omega axioms and primes",
+          "mathematical_evidence": "|\u03a9| = |\u2119| = \u2135\u2080"
+        },
+        "ready_for_proof": true
+      },
+      {
+        "name": "omega_completeness_prime_exhaustiveness_cardinality_match",
+        "type": "completeness_theorem",
+        "component": "cardinality_match",
+        "difficulty": "medium",
+        "depends_on": [
+          "prime_exhaustiveness",
+          "bijection_exists"
+        ],
+        "prime_insight": "Completeness = Prime exhaustiveness (no more primes can be added)",
+        "proof_strategy": "Use bijection between primes and \u2115, apply prime density theorems",
+        "prime_grounding": {
+          "grounded": true,
+          "prime_insight": "|\u03a9| = |\u2119| = \u2135\u2080",
+          "density_insight": "Density(\u03a9) < Density(\u2115) (sparse)",
+          "completeness_insight": "\u03a9 is complete (union of all possible infinite axioms)",
+          "bijection_insight": "Perfect bijection between Omega axioms and primes",
+          "mathematical_evidence": "|\u03a9| = |\u2119| = \u2135\u2080"
+        },
+        "ready_for_proof": true
+      }
+    ],
+    "verification": {
+      "status": "PASS",
+      "results": [
+        true,
+        true,
+        true
+      ]
+    },
+    "ready_for_proof": true
+  },
+  {
+    "phase": "precipitation",
+    "sub_lemmas": [
+      {
+        "name": "omega_cardinality_prime_bijection_bijection_exists",
+        "type": "cardinality_theorem",
+        "component": "bijection_exists",
+        "difficulty": "medium",
+        "depends_on": [],
+        "prime_insight": "|\u03a9| = |\u2119| = \u2135\u2080 (exact prime cardinality)",
+        "proof_strategy": "Use bijection between primes and \u2115, apply prime density theorems",
+        "prime_grounding": {
+          "grounded": true,
+          "prime_insight": "|\u03a9| = |\u2119| = \u2135\u2080",
+          "density_insight": "Density(\u03a9) < Density(\u2115) (sparse)",
+          "completeness_insight": "\u03a9 is complete (union of all possible infinite axioms)",
+          "bijection_insight": "Perfect bijection between Omega axioms and primes",
+          "mathematical_evidence": "|\u03a9| = |\u2119| = \u2135\u2080"
+        },
+        "ready_for_proof": true
+      },
+      {
+        "name": "omega_cardinality_prime_bijection_countability",
+        "type": "cardinality_theorem",
+        "component": "countability",
+        "difficulty": "easy",
+        "depends_on": [
+          "bijection_exists"
+        ],
+        "prime_insight": "|\u03a9| = |\u2119| = \u2135\u2080 (exact prime cardinality)",
+        "proof_strategy": "Use standard cardinality theorems from mathlib",
+        "prime_grounding": {
+          "grounded": true,
+          "prime_insight": "|\u03a9| = |\u2119| = \u2135\u2080",
+          "density_insight": "Density(\u03a9) < Density(\u2115) (sparse)",
+          "completeness_insight": "\u03a9 is complete (union of all possible infinite axioms)",
+          "bijection_insight": "Perfect bijection between Omega axioms and primes",
+          "mathematical_evidence": "|\u03a9| = |\u2119| = \u2135\u2080"
+        },
+        "ready_for_proof": true
+      },
+      {
+        "name": "omega_cardinality_prime_bijection_aleph_zero",
+        "type": "cardinality_theorem",
+        "component": "aleph_zero",
+        "difficulty": "medium",
+        "depends_on": [
+          "bijection_exists",
+          "countability"
+        ],
+        "prime_insight": "|\u03a9| = |\u2119| = \u2135\u2080 (exact prime cardinality)",
+        "proof_strategy": "Use bijection between primes and \u2115, apply prime density theorems",
+        "prime_grounding": {
+          "grounded": true,
+          "prime_insight": "|\u03a9| = |\u2119| = \u2135\u2080",
+          "density_insight": "Density(\u03a9) < Density(\u2115) (sparse)",
+          "completeness_insight": "\u03a9 is complete (union of all possible infinite axioms)",
+          "bijection_insight": "Perfect bijection between Omega axioms and primes",
+          "mathematical_evidence": "|\u03a9| = |\u2119| = \u2135\u2080"
+        },
+        "ready_for_proof": true
+      }
+    ],
+    "verification": {
+      "status": "PASS",
+      "results": [
+        true,
+        true,
+        true
+      ]
+    },
+    "ready_for_proof": true
+  },
+  {
+    "phase": "precipitation",
+    "sub_lemmas": [
+      {
+        "name": "omega_separability_prime_dense_dense_subset_exists",
+        "type": "separability_theorem",
+        "component": "dense_subset_exists",
+        "difficulty": "medium",
+        "depends_on": [],
+        "prime_insight": "\u03a9 is separable (countable dense subset from primes)",
+        "proof_strategy": "Use bijection between primes and \u2115, apply prime density theorems",
+        "prime_grounding": {
+          "grounded": true,
+          "prime_insight": "|\u03a9| = |\u2119| = \u2135\u2080",
+          "density_insight": "Density(\u03a9) < Density(\u2115) (sparse)",
+          "completeness_insight": "\u03a9 is complete (union of all possible infinite axioms)",
+          "bijection_insight": "Perfect bijection between Omega axioms and primes",
+          "mathematical_evidence": "|\u03a9| = |\u2119| = \u2135\u2080"
+        },
+        "ready_for_proof": true
+      },
+      {
+        "name": "omega_separability_prime_dense_countability",
+        "type": "separability_theorem",
+        "component": "countability",
+        "difficulty": "easy",
+        "depends_on": [
+          "dense_subset_exists"
+        ],
+        "prime_insight": "\u03a9 is separable (countable dense subset from primes)",
+        "proof_strategy": "Use standard cardinality theorems from mathlib",
+        "prime_grounding": {
+          "grounded": true,
+          "prime_insight": "|\u03a9| = |\u2119| = \u2135\u2080",
+          "density_insight": "Density(\u03a9) < Density(\u2115) (sparse)",
+          "completeness_insight": "\u03a9 is complete (union of all possible infinite axioms)",
+          "bijection_insight": "Perfect bijection between Omega axioms and primes",
+          "mathematical_evidence": "|\u03a9| = |\u2119| = \u2135\u2080"
+        },
+        "ready_for_proof": true
+      },
+      {
+        "name": "omega_separability_prime_dense_rationals_dense",
+        "type": "separability_theorem",
+        "component": "rationals_dense",
+        "difficulty": "medium",
+        "depends_on": [
+          "dense_subset_exists",
+          "countability"
+        ],
+        "prime_insight": "\u03a9 is separable (countable dense subset from primes)",
+        "proof_strategy": "Use bijection between primes and \u2115, apply prime density theorems",
+        "prime_grounding": {
+          "grounded": true,
+          "prime_insight": "|\u03a9| = |\u2119| = \u2135\u2080",
+          "density_insight": "Density(\u03a9) < Density(\u2115) (sparse)",
+          "completeness_insight": "\u03a9 is complete (union of all possible infinite axioms)",
+          "bijection_insight": "Perfect bijection between Omega axioms and primes",
+          "mathematical_evidence": "|\u03a9| = |\u2119| = \u2135\u2080"
+        },
+        "ready_for_proof": true
+      }
+    ],
+    "verification": {
+      "status": "PASS",
+      "results": [
+        true,
+        true,
+        true
+      ]
+    },
+    "ready_for_proof": true
+  },
+  {
+    "phase": "precipitation",
+    "sub_lemmas": [
+      {
+        "name": "omega_density_sparse_distribution_prime_density",
+        "type": "density_theorem",
+        "component": "prime_density",
+        "difficulty": "medium",
+        "depends_on": [],
+        "prime_insight": "Density(\u03a9) < Density(\u2115) (sparse distribution)",
+        "proof_strategy": "Use bijection between primes and \u2115, apply prime density theorems",
+        "prime_grounding": {
+          "grounded": true,
+          "prime_insight": "|\u03a9| = |\u2119| = \u2135\u2080",
+          "density_insight": "Density(\u03a9) < Density(\u2115) (sparse)",
+          "completeness_insight": "\u03a9 is complete (union of all possible infinite axioms)",
+          "bijection_insight": "Perfect bijection between Omega axioms and primes",
+          "mathematical_evidence": "|\u03a9| = |\u2119| = \u2135\u2080"
+        },
+        "ready_for_proof": true
+      },
+      {
+        "name": "omega_density_sparse_distribution_sparse_distribution",
+        "type": "density_theorem",
+        "component": "sparse_distribution",
+        "difficulty": "medium",
+        "depends_on": [
+          "prime_density"
+        ],
+        "prime_insight": "Density(\u03a9) < Density(\u2115) (sparse distribution)",
+        "proof_strategy": "Use bijection between primes and \u2115, apply prime density theorems",
+        "prime_grounding": {
+          "grounded": true,
+          "prime_insight": "|\u03a9| = |\u2119| = \u2135\u2080",
+          "density_insight": "Density(\u03a9) < Density(\u2115) (sparse)",
+          "completeness_insight": "\u03a9 is complete (union of all possible infinite axioms)",
+          "bijection_insight": "Perfect bijection between Omega axioms and primes",
+          "mathematical_evidence": "|\u03a9| = |\u2119| = \u2135\u2080"
+        },
+        "ready_for_proof": true
+      },
+      {
+        "name": "omega_density_sparse_distribution_limit_behavior",
+        "type": "density_theorem",
+        "component": "limit_behavior",
+        "difficulty": "medium",
+        "depends_on": [
+          "prime_density",
+          "sparse_distribution"
+        ],
+        "prime_insight": "Density(\u03a9) < Density(\u2115) (sparse distribution)",
+        "proof_strategy": "Use bijection between primes and \u2115, apply prime density theorems",
+        "prime_grounding": {
+          "grounded": true,
+          "prime_insight": "|\u03a9| = |\u2119| = \u2135\u2080",
+          "density_insight": "Density(\u03a9) < Density(\u2115) (sparse)",
+          "completeness_insight": "\u03a9 is complete (union of all possible infinite axioms)",
+          "bijection_insight": "Perfect bijection between Omega axioms and primes",
+          "mathematical_evidence": "|\u03a9| = |\u2119| = \u2135\u2080"
+        },
+        "ready_for_proof": true
+      }
+    ],
+    "verification": {
+      "status": "PASS",
+      "results": [
+        true,
+        true,
+        true
+      ]
+    },
+    "ready_for_proof": true
+  },
+  {
+    "phase": "precipitation",
+    "sub_lemmas": [
+      {
+        "name": "omega_metric_prime_structure_metric_definition",
+        "type": "metric_theorem",
+        "component": "metric_definition",
+        "difficulty": "hard",
+        "depends_on": [],
+        "prime_insight": "Metric structure reflects prime distribution",
+        "proof_strategy": "Use prime distribution theorems (PNT) and Adelic structure",
+        "prime_grounding": {
+          "grounded": true,
+          "prime_insight": "|\u03a9| = |\u2119| = \u2135\u2080",
+          "density_insight": "Density(\u03a9) < Density(\u2115) (sparse)",
+          "completeness_insight": "\u03a9 is complete (union of all possible infinite axioms)",
+          "bijection_insight": "Perfect bijection between Omega axioms and primes",
+          "mathematical_evidence": "|\u03a9| = |\u2119| = \u2135\u2080"
+        },
+        "ready_for_proof": true
+      },
+      {
+        "name": "omega_metric_prime_structure_triangle_inequality",
+        "type": "metric_theorem",
+        "component": "triangle_inequality",
+        "difficulty": "medium",
+        "depends_on": [
+          "metric_definition"
+        ],
+        "prime_insight": "Metric structure reflects prime distribution",
+        "proof_strategy": "Use bijection between primes and \u2115, apply prime density theorems",
+        "prime_grounding": {
+          "grounded": true,
+          "prime_insight": "|\u03a9| = |\u2119| = \u2135\u2080",
+          "density_insight": "Density(\u03a9) < Density(\u2115) (sparse)",
+          "completeness_insight": "\u03a9 is complete (union of all possible infinite axioms)",
+          "bijection_insight": "Perfect bijection between Omega axioms and primes",
+          "mathematical_evidence": "|\u03a9| = |\u2119| = \u2135\u2080"
+        },
+        "ready_for_proof": true
+      },
+      {
+        "name": "omega_metric_prime_structure_completeness_metric",
+        "type": "metric_theorem",
+        "component": "completeness_metric",
+        "difficulty": "hard",
+        "depends_on": [
+          "metric_definition",
+          "triangle_inequality"
+        ],
+        "prime_insight": "Metric structure reflects prime distribution",
+        "proof_strategy": "Use prime distribution theorems (PNT) and Adelic structure",
+        "prime_grounding": {
+          "grounded": true,
+          "prime_insight": "|\u03a9| = |\u2119| = \u2135\u2080",
+          "density_insight": "Density(\u03a9) < Density(\u2115) (sparse)",
+          "completeness_insight": "\u03a9 is complete (union of all possible infinite axioms)",
+          "bijection_insight": "Perfect bijection between Omega axioms and primes",
+          "mathematical_evidence": "|\u03a9| = |\u2119| = \u2135\u2080"
+        },
+        "ready_for_proof": true
+      }
+    ],
+    "verification": {
+      "status": "PASS",
+      "results": [
+        true,
+        true,
+        true
+      ]
+    },
+    "ready_for_proof": true
+  }
+]

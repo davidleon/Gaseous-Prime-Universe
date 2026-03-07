@@ -1,0 +1,94 @@
+================================================================================
+ILDA ITERATION 6: CONCRETE EXECUTION PLAN
+================================================================================
+
+EXECUTION ORDER
+================================================================================
+
+Step 1: Sorry 1.1
+  Description: Define KL divergence convention for 0/0
+  Estimated Time: 5 minutes
+--------------------------------------------------------------------------------
+
+Step 2: Sorry 2.1
+  Description: Prove lim_{q→0} p log(p/q) = ∞ for p > 0
+  Estimated Time: 10 minutes
+--------------------------------------------------------------------------------
+
+Step 3: Sorry 3.1
+  Description: Define log of LSE for β ≠ 0
+  Estimated Time: 5 minutes
+--------------------------------------------------------------------------------
+
+Step 4: Sorry 4.1
+  Description: Prove limit: lim_{β→0} (x^β - 1)/β = log x
+  Estimated Time: 15 minutes
+--------------------------------------------------------------------------------
+
+Step 5: Sorry 5.1
+  Description: Prove log-sum inequality
+  Estimated Time: 30 minutes
+--------------------------------------------------------------------------------
+
+Step 6: Sorry 6.1
+  Description: Prove (→) direction: KL = 0 implies P = Q
+  Estimated Time: 20 minutes
+--------------------------------------------------------------------------------
+
+Step 7: Sorry 6.2
+  Description: Prove (←) direction: P = Q implies KL = 0
+  Estimated Time: 10 minutes
+--------------------------------------------------------------------------------
+
+Step 8: Sorry 7.1
+  Description: Define M_U explicitly
+  Estimated Time: 10 minutes
+--------------------------------------------------------------------------------
+
+Step 9: Sorry 8.1
+  Description: Prove triangle inequality for KL divergence
+  Estimated Time: 20 minutes
+--------------------------------------------------------------------------------
+
+Step 10: Sorry 9.1
+  Description: Model grokking as gradient descent
+  Estimated Time: 15 minutes
+--------------------------------------------------------------------------------
+
+Step 11: Sorry 3.3
+  Description: Apply L'Hôpital's rule and exponentiate
+  Estimated Time: 20 minutes
+--------------------------------------------------------------------------------
+
+Step 12: Sorry 4.3
+  Description: Exponentiate to get LSE limit
+  Estimated Time: 10 minutes
+--------------------------------------------------------------------------------
+
+Step 13: Sorry 6.3
+  Description: Combine both directions
+  Estimated Time: 10 minutes
+--------------------------------------------------------------------------------
+
+Step 14: Sorry 7.3
+  Description: Verify projection to M_B (κ → 0)
+  Estimated Time: 15 minutes
+--------------------------------------------------------------------------------
+
+Step 15: Sorry 8.3
+  Description: Use IsJoin to show both terms → 0
+  Estimated Time: 15 minutes
+--------------------------------------------------------------------------------
+
+Step 16: Sorry 9.3
+  Description: Relate to actual grokking dynamics
+  Estimated Time: 30 minutes
+--------------------------------------------------------------------------------
+
+Step 17: Sorry 7.4
+  Description: Combine to prove IsJoin
+  Estimated Time: 10 minutes
+--------------------------------------------------------------------------------
+
+
+Total Estimated Time: 4.2 hours

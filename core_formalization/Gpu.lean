@@ -3,6 +3,7 @@ import Gpu.Core.Base.API
 import Gpu.Core.Decadic.API
 import Gpu.Core.Fundamental.API
 import Gpu.Core.LSE.Definitions
+import Gpu.Core.Universal
 
 /-!
 # The Gaseous Prime Universe Library (Stable API)

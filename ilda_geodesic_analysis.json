@@ -1,0 +1,1635 @@
+{
+  "simulation": {
+    "total_sorries": 30,
+    "by_type": {
+      "unknown": [
+        {
+          "line": 80,
+          "complexity": 0.6,
+          "confidence": 0.5
+        },
+        {
+          "line": 175,
+          "complexity": 0.6,
+          "confidence": 0.5
+        },
+        {
+          "line": 219,
+          "complexity": 0.5,
+          "confidence": 0.5
+        },
+        {
+          "line": 257,
+          "complexity": 0.5,
+          "confidence": 0.5
+        },
+        {
+          "line": 297,
+          "complexity": 0.6,
+          "confidence": 0.95
+        },
+        {
+          "line": 348,
+          "complexity": 0.5,
+          "confidence": 0.9
+        },
+        {
+          "line": 488,
+          "complexity": 0.5,
+          "confidence": 0.5
+        },
+        {
+          "line": 564,
+          "complexity": 0.5,
+          "confidence": 0.5
+        },
+        {
+          "line": 636,
+          "complexity": 0.5,
+          "confidence": 0.5
+        },
+        {
+          "line": 708,
+          "complexity": 0.5,
+          "confidence": 0.85
+        },
+        {
+          "line": 814,
+          "complexity": 0.5,
+          "confidence": 0.85
+        },
+        {
+          "line": 890,
+          "complexity": 0.5,
+          "confidence": 0.9
+        },
+        {
+          "line": 972,
+          "complexity": 0.6,
+          "confidence": 0.75
+        },
+        {
+          "line": 1046,
+          "complexity": 0.5,
+          "confidence": 0.5
+        },
+        {
+          "line": 1123,
+          "complexity": 0.5,
+          "confidence": 0.5
+        },
+        {
+          "line": 1589,
+          "complexity": 0.5,
+          "confidence": 0.5
+        },
+        {
+          "line": 1593,
+          "complexity": 0.5,
+          "confidence": 0.5
+        },
+        {
+          "line": 1597,
+          "complexity": 0.5,
+          "confidence": 0.9
+        },
+        {
+          "line": 1601,
+          "complexity": 0.5,
+          "confidence": 0.9
+        },
+        {
+          "line": 1605,
+          "complexity": 0.5,
+          "confidence": 0.9
+        },
+        {
+          "line": 1609,
+          "complexity": 0.5,
+          "confidence": 0.75
+        },
+        {
+          "line": 1613,
+          "complexity": 0.5,
+          "confidence": 0.95
+        },
+        {
+          "line": 1617,
+          "complexity": 0.5,
+          "confidence": 0.95
+        },
+        {
+          "line": 1621,
+          "complexity": 0.5,
+          "confidence": 0.95
+        },
+        {
+          "line": 1693,
+          "complexity": 0.5,
+          "confidence": 0.5
+        },
+        {
+          "line": 1697,
+          "complexity": 0.5,
+          "confidence": 0.5
+        },
+        {
+          "line": 1701,
+          "complexity": 0.5,
+          "confidence": 0.9
+        },
+        {
+          "line": 1705,
+          "complexity": 0.5,
+          "confidence": 0.9
+        },
+        {
+          "line": 1709,
+          "complexity": 0.5,
+          "confidence": 0.9
+        },
+        {
+          "line": 1713,
+          "complexity": 0.5,
+          "confidence": 0.75
+        }
+      ]
+    },
+    "average_complexity": 0.5133333333333333,
+    "average_confidence": 0.715,
+    "fuzzy_manifold_distribution": {
+      "Unknown fuzzy state": 13,
+      "Computation space (uncertain transitions)": 4,
+      "Proof tree (unknown dependencies)": 1,
+      "Mathematical structure (unknown composition)": 1,
+      "Formula structure (nested quantifiers)": 1,
+      "Lambda term (nested applications)": 7,
+      "Information source (uncertain patterns)": 3
+    },
+    "omega_manifold_targets": {
+      "Unknown omega target": 13,
+      "Universal computation (deterministic)": 4,
+      "Foundational axioms (logical certainty)": 1,
+      "Atomic decomposition (structural certainty)": 1,
+      "Complete FOL analysis (formal certainty)": 1,
+      "Normal form (computational certainty)": 7,
+      "Extracted knowledge (epistemic certainty)": 3
+    },
+    "geodesic_paths": {
+      "unknown": [
+        "Step 1: Enter Information source (uncertain patterns)",
+        "Step 2: Follow geodesic: Generate patterns \u2192 validate relationships \u2192 crystallize",
+        "Step 3: Apply phase lock: Validated patterns crystallize to knowledge",
+        "Step 4: Arrive at Extracted knowledge (epistemic certainty)",
+        "Step 5: Crystallize knowledge"
+      ]
+    },
+    "phase_lock_conditions": {
+      "unknown": "Phase lock achieved when: Validated patterns crystallize to knowledge and state stabilizes in Extracted knowledge (epistemic certainty)"
+    }
+  },
+  "analyses": [
+    {
+      "file_path": "core_formalization/Gpu/Core/Universal/ILDA.lean",
+      "line_number": 80,
+      "context": "  - PMLA + spectral gap \u2192 complete convergence\n\n  - Information dissipates to ground state\n\n  - Crystallization = complete logical understanding\n\n  - Universal for any PMLA-compliant operator\n\n  \n\n  sorry -- Formal link between the PMLA and the manifold's Spectral Gap.\n\n\n\n/- ============================================================================\n\n   SECTION 2: ILDA UNIVERSALITY THEOREMS\n\n   ============================================================================\n\n\n",
+      "theorem_name": "unknown",
+      "theorem_statement": "  - PMLA + spectral gap \u2192 complete convergence\n\n  - Information dissipates to ground state\n\n  - Crystallization = complete logical understanding\n\n  - Universal for any PMLA-compliant operator\n\n  \n\n  sorry -- Formal link between the PMLA and the manifold's Spectral Gap.\n\n\n\n/- ============================================================================\n\n   SECTION 2: ILDA UNIVERSALITY THEOREMS\n\n   ============================================================================\n\n\n",
+      "excitation_phase": "// ILDA: Excitation Phase - understand unknown\n// Unknown properties:\n// 1. Statement:   - PMLA + spectral gap \u2192 complete convergence\n\n  - Information dissipates to ground state\n\n  - Crys...\n// 2. Domain: unknown theory\n// 3. Objective: Understand theorem structure\n// 4. Challenge: Identify key components and relationships",
+      "dissipation_phase": "// ILDA: Dissipation Phase - analyze unknown\n// Unknown analysis:\n// 1. Fuzzy state: Unknown fuzzy state\n// 2. Geodesic: Unknown geodesic\n// 3. Phase lock: Unknown phase lock\n// 4. Target: Unknown omega target\n// 5. Method: Apply ILDA three-phase decomposition",
+      "precipitation_phase": "// ILDA: Precipitation Phase - unknown crystallizes\n// Proof requires:\n// 1. Verify geodesic path validity\n// 2. Check phase lock conditions\n// 3. Validate omega manifold target\n// 4. Confirm crystallization\n// 5. Conclude theorem truth",
+      "key_insights": [
+        "- Unknown fuzzy state initial state",
+        "- Geodesic: Unknown geodesic",
+        "- Phase lock: Unknown phase lock",
+        "- Target: Unknown omega target",
+        "- Universal principle: fuzzy \u2192 omega transition"
+      ],
+      "fuzzy_manifold_state": "Unknown fuzzy state",
+      "geodesic_path": [
+        "Step 1: Enter Unknown fuzzy state",
+        "Step 2: Follow geodesic: Unknown geodesic",
+        "Step 3: Apply phase lock: Unknown phase lock",
+        "Step 4: Arrive at Unknown omega target",
+        "Step 5: Crystallize knowledge"
+      ],
+      "phase_lock_condition": "Phase lock achieved when: Unknown phase lock and state stabilizes in Unknown omega target",
+      "omega_manifold_target": "Unknown omega target",
+      "suggested_lemmas": [
+        {
+          "name": "lemma_1_structure",
+          "description": "Analyze structure"
+        },
+        {
+          "name": "lemma_2_properties",
+          "description": "Identify properties"
+        },
+        {
+          "name": "lemma_3_invariant",
+          "description": "Prove invariant"
+        },
+        {
+          "name": "lemma_4_conclusion",
+          "description": "Reach conclusion"
+        }
+      ],
+      "complexity_score": 0.6,
+      "confidence_score": 0.5
+    },
+    {
+      "file_path": "core_formalization/Gpu/Core/Universal/ILDA.lean",
+      "line_number": 175,
+      "context": "  // ILDA: Key insight:\n\n  - \u211d\u00b3 encoding preserves TM structure\n\n  - Three components uniquely identify TM\n\n  - Injective encoding \u2192 lossless representation\n\n  \n\n  sorry\n\n\n\n/-! Lemma 1.2: TM Decoding Exists\n\n-/\n\n\n\n-- Decode \u211d\u00b3 back to TM state\n",
+      "theorem_name": "unknown",
+      "theorem_statement": "  // ILDA: Key insight:\n\n  - \u211d\u00b3 encoding preserves TM structure\n\n  - Three components uniquely identify TM\n\n  - Injective encoding \u2192 lossless representation\n\n  \n\n  sorry\n\n\n\n/-! Lemma 1.2: TM Decoding Exists\n\n-/\n\n\n\n-- Decode \u211d\u00b3 back to TM state\n",
+      "excitation_phase": "// ILDA: Excitation Phase - understand unknown\n// Unknown properties:\n// 1. Statement:   // ILDA: Key insight:\n\n  - \u211d\u00b3 encoding preserves TM structure\n\n  - Three components uniquely ident...\n// 2. Domain: unknown theory\n// 3. Objective: Understand theorem structure\n// 4. Challenge: Identify key components and relationships",
+      "dissipation_phase": "// ILDA: Dissipation Phase - analyze unknown\n// Unknown analysis:\n// 1. Fuzzy state: Unknown fuzzy state\n// 2. Geodesic: Unknown geodesic\n// 3. Phase lock: Unknown phase lock\n// 4. Target: Unknown omega target\n// 5. Method: Apply ILDA three-phase decomposition",
+      "precipitation_phase": "// ILDA: Precipitation Phase - unknown crystallizes\n// Proof requires:\n// 1. Verify geodesic path validity\n// 2. Check phase lock conditions\n// 3. Validate omega manifold target\n// 4. Confirm crystallization\n// 5. Conclude theorem truth",
+      "key_insights": [
+        "- Unknown fuzzy state initial state",
+        "- Geodesic: Unknown geodesic",
+        "- Phase lock: Unknown phase lock",
+        "- Target: Unknown omega target",
+        "- Universal principle: fuzzy \u2192 omega transition"
+      ],
+      "fuzzy_manifold_state": "Unknown fuzzy state",
+      "geodesic_path": [
+        "Step 1: Enter Unknown fuzzy state",
+        "Step 2: Follow geodesic: Unknown geodesic",
+        "Step 3: Apply phase lock: Unknown phase lock",
+        "Step 4: Arrive at Unknown omega target",
+        "Step 5: Crystallize knowledge"
+      ],
+      "phase_lock_condition": "Phase lock achieved when: Unknown phase lock and state stabilizes in Unknown omega target",
+      "omega_manifold_target": "Unknown omega target",
+      "suggested_lemmas": [
+        {
+          "name": "lemma_1_structure",
+          "description": "Analyze structure"
+        },
+        {
+          "name": "lemma_2_properties",
+          "description": "Identify properties"
+        },
+        {
+          "name": "lemma_3_invariant",
+          "description": "Prove invariant"
+        },
+        {
+          "name": "lemma_4_conclusion",
+          "description": "Reach conclusion"
+        }
+      ],
+      "complexity_score": 0.6,
+      "confidence_score": 0.5
+    },
+    {
+      "file_path": "core_formalization/Gpu/Core/Universal/ILDA.lean",
+      "line_number": 219,
+      "context": "  // ILDA: Key insight:\n\n  - decode \u2218 encode = identity\n\n  - Encoding is bijective\n\n  - Lossless round-trip guaranteed\n\n  \n\n  sorry\n\n\n\n/-! Lemma 1.3: TM Step Preserves Encoding\n\n-/\n\n\n\n-- Lemma: TM transition corresponds to ILDA step\n",
+      "theorem_name": "unknown",
+      "theorem_statement": "  // ILDA: Key insight:\n\n  - decode \u2218 encode = identity\n\n  - Encoding is bijective\n\n  - Lossless round-trip guaranteed\n\n  \n\n  sorry\n\n\n\n/-! Lemma 1.3: TM Step Preserves Encoding\n\n-/\n\n\n\n-- Lemma: TM transition corresponds to ILDA step\n",
+      "excitation_phase": "// ILDA: Excitation Phase - understand unknown\n// Unknown properties:\n// 1. Statement:   // ILDA: Key insight:\n\n  - decode \u2218 encode = identity\n\n  - Encoding is bijective\n\n  - Lossless rou...\n// 2. Domain: unknown theory\n// 3. Objective: Understand theorem structure\n// 4. Challenge: Identify key components and relationships",
+      "dissipation_phase": "// ILDA: Dissipation Phase - analyze unknown\n// Unknown analysis:\n// 1. Fuzzy state: Unknown fuzzy state\n// 2. Geodesic: Unknown geodesic\n// 3. Phase lock: Unknown phase lock\n// 4. Target: Unknown omega target\n// 5. Method: Apply ILDA three-phase decomposition",
+      "precipitation_phase": "// ILDA: Precipitation Phase - unknown crystallizes\n// Proof requires:\n// 1. Verify geodesic path validity\n// 2. Check phase lock conditions\n// 3. Validate omega manifold target\n// 4. Confirm crystallization\n// 5. Conclude theorem truth",
+      "key_insights": [
+        "- Unknown fuzzy state initial state",
+        "- Geodesic: Unknown geodesic",
+        "- Phase lock: Unknown phase lock",
+        "- Target: Unknown omega target",
+        "- Universal principle: fuzzy \u2192 omega transition"
+      ],
+      "fuzzy_manifold_state": "Unknown fuzzy state",
+      "geodesic_path": [
+        "Step 1: Enter Unknown fuzzy state",
+        "Step 2: Follow geodesic: Unknown geodesic",
+        "Step 3: Apply phase lock: Unknown phase lock",
+        "Step 4: Arrive at Unknown omega target",
+        "Step 5: Crystallize knowledge"
+      ],
+      "phase_lock_condition": "Phase lock achieved when: Unknown phase lock and state stabilizes in Unknown omega target",
+      "omega_manifold_target": "Unknown omega target",
+      "suggested_lemmas": [
+        {
+          "name": "lemma_1_structure",
+          "description": "Analyze structure"
+        },
+        {
+          "name": "lemma_2_properties",
+          "description": "Identify properties"
+        },
+        {
+          "name": "lemma_3_invariant",
+          "description": "Prove invariant"
+        },
+        {
+          "name": "lemma_4_conclusion",
+          "description": "Reach conclusion"
+        }
+      ],
+      "complexity_score": 0.5,
+      "confidence_score": 0.5
+    },
+    {
+      "file_path": "core_formalization/Gpu/Core/Universal/ILDA.lean",
+      "line_number": 257,
+      "context": "  // ILDA: Key insight:\n\n  - TM step = ILDA step (via encoding)\n\n  - Transition preserved through encoding\n\n  - Universal step simulation\n\n  \n\n  sorry\n\n\n\n/-! Lemma 1.4: ILDA Simulates TM Computation\n\n-/\n\n\n\n-- Lemma: n ILDA steps = n TM steps\n",
+      "theorem_name": "unknown",
+      "theorem_statement": "  // ILDA: Key insight:\n\n  - TM step = ILDA step (via encoding)\n\n  - Transition preserved through encoding\n\n  - Universal step simulation\n\n  \n\n  sorry\n\n\n\n/-! Lemma 1.4: ILDA Simulates TM Computation\n\n-/\n\n\n\n-- Lemma: n ILDA steps = n TM steps\n",
+      "excitation_phase": "// ILDA: Excitation Phase - understand unknown\n// Unknown properties:\n// 1. Statement:   // ILDA: Key insight:\n\n  - TM step = ILDA step (via encoding)\n\n  - Transition preserved through en...\n// 2. Domain: unknown theory\n// 3. Objective: Understand theorem structure\n// 4. Challenge: Identify key components and relationships",
+      "dissipation_phase": "// ILDA: Dissipation Phase - analyze unknown\n// Unknown analysis:\n// 1. Fuzzy state: Unknown fuzzy state\n// 2. Geodesic: Unknown geodesic\n// 3. Phase lock: Unknown phase lock\n// 4. Target: Unknown omega target\n// 5. Method: Apply ILDA three-phase decomposition",
+      "precipitation_phase": "// ILDA: Precipitation Phase - unknown crystallizes\n// Proof requires:\n// 1. Verify geodesic path validity\n// 2. Check phase lock conditions\n// 3. Validate omega manifold target\n// 4. Confirm crystallization\n// 5. Conclude theorem truth",
+      "key_insights": [
+        "- Unknown fuzzy state initial state",
+        "- Geodesic: Unknown geodesic",
+        "- Phase lock: Unknown phase lock",
+        "- Target: Unknown omega target",
+        "- Universal principle: fuzzy \u2192 omega transition"
+      ],
+      "fuzzy_manifold_state": "Unknown fuzzy state",
+      "geodesic_path": [
+        "Step 1: Enter Unknown fuzzy state",
+        "Step 2: Follow geodesic: Unknown geodesic",
+        "Step 3: Apply phase lock: Unknown phase lock",
+        "Step 4: Arrive at Unknown omega target",
+        "Step 5: Crystallize knowledge"
+      ],
+      "phase_lock_condition": "Phase lock achieved when: Unknown phase lock and state stabilizes in Unknown omega target",
+      "omega_manifold_target": "Unknown omega target",
+      "suggested_lemmas": [
+        {
+          "name": "lemma_1_structure",
+          "description": "Analyze structure"
+        },
+        {
+          "name": "lemma_2_properties",
+          "description": "Identify properties"
+        },
+        {
+          "name": "lemma_3_invariant",
+          "description": "Prove invariant"
+        },
+        {
+          "name": "lemma_4_conclusion",
+          "description": "Reach conclusion"
+        }
+      ],
+      "complexity_score": 0.5,
+      "confidence_score": 0.5
+    },
+    {
+      "file_path": "core_formalization/Gpu/Core/Universal/ILDA.lean",
+      "line_number": 297,
+      "context": "  // ILDA: Key insight:\n\n  - ILDA simulates TM step-by-step\n\n  - n steps \u2192 n steps (via encoding)\n\n  - Complete simulation for any computation\n\n  \n\n  sorry\n\n\n\n/-! Lemma 1.5: ILDA is Turing-Complete\n\n-/\n\n\n\n-- Main theorem: ILDA simulates any TM\n",
+      "theorem_name": "unknown",
+      "theorem_statement": "  // ILDA: Key insight:\n\n  - ILDA simulates TM step-by-step\n\n  - n steps \u2192 n steps (via encoding)\n\n  - Complete simulation for any computation\n\n  \n\n  sorry\n\n\n\n/-! Lemma 1.5: ILDA is Turing-Complete\n\n-/\n\n\n\n-- Main theorem: ILDA simulates any TM\n",
+      "excitation_phase": "// ILDA: Excitation Phase - understand turing\n// Turing properties:\n// 1. Statement:   // ILDA: Key insight:\n\n  - ILDA simulates TM step-by-step\n\n  - n steps \u2192 n steps (via encoding)\n\n ...\n// 2. Domain: turing theory\n// 3. Objective: Understand theorem structure\n// 4. Challenge: Identify key components and relationships",
+      "dissipation_phase": "// ILDA: Dissipation Phase - analyze turing\n// Turing analysis:\n// 1. Fuzzy state: Computation space (uncertain transitions)\n// 2. Geodesic: Encode TM \u2192 simulate steps \u2192 decode result\n// 3. Phase lock: TM encoding preserves structure\n// 4. Target: Universal computation (deterministic)\n// 5. Method: Apply ILDA three-phase decomposition",
+      "precipitation_phase": "// ILDA: Precipitation Phase - turing crystallizes\n// Proof requires:\n// 1. Verify geodesic path validity\n// 2. Check phase lock conditions\n// 3. Validate omega manifold target\n// 4. Confirm crystallization\n// 5. Conclude theorem truth",
+      "key_insights": [
+        "- Computation space (uncertain transitions) initial state",
+        "- Geodesic: Encode TM \u2192 simulate steps \u2192 decode result",
+        "- Phase lock: TM encoding preserves structure",
+        "- Target: Universal computation (deterministic)",
+        "- Universal principle: fuzzy \u2192 omega transition"
+      ],
+      "fuzzy_manifold_state": "Computation space (uncertain transitions)",
+      "geodesic_path": [
+        "Step 1: Enter Computation space (uncertain transitions)",
+        "Step 2: Follow geodesic: Encode TM \u2192 simulate steps \u2192 decode result",
+        "Step 3: Apply phase lock: TM encoding preserves structure",
+        "Step 4: Arrive at Universal computation (deterministic)",
+        "Step 5: Crystallize knowledge"
+      ],
+      "phase_lock_condition": "Phase lock achieved when: TM encoding preserves structure and state stabilizes in Universal computation (deterministic)",
+      "omega_manifold_target": "Universal computation (deterministic)",
+      "suggested_lemmas": [
+        {
+          "name": "tm_encoding_injective",
+          "description": "TM encoding preserves structure"
+        },
+        {
+          "name": "tm_decode_inverts_encode",
+          "description": "Encoding is bijective"
+        },
+        {
+          "name": "tm_step_ilda_correspondence",
+          "description": "TM step = ILDA step"
+        },
+        {
+          "name": "ilda_simulates_tm_steps",
+          "description": "n steps = n steps (induction)"
+        }
+      ],
+      "complexity_score": 0.6,
+      "confidence_score": 0.95
+    },
+    {
+      "file_path": "core_formalization/Gpu/Core/Universal/ILDA.lean",
+      "line_number": 348,
+      "context": "  let encoding (tm : TuringMachineState) (i j k : \u211d) : \u211d\u00b3 :=\n\n    tm_encode tm\n\n  \n\n  -- Show simulation correctness using lemmas\n\n  intro TM transition n_steps h_step\n\n  sorry\n\n\n\n/-!\n\n\n\nTheorem 2: ILDA Decomposes Any Proof Structure\n\n\n",
+      "theorem_name": "unknown",
+      "theorem_statement": "TuringMachineState) (i j k : \u211d) : \u211d\u00b3",
+      "excitation_phase": "// ILDA: Excitation Phase - understand proof\n// Proof properties:\n// 1. Statement: TuringMachineState) (i j k : \u211d) : \u211d\u00b3...\n// 2. Domain: proof theory\n// 3. Objective: Understand theorem structure\n// 4. Challenge: Identify key components and relationships",
+      "dissipation_phase": "// ILDA: Dissipation Phase - analyze proof\n// Proof analysis:\n// 1. Fuzzy state: Proof tree (unknown dependencies)\n// 2. Geodesic: Traverse tree \u2192 identify leaves \u2192 extract axioms\n// 3. Phase lock: Tree structure crystallizes to axioms\n// 4. Target: Foundational axioms (logical certainty)\n// 5. Method: Apply ILDA three-phase decomposition",
+      "precipitation_phase": "// ILDA: Precipitation Phase - proof crystallizes\n// Proof requires:\n// 1. Verify geodesic path validity\n// 2. Check phase lock conditions\n// 3. Validate omega manifold target\n// 4. Confirm crystallization\n// 5. Conclude theorem truth",
+      "key_insights": [
+        "- Proof tree (unknown dependencies) initial state",
+        "- Geodesic: Traverse tree \u2192 identify leaves \u2192 extract axioms",
+        "- Phase lock: Tree structure crystallizes to axioms",
+        "- Target: Foundational axioms (logical certainty)",
+        "- Universal principle: fuzzy \u2192 omega transition"
+      ],
+      "fuzzy_manifold_state": "Proof tree (unknown dependencies)",
+      "geodesic_path": [
+        "Step 1: Enter Proof tree (unknown dependencies)",
+        "Step 2: Follow geodesic: Traverse tree \u2192 identify leaves \u2192 extract axioms",
+        "Step 3: Apply phase lock: Tree structure crystallizes to axioms",
+        "Step 4: Arrive at Foundational axioms (logical certainty)",
+        "Step 5: Crystallize knowledge"
+      ],
+      "phase_lock_condition": "Phase lock achieved when: Tree structure crystallizes to axioms and state stabilizes in Foundational axioms (logical certainty)",
+      "omega_manifold_target": "Foundational axioms (logical certainty)",
+      "suggested_lemmas": [
+        {
+          "name": "proof_tree_structure",
+          "description": "Proof has tree structure"
+        },
+        {
+          "name": "ilda_collects_all_nodes",
+          "description": "Complete tree traversal"
+        },
+        {
+          "name": "leaf_nodes_irreducible",
+          "description": "Leaves are axioms"
+        },
+        {
+          "name": "ilda_extracts_leaves_only",
+          "description": "Pure axiom extraction"
+        }
+      ],
+      "complexity_score": 0.5,
+      "confidence_score": 0.9
+    },
+    {
+      "file_path": "core_formalization/Gpu/Core/Universal/ILDA.lean",
+      "line_number": 488,
+      "context": "\n\n  - Well-founded decomposition possible\n\n\n\n  \n\n\n\n  sorry\n\n\n\n\n\n\n\n/-! Lemma 2.2: ILDA Collects All Nodes\n\n\n",
+      "theorem_name": "unknown",
+      "theorem_statement": "\n\n  - Well-founded decomposition possible\n\n\n\n  \n\n\n\n  sorry\n\n\n\n\n\n\n\n/-! Lemma 2.2: ILDA Collects All Nodes\n\n\n",
+      "excitation_phase": "// ILDA: Excitation Phase - understand unknown\n// Unknown properties:\n// 1. Statement: \n\n  - Well-founded decomposition possible\n\n\n\n  \n\n\n\n  sorry\n\n\n\n\n\n\n\n/-! Lemma 2.2: ILDA Collects All N...\n// 2. Domain: unknown theory\n// 3. Objective: Understand theorem structure\n// 4. Challenge: Identify key components and relationships",
+      "dissipation_phase": "// ILDA: Dissipation Phase - analyze unknown\n// Unknown analysis:\n// 1. Fuzzy state: Unknown fuzzy state\n// 2. Geodesic: Unknown geodesic\n// 3. Phase lock: Unknown phase lock\n// 4. Target: Unknown omega target\n// 5. Method: Apply ILDA three-phase decomposition",
+      "precipitation_phase": "// ILDA: Precipitation Phase - unknown crystallizes\n// Proof requires:\n// 1. Verify geodesic path validity\n// 2. Check phase lock conditions\n// 3. Validate omega manifold target\n// 4. Confirm crystallization\n// 5. Conclude theorem truth",
+      "key_insights": [
+        "- Unknown fuzzy state initial state",
+        "- Geodesic: Unknown geodesic",
+        "- Phase lock: Unknown phase lock",
+        "- Target: Unknown omega target",
+        "- Universal principle: fuzzy \u2192 omega transition"
+      ],
+      "fuzzy_manifold_state": "Unknown fuzzy state",
+      "geodesic_path": [
+        "Step 1: Enter Unknown fuzzy state",
+        "Step 2: Follow geodesic: Unknown geodesic",
+        "Step 3: Apply phase lock: Unknown phase lock",
+        "Step 4: Arrive at Unknown omega target",
+        "Step 5: Crystallize knowledge"
+      ],
+      "phase_lock_condition": "Phase lock achieved when: Unknown phase lock and state stabilizes in Unknown omega target",
+      "omega_manifold_target": "Unknown omega target",
+      "suggested_lemmas": [
+        {
+          "name": "lemma_1_structure",
+          "description": "Analyze structure"
+        },
+        {
+          "name": "lemma_2_properties",
+          "description": "Identify properties"
+        },
+        {
+          "name": "lemma_3_invariant",
+          "description": "Prove invariant"
+        },
+        {
+          "name": "lemma_4_conclusion",
+          "description": "Reach conclusion"
+        }
+      ],
+      "complexity_score": 0.5,
+      "confidence_score": 0.5
+    },
+    {
+      "file_path": "core_formalization/Gpu/Core/Universal/ILDA.lean",
+      "line_number": 564,
+      "context": "\n\n  - Every node visited and recorded\n\n\n\n  \n\n\n\n  sorry\n\n\n\n\n\n\n\n/-! Lemma 2.3: Leaf Nodes are Irreducible\n\n\n",
+      "theorem_name": "unknown",
+      "theorem_statement": "\n\n  - Every node visited and recorded\n\n\n\n  \n\n\n\n  sorry\n\n\n\n\n\n\n\n/-! Lemma 2.3: Leaf Nodes are Irreducible\n\n\n",
+      "excitation_phase": "// ILDA: Excitation Phase - understand unknown\n// Unknown properties:\n// 1. Statement: \n\n  - Every node visited and recorded\n\n\n\n  \n\n\n\n  sorry\n\n\n\n\n\n\n\n/-! Lemma 2.3: Leaf Nodes are Irreduci...\n// 2. Domain: unknown theory\n// 3. Objective: Understand theorem structure\n// 4. Challenge: Identify key components and relationships",
+      "dissipation_phase": "// ILDA: Dissipation Phase - analyze unknown\n// Unknown analysis:\n// 1. Fuzzy state: Unknown fuzzy state\n// 2. Geodesic: Unknown geodesic\n// 3. Phase lock: Unknown phase lock\n// 4. Target: Unknown omega target\n// 5. Method: Apply ILDA three-phase decomposition",
+      "precipitation_phase": "// ILDA: Precipitation Phase - unknown crystallizes\n// Proof requires:\n// 1. Verify geodesic path validity\n// 2. Check phase lock conditions\n// 3. Validate omega manifold target\n// 4. Confirm crystallization\n// 5. Conclude theorem truth",
+      "key_insights": [
+        "- Unknown fuzzy state initial state",
+        "- Geodesic: Unknown geodesic",
+        "- Phase lock: Unknown phase lock",
+        "- Target: Unknown omega target",
+        "- Universal principle: fuzzy \u2192 omega transition"
+      ],
+      "fuzzy_manifold_state": "Unknown fuzzy state",
+      "geodesic_path": [
+        "Step 1: Enter Unknown fuzzy state",
+        "Step 2: Follow geodesic: Unknown geodesic",
+        "Step 3: Apply phase lock: Unknown phase lock",
+        "Step 4: Arrive at Unknown omega target",
+        "Step 5: Crystallize knowledge"
+      ],
+      "phase_lock_condition": "Phase lock achieved when: Unknown phase lock and state stabilizes in Unknown omega target",
+      "omega_manifold_target": "Unknown omega target",
+      "suggested_lemmas": [
+        {
+          "name": "lemma_1_structure",
+          "description": "Analyze structure"
+        },
+        {
+          "name": "lemma_2_properties",
+          "description": "Identify properties"
+        },
+        {
+          "name": "lemma_3_invariant",
+          "description": "Prove invariant"
+        },
+        {
+          "name": "lemma_4_conclusion",
+          "description": "Reach conclusion"
+        }
+      ],
+      "complexity_score": 0.5,
+      "confidence_score": 0.5
+    },
+    {
+      "file_path": "core_formalization/Gpu/Core/Universal/ILDA.lean",
+      "line_number": 636,
+      "context": "\n\n  - Foundation of proof tree\n\n\n\n  \n\n\n\n  sorry\n\n\n\n\n\n\n\n/-! Lemma 2.4: ILDA Extracts All Leaves\n\n\n",
+      "theorem_name": "unknown",
+      "theorem_statement": "\n\n  - Foundation of proof tree\n\n\n\n  \n\n\n\n  sorry\n\n\n\n\n\n\n\n/-! Lemma 2.4: ILDA Extracts All Leaves\n\n\n",
+      "excitation_phase": "// ILDA: Excitation Phase - understand unknown\n// Unknown properties:\n// 1. Statement: \n\n  - Foundation of proof tree\n\n\n\n  \n\n\n\n  sorry\n\n\n\n\n\n\n\n/-! Lemma 2.4: ILDA Extracts All Leaves\n\n\n...\n// 2. Domain: unknown theory\n// 3. Objective: Understand theorem structure\n// 4. Challenge: Identify key components and relationships",
+      "dissipation_phase": "// ILDA: Dissipation Phase - analyze unknown\n// Unknown analysis:\n// 1. Fuzzy state: Unknown fuzzy state\n// 2. Geodesic: Unknown geodesic\n// 3. Phase lock: Unknown phase lock\n// 4. Target: Unknown omega target\n// 5. Method: Apply ILDA three-phase decomposition",
+      "precipitation_phase": "// ILDA: Precipitation Phase - unknown crystallizes\n// Proof requires:\n// 1. Verify geodesic path validity\n// 2. Check phase lock conditions\n// 3. Validate omega manifold target\n// 4. Confirm crystallization\n// 5. Conclude theorem truth",
+      "key_insights": [
+        "- Unknown fuzzy state initial state",
+        "- Geodesic: Unknown geodesic",
+        "- Phase lock: Unknown phase lock",
+        "- Target: Unknown omega target",
+        "- Universal principle: fuzzy \u2192 omega transition"
+      ],
+      "fuzzy_manifold_state": "Unknown fuzzy state",
+      "geodesic_path": [
+        "Step 1: Enter Unknown fuzzy state",
+        "Step 2: Follow geodesic: Unknown geodesic",
+        "Step 3: Apply phase lock: Unknown phase lock",
+        "Step 4: Arrive at Unknown omega target",
+        "Step 5: Crystallize knowledge"
+      ],
+      "phase_lock_condition": "Phase lock achieved when: Unknown phase lock and state stabilizes in Unknown omega target",
+      "omega_manifold_target": "Unknown omega target",
+      "suggested_lemmas": [
+        {
+          "name": "lemma_1_structure",
+          "description": "Analyze structure"
+        },
+        {
+          "name": "lemma_2_properties",
+          "description": "Identify properties"
+        },
+        {
+          "name": "lemma_3_invariant",
+          "description": "Prove invariant"
+        },
+        {
+          "name": "lemma_4_conclusion",
+          "description": "Reach conclusion"
+        }
+      ],
+      "complexity_score": 0.5,
+      "confidence_score": 0.5
+    },
+    {
+      "file_path": "core_formalization/Gpu/Core/Universal/ILDA.lean",
+      "line_number": 708,
+      "context": "\n\n  - Pure irreducible components\n\n\n\n  \n\n\n\n  sorry\n\n\n\n\n\n\n\n/-! Lemma 2.5: ILDA Decomposition is Complete\n\n\n",
+      "theorem_name": "unknown",
+      "theorem_statement": "\n\n  - Pure irreducible components\n\n\n\n  \n\n\n\n  sorry\n\n\n\n\n\n\n\n/-! Lemma 2.5: ILDA Decomposition is Complete\n\n\n",
+      "excitation_phase": "// ILDA: Excitation Phase - understand structure\n// Structure properties:\n// 1. Statement: \n\n  - Pure irreducible components\n\n\n\n  \n\n\n\n  sorry\n\n\n\n\n\n\n\n/-! Lemma 2.5: ILDA Decomposition is Compl...\n// 2. Domain: structure theory\n// 3. Objective: Understand theorem structure\n// 4. Challenge: Identify key components and relationships",
+      "dissipation_phase": "// ILDA: Dissipation Phase - analyze structure\n// Structure analysis:\n// 1. Fuzzy state: Mathematical structure (unknown composition)\n// 2. Geodesic: Identify components \u2192 analyze composition \u2192 decompose\n// 3. Phase lock: Atomic components crystallize\n// 4. Target: Atomic decomposition (structural certainty)\n// 5. Method: Apply ILDA three-phase decomposition",
+      "precipitation_phase": "// ILDA: Precipitation Phase - structure crystallizes\n// Proof requires:\n// 1. Verify geodesic path validity\n// 2. Check phase lock conditions\n// 3. Validate omega manifold target\n// 4. Confirm crystallization\n// 5. Conclude theorem truth",
+      "key_insights": [
+        "- Mathematical structure (unknown composition) initial state",
+        "- Geodesic: Identify components \u2192 analyze composition \u2192 decompose",
+        "- Phase lock: Atomic components crystallize",
+        "- Target: Atomic decomposition (structural certainty)",
+        "- Universal principle: fuzzy \u2192 omega transition"
+      ],
+      "fuzzy_manifold_state": "Mathematical structure (unknown composition)",
+      "geodesic_path": [
+        "Step 1: Enter Mathematical structure (unknown composition)",
+        "Step 2: Follow geodesic: Identify components \u2192 analyze composition \u2192 decompose",
+        "Step 3: Apply phase lock: Atomic components crystallize",
+        "Step 4: Arrive at Atomic decomposition (structural certainty)",
+        "Step 5: Crystallize knowledge"
+      ],
+      "phase_lock_condition": "Phase lock achieved when: Atomic components crystallize and state stabilizes in Atomic decomposition (structural certainty)",
+      "omega_manifold_target": "Atomic decomposition (structural certainty)",
+      "suggested_lemmas": [
+        {
+          "name": "lemma_1_structure",
+          "description": "Analyze structure"
+        },
+        {
+          "name": "lemma_2_properties",
+          "description": "Identify properties"
+        },
+        {
+          "name": "lemma_3_invariant",
+          "description": "Prove invariant"
+        },
+        {
+          "name": "lemma_4_conclusion",
+          "description": "Reach conclusion"
+        }
+      ],
+      "complexity_score": 0.5,
+      "confidence_score": 0.85
+    },
+    {
+      "file_path": "core_formalization/Gpu/Core/Universal/ILDA.lean",
+      "line_number": 814,
+      "context": "\n\n      exact ilda_extracts_leaves_only proof node h_in_decomp\n\n\n\n    \u00b7 -- Node is axiom (by Lemma 2.3)\n\n\n\n      sorry\n\n\n\n/-!\n\nTheorem 3: ILDA is Complete for First-Order Logic\n\n\n\nStatement: ILDA can analyze and decompose any first-order logic\n",
+      "theorem_name": "unknown",
+      "theorem_statement": "\n\n      exact ilda_extracts_leaves_only proof node h_in_decomp\n\n\n\n    \u00b7 -- Node is axiom (by Lemma 2.3)\n\n\n\n      sorry\n\n\n\n/-!\n\nTheorem 3: ILDA is Complete for First-Order Logic\n\n\n\nStatement: ILDA can analyze and decompose any first-order logic\n",
+      "excitation_phase": "// ILDA: Excitation Phase - understand fol\n// Fol properties:\n// 1. Statement: \n\n      exact ilda_extracts_leaves_only proof node h_in_decomp\n\n\n\n    \u00b7 -- Node is axiom (by Lemma 2...\n// 2. Domain: fol theory\n// 3. Objective: Understand theorem structure\n// 4. Challenge: Identify key components and relationships",
+      "dissipation_phase": "// ILDA: Dissipation Phase - analyze fol\n// Fol analysis:\n// 1. Fuzzy state: Formula structure (nested quantifiers)\n// 2. Geodesic: Parse syntax \u2192 extract components \u2192 analyze structure\n// 3. Phase lock: Logical structure crystallizes\n// 4. Target: Complete FOL analysis (formal certainty)\n// 5. Method: Apply ILDA three-phase decomposition",
+      "precipitation_phase": "// ILDA: Precipitation Phase - fol crystallizes\n// Proof requires:\n// 1. Verify geodesic path validity\n// 2. Check phase lock conditions\n// 3. Validate omega manifold target\n// 4. Confirm crystallization\n// 5. Conclude theorem truth",
+      "key_insights": [
+        "- Formula structure (nested quantifiers) initial state",
+        "- Geodesic: Parse syntax \u2192 extract components \u2192 analyze structure",
+        "- Phase lock: Logical structure crystallizes",
+        "- Target: Complete FOL analysis (formal certainty)",
+        "- Universal principle: fuzzy \u2192 omega transition"
+      ],
+      "fuzzy_manifold_state": "Formula structure (nested quantifiers)",
+      "geodesic_path": [
+        "Step 1: Enter Formula structure (nested quantifiers)",
+        "Step 2: Follow geodesic: Parse syntax \u2192 extract components \u2192 analyze structure",
+        "Step 3: Apply phase lock: Logical structure crystallizes",
+        "Step 4: Arrive at Complete FOL analysis (formal certainty)",
+        "Step 5: Crystallize knowledge"
+      ],
+      "phase_lock_condition": "Phase lock achieved when: Logical structure crystallizes and state stabilizes in Complete FOL analysis (formal certainty)",
+      "omega_manifold_target": "Complete FOL analysis (formal certainty)",
+      "suggested_lemmas": [
+        {
+          "name": "fol_syntax_complete",
+          "description": "FOL syntax is complete"
+        },
+        {
+          "name": "fol_quantifier_wellformed",
+          "description": "Quantifiers well-formed"
+        },
+        {
+          "name": "fol_operator_sound",
+          "description": "Operators sound"
+        },
+        {
+          "name": "fol_analysis_complete",
+          "description": "Complete FOL analysis"
+        }
+      ],
+      "complexity_score": 0.5,
+      "confidence_score": 0.85
+    },
+    {
+      "file_path": "core_formalization/Gpu/Core/Universal/ILDA.lean",
+      "line_number": 890,
+      "context": "  - ILDA can analyze any FOL formula\n\n  - Recursive analysis handles nested structure\n\n  - Complete extraction of logical components\n\n  - Universal for first-order logic\n\n  \n\n  sorry\n\n\n\n/-!\n\nTheorem 4: ILDA Simulates Lambda Calculus\n\n\n\nStatement: ILDA can simulate lambda calculus terms, showing it\n",
+      "theorem_name": "unknown",
+      "theorem_statement": "  - ILDA can analyze any FOL formula\n\n  - Recursive analysis handles nested structure\n\n  - Complete extraction of logical components\n\n  - Universal for first-order logic\n\n  \n\n  sorry\n\n\n\n/-!\n\nTheorem 4: ILDA Simulates Lambda Calculus\n\n\n\nStatement: ILDA can simulate lambda calculus terms, showing it\n",
+      "excitation_phase": "// ILDA: Excitation Phase - understand lambda\n// Lambda properties:\n// 1. Statement:   - ILDA can analyze any FOL formula\n\n  - Recursive analysis handles nested structure\n\n  - Complete ...\n// 2. Domain: lambda theory\n// 3. Objective: Understand theorem structure\n// 4. Challenge: Identify key components and relationships",
+      "dissipation_phase": "// ILDA: Dissipation Phase - analyze lambda\n// Lambda analysis:\n// 1. Fuzzy state: Lambda term (nested applications)\n// 2. Geodesic: Identify redexes \u2192 apply beta-reduction \u2192 normalize\n// 3. Phase lock: Beta-reduction crystallizes to normal form\n// 4. Target: Normal form (computational certainty)\n// 5. Method: Apply ILDA three-phase decomposition",
+      "precipitation_phase": "// ILDA: Precipitation Phase - lambda crystallizes\n// Proof requires:\n// 1. Verify geodesic path validity\n// 2. Check phase lock conditions\n// 3. Validate omega manifold target\n// 4. Confirm crystallization\n// 5. Conclude theorem truth",
+      "key_insights": [
+        "- Lambda term (nested applications) initial state",
+        "- Geodesic: Identify redexes \u2192 apply beta-reduction \u2192 normalize",
+        "- Phase lock: Beta-reduction crystallizes to normal form",
+        "- Target: Normal form (computational certainty)",
+        "- Universal principle: fuzzy \u2192 omega transition"
+      ],
+      "fuzzy_manifold_state": "Lambda term (nested applications)",
+      "geodesic_path": [
+        "Step 1: Enter Lambda term (nested applications)",
+        "Step 2: Follow geodesic: Identify redexes \u2192 apply beta-reduction \u2192 normalize",
+        "Step 3: Apply phase lock: Beta-reduction crystallizes to normal form",
+        "Step 4: Arrive at Normal form (computational certainty)",
+        "Step 5: Crystallize knowledge"
+      ],
+      "phase_lock_condition": "Phase lock achieved when: Beta-reduction crystallizes to normal form and state stabilizes in Normal form (computational certainty)",
+      "omega_manifold_target": "Normal form (computational certainty)",
+      "suggested_lemmas": [
+        {
+          "name": "lambda_term_wellformed",
+          "description": "Lambda terms well-formed"
+        },
+        {
+          "name": "beta_reduction_correct",
+          "description": "Beta-reduction correct"
+        },
+        {
+          "name": "normal_form_exists",
+          "description": "Normal form exists"
+        },
+        {
+          "name": "lambda_complete",
+          "description": "Complete lambda analysis"
+        }
+      ],
+      "complexity_score": 0.5,
+      "confidence_score": 0.9
+    },
+    {
+      "file_path": "core_formalization/Gpu/Core/Universal/ILDA.lean",
+      "line_number": 972,
+      "context": "  - ILDA simulates lambda calculus\n\n  - Beta-reduction = dissipation phase\n\n  - Normalization = precipitation phase\n\n  - Universal for functional computation\n\n  \n\n  sorry\n\n\n\n/-!\n\nTheorem 5: ILDA Universal Knowledge Extraction\n\n\n\nStatement: ILDA can extract knowledge from any information source,\n",
+      "theorem_name": "unknown",
+      "theorem_statement": "  - ILDA simulates lambda calculus\n\n  - Beta-reduction = dissipation phase\n\n  - Normalization = precipitation phase\n\n  - Universal for functional computation\n\n  \n\n  sorry\n\n\n\n/-!\n\nTheorem 5: ILDA Universal Knowledge Extraction\n\n\n\nStatement: ILDA can extract knowledge from any information source,\n",
+      "excitation_phase": "// ILDA: Excitation Phase - understand knowledge\n// Knowledge properties:\n// 1. Statement:   - ILDA simulates lambda calculus\n\n  - Beta-reduction = dissipation phase\n\n  - Normalization = prec...\n// 2. Domain: knowledge theory\n// 3. Objective: Understand theorem structure\n// 4. Challenge: Identify key components and relationships",
+      "dissipation_phase": "// ILDA: Dissipation Phase - analyze knowledge\n// Knowledge analysis:\n// 1. Fuzzy state: Information source (uncertain patterns)\n// 2. Geodesic: Generate patterns \u2192 validate relationships \u2192 crystallize\n// 3. Phase lock: Validated patterns crystallize to knowledge\n// 4. Target: Extracted knowledge (epistemic certainty)\n// 5. Method: Apply ILDA three-phase decomposition",
+      "precipitation_phase": "// ILDA: Precipitation Phase - knowledge crystallizes\n// Proof requires:\n// 1. Verify geodesic path validity\n// 2. Check phase lock conditions\n// 3. Validate omega manifold target\n// 4. Confirm crystallization\n// 5. Conclude theorem truth",
+      "key_insights": [
+        "- Information source (uncertain patterns) initial state",
+        "- Geodesic: Generate patterns \u2192 validate relationships \u2192 crystallize",
+        "- Phase lock: Validated patterns crystallize to knowledge",
+        "- Target: Extracted knowledge (epistemic certainty)",
+        "- Universal principle: fuzzy \u2192 omega transition"
+      ],
+      "fuzzy_manifold_state": "Information source (uncertain patterns)",
+      "geodesic_path": [
+        "Step 1: Enter Information source (uncertain patterns)",
+        "Step 2: Follow geodesic: Generate patterns \u2192 validate relationships \u2192 crystallize",
+        "Step 3: Apply phase lock: Validated patterns crystallize to knowledge",
+        "Step 4: Arrive at Extracted knowledge (epistemic certainty)",
+        "Step 5: Crystallize knowledge"
+      ],
+      "phase_lock_condition": "Phase lock achieved when: Validated patterns crystallize to knowledge and state stabilizes in Extracted knowledge (epistemic certainty)",
+      "omega_manifold_target": "Extracted knowledge (epistemic certainty)",
+      "suggested_lemmas": [
+        {
+          "name": "lemma_1_structure",
+          "description": "Analyze structure"
+        },
+        {
+          "name": "lemma_2_properties",
+          "description": "Identify properties"
+        },
+        {
+          "name": "lemma_3_invariant",
+          "description": "Prove invariant"
+        },
+        {
+          "name": "lemma_4_conclusion",
+          "description": "Reach conclusion"
+        }
+      ],
+      "complexity_score": 0.6,
+      "confidence_score": 0.75
+    },
+    {
+      "file_path": "core_formalization/Gpu/Core/Universal/ILDA.lean",
+      "line_number": 1046,
+      "context": "  - ILDA = universal knowledge extractor\n\n  - Three phases = complete extraction process\n\n  - Works for any knowledge structure\n\n  - Fundamental to intelligence\n\n  \n\n  sorry\n\n\n\n/-!\n\nTheorem 6: ILDA is Universally Decomposable\n\n\n\nStatement: Any mathematical structure can be decomposed using ILDA,\n",
+      "theorem_name": "unknown",
+      "theorem_statement": "  - ILDA = universal knowledge extractor\n\n  - Three phases = complete extraction process\n\n  - Works for any knowledge structure\n\n  - Fundamental to intelligence\n\n  \n\n  sorry\n\n\n\n/-!\n\nTheorem 6: ILDA is Universally Decomposable\n\n\n\nStatement: Any mathematical structure can be decomposed using ILDA,\n",
+      "excitation_phase": "// ILDA: Excitation Phase - understand unknown\n// Unknown properties:\n// 1. Statement:   - ILDA = universal knowledge extractor\n\n  - Three phases = complete extraction process\n\n  - Works ...\n// 2. Domain: unknown theory\n// 3. Objective: Understand theorem structure\n// 4. Challenge: Identify key components and relationships",
+      "dissipation_phase": "// ILDA: Dissipation Phase - analyze unknown\n// Unknown analysis:\n// 1. Fuzzy state: Unknown fuzzy state\n// 2. Geodesic: Unknown geodesic\n// 3. Phase lock: Unknown phase lock\n// 4. Target: Unknown omega target\n// 5. Method: Apply ILDA three-phase decomposition",
+      "precipitation_phase": "// ILDA: Precipitation Phase - unknown crystallizes\n// Proof requires:\n// 1. Verify geodesic path validity\n// 2. Check phase lock conditions\n// 3. Validate omega manifold target\n// 4. Confirm crystallization\n// 5. Conclude theorem truth",
+      "key_insights": [
+        "- Unknown fuzzy state initial state",
+        "- Geodesic: Unknown geodesic",
+        "- Phase lock: Unknown phase lock",
+        "- Target: Unknown omega target",
+        "- Universal principle: fuzzy \u2192 omega transition"
+      ],
+      "fuzzy_manifold_state": "Unknown fuzzy state",
+      "geodesic_path": [
+        "Step 1: Enter Unknown fuzzy state",
+        "Step 2: Follow geodesic: Unknown geodesic",
+        "Step 3: Apply phase lock: Unknown phase lock",
+        "Step 4: Arrive at Unknown omega target",
+        "Step 5: Crystallize knowledge"
+      ],
+      "phase_lock_condition": "Phase lock achieved when: Unknown phase lock and state stabilizes in Unknown omega target",
+      "omega_manifold_target": "Unknown omega target",
+      "suggested_lemmas": [
+        {
+          "name": "lemma_1_structure",
+          "description": "Analyze structure"
+        },
+        {
+          "name": "lemma_2_properties",
+          "description": "Identify properties"
+        },
+        {
+          "name": "lemma_3_invariant",
+          "description": "Prove invariant"
+        },
+        {
+          "name": "lemma_4_conclusion",
+          "description": "Reach conclusion"
+        }
+      ],
+      "complexity_score": 0.5,
+      "confidence_score": 0.5
+    },
+    {
+      "file_path": "core_formalization/Gpu/Core/Universal/ILDA.lean",
+      "line_number": 1123,
+      "context": "  - ILDA = universal decomposition operator\n\n  - Works for any mathematical structure\n\n  - Atomic components = fundamental building blocks\n\n  - Complete decomposition = complete understanding\n\n  \n\n  sorry\n\n\n\n/- ============================================================================\n\n   SECTION 3: ILDA PROVES ITSELF: SELF-REFERENTIAL UNIVERSALITY PROOF\n\n   ============================================================================\n\n\n",
+      "theorem_name": "unknown",
+      "theorem_statement": "  - ILDA = universal decomposition operator\n\n  - Works for any mathematical structure\n\n  - Atomic components = fundamental building blocks\n\n  - Complete decomposition = complete understanding\n\n  \n\n  sorry\n\n\n\n/- ============================================================================\n\n   SECTION 3: ILDA PROVES ITSELF: SELF-REFERENTIAL UNIVERSALITY PROOF\n\n   ============================================================================\n\n\n",
+      "excitation_phase": "// ILDA: Excitation Phase - understand unknown\n// Unknown properties:\n// 1. Statement:   - ILDA = universal decomposition operator\n\n  - Works for any mathematical structure\n\n  - Atomic co...\n// 2. Domain: unknown theory\n// 3. Objective: Understand theorem structure\n// 4. Challenge: Identify key components and relationships",
+      "dissipation_phase": "// ILDA: Dissipation Phase - analyze unknown\n// Unknown analysis:\n// 1. Fuzzy state: Unknown fuzzy state\n// 2. Geodesic: Unknown geodesic\n// 3. Phase lock: Unknown phase lock\n// 4. Target: Unknown omega target\n// 5. Method: Apply ILDA three-phase decomposition",
+      "precipitation_phase": "// ILDA: Precipitation Phase - unknown crystallizes\n// Proof requires:\n// 1. Verify geodesic path validity\n// 2. Check phase lock conditions\n// 3. Validate omega manifold target\n// 4. Confirm crystallization\n// 5. Conclude theorem truth",
+      "key_insights": [
+        "- Unknown fuzzy state initial state",
+        "- Geodesic: Unknown geodesic",
+        "- Phase lock: Unknown phase lock",
+        "- Target: Unknown omega target",
+        "- Universal principle: fuzzy \u2192 omega transition"
+      ],
+      "fuzzy_manifold_state": "Unknown fuzzy state",
+      "geodesic_path": [
+        "Step 1: Enter Unknown fuzzy state",
+        "Step 2: Follow geodesic: Unknown geodesic",
+        "Step 3: Apply phase lock: Unknown phase lock",
+        "Step 4: Arrive at Unknown omega target",
+        "Step 5: Crystallize knowledge"
+      ],
+      "phase_lock_condition": "Phase lock achieved when: Unknown phase lock and state stabilizes in Unknown omega target",
+      "omega_manifold_target": "Unknown omega target",
+      "suggested_lemmas": [
+        {
+          "name": "lemma_1_structure",
+          "description": "Analyze structure"
+        },
+        {
+          "name": "lemma_2_properties",
+          "description": "Identify properties"
+        },
+        {
+          "name": "lemma_3_invariant",
+          "description": "Prove invariant"
+        },
+        {
+          "name": "lemma_4_conclusion",
+          "description": "Reach conclusion"
+        }
+      ],
+      "complexity_score": 0.5,
+      "confidence_score": 0.5
+    },
+    {
+      "file_path": "core_formalization/Gpu/Core/Universal/ILDA.lean",
+      "line_number": 1589,
+      "context": "  \n\n  constructor\n\n  \u00b7 -- Turing completeness\n\n    intro TM\n\n    -- By Theorem 1, ILDA simulates any TM\n\n    sorry\n\n  \u00b7 -- Proof decomposition\n\n    intro proof\n\n    -- By Theorem 2, ILDA decomposes any proof\n\n    sorry\n\n  \u00b7 -- FOL completeness\n",
+      "theorem_name": "unknown",
+      "theorem_statement": "  \n\n  constructor\n\n  \u00b7 -- Turing completeness\n\n    intro TM\n\n    -- By Theorem 1, ILDA simulates any TM\n\n    sorry\n\n  \u00b7 -- Proof decomposition\n\n    intro proof\n\n    -- By Theorem 2, ILDA decomposes any proof\n\n    sorry\n\n  \u00b7 -- FOL completeness\n",
+      "excitation_phase": "// ILDA: Excitation Phase - understand unknown\n// Unknown properties:\n// 1. Statement:   \n\n  constructor\n\n  \u00b7 -- Turing completeness\n\n    intro TM\n\n    -- By Theorem 1, ILDA simulates any...\n// 2. Domain: unknown theory\n// 3. Objective: Understand theorem structure\n// 4. Challenge: Identify key components and relationships",
+      "dissipation_phase": "// ILDA: Dissipation Phase - analyze unknown\n// Unknown analysis:\n// 1. Fuzzy state: Unknown fuzzy state\n// 2. Geodesic: Unknown geodesic\n// 3. Phase lock: Unknown phase lock\n// 4. Target: Unknown omega target\n// 5. Method: Apply ILDA three-phase decomposition",
+      "precipitation_phase": "// ILDA: Precipitation Phase - unknown crystallizes\n// Proof requires:\n// 1. Verify geodesic path validity\n// 2. Check phase lock conditions\n// 3. Validate omega manifold target\n// 4. Confirm crystallization\n// 5. Conclude theorem truth",
+      "key_insights": [
+        "- Unknown fuzzy state initial state",
+        "- Geodesic: Unknown geodesic",
+        "- Phase lock: Unknown phase lock",
+        "- Target: Unknown omega target",
+        "- Universal principle: fuzzy \u2192 omega transition"
+      ],
+      "fuzzy_manifold_state": "Unknown fuzzy state",
+      "geodesic_path": [
+        "Step 1: Enter Unknown fuzzy state",
+        "Step 2: Follow geodesic: Unknown geodesic",
+        "Step 3: Apply phase lock: Unknown phase lock",
+        "Step 4: Arrive at Unknown omega target",
+        "Step 5: Crystallize knowledge"
+      ],
+      "phase_lock_condition": "Phase lock achieved when: Unknown phase lock and state stabilizes in Unknown omega target",
+      "omega_manifold_target": "Unknown omega target",
+      "suggested_lemmas": [
+        {
+          "name": "lemma_1_structure",
+          "description": "Analyze structure"
+        },
+        {
+          "name": "lemma_2_properties",
+          "description": "Identify properties"
+        },
+        {
+          "name": "lemma_3_invariant",
+          "description": "Prove invariant"
+        },
+        {
+          "name": "lemma_4_conclusion",
+          "description": "Reach conclusion"
+        }
+      ],
+      "complexity_score": 0.5,
+      "confidence_score": 0.5
+    },
+    {
+      "file_path": "core_formalization/Gpu/Core/Universal/ILDA.lean",
+      "line_number": 1593,
+      "context": "    -- By Theorem 1, ILDA simulates any TM\n\n    sorry\n\n  \u00b7 -- Proof decomposition\n\n    intro proof\n\n    -- By Theorem 2, ILDA decomposes any proof\n\n    sorry\n\n  \u00b7 -- FOL completeness\n\n    intro formula\n\n    -- By Theorem 3, ILDA analyzes any FOL formula\n\n    sorry\n\n  \u00b7 -- Lambda completeness\n",
+      "theorem_name": "unknown",
+      "theorem_statement": "    -- By Theorem 1, ILDA simulates any TM\n\n    sorry\n\n  \u00b7 -- Proof decomposition\n\n    intro proof\n\n    -- By Theorem 2, ILDA decomposes any proof\n\n    sorry\n\n  \u00b7 -- FOL completeness\n\n    intro formula\n\n    -- By Theorem 3, ILDA analyzes any FOL formula\n\n    sorry\n\n  \u00b7 -- Lambda completeness\n",
+      "excitation_phase": "// ILDA: Excitation Phase - understand unknown\n// Unknown properties:\n// 1. Statement:     -- By Theorem 1, ILDA simulates any TM\n\n    sorry\n\n  \u00b7 -- Proof decomposition\n\n    intro proof\n\n...\n// 2. Domain: unknown theory\n// 3. Objective: Understand theorem structure\n// 4. Challenge: Identify key components and relationships",
+      "dissipation_phase": "// ILDA: Dissipation Phase - analyze unknown\n// Unknown analysis:\n// 1. Fuzzy state: Unknown fuzzy state\n// 2. Geodesic: Unknown geodesic\n// 3. Phase lock: Unknown phase lock\n// 4. Target: Unknown omega target\n// 5. Method: Apply ILDA three-phase decomposition",
+      "precipitation_phase": "// ILDA: Precipitation Phase - unknown crystallizes\n// Proof requires:\n// 1. Verify geodesic path validity\n// 2. Check phase lock conditions\n// 3. Validate omega manifold target\n// 4. Confirm crystallization\n// 5. Conclude theorem truth",
+      "key_insights": [
+        "- Unknown fuzzy state initial state",
+        "- Geodesic: Unknown geodesic",
+        "- Phase lock: Unknown phase lock",
+        "- Target: Unknown omega target",
+        "- Universal principle: fuzzy \u2192 omega transition"
+      ],
+      "fuzzy_manifold_state": "Unknown fuzzy state",
+      "geodesic_path": [
+        "Step 1: Enter Unknown fuzzy state",
+        "Step 2: Follow geodesic: Unknown geodesic",
+        "Step 3: Apply phase lock: Unknown phase lock",
+        "Step 4: Arrive at Unknown omega target",
+        "Step 5: Crystallize knowledge"
+      ],
+      "phase_lock_condition": "Phase lock achieved when: Unknown phase lock and state stabilizes in Unknown omega target",
+      "omega_manifold_target": "Unknown omega target",
+      "suggested_lemmas": [
+        {
+          "name": "lemma_1_structure",
+          "description": "Analyze structure"
+        },
+        {
+          "name": "lemma_2_properties",
+          "description": "Identify properties"
+        },
+        {
+          "name": "lemma_3_invariant",
+          "description": "Prove invariant"
+        },
+        {
+          "name": "lemma_4_conclusion",
+          "description": "Reach conclusion"
+        }
+      ],
+      "complexity_score": 0.5,
+      "confidence_score": 0.5
+    },
+    {
+      "file_path": "core_formalization/Gpu/Core/Universal/ILDA.lean",
+      "line_number": 1597,
+      "context": "    -- By Theorem 2, ILDA decomposes any proof\n\n    sorry\n\n  \u00b7 -- FOL completeness\n\n    intro formula\n\n    -- By Theorem 3, ILDA analyzes any FOL formula\n\n    sorry\n\n  \u00b7 -- Lambda completeness\n\n    intro term\n\n    -- By Theorem 4, ILDA reduces any lambda term\n\n    sorry\n\n  \u00b7 -- Knowledge extraction\n",
+      "theorem_name": "unknown",
+      "theorem_statement": "    -- By Theorem 2, ILDA decomposes any proof\n\n    sorry\n\n  \u00b7 -- FOL completeness\n\n    intro formula\n\n    -- By Theorem 3, ILDA analyzes any FOL formula\n\n    sorry\n\n  \u00b7 -- Lambda completeness\n\n    intro term\n\n    -- By Theorem 4, ILDA reduces any lambda term\n\n    sorry\n\n  \u00b7 -- Knowledge extraction\n",
+      "excitation_phase": "// ILDA: Excitation Phase - understand lambda\n// Lambda properties:\n// 1. Statement:     -- By Theorem 2, ILDA decomposes any proof\n\n    sorry\n\n  \u00b7 -- FOL completeness\n\n    intro formul...\n// 2. Domain: lambda theory\n// 3. Objective: Understand theorem structure\n// 4. Challenge: Identify key components and relationships",
+      "dissipation_phase": "// ILDA: Dissipation Phase - analyze lambda\n// Lambda analysis:\n// 1. Fuzzy state: Lambda term (nested applications)\n// 2. Geodesic: Identify redexes \u2192 apply beta-reduction \u2192 normalize\n// 3. Phase lock: Beta-reduction crystallizes to normal form\n// 4. Target: Normal form (computational certainty)\n// 5. Method: Apply ILDA three-phase decomposition",
+      "precipitation_phase": "// ILDA: Precipitation Phase - lambda crystallizes\n// Proof requires:\n// 1. Verify geodesic path validity\n// 2. Check phase lock conditions\n// 3. Validate omega manifold target\n// 4. Confirm crystallization\n// 5. Conclude theorem truth",
+      "key_insights": [
+        "- Lambda term (nested applications) initial state",
+        "- Geodesic: Identify redexes \u2192 apply beta-reduction \u2192 normalize",
+        "- Phase lock: Beta-reduction crystallizes to normal form",
+        "- Target: Normal form (computational certainty)",
+        "- Universal principle: fuzzy \u2192 omega transition"
+      ],
+      "fuzzy_manifold_state": "Lambda term (nested applications)",
+      "geodesic_path": [
+        "Step 1: Enter Lambda term (nested applications)",
+        "Step 2: Follow geodesic: Identify redexes \u2192 apply beta-reduction \u2192 normalize",
+        "Step 3: Apply phase lock: Beta-reduction crystallizes to normal form",
+        "Step 4: Arrive at Normal form (computational certainty)",
+        "Step 5: Crystallize knowledge"
+      ],
+      "phase_lock_condition": "Phase lock achieved when: Beta-reduction crystallizes to normal form and state stabilizes in Normal form (computational certainty)",
+      "omega_manifold_target": "Normal form (computational certainty)",
+      "suggested_lemmas": [
+        {
+          "name": "lambda_term_wellformed",
+          "description": "Lambda terms well-formed"
+        },
+        {
+          "name": "beta_reduction_correct",
+          "description": "Beta-reduction correct"
+        },
+        {
+          "name": "normal_form_exists",
+          "description": "Normal form exists"
+        },
+        {
+          "name": "lambda_complete",
+          "description": "Complete lambda analysis"
+        }
+      ],
+      "complexity_score": 0.5,
+      "confidence_score": 0.9
+    },
+    {
+      "file_path": "core_formalization/Gpu/Core/Universal/ILDA.lean",
+      "line_number": 1601,
+      "context": "    -- By Theorem 3, ILDA analyzes any FOL formula\n\n    sorry\n\n  \u00b7 -- Lambda completeness\n\n    intro term\n\n    -- By Theorem 4, ILDA reduces any lambda term\n\n    sorry\n\n  \u00b7 -- Knowledge extraction\n\n    intro source\n\n    -- By Theorem 5, ILDA extracts all knowledge\n\n    sorry\n\n  \u00b7 -- Structural decomposition\n",
+      "theorem_name": "unknown",
+      "theorem_statement": "    -- By Theorem 3, ILDA analyzes any FOL formula\n\n    sorry\n\n  \u00b7 -- Lambda completeness\n\n    intro term\n\n    -- By Theorem 4, ILDA reduces any lambda term\n\n    sorry\n\n  \u00b7 -- Knowledge extraction\n\n    intro source\n\n    -- By Theorem 5, ILDA extracts all knowledge\n\n    sorry\n\n  \u00b7 -- Structural decomposition\n",
+      "excitation_phase": "// ILDA: Excitation Phase - understand lambda\n// Lambda properties:\n// 1. Statement:     -- By Theorem 3, ILDA analyzes any FOL formula\n\n    sorry\n\n  \u00b7 -- Lambda completeness\n\n    intro...\n// 2. Domain: lambda theory\n// 3. Objective: Understand theorem structure\n// 4. Challenge: Identify key components and relationships",
+      "dissipation_phase": "// ILDA: Dissipation Phase - analyze lambda\n// Lambda analysis:\n// 1. Fuzzy state: Lambda term (nested applications)\n// 2. Geodesic: Identify redexes \u2192 apply beta-reduction \u2192 normalize\n// 3. Phase lock: Beta-reduction crystallizes to normal form\n// 4. Target: Normal form (computational certainty)\n// 5. Method: Apply ILDA three-phase decomposition",
+      "precipitation_phase": "// ILDA: Precipitation Phase - lambda crystallizes\n// Proof requires:\n// 1. Verify geodesic path validity\n// 2. Check phase lock conditions\n// 3. Validate omega manifold target\n// 4. Confirm crystallization\n// 5. Conclude theorem truth",
+      "key_insights": [
+        "- Lambda term (nested applications) initial state",
+        "- Geodesic: Identify redexes \u2192 apply beta-reduction \u2192 normalize",
+        "- Phase lock: Beta-reduction crystallizes to normal form",
+        "- Target: Normal form (computational certainty)",
+        "- Universal principle: fuzzy \u2192 omega transition"
+      ],
+      "fuzzy_manifold_state": "Lambda term (nested applications)",
+      "geodesic_path": [
+        "Step 1: Enter Lambda term (nested applications)",
+        "Step 2: Follow geodesic: Identify redexes \u2192 apply beta-reduction \u2192 normalize",
+        "Step 3: Apply phase lock: Beta-reduction crystallizes to normal form",
+        "Step 4: Arrive at Normal form (computational certainty)",
+        "Step 5: Crystallize knowledge"
+      ],
+      "phase_lock_condition": "Phase lock achieved when: Beta-reduction crystallizes to normal form and state stabilizes in Normal form (computational certainty)",
+      "omega_manifold_target": "Normal form (computational certainty)",
+      "suggested_lemmas": [
+        {
+          "name": "lambda_term_wellformed",
+          "description": "Lambda terms well-formed"
+        },
+        {
+          "name": "beta_reduction_correct",
+          "description": "Beta-reduction correct"
+        },
+        {
+          "name": "normal_form_exists",
+          "description": "Normal form exists"
+        },
+        {
+          "name": "lambda_complete",
+          "description": "Complete lambda analysis"
+        }
+      ],
+      "complexity_score": 0.5,
+      "confidence_score": 0.9
+    },
+    {
+      "file_path": "core_formalization/Gpu/Core/Universal/ILDA.lean",
+      "line_number": 1605,
+      "context": "    -- By Theorem 4, ILDA reduces any lambda term\n\n    sorry\n\n  \u00b7 -- Knowledge extraction\n\n    intro source\n\n    -- By Theorem 5, ILDA extracts all knowledge\n\n    sorry\n\n  \u00b7 -- Structural decomposition\n\n    intro structure\n\n    -- By Theorem 6, ILDA decomposes any structure\n\n    sorry\n\n  \u00b7 -- Self-referential universality\n",
+      "theorem_name": "unknown",
+      "theorem_statement": "    -- By Theorem 4, ILDA reduces any lambda term\n\n    sorry\n\n  \u00b7 -- Knowledge extraction\n\n    intro source\n\n    -- By Theorem 5, ILDA extracts all knowledge\n\n    sorry\n\n  \u00b7 -- Structural decomposition\n\n    intro structure\n\n    -- By Theorem 6, ILDA decomposes any structure\n\n    sorry\n\n  \u00b7 -- Self-referential universality\n",
+      "excitation_phase": "// ILDA: Excitation Phase - understand lambda\n// Lambda properties:\n// 1. Statement:     -- By Theorem 4, ILDA reduces any lambda term\n\n    sorry\n\n  \u00b7 -- Knowledge extraction\n\n    intro...\n// 2. Domain: lambda theory\n// 3. Objective: Understand theorem structure\n// 4. Challenge: Identify key components and relationships",
+      "dissipation_phase": "// ILDA: Dissipation Phase - analyze lambda\n// Lambda analysis:\n// 1. Fuzzy state: Lambda term (nested applications)\n// 2. Geodesic: Identify redexes \u2192 apply beta-reduction \u2192 normalize\n// 3. Phase lock: Beta-reduction crystallizes to normal form\n// 4. Target: Normal form (computational certainty)\n// 5. Method: Apply ILDA three-phase decomposition",
+      "precipitation_phase": "// ILDA: Precipitation Phase - lambda crystallizes\n// Proof requires:\n// 1. Verify geodesic path validity\n// 2. Check phase lock conditions\n// 3. Validate omega manifold target\n// 4. Confirm crystallization\n// 5. Conclude theorem truth",
+      "key_insights": [
+        "- Lambda term (nested applications) initial state",
+        "- Geodesic: Identify redexes \u2192 apply beta-reduction \u2192 normalize",
+        "- Phase lock: Beta-reduction crystallizes to normal form",
+        "- Target: Normal form (computational certainty)",
+        "- Universal principle: fuzzy \u2192 omega transition"
+      ],
+      "fuzzy_manifold_state": "Lambda term (nested applications)",
+      "geodesic_path": [
+        "Step 1: Enter Lambda term (nested applications)",
+        "Step 2: Follow geodesic: Identify redexes \u2192 apply beta-reduction \u2192 normalize",
+        "Step 3: Apply phase lock: Beta-reduction crystallizes to normal form",
+        "Step 4: Arrive at Normal form (computational certainty)",
+        "Step 5: Crystallize knowledge"
+      ],
+      "phase_lock_condition": "Phase lock achieved when: Beta-reduction crystallizes to normal form and state stabilizes in Normal form (computational certainty)",
+      "omega_manifold_target": "Normal form (computational certainty)",
+      "suggested_lemmas": [
+        {
+          "name": "lambda_term_wellformed",
+          "description": "Lambda terms well-formed"
+        },
+        {
+          "name": "beta_reduction_correct",
+          "description": "Beta-reduction correct"
+        },
+        {
+          "name": "normal_form_exists",
+          "description": "Normal form exists"
+        },
+        {
+          "name": "lambda_complete",
+          "description": "Complete lambda analysis"
+        }
+      ],
+      "complexity_score": 0.5,
+      "confidence_score": 0.9
+    },
+    {
+      "file_path": "core_formalization/Gpu/Core/Universal/ILDA.lean",
+      "line_number": 1609,
+      "context": "    -- By Theorem 5, ILDA extracts all knowledge\n\n    sorry\n\n  \u00b7 -- Structural decomposition\n\n    intro structure\n\n    -- By Theorem 6, ILDA decomposes any structure\n\n    sorry\n\n  \u00b7 -- Self-referential universality\n\n    intro domain\n\n    -- By Theorem 7, ILDA proves ILDA using ILDA\n\n    sorry\n\n  \u00b7 -- Fundamental computation structure\n",
+      "theorem_name": "unknown",
+      "theorem_statement": "    -- By Theorem 5, ILDA extracts all knowledge\n\n    sorry\n\n  \u00b7 -- Structural decomposition\n\n    intro structure\n\n    -- By Theorem 6, ILDA decomposes any structure\n\n    sorry\n\n  \u00b7 -- Self-referential universality\n\n    intro domain\n\n    -- By Theorem 7, ILDA proves ILDA using ILDA\n\n    sorry\n\n  \u00b7 -- Fundamental computation structure\n",
+      "excitation_phase": "// ILDA: Excitation Phase - understand knowledge\n// Knowledge properties:\n// 1. Statement:     -- By Theorem 5, ILDA extracts all knowledge\n\n    sorry\n\n  \u00b7 -- Structural decomposition\n\n    in...\n// 2. Domain: knowledge theory\n// 3. Objective: Understand theorem structure\n// 4. Challenge: Identify key components and relationships",
+      "dissipation_phase": "// ILDA: Dissipation Phase - analyze knowledge\n// Knowledge analysis:\n// 1. Fuzzy state: Information source (uncertain patterns)\n// 2. Geodesic: Generate patterns \u2192 validate relationships \u2192 crystallize\n// 3. Phase lock: Validated patterns crystallize to knowledge\n// 4. Target: Extracted knowledge (epistemic certainty)\n// 5. Method: Apply ILDA three-phase decomposition",
+      "precipitation_phase": "// ILDA: Precipitation Phase - knowledge crystallizes\n// Proof requires:\n// 1. Verify geodesic path validity\n// 2. Check phase lock conditions\n// 3. Validate omega manifold target\n// 4. Confirm crystallization\n// 5. Conclude theorem truth",
+      "key_insights": [
+        "- Information source (uncertain patterns) initial state",
+        "- Geodesic: Generate patterns \u2192 validate relationships \u2192 crystallize",
+        "- Phase lock: Validated patterns crystallize to knowledge",
+        "- Target: Extracted knowledge (epistemic certainty)",
+        "- Universal principle: fuzzy \u2192 omega transition"
+      ],
+      "fuzzy_manifold_state": "Information source (uncertain patterns)",
+      "geodesic_path": [
+        "Step 1: Enter Information source (uncertain patterns)",
+        "Step 2: Follow geodesic: Generate patterns \u2192 validate relationships \u2192 crystallize",
+        "Step 3: Apply phase lock: Validated patterns crystallize to knowledge",
+        "Step 4: Arrive at Extracted knowledge (epistemic certainty)",
+        "Step 5: Crystallize knowledge"
+      ],
+      "phase_lock_condition": "Phase lock achieved when: Validated patterns crystallize to knowledge and state stabilizes in Extracted knowledge (epistemic certainty)",
+      "omega_manifold_target": "Extracted knowledge (epistemic certainty)",
+      "suggested_lemmas": [
+        {
+          "name": "lemma_1_structure",
+          "description": "Analyze structure"
+        },
+        {
+          "name": "lemma_2_properties",
+          "description": "Identify properties"
+        },
+        {
+          "name": "lemma_3_invariant",
+          "description": "Prove invariant"
+        },
+        {
+          "name": "lemma_4_conclusion",
+          "description": "Reach conclusion"
+        }
+      ],
+      "complexity_score": 0.5,
+      "confidence_score": 0.75
+    },
+    {
+      "file_path": "core_formalization/Gpu/Core/Universal/ILDA.lean",
+      "line_number": 1613,
+      "context": "    -- By Theorem 6, ILDA decomposes any structure\n\n    sorry\n\n  \u00b7 -- Self-referential universality\n\n    intro domain\n\n    -- By Theorem 7, ILDA proves ILDA using ILDA\n\n    sorry\n\n  \u00b7 -- Fundamental computation structure\n\n    intro computation_model\n\n    -- By Theorem 8, ILDA = structure of universal computation\n\n    sorry\n\n  \u00b7 -- G\u00f6delian completeness\n",
+      "theorem_name": "unknown",
+      "theorem_statement": "    -- By Theorem 6, ILDA decomposes any structure\n\n    sorry\n\n  \u00b7 -- Self-referential universality\n\n    intro domain\n\n    -- By Theorem 7, ILDA proves ILDA using ILDA\n\n    sorry\n\n  \u00b7 -- Fundamental computation structure\n\n    intro computation_model\n\n    -- By Theorem 8, ILDA = structure of universal computation\n\n    sorry\n\n  \u00b7 -- G\u00f6delian completeness\n",
+      "excitation_phase": "// ILDA: Excitation Phase - understand turing\n// Turing properties:\n// 1. Statement:     -- By Theorem 6, ILDA decomposes any structure\n\n    sorry\n\n  \u00b7 -- Self-referential universality\n...\n// 2. Domain: turing theory\n// 3. Objective: Understand theorem structure\n// 4. Challenge: Identify key components and relationships",
+      "dissipation_phase": "// ILDA: Dissipation Phase - analyze turing\n// Turing analysis:\n// 1. Fuzzy state: Computation space (uncertain transitions)\n// 2. Geodesic: Encode TM \u2192 simulate steps \u2192 decode result\n// 3. Phase lock: TM encoding preserves structure\n// 4. Target: Universal computation (deterministic)\n// 5. Method: Apply ILDA three-phase decomposition",
+      "precipitation_phase": "// ILDA: Precipitation Phase - turing crystallizes\n// Proof requires:\n// 1. Verify geodesic path validity\n// 2. Check phase lock conditions\n// 3. Validate omega manifold target\n// 4. Confirm crystallization\n// 5. Conclude theorem truth",
+      "key_insights": [
+        "- Computation space (uncertain transitions) initial state",
+        "- Geodesic: Encode TM \u2192 simulate steps \u2192 decode result",
+        "- Phase lock: TM encoding preserves structure",
+        "- Target: Universal computation (deterministic)",
+        "- Universal principle: fuzzy \u2192 omega transition"
+      ],
+      "fuzzy_manifold_state": "Computation space (uncertain transitions)",
+      "geodesic_path": [
+        "Step 1: Enter Computation space (uncertain transitions)",
+        "Step 2: Follow geodesic: Encode TM \u2192 simulate steps \u2192 decode result",
+        "Step 3: Apply phase lock: TM encoding preserves structure",
+        "Step 4: Arrive at Universal computation (deterministic)",
+        "Step 5: Crystallize knowledge"
+      ],
+      "phase_lock_condition": "Phase lock achieved when: TM encoding preserves structure and state stabilizes in Universal computation (deterministic)",
+      "omega_manifold_target": "Universal computation (deterministic)",
+      "suggested_lemmas": [
+        {
+          "name": "tm_encoding_injective",
+          "description": "TM encoding preserves structure"
+        },
+        {
+          "name": "tm_decode_inverts_encode",
+          "description": "Encoding is bijective"
+        },
+        {
+          "name": "tm_step_ilda_correspondence",
+          "description": "TM step = ILDA step"
+        },
+        {
+          "name": "ilda_simulates_tm_steps",
+          "description": "n steps = n steps (induction)"
+        }
+      ],
+      "complexity_score": 0.5,
+      "confidence_score": 0.95
+    },
+    {
+      "file_path": "core_formalization/Gpu/Core/Universal/ILDA.lean",
+      "line_number": 1617,
+      "context": "    -- By Theorem 7, ILDA proves ILDA using ILDA\n\n    sorry\n\n  \u00b7 -- Fundamental computation structure\n\n    intro computation_model\n\n    -- By Theorem 8, ILDA = structure of universal computation\n\n    sorry\n\n  \u00b7 -- G\u00f6delian completeness\n\n    intro system h_ilda\n\n    -- By Theorem 9, ILDA achieves G\u00f6delian completeness\n\n    sorry\n\n\n",
+      "theorem_name": "unknown",
+      "theorem_statement": "    -- By Theorem 7, ILDA proves ILDA using ILDA\n\n    sorry\n\n  \u00b7 -- Fundamental computation structure\n\n    intro computation_model\n\n    -- By Theorem 8, ILDA = structure of universal computation\n\n    sorry\n\n  \u00b7 -- G\u00f6delian completeness\n\n    intro system h_ilda\n\n    -- By Theorem 9, ILDA achieves G\u00f6delian completeness\n\n    sorry\n\n\n",
+      "excitation_phase": "// ILDA: Excitation Phase - understand turing\n// Turing properties:\n// 1. Statement:     -- By Theorem 7, ILDA proves ILDA using ILDA\n\n    sorry\n\n  \u00b7 -- Fundamental computation structur...\n// 2. Domain: turing theory\n// 3. Objective: Understand theorem structure\n// 4. Challenge: Identify key components and relationships",
+      "dissipation_phase": "// ILDA: Dissipation Phase - analyze turing\n// Turing analysis:\n// 1. Fuzzy state: Computation space (uncertain transitions)\n// 2. Geodesic: Encode TM \u2192 simulate steps \u2192 decode result\n// 3. Phase lock: TM encoding preserves structure\n// 4. Target: Universal computation (deterministic)\n// 5. Method: Apply ILDA three-phase decomposition",
+      "precipitation_phase": "// ILDA: Precipitation Phase - turing crystallizes\n// Proof requires:\n// 1. Verify geodesic path validity\n// 2. Check phase lock conditions\n// 3. Validate omega manifold target\n// 4. Confirm crystallization\n// 5. Conclude theorem truth",
+      "key_insights": [
+        "- Computation space (uncertain transitions) initial state",
+        "- Geodesic: Encode TM \u2192 simulate steps \u2192 decode result",
+        "- Phase lock: TM encoding preserves structure",
+        "- Target: Universal computation (deterministic)",
+        "- Universal principle: fuzzy \u2192 omega transition"
+      ],
+      "fuzzy_manifold_state": "Computation space (uncertain transitions)",
+      "geodesic_path": [
+        "Step 1: Enter Computation space (uncertain transitions)",
+        "Step 2: Follow geodesic: Encode TM \u2192 simulate steps \u2192 decode result",
+        "Step 3: Apply phase lock: TM encoding preserves structure",
+        "Step 4: Arrive at Universal computation (deterministic)",
+        "Step 5: Crystallize knowledge"
+      ],
+      "phase_lock_condition": "Phase lock achieved when: TM encoding preserves structure and state stabilizes in Universal computation (deterministic)",
+      "omega_manifold_target": "Universal computation (deterministic)",
+      "suggested_lemmas": [
+        {
+          "name": "tm_encoding_injective",
+          "description": "TM encoding preserves structure"
+        },
+        {
+          "name": "tm_decode_inverts_encode",
+          "description": "Encoding is bijective"
+        },
+        {
+          "name": "tm_step_ilda_correspondence",
+          "description": "TM step = ILDA step"
+        },
+        {
+          "name": "ilda_simulates_tm_steps",
+          "description": "n steps = n steps (induction)"
+        }
+      ],
+      "complexity_score": 0.5,
+      "confidence_score": 0.95
+    },
+    {
+      "file_path": "core_formalization/Gpu/Core/Universal/ILDA.lean",
+      "line_number": 1621,
+      "context": "    -- By Theorem 8, ILDA = structure of universal computation\n\n    sorry\n\n  \u00b7 -- G\u00f6delian completeness\n\n    intro system h_ilda\n\n    -- By Theorem 9, ILDA achieves G\u00f6delian completeness\n\n    sorry\n\n\n\n/-!\n\nProfound Theorem: ILDA is Fundamentally Universal\n\n\n\nStatement: ILDA is universal across computation, logic, proof,\n",
+      "theorem_name": "unknown",
+      "theorem_statement": "    -- By Theorem 8, ILDA = structure of universal computation\n\n    sorry\n\n  \u00b7 -- G\u00f6delian completeness\n\n    intro system h_ilda\n\n    -- By Theorem 9, ILDA achieves G\u00f6delian completeness\n\n    sorry\n\n\n\n/-!\n\nProfound Theorem: ILDA is Fundamentally Universal\n\n\n\nStatement: ILDA is universal across computation, logic, proof,\n",
+      "excitation_phase": "// ILDA: Excitation Phase - understand turing\n// Turing properties:\n// 1. Statement:     -- By Theorem 8, ILDA = structure of universal computation\n\n    sorry\n\n  \u00b7 -- G\u00f6delian completen...\n// 2. Domain: turing theory\n// 3. Objective: Understand theorem structure\n// 4. Challenge: Identify key components and relationships",
+      "dissipation_phase": "// ILDA: Dissipation Phase - analyze turing\n// Turing analysis:\n// 1. Fuzzy state: Computation space (uncertain transitions)\n// 2. Geodesic: Encode TM \u2192 simulate steps \u2192 decode result\n// 3. Phase lock: TM encoding preserves structure\n// 4. Target: Universal computation (deterministic)\n// 5. Method: Apply ILDA three-phase decomposition",
+      "precipitation_phase": "// ILDA: Precipitation Phase - turing crystallizes\n// Proof requires:\n// 1. Verify geodesic path validity\n// 2. Check phase lock conditions\n// 3. Validate omega manifold target\n// 4. Confirm crystallization\n// 5. Conclude theorem truth",
+      "key_insights": [
+        "- Computation space (uncertain transitions) initial state",
+        "- Geodesic: Encode TM \u2192 simulate steps \u2192 decode result",
+        "- Phase lock: TM encoding preserves structure",
+        "- Target: Universal computation (deterministic)",
+        "- Universal principle: fuzzy \u2192 omega transition"
+      ],
+      "fuzzy_manifold_state": "Computation space (uncertain transitions)",
+      "geodesic_path": [
+        "Step 1: Enter Computation space (uncertain transitions)",
+        "Step 2: Follow geodesic: Encode TM \u2192 simulate steps \u2192 decode result",
+        "Step 3: Apply phase lock: TM encoding preserves structure",
+        "Step 4: Arrive at Universal computation (deterministic)",
+        "Step 5: Crystallize knowledge"
+      ],
+      "phase_lock_condition": "Phase lock achieved when: TM encoding preserves structure and state stabilizes in Universal computation (deterministic)",
+      "omega_manifold_target": "Universal computation (deterministic)",
+      "suggested_lemmas": [
+        {
+          "name": "tm_encoding_injective",
+          "description": "TM encoding preserves structure"
+        },
+        {
+          "name": "tm_decode_inverts_encode",
+          "description": "Encoding is bijective"
+        },
+        {
+          "name": "tm_step_ilda_correspondence",
+          "description": "TM step = ILDA step"
+        },
+        {
+          "name": "ilda_simulates_tm_steps",
+          "description": "n steps = n steps (induction)"
+        }
+      ],
+      "complexity_score": 0.5,
+      "confidence_score": 0.95
+    },
+    {
+      "file_path": "core_formalization/Gpu/Core/Universal/ILDA.lean",
+      "line_number": 1693,
+      "context": "  \n\n  constructor\n\n  \u00b7 -- Turing completeness\n\n    intro TM\n\n    -- By Theorem 1, ILDA simulates any TM\n\n    sorry\n\n  \u00b7 -- Proof decomposition\n\n    intro proof\n\n    -- By Theorem 2, ILDA decomposes any proof\n\n    sorry\n\n  \u00b7 -- FOL completeness\n",
+      "theorem_name": "unknown",
+      "theorem_statement": "  \n\n  constructor\n\n  \u00b7 -- Turing completeness\n\n    intro TM\n\n    -- By Theorem 1, ILDA simulates any TM\n\n    sorry\n\n  \u00b7 -- Proof decomposition\n\n    intro proof\n\n    -- By Theorem 2, ILDA decomposes any proof\n\n    sorry\n\n  \u00b7 -- FOL completeness\n",
+      "excitation_phase": "// ILDA: Excitation Phase - understand unknown\n// Unknown properties:\n// 1. Statement:   \n\n  constructor\n\n  \u00b7 -- Turing completeness\n\n    intro TM\n\n    -- By Theorem 1, ILDA simulates any...\n// 2. Domain: unknown theory\n// 3. Objective: Understand theorem structure\n// 4. Challenge: Identify key components and relationships",
+      "dissipation_phase": "// ILDA: Dissipation Phase - analyze unknown\n// Unknown analysis:\n// 1. Fuzzy state: Unknown fuzzy state\n// 2. Geodesic: Unknown geodesic\n// 3. Phase lock: Unknown phase lock\n// 4. Target: Unknown omega target\n// 5. Method: Apply ILDA three-phase decomposition",
+      "precipitation_phase": "// ILDA: Precipitation Phase - unknown crystallizes\n// Proof requires:\n// 1. Verify geodesic path validity\n// 2. Check phase lock conditions\n// 3. Validate omega manifold target\n// 4. Confirm crystallization\n// 5. Conclude theorem truth",
+      "key_insights": [
+        "- Unknown fuzzy state initial state",
+        "- Geodesic: Unknown geodesic",
+        "- Phase lock: Unknown phase lock",
+        "- Target: Unknown omega target",
+        "- Universal principle: fuzzy \u2192 omega transition"
+      ],
+      "fuzzy_manifold_state": "Unknown fuzzy state",
+      "geodesic_path": [
+        "Step 1: Enter Unknown fuzzy state",
+        "Step 2: Follow geodesic: Unknown geodesic",
+        "Step 3: Apply phase lock: Unknown phase lock",
+        "Step 4: Arrive at Unknown omega target",
+        "Step 5: Crystallize knowledge"
+      ],
+      "phase_lock_condition": "Phase lock achieved when: Unknown phase lock and state stabilizes in Unknown omega target",
+      "omega_manifold_target": "Unknown omega target",
+      "suggested_lemmas": [
+        {
+          "name": "lemma_1_structure",
+          "description": "Analyze structure"
+        },
+        {
+          "name": "lemma_2_properties",
+          "description": "Identify properties"
+        },
+        {
+          "name": "lemma_3_invariant",
+          "description": "Prove invariant"
+        },
+        {
+          "name": "lemma_4_conclusion",
+          "description": "Reach conclusion"
+        }
+      ],
+      "complexity_score": 0.5,
+      "confidence_score": 0.5
+    },
+    {
+      "file_path": "core_formalization/Gpu/Core/Universal/ILDA.lean",
+      "line_number": 1697,
+      "context": "    -- By Theorem 1, ILDA simulates any TM\n\n    sorry\n\n  \u00b7 -- Proof decomposition\n\n    intro proof\n\n    -- By Theorem 2, ILDA decomposes any proof\n\n    sorry\n\n  \u00b7 -- FOL completeness\n\n    intro formula\n\n    -- By Theorem 3, ILDA analyzes any FOL formula\n\n    sorry\n\n  \u00b7 -- Lambda completeness\n",
+      "theorem_name": "unknown",
+      "theorem_statement": "    -- By Theorem 1, ILDA simulates any TM\n\n    sorry\n\n  \u00b7 -- Proof decomposition\n\n    intro proof\n\n    -- By Theorem 2, ILDA decomposes any proof\n\n    sorry\n\n  \u00b7 -- FOL completeness\n\n    intro formula\n\n    -- By Theorem 3, ILDA analyzes any FOL formula\n\n    sorry\n\n  \u00b7 -- Lambda completeness\n",
+      "excitation_phase": "// ILDA: Excitation Phase - understand unknown\n// Unknown properties:\n// 1. Statement:     -- By Theorem 1, ILDA simulates any TM\n\n    sorry\n\n  \u00b7 -- Proof decomposition\n\n    intro proof\n\n...\n// 2. Domain: unknown theory\n// 3. Objective: Understand theorem structure\n// 4. Challenge: Identify key components and relationships",
+      "dissipation_phase": "// ILDA: Dissipation Phase - analyze unknown\n// Unknown analysis:\n// 1. Fuzzy state: Unknown fuzzy state\n// 2. Geodesic: Unknown geodesic\n// 3. Phase lock: Unknown phase lock\n// 4. Target: Unknown omega target\n// 5. Method: Apply ILDA three-phase decomposition",
+      "precipitation_phase": "// ILDA: Precipitation Phase - unknown crystallizes\n// Proof requires:\n// 1. Verify geodesic path validity\n// 2. Check phase lock conditions\n// 3. Validate omega manifold target\n// 4. Confirm crystallization\n// 5. Conclude theorem truth",
+      "key_insights": [
+        "- Unknown fuzzy state initial state",
+        "- Geodesic: Unknown geodesic",
+        "- Phase lock: Unknown phase lock",
+        "- Target: Unknown omega target",
+        "- Universal principle: fuzzy \u2192 omega transition"
+      ],
+      "fuzzy_manifold_state": "Unknown fuzzy state",
+      "geodesic_path": [
+        "Step 1: Enter Unknown fuzzy state",
+        "Step 2: Follow geodesic: Unknown geodesic",
+        "Step 3: Apply phase lock: Unknown phase lock",
+        "Step 4: Arrive at Unknown omega target",
+        "Step 5: Crystallize knowledge"
+      ],
+      "phase_lock_condition": "Phase lock achieved when: Unknown phase lock and state stabilizes in Unknown omega target",
+      "omega_manifold_target": "Unknown omega target",
+      "suggested_lemmas": [
+        {
+          "name": "lemma_1_structure",
+          "description": "Analyze structure"
+        },
+        {
+          "name": "lemma_2_properties",
+          "description": "Identify properties"
+        },
+        {
+          "name": "lemma_3_invariant",
+          "description": "Prove invariant"
+        },
+        {
+          "name": "lemma_4_conclusion",
+          "description": "Reach conclusion"
+        }
+      ],
+      "complexity_score": 0.5,
+      "confidence_score": 0.5
+    },
+    {
+      "file_path": "core_formalization/Gpu/Core/Universal/ILDA.lean",
+      "line_number": 1701,
+      "context": "    -- By Theorem 2, ILDA decomposes any proof\n\n    sorry\n\n  \u00b7 -- FOL completeness\n\n    intro formula\n\n    -- By Theorem 3, ILDA analyzes any FOL formula\n\n    sorry\n\n  \u00b7 -- Lambda completeness\n\n    intro term\n\n    -- By Theorem 4, ILDA reduces any lambda term\n\n    sorry\n\n  \u00b7 -- Knowledge extraction\n",
+      "theorem_name": "unknown",
+      "theorem_statement": "    -- By Theorem 2, ILDA decomposes any proof\n\n    sorry\n\n  \u00b7 -- FOL completeness\n\n    intro formula\n\n    -- By Theorem 3, ILDA analyzes any FOL formula\n\n    sorry\n\n  \u00b7 -- Lambda completeness\n\n    intro term\n\n    -- By Theorem 4, ILDA reduces any lambda term\n\n    sorry\n\n  \u00b7 -- Knowledge extraction\n",
+      "excitation_phase": "// ILDA: Excitation Phase - understand lambda\n// Lambda properties:\n// 1. Statement:     -- By Theorem 2, ILDA decomposes any proof\n\n    sorry\n\n  \u00b7 -- FOL completeness\n\n    intro formul...\n// 2. Domain: lambda theory\n// 3. Objective: Understand theorem structure\n// 4. Challenge: Identify key components and relationships",
+      "dissipation_phase": "// ILDA: Dissipation Phase - analyze lambda\n// Lambda analysis:\n// 1. Fuzzy state: Lambda term (nested applications)\n// 2. Geodesic: Identify redexes \u2192 apply beta-reduction \u2192 normalize\n// 3. Phase lock: Beta-reduction crystallizes to normal form\n// 4. Target: Normal form (computational certainty)\n// 5. Method: Apply ILDA three-phase decomposition",
+      "precipitation_phase": "// ILDA: Precipitation Phase - lambda crystallizes\n// Proof requires:\n// 1. Verify geodesic path validity\n// 2. Check phase lock conditions\n// 3. Validate omega manifold target\n// 4. Confirm crystallization\n// 5. Conclude theorem truth",
+      "key_insights": [
+        "- Lambda term (nested applications) initial state",
+        "- Geodesic: Identify redexes \u2192 apply beta-reduction \u2192 normalize",
+        "- Phase lock: Beta-reduction crystallizes to normal form",
+        "- Target: Normal form (computational certainty)",
+        "- Universal principle: fuzzy \u2192 omega transition"
+      ],
+      "fuzzy_manifold_state": "Lambda term (nested applications)",
+      "geodesic_path": [
+        "Step 1: Enter Lambda term (nested applications)",
+        "Step 2: Follow geodesic: Identify redexes \u2192 apply beta-reduction \u2192 normalize",
+        "Step 3: Apply phase lock: Beta-reduction crystallizes to normal form",
+        "Step 4: Arrive at Normal form (computational certainty)",
+        "Step 5: Crystallize knowledge"
+      ],
+      "phase_lock_condition": "Phase lock achieved when: Beta-reduction crystallizes to normal form and state stabilizes in Normal form (computational certainty)",
+      "omega_manifold_target": "Normal form (computational certainty)",
+      "suggested_lemmas": [
+        {
+          "name": "lambda_term_wellformed",
+          "description": "Lambda terms well-formed"
+        },
+        {
+          "name": "beta_reduction_correct",
+          "description": "Beta-reduction correct"
+        },
+        {
+          "name": "normal_form_exists",
+          "description": "Normal form exists"
+        },
+        {
+          "name": "lambda_complete",
+          "description": "Complete lambda analysis"
+        }
+      ],
+      "complexity_score": 0.5,
+      "confidence_score": 0.9
+    },
+    {
+      "file_path": "core_formalization/Gpu/Core/Universal/ILDA.lean",
+      "line_number": 1705,
+      "context": "    -- By Theorem 3, ILDA analyzes any FOL formula\n\n    sorry\n\n  \u00b7 -- Lambda completeness\n\n    intro term\n\n    -- By Theorem 4, ILDA reduces any lambda term\n\n    sorry\n\n  \u00b7 -- Knowledge extraction\n\n    intro source\n\n    -- By Theorem 5, ILDA extracts all knowledge\n\n    sorry\n\n  \u00b7 -- Structural decomposition\n",
+      "theorem_name": "unknown",
+      "theorem_statement": "    -- By Theorem 3, ILDA analyzes any FOL formula\n\n    sorry\n\n  \u00b7 -- Lambda completeness\n\n    intro term\n\n    -- By Theorem 4, ILDA reduces any lambda term\n\n    sorry\n\n  \u00b7 -- Knowledge extraction\n\n    intro source\n\n    -- By Theorem 5, ILDA extracts all knowledge\n\n    sorry\n\n  \u00b7 -- Structural decomposition\n",
+      "excitation_phase": "// ILDA: Excitation Phase - understand lambda\n// Lambda properties:\n// 1. Statement:     -- By Theorem 3, ILDA analyzes any FOL formula\n\n    sorry\n\n  \u00b7 -- Lambda completeness\n\n    intro...\n// 2. Domain: lambda theory\n// 3. Objective: Understand theorem structure\n// 4. Challenge: Identify key components and relationships",
+      "dissipation_phase": "// ILDA: Dissipation Phase - analyze lambda\n// Lambda analysis:\n// 1. Fuzzy state: Lambda term (nested applications)\n// 2. Geodesic: Identify redexes \u2192 apply beta-reduction \u2192 normalize\n// 3. Phase lock: Beta-reduction crystallizes to normal form\n// 4. Target: Normal form (computational certainty)\n// 5. Method: Apply ILDA three-phase decomposition",
+      "precipitation_phase": "// ILDA: Precipitation Phase - lambda crystallizes\n// Proof requires:\n// 1. Verify geodesic path validity\n// 2. Check phase lock conditions\n// 3. Validate omega manifold target\n// 4. Confirm crystallization\n// 5. Conclude theorem truth",
+      "key_insights": [
+        "- Lambda term (nested applications) initial state",
+        "- Geodesic: Identify redexes \u2192 apply beta-reduction \u2192 normalize",
+        "- Phase lock: Beta-reduction crystallizes to normal form",
+        "- Target: Normal form (computational certainty)",
+        "- Universal principle: fuzzy \u2192 omega transition"
+      ],
+      "fuzzy_manifold_state": "Lambda term (nested applications)",
+      "geodesic_path": [
+        "Step 1: Enter Lambda term (nested applications)",
+        "Step 2: Follow geodesic: Identify redexes \u2192 apply beta-reduction \u2192 normalize",
+        "Step 3: Apply phase lock: Beta-reduction crystallizes to normal form",
+        "Step 4: Arrive at Normal form (computational certainty)",
+        "Step 5: Crystallize knowledge"
+      ],
+      "phase_lock_condition": "Phase lock achieved when: Beta-reduction crystallizes to normal form and state stabilizes in Normal form (computational certainty)",
+      "omega_manifold_target": "Normal form (computational certainty)",
+      "suggested_lemmas": [
+        {
+          "name": "lambda_term_wellformed",
+          "description": "Lambda terms well-formed"
+        },
+        {
+          "name": "beta_reduction_correct",
+          "description": "Beta-reduction correct"
+        },
+        {
+          "name": "normal_form_exists",
+          "description": "Normal form exists"
+        },
+        {
+          "name": "lambda_complete",
+          "description": "Complete lambda analysis"
+        }
+      ],
+      "complexity_score": 0.5,
+      "confidence_score": 0.9
+    },
+    {
+      "file_path": "core_formalization/Gpu/Core/Universal/ILDA.lean",
+      "line_number": 1709,
+      "context": "    -- By Theorem 4, ILDA reduces any lambda term\n\n    sorry\n\n  \u00b7 -- Knowledge extraction\n\n    intro source\n\n    -- By Theorem 5, ILDA extracts all knowledge\n\n    sorry\n\n  \u00b7 -- Structural decomposition\n\n    intro structure\n\n    -- By Theorem 6, ILDA decomposes any structure\n\n    sorry\n\n\n",
+      "theorem_name": "unknown",
+      "theorem_statement": "    -- By Theorem 4, ILDA reduces any lambda term\n\n    sorry\n\n  \u00b7 -- Knowledge extraction\n\n    intro source\n\n    -- By Theorem 5, ILDA extracts all knowledge\n\n    sorry\n\n  \u00b7 -- Structural decomposition\n\n    intro structure\n\n    -- By Theorem 6, ILDA decomposes any structure\n\n    sorry\n\n\n",
+      "excitation_phase": "// ILDA: Excitation Phase - understand lambda\n// Lambda properties:\n// 1. Statement:     -- By Theorem 4, ILDA reduces any lambda term\n\n    sorry\n\n  \u00b7 -- Knowledge extraction\n\n    intro...\n// 2. Domain: lambda theory\n// 3. Objective: Understand theorem structure\n// 4. Challenge: Identify key components and relationships",
+      "dissipation_phase": "// ILDA: Dissipation Phase - analyze lambda\n// Lambda analysis:\n// 1. Fuzzy state: Lambda term (nested applications)\n// 2. Geodesic: Identify redexes \u2192 apply beta-reduction \u2192 normalize\n// 3. Phase lock: Beta-reduction crystallizes to normal form\n// 4. Target: Normal form (computational certainty)\n// 5. Method: Apply ILDA three-phase decomposition",
+      "precipitation_phase": "// ILDA: Precipitation Phase - lambda crystallizes\n// Proof requires:\n// 1. Verify geodesic path validity\n// 2. Check phase lock conditions\n// 3. Validate omega manifold target\n// 4. Confirm crystallization\n// 5. Conclude theorem truth",
+      "key_insights": [
+        "- Lambda term (nested applications) initial state",
+        "- Geodesic: Identify redexes \u2192 apply beta-reduction \u2192 normalize",
+        "- Phase lock: Beta-reduction crystallizes to normal form",
+        "- Target: Normal form (computational certainty)",
+        "- Universal principle: fuzzy \u2192 omega transition"
+      ],
+      "fuzzy_manifold_state": "Lambda term (nested applications)",
+      "geodesic_path": [
+        "Step 1: Enter Lambda term (nested applications)",
+        "Step 2: Follow geodesic: Identify redexes \u2192 apply beta-reduction \u2192 normalize",
+        "Step 3: Apply phase lock: Beta-reduction crystallizes to normal form",
+        "Step 4: Arrive at Normal form (computational certainty)",
+        "Step 5: Crystallize knowledge"
+      ],
+      "phase_lock_condition": "Phase lock achieved when: Beta-reduction crystallizes to normal form and state stabilizes in Normal form (computational certainty)",
+      "omega_manifold_target": "Normal form (computational certainty)",
+      "suggested_lemmas": [
+        {
+          "name": "lambda_term_wellformed",
+          "description": "Lambda terms well-formed"
+        },
+        {
+          "name": "beta_reduction_correct",
+          "description": "Beta-reduction correct"
+        },
+        {
+          "name": "normal_form_exists",
+          "description": "Normal form exists"
+        },
+        {
+          "name": "lambda_complete",
+          "description": "Complete lambda analysis"
+        }
+      ],
+      "complexity_score": 0.5,
+      "confidence_score": 0.9
+    },
+    {
+      "file_path": "core_formalization/Gpu/Core/Universal/ILDA.lean",
+      "line_number": 1713,
+      "context": "    -- By Theorem 5, ILDA extracts all knowledge\n\n    sorry\n\n  \u00b7 -- Structural decomposition\n\n    intro structure\n\n    -- By Theorem 6, ILDA decomposes any structure\n\n    sorry\n\n\n\nend GPU.Universal\n",
+      "theorem_name": "unknown",
+      "theorem_statement": "    -- By Theorem 5, ILDA extracts all knowledge\n\n    sorry\n\n  \u00b7 -- Structural decomposition\n\n    intro structure\n\n    -- By Theorem 6, ILDA decomposes any structure\n\n    sorry\n\n\n\nend GPU.Universal\n",
+      "excitation_phase": "// ILDA: Excitation Phase - understand knowledge\n// Knowledge properties:\n// 1. Statement:     -- By Theorem 5, ILDA extracts all knowledge\n\n    sorry\n\n  \u00b7 -- Structural decomposition\n\n    in...\n// 2. Domain: knowledge theory\n// 3. Objective: Understand theorem structure\n// 4. Challenge: Identify key components and relationships",
+      "dissipation_phase": "// ILDA: Dissipation Phase - analyze knowledge\n// Knowledge analysis:\n// 1. Fuzzy state: Information source (uncertain patterns)\n// 2. Geodesic: Generate patterns \u2192 validate relationships \u2192 crystallize\n// 3. Phase lock: Validated patterns crystallize to knowledge\n// 4. Target: Extracted knowledge (epistemic certainty)\n// 5. Method: Apply ILDA three-phase decomposition",
+      "precipitation_phase": "// ILDA: Precipitation Phase - knowledge crystallizes\n// Proof requires:\n// 1. Verify geodesic path validity\n// 2. Check phase lock conditions\n// 3. Validate omega manifold target\n// 4. Confirm crystallization\n// 5. Conclude theorem truth",
+      "key_insights": [
+        "- Information source (uncertain patterns) initial state",
+        "- Geodesic: Generate patterns \u2192 validate relationships \u2192 crystallize",
+        "- Phase lock: Validated patterns crystallize to knowledge",
+        "- Target: Extracted knowledge (epistemic certainty)",
+        "- Universal principle: fuzzy \u2192 omega transition"
+      ],
+      "fuzzy_manifold_state": "Information source (uncertain patterns)",
+      "geodesic_path": [
+        "Step 1: Enter Information source (uncertain patterns)",
+        "Step 2: Follow geodesic: Generate patterns \u2192 validate relationships \u2192 crystallize",
+        "Step 3: Apply phase lock: Validated patterns crystallize to knowledge",
+        "Step 4: Arrive at Extracted knowledge (epistemic certainty)",
+        "Step 5: Crystallize knowledge"
+      ],
+      "phase_lock_condition": "Phase lock achieved when: Validated patterns crystallize to knowledge and state stabilizes in Extracted knowledge (epistemic certainty)",
+      "omega_manifold_target": "Extracted knowledge (epistemic certainty)",
+      "suggested_lemmas": [
+        {
+          "name": "lemma_1_structure",
+          "description": "Analyze structure"
+        },
+        {
+          "name": "lemma_2_properties",
+          "description": "Identify properties"
+        },
+        {
+          "name": "lemma_3_invariant",
+          "description": "Prove invariant"
+        },
+        {
+          "name": "lemma_4_conclusion",
+          "description": "Reach conclusion"
+        }
+      ],
+      "complexity_score": 0.5,
+      "confidence_score": 0.75
+    }
+  ],
+  "recommendations": [
+    "\nSorry at line 80 in unknown:\nComplexity: 0.60, Confidence: 0.50\n\nRecommended Lemma Breakdown:\n  1. lemma_1_structure: Analyze structure\n  2. lemma_2_properties: Identify properties\n  3. lemma_3_invariant: Prove invariant\n  4. lemma_4_conclusion: Reach conclusion\n\nGeodesic Path:\n  Step 1: Enter Unknown fuzzy state\n  Step 2: Follow geodesic: Unknown geodesic\n  Step 3: Apply phase lock: Unknown phase lock\n  Step 4: Arrive at Unknown omega target\n  Step 5: Crystallize knowledge\n\nPhase Lock Condition:\n  Phase lock achieved when: Unknown phase lock and state stabilizes in Unknown omega target\n\nKey Insights:\n  - Unknown fuzzy state initial state\n  - Geodesic: Unknown geodesic\n  - Phase lock: Unknown phase lock\n  - Target: Unknown omega target\n  - Universal principle: fuzzy \u2192 omega transition\n\n---\n",
+    "\nSorry at line 175 in unknown:\nComplexity: 0.60, Confidence: 0.50\n\nRecommended Lemma Breakdown:\n  1. lemma_1_structure: Analyze structure\n  2. lemma_2_properties: Identify properties\n  3. lemma_3_invariant: Prove invariant\n  4. lemma_4_conclusion: Reach conclusion\n\nGeodesic Path:\n  Step 1: Enter Unknown fuzzy state\n  Step 2: Follow geodesic: Unknown geodesic\n  Step 3: Apply phase lock: Unknown phase lock\n  Step 4: Arrive at Unknown omega target\n  Step 5: Crystallize knowledge\n\nPhase Lock Condition:\n  Phase lock achieved when: Unknown phase lock and state stabilizes in Unknown omega target\n\nKey Insights:\n  - Unknown fuzzy state initial state\n  - Geodesic: Unknown geodesic\n  - Phase lock: Unknown phase lock\n  - Target: Unknown omega target\n  - Universal principle: fuzzy \u2192 omega transition\n\n---\n",
+    "\nSorry at line 219 in unknown:\nComplexity: 0.50, Confidence: 0.50\n\nRecommended Lemma Breakdown:\n  1. lemma_1_structure: Analyze structure\n  2. lemma_2_properties: Identify properties\n  3. lemma_3_invariant: Prove invariant\n  4. lemma_4_conclusion: Reach conclusion\n\nGeodesic Path:\n  Step 1: Enter Unknown fuzzy state\n  Step 2: Follow geodesic: Unknown geodesic\n  Step 3: Apply phase lock: Unknown phase lock\n  Step 4: Arrive at Unknown omega target\n  Step 5: Crystallize knowledge\n\nPhase Lock Condition:\n  Phase lock achieved when: Unknown phase lock and state stabilizes in Unknown omega target\n\nKey Insights:\n  - Unknown fuzzy state initial state\n  - Geodesic: Unknown geodesic\n  - Phase lock: Unknown phase lock\n  - Target: Unknown omega target\n  - Universal principle: fuzzy \u2192 omega transition\n\n---\n",
+    "\nSorry at line 257 in unknown:\nComplexity: 0.50, Confidence: 0.50\n\nRecommended Lemma Breakdown:\n  1. lemma_1_structure: Analyze structure\n  2. lemma_2_properties: Identify properties\n  3. lemma_3_invariant: Prove invariant\n  4. lemma_4_conclusion: Reach conclusion\n\nGeodesic Path:\n  Step 1: Enter Unknown fuzzy state\n  Step 2: Follow geodesic: Unknown geodesic\n  Step 3: Apply phase lock: Unknown phase lock\n  Step 4: Arrive at Unknown omega target\n  Step 5: Crystallize knowledge\n\nPhase Lock Condition:\n  Phase lock achieved when: Unknown phase lock and state stabilizes in Unknown omega target\n\nKey Insights:\n  - Unknown fuzzy state initial state\n  - Geodesic: Unknown geodesic\n  - Phase lock: Unknown phase lock\n  - Target: Unknown omega target\n  - Universal principle: fuzzy \u2192 omega transition\n\n---\n",
+    "\nSorry at line 297 in unknown:\nComplexity: 0.60, Confidence: 0.95\n\nRecommended Lemma Breakdown:\n  1. tm_encoding_injective: TM encoding preserves structure\n  2. tm_decode_inverts_encode: Encoding is bijective\n  3. tm_step_ilda_correspondence: TM step = ILDA step\n  4. ilda_simulates_tm_steps: n steps = n steps (induction)\n\nGeodesic Path:\n  Step 1: Enter Computation space (uncertain transitions)\n  Step 2: Follow geodesic: Encode TM \u2192 simulate steps \u2192 decode result\n  Step 3: Apply phase lock: TM encoding preserves structure\n  Step 4: Arrive at Universal computation (deterministic)\n  Step 5: Crystallize knowledge\n\nPhase Lock Condition:\n  Phase lock achieved when: TM encoding preserves structure and state stabilizes in Universal computation (deterministic)\n\nKey Insights:\n  - Computation space (uncertain transitions) initial state\n  - Geodesic: Encode TM \u2192 simulate steps \u2192 decode result\n  - Phase lock: TM encoding preserves structure\n  - Target: Universal computation (deterministic)\n  - Universal principle: fuzzy \u2192 omega transition\n\n---\n",
+    "\nSorry at line 348 in unknown:\nComplexity: 0.50, Confidence: 0.90\n\nRecommended Lemma Breakdown:\n  1. proof_tree_structure: Proof has tree structure\n  2. ilda_collects_all_nodes: Complete tree traversal\n  3. leaf_nodes_irreducible: Leaves are axioms\n  4. ilda_extracts_leaves_only: Pure axiom extraction\n\nGeodesic Path:\n  Step 1: Enter Proof tree (unknown dependencies)\n  Step 2: Follow geodesic: Traverse tree \u2192 identify leaves \u2192 extract axioms\n  Step 3: Apply phase lock: Tree structure crystallizes to axioms\n  Step 4: Arrive at Foundational axioms (logical certainty)\n  Step 5: Crystallize knowledge\n\nPhase Lock Condition:\n  Phase lock achieved when: Tree structure crystallizes to axioms and state stabilizes in Foundational axioms (logical certainty)\n\nKey Insights:\n  - Proof tree (unknown dependencies) initial state\n  - Geodesic: Traverse tree \u2192 identify leaves \u2192 extract axioms\n  - Phase lock: Tree structure crystallizes to axioms\n  - Target: Foundational axioms (logical certainty)\n  - Universal principle: fuzzy \u2192 omega transition\n\n---\n",
+    "\nSorry at line 488 in unknown:\nComplexity: 0.50, Confidence: 0.50\n\nRecommended Lemma Breakdown:\n  1. lemma_1_structure: Analyze structure\n  2. lemma_2_properties: Identify properties\n  3. lemma_3_invariant: Prove invariant\n  4. lemma_4_conclusion: Reach conclusion\n\nGeodesic Path:\n  Step 1: Enter Unknown fuzzy state\n  Step 2: Follow geodesic: Unknown geodesic\n  Step 3: Apply phase lock: Unknown phase lock\n  Step 4: Arrive at Unknown omega target\n  Step 5: Crystallize knowledge\n\nPhase Lock Condition:\n  Phase lock achieved when: Unknown phase lock and state stabilizes in Unknown omega target\n\nKey Insights:\n  - Unknown fuzzy state initial state\n  - Geodesic: Unknown geodesic\n  - Phase lock: Unknown phase lock\n  - Target: Unknown omega target\n  - Universal principle: fuzzy \u2192 omega transition\n\n---\n",
+    "\nSorry at line 564 in unknown:\nComplexity: 0.50, Confidence: 0.50\n\nRecommended Lemma Breakdown:\n  1. lemma_1_structure: Analyze structure\n  2. lemma_2_properties: Identify properties\n  3. lemma_3_invariant: Prove invariant\n  4. lemma_4_conclusion: Reach conclusion\n\nGeodesic Path:\n  Step 1: Enter Unknown fuzzy state\n  Step 2: Follow geodesic: Unknown geodesic\n  Step 3: Apply phase lock: Unknown phase lock\n  Step 4: Arrive at Unknown omega target\n  Step 5: Crystallize knowledge\n\nPhase Lock Condition:\n  Phase lock achieved when: Unknown phase lock and state stabilizes in Unknown omega target\n\nKey Insights:\n  - Unknown fuzzy state initial state\n  - Geodesic: Unknown geodesic\n  - Phase lock: Unknown phase lock\n  - Target: Unknown omega target\n  - Universal principle: fuzzy \u2192 omega transition\n\n---\n",
+    "\nSorry at line 636 in unknown:\nComplexity: 0.50, Confidence: 0.50\n\nRecommended Lemma Breakdown:\n  1. lemma_1_structure: Analyze structure\n  2. lemma_2_properties: Identify properties\n  3. lemma_3_invariant: Prove invariant\n  4. lemma_4_conclusion: Reach conclusion\n\nGeodesic Path:\n  Step 1: Enter Unknown fuzzy state\n  Step 2: Follow geodesic: Unknown geodesic\n  Step 3: Apply phase lock: Unknown phase lock\n  Step 4: Arrive at Unknown omega target\n  Step 5: Crystallize knowledge\n\nPhase Lock Condition:\n  Phase lock achieved when: Unknown phase lock and state stabilizes in Unknown omega target\n\nKey Insights:\n  - Unknown fuzzy state initial state\n  - Geodesic: Unknown geodesic\n  - Phase lock: Unknown phase lock\n  - Target: Unknown omega target\n  - Universal principle: fuzzy \u2192 omega transition\n\n---\n",
+    "\nSorry at line 708 in unknown:\nComplexity: 0.50, Confidence: 0.85\n\nRecommended Lemma Breakdown:\n  1. lemma_1_structure: Analyze structure\n  2. lemma_2_properties: Identify properties\n  3. lemma_3_invariant: Prove invariant\n  4. lemma_4_conclusion: Reach conclusion\n\nGeodesic Path:\n  Step 1: Enter Mathematical structure (unknown composition)\n  Step 2: Follow geodesic: Identify components \u2192 analyze composition \u2192 decompose\n  Step 3: Apply phase lock: Atomic components crystallize\n  Step 4: Arrive at Atomic decomposition (structural certainty)\n  Step 5: Crystallize knowledge\n\nPhase Lock Condition:\n  Phase lock achieved when: Atomic components crystallize and state stabilizes in Atomic decomposition (structural certainty)\n\nKey Insights:\n  - Mathematical structure (unknown composition) initial state\n  - Geodesic: Identify components \u2192 analyze composition \u2192 decompose\n  - Phase lock: Atomic components crystallize\n  - Target: Atomic decomposition (structural certainty)\n  - Universal principle: fuzzy \u2192 omega transition\n\n---\n",
+    "\nSorry at line 814 in unknown:\nComplexity: 0.50, Confidence: 0.85\n\nRecommended Lemma Breakdown:\n  1. fol_syntax_complete: FOL syntax is complete\n  2. fol_quantifier_wellformed: Quantifiers well-formed\n  3. fol_operator_sound: Operators sound\n  4. fol_analysis_complete: Complete FOL analysis\n\nGeodesic Path:\n  Step 1: Enter Formula structure (nested quantifiers)\n  Step 2: Follow geodesic: Parse syntax \u2192 extract components \u2192 analyze structure\n  Step 3: Apply phase lock: Logical structure crystallizes\n  Step 4: Arrive at Complete FOL analysis (formal certainty)\n  Step 5: Crystallize knowledge\n\nPhase Lock Condition:\n  Phase lock achieved when: Logical structure crystallizes and state stabilizes in Complete FOL analysis (formal certainty)\n\nKey Insights:\n  - Formula structure (nested quantifiers) initial state\n  - Geodesic: Parse syntax \u2192 extract components \u2192 analyze structure\n  - Phase lock: Logical structure crystallizes\n  - Target: Complete FOL analysis (formal certainty)\n  - Universal principle: fuzzy \u2192 omega transition\n\n---\n",
+    "\nSorry at line 890 in unknown:\nComplexity: 0.50, Confidence: 0.90\n\nRecommended Lemma Breakdown:\n  1. lambda_term_wellformed: Lambda terms well-formed\n  2. beta_reduction_correct: Beta-reduction correct\n  3. normal_form_exists: Normal form exists\n  4. lambda_complete: Complete lambda analysis\n\nGeodesic Path:\n  Step 1: Enter Lambda term (nested applications)\n  Step 2: Follow geodesic: Identify redexes \u2192 apply beta-reduction \u2192 normalize\n  Step 3: Apply phase lock: Beta-reduction crystallizes to normal form\n  Step 4: Arrive at Normal form (computational certainty)\n  Step 5: Crystallize knowledge\n\nPhase Lock Condition:\n  Phase lock achieved when: Beta-reduction crystallizes to normal form and state stabilizes in Normal form (computational certainty)\n\nKey Insights:\n  - Lambda term (nested applications) initial state\n  - Geodesic: Identify redexes \u2192 apply beta-reduction \u2192 normalize\n  - Phase lock: Beta-reduction crystallizes to normal form\n  - Target: Normal form (computational certainty)\n  - Universal principle: fuzzy \u2192 omega transition\n\n---\n",
+    "\nSorry at line 972 in unknown:\nComplexity: 0.60, Confidence: 0.75\n\nRecommended Lemma Breakdown:\n  1. lemma_1_structure: Analyze structure\n  2. lemma_2_properties: Identify properties\n  3. lemma_3_invariant: Prove invariant\n  4. lemma_4_conclusion: Reach conclusion\n\nGeodesic Path:\n  Step 1: Enter Information source (uncertain patterns)\n  Step 2: Follow geodesic: Generate patterns \u2192 validate relationships \u2192 crystallize\n  Step 3: Apply phase lock: Validated patterns crystallize to knowledge\n  Step 4: Arrive at Extracted knowledge (epistemic certainty)\n  Step 5: Crystallize knowledge\n\nPhase Lock Condition:\n  Phase lock achieved when: Validated patterns crystallize to knowledge and state stabilizes in Extracted knowledge (epistemic certainty)\n\nKey Insights:\n  - Information source (uncertain patterns) initial state\n  - Geodesic: Generate patterns \u2192 validate relationships \u2192 crystallize\n  - Phase lock: Validated patterns crystallize to knowledge\n  - Target: Extracted knowledge (epistemic certainty)\n  - Universal principle: fuzzy \u2192 omega transition\n\n---\n",
+    "\nSorry at line 1046 in unknown:\nComplexity: 0.50, Confidence: 0.50\n\nRecommended Lemma Breakdown:\n  1. lemma_1_structure: Analyze structure\n  2. lemma_2_properties: Identify properties\n  3. lemma_3_invariant: Prove invariant\n  4. lemma_4_conclusion: Reach conclusion\n\nGeodesic Path:\n  Step 1: Enter Unknown fuzzy state\n  Step 2: Follow geodesic: Unknown geodesic\n  Step 3: Apply phase lock: Unknown phase lock\n  Step 4: Arrive at Unknown omega target\n  Step 5: Crystallize knowledge\n\nPhase Lock Condition:\n  Phase lock achieved when: Unknown phase lock and state stabilizes in Unknown omega target\n\nKey Insights:\n  - Unknown fuzzy state initial state\n  - Geodesic: Unknown geodesic\n  - Phase lock: Unknown phase lock\n  - Target: Unknown omega target\n  - Universal principle: fuzzy \u2192 omega transition\n\n---\n",
+    "\nSorry at line 1123 in unknown:\nComplexity: 0.50, Confidence: 0.50\n\nRecommended Lemma Breakdown:\n  1. lemma_1_structure: Analyze structure\n  2. lemma_2_properties: Identify properties\n  3. lemma_3_invariant: Prove invariant\n  4. lemma_4_conclusion: Reach conclusion\n\nGeodesic Path:\n  Step 1: Enter Unknown fuzzy state\n  Step 2: Follow geodesic: Unknown geodesic\n  Step 3: Apply phase lock: Unknown phase lock\n  Step 4: Arrive at Unknown omega target\n  Step 5: Crystallize knowledge\n\nPhase Lock Condition:\n  Phase lock achieved when: Unknown phase lock and state stabilizes in Unknown omega target\n\nKey Insights:\n  - Unknown fuzzy state initial state\n  - Geodesic: Unknown geodesic\n  - Phase lock: Unknown phase lock\n  - Target: Unknown omega target\n  - Universal principle: fuzzy \u2192 omega transition\n\n---\n",
+    "\nSorry at line 1589 in unknown:\nComplexity: 0.50, Confidence: 0.50\n\nRecommended Lemma Breakdown:\n  1. lemma_1_structure: Analyze structure\n  2. lemma_2_properties: Identify properties\n  3. lemma_3_invariant: Prove invariant\n  4. lemma_4_conclusion: Reach conclusion\n\nGeodesic Path:\n  Step 1: Enter Unknown fuzzy state\n  Step 2: Follow geodesic: Unknown geodesic\n  Step 3: Apply phase lock: Unknown phase lock\n  Step 4: Arrive at Unknown omega target\n  Step 5: Crystallize knowledge\n\nPhase Lock Condition:\n  Phase lock achieved when: Unknown phase lock and state stabilizes in Unknown omega target\n\nKey Insights:\n  - Unknown fuzzy state initial state\n  - Geodesic: Unknown geodesic\n  - Phase lock: Unknown phase lock\n  - Target: Unknown omega target\n  - Universal principle: fuzzy \u2192 omega transition\n\n---\n",
+    "\nSorry at line 1593 in unknown:\nComplexity: 0.50, Confidence: 0.50\n\nRecommended Lemma Breakdown:\n  1. lemma_1_structure: Analyze structure\n  2. lemma_2_properties: Identify properties\n  3. lemma_3_invariant: Prove invariant\n  4. lemma_4_conclusion: Reach conclusion\n\nGeodesic Path:\n  Step 1: Enter Unknown fuzzy state\n  Step 2: Follow geodesic: Unknown geodesic\n  Step 3: Apply phase lock: Unknown phase lock\n  Step 4: Arrive at Unknown omega target\n  Step 5: Crystallize knowledge\n\nPhase Lock Condition:\n  Phase lock achieved when: Unknown phase lock and state stabilizes in Unknown omega target\n\nKey Insights:\n  - Unknown fuzzy state initial state\n  - Geodesic: Unknown geodesic\n  - Phase lock: Unknown phase lock\n  - Target: Unknown omega target\n  - Universal principle: fuzzy \u2192 omega transition\n\n---\n",
+    "\nSorry at line 1597 in unknown:\nComplexity: 0.50, Confidence: 0.90\n\nRecommended Lemma Breakdown:\n  1. lambda_term_wellformed: Lambda terms well-formed\n  2. beta_reduction_correct: Beta-reduction correct\n  3. normal_form_exists: Normal form exists\n  4. lambda_complete: Complete lambda analysis\n\nGeodesic Path:\n  Step 1: Enter Lambda term (nested applications)\n  Step 2: Follow geodesic: Identify redexes \u2192 apply beta-reduction \u2192 normalize\n  Step 3: Apply phase lock: Beta-reduction crystallizes to normal form\n  Step 4: Arrive at Normal form (computational certainty)\n  Step 5: Crystallize knowledge\n\nPhase Lock Condition:\n  Phase lock achieved when: Beta-reduction crystallizes to normal form and state stabilizes in Normal form (computational certainty)\n\nKey Insights:\n  - Lambda term (nested applications) initial state\n  - Geodesic: Identify redexes \u2192 apply beta-reduction \u2192 normalize\n  - Phase lock: Beta-reduction crystallizes to normal form\n  - Target: Normal form (computational certainty)\n  - Universal principle: fuzzy \u2192 omega transition\n\n---\n",
+    "\nSorry at line 1601 in unknown:\nComplexity: 0.50, Confidence: 0.90\n\nRecommended Lemma Breakdown:\n  1. lambda_term_wellformed: Lambda terms well-formed\n  2. beta_reduction_correct: Beta-reduction correct\n  3. normal_form_exists: Normal form exists\n  4. lambda_complete: Complete lambda analysis\n\nGeodesic Path:\n  Step 1: Enter Lambda term (nested applications)\n  Step 2: Follow geodesic: Identify redexes \u2192 apply beta-reduction \u2192 normalize\n  Step 3: Apply phase lock: Beta-reduction crystallizes to normal form\n  Step 4: Arrive at Normal form (computational certainty)\n  Step 5: Crystallize knowledge\n\nPhase Lock Condition:\n  Phase lock achieved when: Beta-reduction crystallizes to normal form and state stabilizes in Normal form (computational certainty)\n\nKey Insights:\n  - Lambda term (nested applications) initial state\n  - Geodesic: Identify redexes \u2192 apply beta-reduction \u2192 normalize\n  - Phase lock: Beta-reduction crystallizes to normal form\n  - Target: Normal form (computational certainty)\n  - Universal principle: fuzzy \u2192 omega transition\n\n---\n",
+    "\nSorry at line 1605 in unknown:\nComplexity: 0.50, Confidence: 0.90\n\nRecommended Lemma Breakdown:\n  1. lambda_term_wellformed: Lambda terms well-formed\n  2. beta_reduction_correct: Beta-reduction correct\n  3. normal_form_exists: Normal form exists\n  4. lambda_complete: Complete lambda analysis\n\nGeodesic Path:\n  Step 1: Enter Lambda term (nested applications)\n  Step 2: Follow geodesic: Identify redexes \u2192 apply beta-reduction \u2192 normalize\n  Step 3: Apply phase lock: Beta-reduction crystallizes to normal form\n  Step 4: Arrive at Normal form (computational certainty)\n  Step 5: Crystallize knowledge\n\nPhase Lock Condition:\n  Phase lock achieved when: Beta-reduction crystallizes to normal form and state stabilizes in Normal form (computational certainty)\n\nKey Insights:\n  - Lambda term (nested applications) initial state\n  - Geodesic: Identify redexes \u2192 apply beta-reduction \u2192 normalize\n  - Phase lock: Beta-reduction crystallizes to normal form\n  - Target: Normal form (computational certainty)\n  - Universal principle: fuzzy \u2192 omega transition\n\n---\n",
+    "\nSorry at line 1609 in unknown:\nComplexity: 0.50, Confidence: 0.75\n\nRecommended Lemma Breakdown:\n  1. lemma_1_structure: Analyze structure\n  2. lemma_2_properties: Identify properties\n  3. lemma_3_invariant: Prove invariant\n  4. lemma_4_conclusion: Reach conclusion\n\nGeodesic Path:\n  Step 1: Enter Information source (uncertain patterns)\n  Step 2: Follow geodesic: Generate patterns \u2192 validate relationships \u2192 crystallize\n  Step 3: Apply phase lock: Validated patterns crystallize to knowledge\n  Step 4: Arrive at Extracted knowledge (epistemic certainty)\n  Step 5: Crystallize knowledge\n\nPhase Lock Condition:\n  Phase lock achieved when: Validated patterns crystallize to knowledge and state stabilizes in Extracted knowledge (epistemic certainty)\n\nKey Insights:\n  - Information source (uncertain patterns) initial state\n  - Geodesic: Generate patterns \u2192 validate relationships \u2192 crystallize\n  - Phase lock: Validated patterns crystallize to knowledge\n  - Target: Extracted knowledge (epistemic certainty)\n  - Universal principle: fuzzy \u2192 omega transition\n\n---\n",
+    "\nSorry at line 1613 in unknown:\nComplexity: 0.50, Confidence: 0.95\n\nRecommended Lemma Breakdown:\n  1. tm_encoding_injective: TM encoding preserves structure\n  2. tm_decode_inverts_encode: Encoding is bijective\n  3. tm_step_ilda_correspondence: TM step = ILDA step\n  4. ilda_simulates_tm_steps: n steps = n steps (induction)\n\nGeodesic Path:\n  Step 1: Enter Computation space (uncertain transitions)\n  Step 2: Follow geodesic: Encode TM \u2192 simulate steps \u2192 decode result\n  Step 3: Apply phase lock: TM encoding preserves structure\n  Step 4: Arrive at Universal computation (deterministic)\n  Step 5: Crystallize knowledge\n\nPhase Lock Condition:\n  Phase lock achieved when: TM encoding preserves structure and state stabilizes in Universal computation (deterministic)\n\nKey Insights:\n  - Computation space (uncertain transitions) initial state\n  - Geodesic: Encode TM \u2192 simulate steps \u2192 decode result\n  - Phase lock: TM encoding preserves structure\n  - Target: Universal computation (deterministic)\n  - Universal principle: fuzzy \u2192 omega transition\n\n---\n",
+    "\nSorry at line 1617 in unknown:\nComplexity: 0.50, Confidence: 0.95\n\nRecommended Lemma Breakdown:\n  1. tm_encoding_injective: TM encoding preserves structure\n  2. tm_decode_inverts_encode: Encoding is bijective\n  3. tm_step_ilda_correspondence: TM step = ILDA step\n  4. ilda_simulates_tm_steps: n steps = n steps (induction)\n\nGeodesic Path:\n  Step 1: Enter Computation space (uncertain transitions)\n  Step 2: Follow geodesic: Encode TM \u2192 simulate steps \u2192 decode result\n  Step 3: Apply phase lock: TM encoding preserves structure\n  Step 4: Arrive at Universal computation (deterministic)\n  Step 5: Crystallize knowledge\n\nPhase Lock Condition:\n  Phase lock achieved when: TM encoding preserves structure and state stabilizes in Universal computation (deterministic)\n\nKey Insights:\n  - Computation space (uncertain transitions) initial state\n  - Geodesic: Encode TM \u2192 simulate steps \u2192 decode result\n  - Phase lock: TM encoding preserves structure\n  - Target: Universal computation (deterministic)\n  - Universal principle: fuzzy \u2192 omega transition\n\n---\n",
+    "\nSorry at line 1621 in unknown:\nComplexity: 0.50, Confidence: 0.95\n\nRecommended Lemma Breakdown:\n  1. tm_encoding_injective: TM encoding preserves structure\n  2. tm_decode_inverts_encode: Encoding is bijective\n  3. tm_step_ilda_correspondence: TM step = ILDA step\n  4. ilda_simulates_tm_steps: n steps = n steps (induction)\n\nGeodesic Path:\n  Step 1: Enter Computation space (uncertain transitions)\n  Step 2: Follow geodesic: Encode TM \u2192 simulate steps \u2192 decode result\n  Step 3: Apply phase lock: TM encoding preserves structure\n  Step 4: Arrive at Universal computation (deterministic)\n  Step 5: Crystallize knowledge\n\nPhase Lock Condition:\n  Phase lock achieved when: TM encoding preserves structure and state stabilizes in Universal computation (deterministic)\n\nKey Insights:\n  - Computation space (uncertain transitions) initial state\n  - Geodesic: Encode TM \u2192 simulate steps \u2192 decode result\n  - Phase lock: TM encoding preserves structure\n  - Target: Universal computation (deterministic)\n  - Universal principle: fuzzy \u2192 omega transition\n\n---\n",
+    "\nSorry at line 1693 in unknown:\nComplexity: 0.50, Confidence: 0.50\n\nRecommended Lemma Breakdown:\n  1. lemma_1_structure: Analyze structure\n  2. lemma_2_properties: Identify properties\n  3. lemma_3_invariant: Prove invariant\n  4. lemma_4_conclusion: Reach conclusion\n\nGeodesic Path:\n  Step 1: Enter Unknown fuzzy state\n  Step 2: Follow geodesic: Unknown geodesic\n  Step 3: Apply phase lock: Unknown phase lock\n  Step 4: Arrive at Unknown omega target\n  Step 5: Crystallize knowledge\n\nPhase Lock Condition:\n  Phase lock achieved when: Unknown phase lock and state stabilizes in Unknown omega target\n\nKey Insights:\n  - Unknown fuzzy state initial state\n  - Geodesic: Unknown geodesic\n  - Phase lock: Unknown phase lock\n  - Target: Unknown omega target\n  - Universal principle: fuzzy \u2192 omega transition\n\n---\n",
+    "\nSorry at line 1697 in unknown:\nComplexity: 0.50, Confidence: 0.50\n\nRecommended Lemma Breakdown:\n  1. lemma_1_structure: Analyze structure\n  2. lemma_2_properties: Identify properties\n  3. lemma_3_invariant: Prove invariant\n  4. lemma_4_conclusion: Reach conclusion\n\nGeodesic Path:\n  Step 1: Enter Unknown fuzzy state\n  Step 2: Follow geodesic: Unknown geodesic\n  Step 3: Apply phase lock: Unknown phase lock\n  Step 4: Arrive at Unknown omega target\n  Step 5: Crystallize knowledge\n\nPhase Lock Condition:\n  Phase lock achieved when: Unknown phase lock and state stabilizes in Unknown omega target\n\nKey Insights:\n  - Unknown fuzzy state initial state\n  - Geodesic: Unknown geodesic\n  - Phase lock: Unknown phase lock\n  - Target: Unknown omega target\n  - Universal principle: fuzzy \u2192 omega transition\n\n---\n",
+    "\nSorry at line 1701 in unknown:\nComplexity: 0.50, Confidence: 0.90\n\nRecommended Lemma Breakdown:\n  1. lambda_term_wellformed: Lambda terms well-formed\n  2. beta_reduction_correct: Beta-reduction correct\n  3. normal_form_exists: Normal form exists\n  4. lambda_complete: Complete lambda analysis\n\nGeodesic Path:\n  Step 1: Enter Lambda term (nested applications)\n  Step 2: Follow geodesic: Identify redexes \u2192 apply beta-reduction \u2192 normalize\n  Step 3: Apply phase lock: Beta-reduction crystallizes to normal form\n  Step 4: Arrive at Normal form (computational certainty)\n  Step 5: Crystallize knowledge\n\nPhase Lock Condition:\n  Phase lock achieved when: Beta-reduction crystallizes to normal form and state stabilizes in Normal form (computational certainty)\n\nKey Insights:\n  - Lambda term (nested applications) initial state\n  - Geodesic: Identify redexes \u2192 apply beta-reduction \u2192 normalize\n  - Phase lock: Beta-reduction crystallizes to normal form\n  - Target: Normal form (computational certainty)\n  - Universal principle: fuzzy \u2192 omega transition\n\n---\n",
+    "\nSorry at line 1705 in unknown:\nComplexity: 0.50, Confidence: 0.90\n\nRecommended Lemma Breakdown:\n  1. lambda_term_wellformed: Lambda terms well-formed\n  2. beta_reduction_correct: Beta-reduction correct\n  3. normal_form_exists: Normal form exists\n  4. lambda_complete: Complete lambda analysis\n\nGeodesic Path:\n  Step 1: Enter Lambda term (nested applications)\n  Step 2: Follow geodesic: Identify redexes \u2192 apply beta-reduction \u2192 normalize\n  Step 3: Apply phase lock: Beta-reduction crystallizes to normal form\n  Step 4: Arrive at Normal form (computational certainty)\n  Step 5: Crystallize knowledge\n\nPhase Lock Condition:\n  Phase lock achieved when: Beta-reduction crystallizes to normal form and state stabilizes in Normal form (computational certainty)\n\nKey Insights:\n  - Lambda term (nested applications) initial state\n  - Geodesic: Identify redexes \u2192 apply beta-reduction \u2192 normalize\n  - Phase lock: Beta-reduction crystallizes to normal form\n  - Target: Normal form (computational certainty)\n  - Universal principle: fuzzy \u2192 omega transition\n\n---\n",
+    "\nSorry at line 1709 in unknown:\nComplexity: 0.50, Confidence: 0.90\n\nRecommended Lemma Breakdown:\n  1. lambda_term_wellformed: Lambda terms well-formed\n  2. beta_reduction_correct: Beta-reduction correct\n  3. normal_form_exists: Normal form exists\n  4. lambda_complete: Complete lambda analysis\n\nGeodesic Path:\n  Step 1: Enter Lambda term (nested applications)\n  Step 2: Follow geodesic: Identify redexes \u2192 apply beta-reduction \u2192 normalize\n  Step 3: Apply phase lock: Beta-reduction crystallizes to normal form\n  Step 4: Arrive at Normal form (computational certainty)\n  Step 5: Crystallize knowledge\n\nPhase Lock Condition:\n  Phase lock achieved when: Beta-reduction crystallizes to normal form and state stabilizes in Normal form (computational certainty)\n\nKey Insights:\n  - Lambda term (nested applications) initial state\n  - Geodesic: Identify redexes \u2192 apply beta-reduction \u2192 normalize\n  - Phase lock: Beta-reduction crystallizes to normal form\n  - Target: Normal form (computational certainty)\n  - Universal principle: fuzzy \u2192 omega transition\n\n---\n",
+    "\nSorry at line 1713 in unknown:\nComplexity: 0.50, Confidence: 0.75\n\nRecommended Lemma Breakdown:\n  1. lemma_1_structure: Analyze structure\n  2. lemma_2_properties: Identify properties\n  3. lemma_3_invariant: Prove invariant\n  4. lemma_4_conclusion: Reach conclusion\n\nGeodesic Path:\n  Step 1: Enter Information source (uncertain patterns)\n  Step 2: Follow geodesic: Generate patterns \u2192 validate relationships \u2192 crystallize\n  Step 3: Apply phase lock: Validated patterns crystallize to knowledge\n  Step 4: Arrive at Extracted knowledge (epistemic certainty)\n  Step 5: Crystallize knowledge\n\nPhase Lock Condition:\n  Phase lock achieved when: Validated patterns crystallize to knowledge and state stabilizes in Extracted knowledge (epistemic certainty)\n\nKey Insights:\n  - Information source (uncertain patterns) initial state\n  - Geodesic: Generate patterns \u2192 validate relationships \u2192 crystallize\n  - Phase lock: Validated patterns crystallize to knowledge\n  - Target: Extracted knowledge (epistemic certainty)\n  - Universal principle: fuzzy \u2192 omega transition\n\n---\n"
+  ]
+}

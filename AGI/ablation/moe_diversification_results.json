@@ -1,0 +1,248 @@
+{
+  "diversity_experiments": {
+    "Same Manifold": {
+      "2": {
+        "accuracy": 0.42333333333333334,
+        "routing_efficiency": 0.42333333333333334,
+        "expert_diversity": 0.4,
+        "n_experts": 2
+      },
+      "4": {
+        "accuracy": 0.59,
+        "routing_efficiency": 0.64,
+        "expert_diversity": 0.5166666666666667,
+        "n_experts": 4
+      },
+      "6": {
+        "accuracy": 0.5333333333333333,
+        "routing_efficiency": 0.5133333333333333,
+        "expert_diversity": 0.4933333333333334,
+        "n_experts": 6
+      },
+      "8": {
+        "accuracy": 0.55,
+        "routing_efficiency": 0.45666666666666667,
+        "expert_diversity": 0.5428571428571428,
+        "n_experts": 8
+      },
+      "10": {
+        "accuracy": 0.5233333333333333,
+        "routing_efficiency": 0.52,
+        "expert_diversity": 0.5288888888888889,
+        "n_experts": 10
+      },
+      "12": {
+        "accuracy": 0.35,
+        "routing_efficiency": 0.47,
+        "expert_diversity": 0.5212121212121212,
+        "n_experts": 12
+      },
+      "14": {
+        "accuracy": 0.5,
+        "routing_efficiency": 0.63,
+        "expert_diversity": 0.49010989010989003,
+        "n_experts": 14
+      },
+      "16": {
+        "accuracy": 0.4266666666666667,
+        "routing_efficiency": 0.5933333333333334,
+        "expert_diversity": 0.5083333333333333,
+        "n_experts": 16
+      }
+    },
+    "Manifold Diversification": {
+      "2": {
+        "accuracy": 0.4766666666666667,
+        "routing_efficiency": 0.4766666666666667,
+        "expert_diversity": 0.5,
+        "n_experts": 2
+      },
+      "4": {
+        "accuracy": 0.73,
+        "routing_efficiency": 0.6033333333333334,
+        "expert_diversity": 0.15,
+        "n_experts": 4
+      },
+      "6": {
+        "accuracy": 0.6366666666666667,
+        "routing_efficiency": 0.32,
+        "expert_diversity": 0.4666666666666667,
+        "n_experts": 6
+      },
+      "8": {
+        "accuracy": 0.7166666666666667,
+        "routing_efficiency": 0.7933333333333333,
+        "expert_diversity": 0.34285714285714286,
+        "n_experts": 8
+      },
+      "10": {
+        "accuracy": 0.71,
+        "routing_efficiency": 0.48,
+        "expert_diversity": 0.52,
+        "n_experts": 10
+      },
+      "12": {
+        "accuracy": 0.8066666666666666,
+        "routing_efficiency": 0.7533333333333333,
+        "expert_diversity": 0.34242424242424246,
+        "n_experts": 12
+      },
+      "14": {
+        "accuracy": 0.7233333333333334,
+        "routing_efficiency": 0.48,
+        "expert_diversity": 0.31978021978021975,
+        "n_experts": 14
+      },
+      "16": {
+        "accuracy": 0.73,
+        "routing_efficiency": 0.5233333333333333,
+        "expert_diversity": 0.3783333333333333,
+        "n_experts": 16
+      }
+    },
+    "Parameter Diversification": {
+      "2": {
+        "accuracy": 0.7466666666666667,
+        "routing_efficiency": 0.7466666666666667,
+        "expert_diversity": 0.4,
+        "n_experts": 2
+      },
+      "4": {
+        "accuracy": 0.42333333333333334,
+        "routing_efficiency": 0.4166666666666667,
+        "expert_diversity": 0.55,
+        "n_experts": 4
+      },
+      "6": {
+        "accuracy": 0.6233333333333333,
+        "routing_efficiency": 0.6833333333333333,
+        "expert_diversity": 0.5533333333333332,
+        "n_experts": 6
+      },
+      "8": {
+        "accuracy": 0.4766666666666667,
+        "routing_efficiency": 0.5166666666666667,
+        "expert_diversity": 0.5285714285714286,
+        "n_experts": 8
+      },
+      "10": {
+        "accuracy": 0.49333333333333335,
+        "routing_efficiency": 0.43666666666666665,
+        "expert_diversity": 0.49777777777777776,
+        "n_experts": 10
+      },
+      "12": {
+        "accuracy": 0.4266666666666667,
+        "routing_efficiency": 0.5566666666666666,
+        "expert_diversity": 0.5333333333333332,
+        "n_experts": 12
+      },
+      "14": {
+        "accuracy": 0.5366666666666666,
+        "routing_efficiency": 0.52,
+        "expert_diversity": 0.5054945054945055,
+        "n_experts": 14
+      },
+      "16": {
+        "accuracy": 0.54,
+        "routing_efficiency": 0.49666666666666665,
+        "expert_diversity": 0.5191666666666667,
+        "n_experts": 16
+      }
+    },
+    "Random Initialization": {
+      "2": {
+        "accuracy": 0.5666666666666667,
+        "routing_efficiency": 0.5666666666666667,
+        "expert_diversity": 0.6,
+        "n_experts": 2
+      },
+      "4": {
+        "accuracy": 0.72,
+        "routing_efficiency": 0.6833333333333333,
+        "expert_diversity": 0.5833333333333334,
+        "n_experts": 4
+      },
+      "6": {
+        "accuracy": 0.68,
+        "routing_efficiency": 0.7066666666666667,
+        "expert_diversity": 0.52,
+        "n_experts": 6
+      },
+      "8": {
+        "accuracy": 0.36,
+        "routing_efficiency": 0.37666666666666665,
+        "expert_diversity": 0.5321428571428571,
+        "n_experts": 8
+      },
+      "10": {
+        "accuracy": 0.3466666666666667,
+        "routing_efficiency": 0.45666666666666667,
+        "expert_diversity": 0.5088888888888888,
+        "n_experts": 10
+      },
+      "12": {
+        "accuracy": 0.7433333333333333,
+        "routing_efficiency": 0.6233333333333333,
+        "expert_diversity": 0.4878787878787879,
+        "n_experts": 12
+      },
+      "14": {
+        "accuracy": 0.4533333333333333,
+        "routing_efficiency": 0.6866666666666666,
+        "expert_diversity": 0.5307692307692308,
+        "n_experts": 14
+      },
+      "16": {
+        "accuracy": 0.48,
+        "routing_efficiency": 0.48333333333333334,
+        "expert_diversity": 0.5208333333333334,
+        "n_experts": 16
+      }
+    }
+  },
+  "routing_comparison": {
+    "learned": {
+      "accuracy": 0.72,
+      "expert_utilization": {
+        "0": 0.16666666666666666,
+        "1": 0.0033333333333333335,
+        "2": 0.0,
+        "3": 0.01,
+        "4": 0.6266666666666667,
+        "5": 0.006666666666666667,
+        "6": 0.16666666666666666,
+        "7": 0.02
+      },
+      "entropy": 1.0668288826650756
+    },
+    "random": {
+      "accuracy": 0.72,
+      "expert_utilization": {
+        "0": 0.08333333333333333,
+        "1": 0.14333333333333334,
+        "2": 0.11666666666666667,
+        "3": 0.12666666666666668,
+        "4": 0.15,
+        "5": 0.15333333333333332,
+        "6": 0.13666666666666666,
+        "7": 0.09
+      },
+      "entropy": 2.0586813972781455
+    },
+    "uniform": {
+      "accuracy": 0.72,
+      "expert_utilization": {
+        "0": 1.0,
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0,
+        "7": 0.0
+      },
+      "entropy": -0.0
+    }
+  }
+}

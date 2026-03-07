@@ -1,0 +1,157 @@
+{
+  "max_prime": 1000000,
+  "golden_ratio": 1.618033988749895,
+  "silver_ratio": 2.414213562373095,
+  "bronze_ratio": 3.302775637731995,
+  "results": {
+    "test_3": {
+      "test_name": "Multiple Scale Factor Comparison",
+      "statement": "Statement 2 (Scale Invariance)",
+      "ks_distances": {
+        "1.618033988749895": {
+          "mean": 1.0,
+          "std": 0.0,
+          "values": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "1.5": {
+          "mean": 1.0,
+          "std": 0.0,
+          "values": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "2.0": {
+          "mean": 1.0,
+          "std": 0.0,
+          "values": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "2.5": {
+          "mean": 1.0,
+          "std": 0.0,
+          "values": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "3.0": {
+          "mean": 1.0,
+          "std": 0.0,
+          "values": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "10.0": {
+          "mean": 1.0,
+          "std": 0.0,
+          "values": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      },
+      "sigma_1_ks": 1.0,
+      "min_other_ks": 1.0,
+      "sigma_1_unique": false,
+      "passes": false
+    },
+    "test_10": {
+      "test_name": "Mode Location Test",
+      "statement": "Statement 5 (GUE Constraint)",
+      "empirical_mode": 0.45545545545545546,
+      "gue_mode": 0.8862269254527579,
+      "golden_ratio": 1.618033988749895,
+      "dist_to_gue": 0.4307714699973025,
+      "dist_to_golden": 1.1625785332944394,
+      "closer_to_gue": true,
+      "passes": true
+    },
+    "test_15": {
+      "test_name": "Random Shuffle Control",
+      "statement": "All statements (Control)",
+      "actual_basin_prob": 0.232136259984458,
+      "random_basin_prob": 0.20585500082805713,
+      "actual_in_basin": 18222,
+      "random_in_basin": 16159,
+      "total_gaps": 78497,
+      "z_score": 12.589638037199046,
+      "p_value": 0.0,
+      "significant": true,
+      "passes": true
+    },
+    "test_2": {
+      "test_name": "Scale-Dependence Check",
+      "statement": "Statement 1 (Prime Gap Aggregation)",
+      "scales": [
+        100000,
+        1000000,
+        10000000
+      ],
+      "basin_probabilities": [
+        0.2455426962777604,
+        0.232136259984458,
+        0.25023548778322485
+      ],
+      "trend": 0.00469279150546445,
+      "final_prob": 0.25023548778322485,
+      "random_expectation": 0.5,
+      "above_random": false,
+      "passes": false
+    },
+    "test_6": {
+      "test_name": "PNT Correction Comparison",
+      "statement": "Statement 3 (Fixed-Point PNT)",
+      "errors": {
+        "classical": [
+          906.1103619349633,
+          6115.586349458026
+        ],
+        "fixed_point": [
+          413.3863150207253,
+          2725.93897337238
+        ],
+        "li": [
+          234.52473033078786,
+          1339.1457107687602
+        ]
+      },
+      "avg_errors": {
+        "classical": 3510.8483556964948,
+        "fixed_point": 1569.6626441965527,
+        "li": 786.835220549774
+      },
+      "improvement_factor": 2.236689755392349,
+      "li_improvement": 4.461986784530833,
+      "improves_over_classical": true,
+      "passes": true
+    },
+    "test_7": {
+      "test_name": "Oscillation Period Detection",
+      "statement": "Statement 4 (Complex Dimensions)",
+      "dominant_frequency": 0.0,
+      "dominant_period": Infinity,
+      "expected_frequency": 2.0780869212350273,
+      "expected_period": 0.48121182505960347,
+      "freq_match": false,
+      "passes": false
+    }
+  },
+  "summary": {
+    "total_tests": 6,
+    "passed": 3,
+    "failed": 3
+  }
+}

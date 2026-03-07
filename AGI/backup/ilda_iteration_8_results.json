@@ -1,0 +1,515 @@
+{
+  "total_substeps": 25,
+  "total_time_hours": 9.916666666666666,
+  "difficulty_counts": {
+    "hard": 10,
+    "easy": 5,
+    "medium": 7,
+    "very_hard": 3
+  },
+  "breakdowns": [
+    {
+      "step_id": 36,
+      "original_description": "Assume two joins M_U and M_U'",
+      "original_difficulty": "hard",
+      "substeps": [
+        {
+          "parent_step_id": 36,
+          "substep_number": 1,
+          "substep_type": "SubStepType.CONSTRUCTION",
+          "description": "Assume two joins M_U and M_U'",
+          "lean_code": "\n                variable (M_U M_Uprime : LogicalManifold)\n                variable (kappa kappa' : Real)\n                variable (h_join : IsJoin M_U M_A M_B kappa)\n                variable (h_join' : IsJoin M_Uprime M_A M_B kappa')\n                ",
+          "python_simulation": null,
+          "prerequisites": [],
+          "verification_method": "Setup assumptions",
+          "estimated_time": "15 minutes",
+          "confidence": 0.9,
+          "difficulty": "hard"
+        }
+      ],
+      "total_substeps": 1,
+      "total_estimated_time": "0h 15m",
+      "breakdown_reason": "Step requires verification but can be implemented directly"
+    },
+    {
+      "step_id": 37,
+      "original_description": "Construct isometry \u03c6: M_U \u2192 M_U'",
+      "original_difficulty": "hard",
+      "substeps": [
+        {
+          "parent_step_id": 37,
+          "substep_number": 2,
+          "substep_type": "SubStepType.DEFINITION",
+          "description": "Define projection operators proj_A and proj_B",
+          "lean_code": "\n                noncomputable def proj_A (M_A M_B M_U : LogicalManifold) : ManifoldSpace M_U -> ManifoldSpace M_A\n                  | x => M_A.extract_from_join x M_B\n                \n                noncomputable def proj_B (M_A M_B M_U : LogicalManifold) : ManifoldSpace M_U -> ManifoldSpace M_B\n                  | x => M_B.extract_from_join x M_A\n                ",
+          "python_simulation": "\ndef test_projections():\n    M_A = create_test_manifold('addition')\n    M_B = create_test_manifold('multiplication')\n    M_U = join_manifolds(M_A, M_B, kappa=0.5)\n    \n    x = np.array([1.0, 2.0])\n    proj_A_x = proj_A(M_A, M_B, M_U, x)\n    proj_B_x = proj_B(M_A, M_B, M_U, x)\n    \n    assert np.allclose(proj_A_x, M_A(x))\n    assert np.allclose(proj_B_x, M_B(x))\n                ",
+          "prerequisites": [],
+          "verification_method": "Test with synthetic manifolds",
+          "estimated_time": "20 minutes",
+          "confidence": 0.9,
+          "difficulty": "easy"
+        },
+        {
+          "parent_step_id": 37,
+          "substep_number": 3,
+          "substep_type": "SubStepType.CONSTRUCTION",
+          "description": "Construct isometry map between joins",
+          "lean_code": "\n                noncomputable def join_isometry (M_U M_Uprime : LogicalManifold) \n                                           (proj_A proj_Aprime proj_B proj_Bprime) :\n                  ManifoldSpace M_U -> ManifoldSpace M_Uprime\n                  | x => M_Uprime.from_projections (proj_A x) (proj_B x)\n                ",
+          "python_simulation": "\ndef test_isometry_construction():\n    M_A = create_test_manifold('addition')\n    M_B = create_test_manifold('multiplication')\n    M_U1 = join_manifolds(M_A, M_B, kappa=0.5)\n    M_U2 = join_manifolds(M_A, M_B, kappa=0.5)\n    \n    phi = join_isometry(M_U1, M_U2, proj_A, proj_A, proj_B, proj_B)\n    x = np.array([1.0, 2.0])\n    phi_x = phi(x)\n    \n    assert np.allclose(proj_A(phi_x), proj_A(x))\n                ",
+          "prerequisites": [
+            2
+          ],
+          "verification_method": "Check projection preservation",
+          "estimated_time": "25 minutes",
+          "confidence": 0.8,
+          "difficulty": "medium"
+        },
+        {
+          "parent_step_id": 37,
+          "substep_number": 4,
+          "substep_type": "SubStepType.LEMMA_PROOF",
+          "description": "Prove isometry preserves distances",
+          "lean_code": "\n                theorem isometry_preserves_distance (phi : Isometry) (M : LogicalManifold) :\n                  forall x1 x2, dist (phi x1) (phi x2) = dist x1 x2 := by\n                  unfold dist\n                  rw [isometry_def]\n                  apply Manifold.distance_symmetry\n                ",
+          "python_simulation": "\ndef test_distance_preservation():\n    M_A = create_test_manifold('addition')\n    M_B = create_test_manifold('multiplication')\n    M_U1 = join_manifolds(M_A, M_B, kappa=0.5)\n    M_U2 = join_manifolds(M_A, M_B, kappa=0.5)\n    \n    phi = join_isometry(M_U1, M_U2, proj_A, proj_A, proj_B, proj_B)\n    \n    for _ in range(100):\n        x1 = np.random.randn(2)\n        x2 = np.random.randn(2)\n        d1 = M_U1.distance(x1, x2)\n        d2 = M_U2.distance(phi(x1), phi(x2))\n        assert np.isclose(d1, d2, rtol=1e-6)\n                ",
+          "prerequisites": [
+            2
+          ],
+          "verification_method": "Numerical distance test",
+          "estimated_time": "30 minutes",
+          "confidence": 0.75,
+          "difficulty": "hard"
+        }
+      ],
+      "total_substeps": 3,
+      "total_estimated_time": "1h 15m",
+      "breakdown_reason": "Isometry construction requires multiple definitions and proofs"
+    },
+    {
+      "step_id": 38,
+      "original_description": "Show phi preserves metric structure",
+      "original_difficulty": "hard",
+      "substeps": [
+        {
+          "parent_step_id": 38,
+          "substep_number": 5,
+          "substep_type": "SubStepType.LEMMA_PROOF",
+          "description": "Prove isometry preserves inner products",
+          "lean_code": "\n                theorem isometry_preserves_inner_product (phi : Isometry) (M : LogicalManifold) :\n                  forall x y, inner_product (phi x) (phi y) = inner_product x y := by\n                  have h_dist := isometry_preserves_distance phi\n                  rw [distance_formula] at *\n                  rw [distance_formula] at *\n                  nlinarith [h_dist]\n                ",
+          "python_simulation": "\ndef test_inner_product_preservation():\n    M = create_test_manifold('hyperbolic')\n    phi = create_isometry(M)\n    \n    for _ in range(100):\n        x = np.random.randn(10)\n        y = np.random.randn(10)\n        ip1 = M.inner_product(x, y)\n        ip2 = M.inner_product(phi(x), phi(y))\n        assert np.isclose(ip1, ip2, rtol=1e-6)\n                ",
+          "prerequisites": [],
+          "verification_method": "Numerical inner product test",
+          "estimated_time": "20 minutes",
+          "confidence": 0.8,
+          "difficulty": "medium"
+        },
+        {
+          "parent_step_id": 38,
+          "substep_number": 6,
+          "substep_type": "SubStepType.LEMMA_PROOF",
+          "description": "Prove isometry preserves angles",
+          "lean_code": "\n                theorem isometry_preserves_angle (phi : Isometry) (M : LogicalManifold) :\n                  forall x y, angle (phi x) (phi y) = angle x y := by\n                  unfold angle\n                  rw [isometry_preserves_inner_product]\n                  rw [isometry_preserves_distance]\n                  rfl\n                ",
+          "python_simulation": "\ndef test_angle_preservation():\n    M = create_test_manifold('spherical')\n    phi = create_isometry(M)\n    \n    for _ in range(100):\n        x = np.random.randn(10)\n        y = np.random.randn(10)\n        angle1 = M.angle(x, y)\n        angle2 = M.angle(phi(x), phi(y))\n        assert np.isclose(angle1, angle2, rtol=1e-6)\n                ",
+          "prerequisites": [
+            5
+          ],
+          "verification_method": "Numerical angle test",
+          "estimated_time": "25 minutes",
+          "confidence": 0.75,
+          "difficulty": "medium"
+        }
+      ],
+      "total_substeps": 2,
+      "total_estimated_time": "0h 45m",
+      "breakdown_reason": "Metric preservation requires angle and inner product proofs"
+    },
+    {
+      "step_id": 39,
+      "original_description": "Prove \u03c6 is unique given projection constraints",
+      "original_difficulty": "hard",
+      "substeps": [
+        {
+          "parent_step_id": 39,
+          "substep_number": 7,
+          "substep_type": "SubStepType.VERIFICATION",
+          "description": "Prove \u03c6 is unique given projection constraints",
+          "lean_code": "\n                theorem isometry_unique (M_U M_Uprime : LogicalManifold) (phi psi : Isometry) :\n                  (forall x, proj_A (phi x) = proj_A x /\\ proj_B (phi x) = proj_B x) ->\n                  (forall x, proj_A (psi x) = proj_A x /\\ proj_B (psi x) = proj_B x) ->\n                  phi = psi := by\n                ",
+          "python_simulation": null,
+          "prerequisites": [],
+          "verification_method": "Use functional extensionality",
+          "estimated_time": "60 minutes",
+          "confidence": 0.65,
+          "difficulty": "hard"
+        }
+      ],
+      "total_substeps": 1,
+      "total_estimated_time": "1h 0m",
+      "breakdown_reason": "Step requires verification but can be implemented directly"
+    },
+    {
+      "step_id": 40,
+      "original_description": "Complete uniqueness proof",
+      "original_difficulty": "hard",
+      "substeps": [
+        {
+          "parent_step_id": 40,
+          "substep_number": 8,
+          "substep_type": "SubStepType.TACTIC_APPLICATION",
+          "description": "Complete uniqueness proof",
+          "lean_code": "\n                constructor\n                * exact join_isometry M_U M_Uprime\n                * apply isometry_preserves_metric\n                * apply isometry_unique\n                ",
+          "python_simulation": null,
+          "prerequisites": [],
+          "verification_method": "Check complete proof",
+          "estimated_time": "30 minutes",
+          "confidence": 0.7,
+          "difficulty": "hard"
+        }
+      ],
+      "total_substeps": 1,
+      "total_estimated_time": "0h 30m",
+      "breakdown_reason": "Step requires verification but can be implemented directly"
+    },
+    {
+      "step_id": 55,
+      "original_description": "Define Lyapunov function V(t) = Gamma(t)",
+      "original_difficulty": "hard",
+      "substeps": [
+        {
+          "parent_step_id": 55,
+          "substep_number": 9,
+          "substep_type": "SubStepType.DEFINITION",
+          "description": "Define Lyapunov function V(t) = Gamma(t)",
+          "lean_code": "\n                noncomputable def lyapunov_function (Gamma0 lambda : Real) (t : Real) : Real :=\n                  Gamma0 * Real.exp (-lambda * t)\n                ",
+          "python_simulation": null,
+          "prerequisites": [],
+          "verification_method": "Check definition compiles",
+          "estimated_time": "15 minutes",
+          "confidence": 0.9,
+          "difficulty": "hard"
+        }
+      ],
+      "total_substeps": 1,
+      "total_estimated_time": "0h 15m",
+      "breakdown_reason": "Step requires verification but can be implemented directly"
+    },
+    {
+      "step_id": 56,
+      "original_description": "Show dV/dt < 0 for \u0393 > 0",
+      "original_difficulty": "hard",
+      "substeps": [
+        {
+          "parent_step_id": 56,
+          "substep_number": 10,
+          "substep_type": "SubStepType.VERIFICATION",
+          "description": "Show dV/dt < 0 for \u0393 > 0",
+          "lean_code": "\n                theorem lyapunov_decreasing (Gamma0 lambda t : Real) (hlambda : lambda > 0) (ht : t > 0) :\n                  HasDerivAt (fun t => lyapunov_function Gamma0 lambda t) t\n                    (-lambda * lyapunov_function Gamma0 lambda t) := by\n                ",
+          "python_simulation": null,
+          "prerequisites": [],
+          "verification_method": "Verify derivative is negative",
+          "estimated_time": "30 minutes",
+          "confidence": 0.75,
+          "difficulty": "hard"
+        }
+      ],
+      "total_substeps": 1,
+      "total_estimated_time": "0h 30m",
+      "breakdown_reason": "Step requires verification but can be implemented directly"
+    },
+    {
+      "step_id": 57,
+      "original_description": "Prove \u0393(t) \u2192 0 as t \u2192 \u221e",
+      "original_difficulty": "hard",
+      "substeps": [
+        {
+          "parent_step_id": 57,
+          "substep_number": 11,
+          "substep_type": "SubStepType.LEMMA_PROOF",
+          "description": "Prove exponential decay bound: \u0393(t) \u2264 \u0393\u2080\u00b7exp(-\u03bbt)",
+          "lean_code": "\n                theorem exponential_decay_bound (Gamma0 lambda : Real) (hlambda : lambda > 0) (t : Real) :\n                  lyapunov_function Gamma0 lambda t <= Gamma0 * Real.exp (-lambda * t) := by\n                  unfold lyapunov_function\n                  apply Real.mul_le_mul_right\n                  * apply Real.exp_neg\n                  * apply Real.le_refl\n                ",
+          "python_simulation": "\ndef test_exponential_decay():\n    Gamma0 = 1.0\n    lambda_val = 0.5\n    \n    for t in np.linspace(0, 10, 100):\n        Gamma_t = Gamma0 * np.exp(-lambda_val * t)\n        assert Gamma_t <= Gamma0 + 1e-10\n        assert Gamma_t >= 0\n        if t > 0:\n            assert Gamma_t < Gamma0\n                ",
+          "prerequisites": [],
+          "verification_method": "Numerical decay verification",
+          "estimated_time": "15 minutes",
+          "confidence": 0.9,
+          "difficulty": "easy"
+        },
+        {
+          "parent_step_id": 57,
+          "substep_number": 12,
+          "substep_type": "SubStepType.VERIFICATION",
+          "description": "Prove lim_{t\u2192\u221e} exp(-\u03bbt) = 0 for \u03bb > 0",
+          "lean_code": "\n                theorem exp_decay_to_zero (lambda : Real) (hlambda : lambda > 0) :\n                  Tendsto (fun t => Real.exp (-lambda * t)) atTop (nhds 0) := by\n                  apply Real.tendsto_exp_neg_mul\n                  \u00b7 apply tendsto_id\n                  \u00b7 apply tendsto_const_nhds\n                  \u00b7 linarith\n                ",
+          "python_simulation": "\ndef test_limit_to_zero():\n    lambda_val = 0.5\n    \n    for t in [10, 20, 50, 100]:\n        exp_val = np.exp(-lambda_val * t)\n        assert exp_val < 1e-4\n    \n    # Show monotonic decrease\n    t_values = np.linspace(0, 20, 100)\n    exp_values = np.exp(-lambda_val * t_values)\n    assert np.all(np.diff(exp_values) <= 1e-10)\n                ",
+          "prerequisites": [
+            11
+          ],
+          "verification_method": "Numerical limit verification",
+          "estimated_time": "20 minutes",
+          "confidence": 0.85,
+          "difficulty": "medium"
+        },
+        {
+          "parent_step_id": 57,
+          "substep_number": 13,
+          "substep_type": "SubStepType.TACTIC_APPLICATION",
+          "description": "Combine bounds to prove \u0393(t) \u2192 0",
+          "lean_code": "\n                theorem convergence_to_zero_complete (Gamma0 lambda : Real) (hlambda : lambda > 0) :\n                  Tendsto (fun t => lyapunov_function Gamma0 lambda t) atTop (nhds 0) := by\n                  unfold lyapunov_function\n                  have h_decay := exponential_decay_bound Gamma0 lambda hlambda\n                  have h_exp := exp_decay_to_zero lambda hlambda\n                  apply Real.tendsto_const_mul_atTop\n                  \u00b7 exact h_exp\n                  \u00b7 linarith\n                ",
+          "python_simulation": "\ndef test_complete_convergence():\n    Gamma0 = 1.0\n    lambda_val = 0.5\n    \n    # Test convergence criteria\n    epsilon = 1e-6\n    T_large = -np.log(epsilon / Gamma0) / lambda_val\n    \n    for t in [T_large, T_large + 10, T_large + 100]:\n        Gamma_t = Gamma0 * np.exp(-lambda_val * t)\n        assert Gamma_t < epsilon\n                ",
+          "prerequisites": [
+            11
+          ],
+          "verification_method": "Complete convergence test",
+          "estimated_time": "15 minutes",
+          "confidence": 0.8,
+          "difficulty": "medium"
+        }
+      ],
+      "total_substeps": 3,
+      "total_estimated_time": "0h 50m",
+      "breakdown_reason": "Convergence requires exponential bound and limit proofs"
+    },
+    {
+      "step_id": 58,
+      "original_description": "Verify numerical stability with 5000+ iterations",
+      "original_difficulty": "hard",
+      "substeps": [
+        {
+          "parent_step_id": 58,
+          "substep_number": 14,
+          "substep_type": "SubStepType.VERIFICATION",
+          "description": "Verify numerical stability with 5000+ iterations",
+          "lean_code": "\n                theorem numerical_stability (Gamma0 lambda : Real) (hlambda : lambda > 0) :\n                  forall N >= 5000, |lyapunov_function Gamma0 lambda N - 0| < 10^(-10) := by\n                ",
+          "python_simulation": null,
+          "prerequisites": [],
+          "verification_method": "Numerical computation verification",
+          "estimated_time": "60 minutes",
+          "confidence": 0.6,
+          "difficulty": "hard"
+        }
+      ],
+      "total_substeps": 1,
+      "total_estimated_time": "1h 0m",
+      "breakdown_reason": "Step requires verification but can be implemented directly"
+    },
+    {
+      "step_id": 59,
+      "original_description": "Complete asymptotic stability proof",
+      "original_difficulty": "hard",
+      "substeps": [
+        {
+          "parent_step_id": 59,
+          "substep_number": 15,
+          "substep_type": "SubStepType.TACTIC_APPLICATION",
+          "description": "Complete asymptotic stability proof",
+          "lean_code": "\n                constructor\n                * apply lyapunov_decreasing\n                * apply convergence_to_zero\n                * apply numerical_stability\n                ",
+          "python_simulation": null,
+          "prerequisites": [],
+          "verification_method": "Check complete proof",
+          "estimated_time": "30 minutes",
+          "confidence": 0.65,
+          "difficulty": "hard"
+        }
+      ],
+      "total_substeps": 1,
+      "total_estimated_time": "0h 30m",
+      "breakdown_reason": "Step requires verification but can be implemented directly"
+    },
+    {
+      "step_id": 60,
+      "original_description": "Define improvement metric I(t) = 1/Gamma(t)",
+      "original_difficulty": "very_hard",
+      "substeps": [
+        {
+          "parent_step_id": 60,
+          "substep_number": 16,
+          "substep_type": "SubStepType.DEFINITION",
+          "description": "Define improvement metric I(t) = 1/Gamma(t)",
+          "lean_code": "\n                noncomputable def improvement_metric (Gamma : Real -> Real) (t : Real) : Real :=\n                  1 / (Gamma t + 10^(-10))  -- Avoid division by zero\n                ",
+          "python_simulation": null,
+          "prerequisites": [],
+          "verification_method": "Check definition compiles",
+          "estimated_time": "15 minutes",
+          "confidence": 0.9,
+          "difficulty": "very_hard"
+        }
+      ],
+      "total_substeps": 1,
+      "total_estimated_time": "0h 15m",
+      "breakdown_reason": "Step requires verification but can be implemented directly"
+    },
+    {
+      "step_id": 61,
+      "original_description": "Show \u0393(t) satisfies differential equation: d\u0393/dt = -\u03bb\u0393",
+      "original_difficulty": "very_hard",
+      "substeps": [
+        {
+          "parent_step_id": 61,
+          "substep_number": 17,
+          "substep_type": "SubStepType.CALCULATION",
+          "description": "Compute derivative: d/dt[\u0393\u2080\u00b7exp(-\u03bbt)] = -\u03bb\u0393\u2080\u00b7exp(-\u03bbt)",
+          "lean_code": "\n                theorem lyapunov_derivative (Gamma0 lambda t : Real) (hlambda : lambda > 0) :\n                  HasDerivAt (fun t => lyapunov_function Gamma0 lambda t) t \n                    (-lambda * lyapunov_function Gamma0 lambda t) := by\n                  unfold lyapunov_function\n                  have h_der := HasDerivAt (fun t => Real.exp (-lambda * t)) t \n                                 (-lambda * Real.exp (-lambda * t)) := by\n                    apply Real.hasDerivAt_exp_mul\n                  apply Real.hasDerivAt_const_mul\n                  exact h_der\n                ",
+          "python_simulation": "\ndef test_derivative():\n    Gamma0 = 1.0\n    lambda_val = 0.5\n    \n    t_values = np.linspace(0.1, 10, 100)\n    dt = 1e-6\n    \n    for t in t_values:\n        # Numerical derivative\n        Gamma_plus = Gamma0 * np.exp(-lambda_val * (t + dt))\n        Gamma_minus = Gamma0 * np.exp(-lambda_val * (t - dt))\n        numerical_deriv = (Gamma_plus - Gamma_minus) / (2 * dt)\n        \n        # Analytical derivative\n        analytical_deriv = -lambda_val * Gamma0 * np.exp(-lambda_val * t)\n        \n        assert np.isclose(numerical_deriv, analytical_deriv, rtol=1e-4)\n                ",
+          "prerequisites": [],
+          "verification_method": "Numerical derivative test",
+          "estimated_time": "20 minutes",
+          "confidence": 0.85,
+          "difficulty": "medium"
+        },
+        {
+          "parent_step_id": 61,
+          "substep_number": 18,
+          "substep_type": "SubStepType.VERIFICATION",
+          "description": "Verify \u0393(t) satisfies d\u0393/dt = -\u03bb\u0393",
+          "lean_code": "\n                theorem satisfies_ODE (Gamma0 lambda : Real) (hlambda : lambda > 0) (t : Real) :\n                  let Gamma := fun t => lyapunov_function Gamma0 lambda t\n                  let deriv := -lambda * (Gamma t)\n                  HasDerivAt Gamma t deriv := by\n                  exact lyapunov_derivative Gamma0 lambda t hlambda\n                ",
+          "python_simulation": "\ndef test_ODE_satisfaction():\n    Gamma0 = 1.0\n    lambda_val = 0.5\n    \n    # Solve ODE numerically\n    def ode_system(t, y):\n        return -lambda_val * y[0]\n    \n    from scipy.integrate import solve_ivp\n    sol = solve_ivp(ode_system, [0, 10], [Gamma0], t_eval=np.linspace(0, 10, 100))\n    \n    # Compare with analytical solution\n    analytical = Gamma0 * np.exp(-lambda_val * sol.t)\n    \n    assert np.allclose(sol.y[0], analytical, rtol=1e-6)\n                ",
+          "prerequisites": [
+            17
+          ],
+          "verification_method": "ODE numerical integration test",
+          "estimated_time": "25 minutes",
+          "confidence": 0.8,
+          "difficulty": "hard"
+        }
+      ],
+      "total_substeps": 2,
+      "total_estimated_time": "0h 45m",
+      "breakdown_reason": "ODE verification requires derivative computation and integration"
+    },
+    {
+      "step_id": 62,
+      "original_description": "Solve ODE: \u0393(t) = \u0393\u2080\u00b7exp(-\u03bbt)",
+      "original_difficulty": "very_hard",
+      "substeps": [
+        {
+          "parent_step_id": 62,
+          "substep_number": 19,
+          "substep_type": "SubStepType.VERIFICATION",
+          "description": "Verify \u0393(0) = \u0393\u2080",
+          "lean_code": "\n                theorem solution_initial_condition (Gamma0 lambda : Real) (hlambda : lambda > 0) :\n                  lyapunov_function Gamma0 lambda 0 = Gamma0 := by\n                  unfold lyapunov_function\n                  rw [Real.exp_zero]\n                  ring\n                ",
+          "python_simulation": "\ndef test_initial_condition():\n    Gamma0 = 1.5\n    lambda_val = 0.7\n    \n    Gamma_0 = Gamma0 * np.exp(-lambda_val * 0)\n    assert np.isclose(Gamma_0, Gamma0)\n                ",
+          "prerequisites": [],
+          "verification_method": "Initial condition test",
+          "estimated_time": "5 minutes",
+          "confidence": 0.95,
+          "difficulty": "easy"
+        },
+        {
+          "parent_step_id": 62,
+          "substep_number": 20,
+          "substep_type": "SubStepType.LEMMA_PROOF",
+          "description": "Prove uniqueness of ODE solution",
+          "lean_code": "\n                theorem ODE_solution_unique (Gamma0 lambda : Real) (hlambda : lambda > 0) \n                                          (f g : Real -> Real) :\n                  (\u2200 t, HasDerivAt f t (-lambda * f t)) ->\n                  (\u2200 t, HasDerivAt g t (-lambda * g t)) ->\n                  f 0 = g 0 ->\n                  \u2200 t, f t = g t := by\n                  intro h_f h_g h_init\n                  apply Real.eq_of_deriv_at_zero\n                  \u00b7 intro t\n                    rw [h_f, h_g]\n                    ring\n                  \u00b7 exact h_init\n                ",
+          "python_simulation": "\ndef test_solution_uniqueness():\n    Gamma0 = 1.0\n    lambda_val = 0.5\n    \n    # Our solution\n    f = lambda t: Gamma0 * np.exp(-lambda_val * t)\n    \n    # Alternative solution (should be same)\n    g = lambda t: Gamma0 * np.exp(-lambda_val * t)\n    \n    t_values = np.linspace(0, 10, 100)\n    assert np.allclose([f(t) for t in t_values], [g(t) for t in t_values])\n                ",
+          "prerequisites": [
+            19
+          ],
+          "verification_method": "Uniqueness verification",
+          "estimated_time": "20 minutes",
+          "confidence": 0.75,
+          "difficulty": "hard"
+        }
+      ],
+      "total_substeps": 2,
+      "total_estimated_time": "0h 25m",
+      "breakdown_reason": "Solution verification requires initial condition and uniqueness proofs"
+    },
+    {
+      "step_id": 63,
+      "original_description": "Prove I(t) \u2192 \u221e as t \u2192 \u221e",
+      "original_difficulty": "very_hard",
+      "substeps": [
+        {
+          "parent_step_id": 63,
+          "substep_number": 21,
+          "substep_type": "SubStepType.CALCULATION",
+          "description": "Express I(t) = 1/\u0393(t) = exp(\u03bbt)/\u0393\u2080",
+          "lean_code": "\n                theorem improvement_formula (Gamma0 lambda : Real) (hlambda : lambda > 0) (t : Real) :\n                  improvement_metric (fun t => lyapunov_function Gamma0 lambda t) t = \n                    Real.exp (lambda * t) / Gamma0 := by\n                  unfold improvement_metric\n                  unfold lyapunov_function\n                  have h_gt : Gamma0 * Real.exp (-lambda * t) + 10^(-10) > 0 := by\n                    apply Real.add_pos\n                    * apply Real.mul_pos\n                      \u00b7 apply Real.pos_of_pos\n                      \u00b7 apply Real.exp_pos\n                    \u00b7 apply Real.pow_pos\n                  field_simp\n                  ring\n                ",
+          "python_simulation": "\ndef test_improvement_formula():\n    Gamma0 = 1.0\n    lambda_val = 0.5\n    \n    for t in np.linspace(0, 10, 20):\n        Gamma_t = Gamma0 * np.exp(-lambda_val * t)\n        I_t = 1 / Gamma_t\n        \n        # Check formula\n        I_formula = np.exp(lambda_val * t) / Gamma0\n        assert np.isclose(I_t, I_formula, rtol=1e-6)\n                ",
+          "prerequisites": [],
+          "verification_method": "Formula verification",
+          "estimated_time": "15 minutes",
+          "confidence": 0.85,
+          "difficulty": "easy"
+        },
+        {
+          "parent_step_id": 63,
+          "substep_number": 22,
+          "substep_type": "SubStepType.LEMMA_PROOF",
+          "description": "Prove exp(\u03bbt) \u2192 \u221e as t \u2192 \u221e for \u03bb > 0",
+          "lean_code": "\n                theorem exp_diverges_to_infinity (lambda : Real) (hlambda : lambda > 0) :\n                  Tendsto (fun t => Real.exp (lambda * t)) atTop atTop := by\n                  apply Real.tendsto_exp_atTop_atTop\n                  \u00b7 apply tendsto_id\n                  \u00b7 apply tendsto_const_nhds\n                  \u00b7 linarith\n                ",
+          "python_simulation": "\ndef test_exp_divergence():\n    lambda_val = 0.5\n    \n    thresholds = [10, 100, 1000, 10000]\n    \n    for threshold in thresholds:\n        t_needed = np.log(threshold) / lambda_val\n        exp_val = np.exp(lambda_val * t_needed)\n        assert exp_val >= threshold * 0.99\n                ",
+          "prerequisites": [
+            21
+          ],
+          "verification_method": "Divergence test",
+          "estimated_time": "10 minutes",
+          "confidence": 0.9,
+          "difficulty": "easy"
+        },
+        {
+          "parent_step_id": 63,
+          "substep_number": 23,
+          "substep_type": "SubStepType.TACTIC_APPLICATION",
+          "description": "Combine to prove I(t) \u2192 \u221e",
+          "lean_code": "\n                theorem improvement_diverges_complete (Gamma0 lambda : Real) \n                                                        (hlambda : lambda > 0) (hGamma0 : Gamma0 > 0) :\n                  Tendsto (fun t => improvement_metric (fun t => lyapunov_function Gamma0 lambda t) t) \n                          atTop atTop := by\n                  have h_formula := improvement_formula Gamma0 lambda hlambda\n                  have h_exp := exp_diverges_to_infinity lambda hlambda\n                  rw [h_formula]\n                  apply Real.tendsto_div_atTop\n                  \u00b7 exact h_exp\n                  \u00b7 apply tendsto_const_nhds\n                  \u00b7 linarith\n                ",
+          "python_simulation": "\ndef test_improvement_divergence():\n    Gamma0 = 1.0\n    lambda_val = 0.5\n    \n    # Test that I(t) exceeds any finite threshold\n    thresholds = [10, 100, 1000]\n    \n    for threshold in thresholds:\n        t_needed = np.log(threshold * Gamma0) / lambda_val\n        I_t = 1 / (Gamma0 * np.exp(-lambda_val * t_needed))\n        assert I_t >= threshold * 0.99\n                ",
+          "prerequisites": [
+            21
+          ],
+          "verification_method": "Complete divergence test",
+          "estimated_time": "15 minutes",
+          "confidence": 0.8,
+          "difficulty": "medium"
+        }
+      ],
+      "total_substeps": 3,
+      "total_estimated_time": "0h 40m",
+      "breakdown_reason": "Improvement divergence requires formula and limit proofs"
+    },
+    {
+      "step_id": 64,
+      "original_description": "Find t when I(t) \u2265 100",
+      "original_difficulty": "very_hard",
+      "substeps": [
+        {
+          "parent_step_id": 64,
+          "substep_number": 24,
+          "substep_type": "SubStepType.CALCULATION",
+          "description": "Find t when I(t) \u2265 100",
+          "lean_code": "\n                theorem find_100x_time (Gamma0 lambda : Real) (hlambda : lambda > 0) (hGamma0 : Gamma0 > 0) :\n                  exists t0 : Real, improvement_metric (lyapunov_function Gamma0 lambda t0) >= 100 /                          forall t >= t0, improvement_metric (lyapunov_function Gamma0 lambda t) >= 100 := by\n                ",
+          "python_simulation": null,
+          "prerequisites": [],
+          "verification_method": "Solve exp(\u03bbt) \u2265 100/\u0393\u2080",
+          "estimated_time": "30 minutes",
+          "confidence": 0.65,
+          "difficulty": "very_hard"
+        }
+      ],
+      "total_substeps": 1,
+      "total_estimated_time": "0h 30m",
+      "breakdown_reason": "Step requires verification but can be implemented directly"
+    },
+    {
+      "step_id": 65,
+      "original_description": "Complete grokking completeness proof",
+      "original_difficulty": "very_hard",
+      "substeps": [
+        {
+          "parent_step_id": 65,
+          "substep_number": 25,
+          "substep_type": "SubStepType.TACTIC_APPLICATION",
+          "description": "Complete grokking completeness proof",
+          "lean_code": "\n                constructor\n                * exact improvement_diverges\n                * exact find_100x_time\n                * intro t0\n                  apply improvement_diverges\n                  linarith [t\u2080]\n                ",
+          "python_simulation": null,
+          "prerequisites": [],
+          "verification_method": "Check complete proof",
+          "estimated_time": "30 minutes",
+          "confidence": 0.5,
+          "difficulty": "very_hard"
+        }
+      ],
+      "total_substeps": 1,
+      "total_estimated_time": "0h 30m",
+      "breakdown_reason": "Step requires verification but can be implemented directly"
+    }
+  ]
+}

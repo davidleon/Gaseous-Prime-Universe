@@ -1,0 +1,24 @@
+{
+  "timestamp": "2026-03-07T05:13:01.467115",
+  "method": "Infinite Logic Descendent Algorithm (ILDA)",
+  "ilda_analysis": {
+    "excitation": {
+      "axiom_1": "Forward Reasoning: Given context, predict next",
+      "axiom_2": "Reverse Reasoning: Given goal, find previous",
+      "axiom_3": "Bidirectional: Both directions reinforce",
+      "num_proofs": 100
+    },
+    "dissipation": {
+      "forward_entropy_reduction": 33.88366656785109,
+      "bidirectional_entropy_reduction": 48.001860971122376,
+      "improvement": 14.11819440327129
+    },
+    "precipitation": {
+      "forward_test_accuracy": 0.8923545832098139,
+      "bidirectional_test_accuracy": 0.9092964164937394,
+      "improvement": 0.01694183328392551,
+      "generalization_gap_forward": 0.05764541679018609,
+      "generalization_gap_bidirectional": 0.060703583506260594
+    },
+    "conclusion": {
+      "reversal_necessary": 

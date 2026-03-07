@@ -1,0 +1,95 @@
+{
+  "pnt_10k": {
+    "x": 10000,
+    "pi_actual": 1229,
+    "ln_x": 9.210340371976184,
+    "sigma_inv": 0.6180339887498948,
+    "denominator": 8.592306383226289,
+    "pi_classical": 1085.7362047581294,
+    "pi_fixed": 1163.8318693478832,
+    "err_classical": 143.26379524187064,
+    "err_fixed": 65.16813065211682,
+    "improvement": 2.198372023384364,
+    "relative_error_classical": 0.11656940214960995,
+    "relative_error_fixed": 0.05302533006681596
+  },
+  "pnt_100k": {
+    "x": 100000,
+    "pi_actual": 9592,
+    "err_classical": 906.1103619349633,
+    "err_fixed": 413.3863150207253,
+    "improvement": 2.1919215247595583
+  },
+  "pnt_1M": {
+    "x": 1000000,
+    "pi_actual": 78498,
+    "err_classical": 6115.586349458026,
+    "err_fixed": 2725.93897337238,
+    "improvement": 2.243478819297324,
+    "threshold": 2.236,
+    "rhs": 2735.0565069132495,
+    "exceeds_threshold": true
+  },
+  "scaled_error": {
+    "scales": [
+      10000,
+      100000,
+      1000000,
+      10000000
+    ],
+    "scaled_errors": [
+      600.2206647114101,
+      4759.285833072313,
+      37660.23866699241,
+      313017.8702036887
+    ],
+    "max_scaled": 313017.8702036887,
+    "mean_scaled": 89009.40384211621,
+    "std_scaled": 130125.70443659434,
+    "C": 573269.2790768774,
+    "all_bound": true
+  },
+  "error_bound": {
+    "C": 344319.6572240576,
+    "C_values": [
+      600.2206647114101,
+      4759.285833072313,
+      37660.23866699241,
+      313017.8702036887
+    ],
+    "all_holds": true
+  },
+  "gue_golden": {
+    "s": 1.618033988749895,
+    "density": 0.3027994351882555,
+    "expected": 0.303,
+    "error": 0.00020056481174451912,
+    "relative_error": 0.0006619300717640895
+  },
+  "gue_theoretical": {
+    "s": 0.8862269254527579,
+    "density": 0.9367973043891067,
+    "is_maximum": true
+  },
+  "gue_normalization": {
+    "integral": 1.0,
+    "error": 0.0,
+    "normalized": true
+  },
+  "gue_mode": {
+    "s_max_numerical": 0.8854854854854854,
+    "s_max_theoretical": 0.8862269254527579,
+    "error": 0.0007414399672724947,
+    "max_density": 0.9367959926163666
+  },
+  "gue_uniqueness": {
+    "s": 0.8862269254527579,
+    "second_derivative": -4.771069493398055,
+    "is_maximum": true
+  },
+  "gue_monotonicity": {
+    "increasing_before": true,
+    "decreasing_after": true,
+    "unimodal": true
+  }
+}

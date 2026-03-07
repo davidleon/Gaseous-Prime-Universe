@@ -1,0 +1,153 @@
+/home/davidl/miniconda3/lib/python3.13/site-packages/numpy/lib/_function_base_impl.py:3045: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/home/davidl/miniconda3/lib/python3.13/site-packages/numpy/lib/_function_base_impl.py:3046: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+================================================================================
+Competitive Evaluation of 2D Image Learning Approaches
+================================================================================
+
+Created 8 test images: ['horizontal_line', 'vertical_line', 'diagonal_line', 'cross', 'circle', 'checkerboard', 'gaussian_blob', 'noise']
+
+Evaluating 6 approaches:
+  - ColumnToLineEncoder
+  - HolographicEncoder
+  - HilbertCurveEncoder
+  - QuadtreeEncoder
+  - GraphEncoder
+  - ManifoldLearningEncoder
+
+================================================================================
+Evaluating: ColumnToLineEncoder
+================================================================================
+
+  horizontal_line:
+    Reconstruction quality: 0.7408
+    Spatial preservation: 0.1289
+    Integrated information: 1.0000
+    Encoding time: 0.24ms
+    Decoding time: 0.39ms
+
+  vertical_line:
+    Reconstruction quality: 0.7332
+    Spatial preservation: 0.1538
+    Integrated information: 1.0000
+    Encoding time: 0.18ms
+    Decoding time: 0.18ms
+
+  diagonal_line:
+    Reconstruction quality: 0.7211
+    Spatial preservation: 0.1114
+    Integrated information: 1.0000
+    Encoding time: 0.18ms
+    Decoding time: 0.17ms
+
+  cross:
+    Reconstruction quality: 0.7069
+    Spatial preservation: 0.0718
+    Integrated information: 1.0000
+    Encoding time: 0.17ms
+    Decoding time: 0.18ms
+
+  circle:
+    Reconstruction quality: 0.6674
+    Spatial preservation: 0.1008
+    Integrated information: 1.0000
+    Encoding time: 0.16ms
+    Decoding time: 0.17ms
+
+  checkerboard:
+    Reconstruction quality: 0.5735
+    Spatial preservation: 0.0465
+    Integrated information: 0.9529
+    Encoding time: 0.16ms
+    Decoding time: 0.17ms
+
+  gaussian_blob:
+    Reconstruction quality: 0.7439
+    Spatial preservation: 0.0190
+    Integrated information: 1.0000
+    Encoding time: 0.16ms
+    Decoding time: 0.17ms
+
+  noise:
+    Reconstruction quality: 0.7462
+    Spatial preservation: 0.0467
+    Integrated information: 0.9227
+    Encoding time: 0.16ms
+    Decoding time: 0.18ms
+
+================================================================================
+Evaluating: HolographicEncoder
+================================================================================
+
+  horizontal_line:
+    Reconstruction quality: 0.7208
+    Spatial preservation: 0.0764
+    Integrated information: 1.0000
+    Encoding time: 0.06ms
+    Decoding time: 0.04ms
+
+  vertical_line:
+    Reconstruction quality: 0.7208
+    Spatial preservation: 0.0764
+    Integrated information: 1.0000
+    Encoding time: 0.05ms
+    Decoding time: 0.03ms
+
+  diagonal_line:
+    Reconstruction quality: 0.4600
+    Spatial preservation: -0.0294
+    Integrated information: 1.0000
+    Encoding time: 0.15ms
+    Decoding time: 0.04ms
+
+  cross:
+    Reconstruction quality: 0.7181
+    Spatial preservation: 0.0834
+    Integrated information: 1.0000
+    Encoding time: 0.05ms
+    Decoding time: 0.03ms
+
+  circle:
+    Reconstruction quality: 0.8386
+    Spatial preservation: 0.4656
+    Integrated information: 1.0000
+    Encoding time: 0.06ms
+    Decoding time: 0.03ms
+
+  checkerboard:
+    Reconstruction quality: 0.7462
+    Spatial preservation: 0.2056
+    Integrated information: 1.0000
+    Encoding time: 0.05ms
+    Decoding time: 0.03ms
+
+  gaussian_blob:
+    Reconstruction quality: 0.7309
+    Spatial preservation: 0.0579
+    Integrated information: 1.0000
+    Encoding time: 0.05ms
+    Decoding time: 0.05ms
+
+  noise:
+    Reconstruction quality: 0.8569
+    Spatial preservation: -0.0122
+    Integrated information: 1.0000
+    Encoding time: 0.05ms
+    Decoding time: 0.03ms
+
+================================================================================
+Evaluating: HilbertCurveEncoder
+================================================================================
+Traceback (most recent call last):
+  File "/home/davidl/Gaseous Prime Universe/AGI/compare_2d_approaches.py", line 715, in <module>
+    results, summary = compare_approaches(image_dim=(28, 28), embedding_dim=12)
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/davidl/Gaseous Prime Universe/AGI/compare_2d_approaches.py", line 624, in compare_approaches
+    result = encoder.evaluate(image)
+  File "/home/davidl/Gaseous Prime Universe/AGI/compare_2d_approaches.py", line 61, in evaluate
+    embedding = self.encode(image)
+  File "/home/davidl/Gaseous Prime Universe/AGI/compare_2d_approaches.py", line 268, in encode
+    idx = self.hilbert_map[y, x]
+          ~~~~~~~~~~~~~~~~^^^^^^
+IndexError: index 16 is out of bounds for axis 1 with size 16

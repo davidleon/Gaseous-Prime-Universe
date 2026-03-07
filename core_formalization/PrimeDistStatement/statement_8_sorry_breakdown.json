@@ -1,0 +1,233 @@
+{
+  "total_sorries": 17,
+  "by_type": {
+    "definition": 3,
+    "computation": 1,
+    "proof": 8,
+    "derivation": 5
+  },
+  "by_complexity": {
+    "MEDIUM": 4,
+    "HIGH": 4,
+    "EXTREME": 9
+  },
+  "actionable_count": 4,
+  "critical_count": 9,
+  "sorries": [
+    {
+      "id": "s8_sorry_7_1",
+      "parent_lemma": "s8_lemma_7",
+      "description": "Define the infinite sum S = \u2211_{g=g_min}^\u221e g^(-ln \u03c3\u2082)",
+      "type": "definition",
+      "complexity": "MEDIUM",
+      "proof_strategy": "Use p-series convergence test",
+      "missing_pieces": [
+        "Determine g_min value",
+        "Handle divergence"
+      ]
+    },
+    {
+      "id": "s8_sorry_7_2",
+      "parent_lemma": "s8_lemma_7",
+      "description": "Find minimum gap size where power law holds",
+      "type": "computation",
+      "complexity": "HIGH",
+      "proof_strategy": "Statistical analysis of gap data",
+      "missing_pieces": [
+        "Rigorous analysis of power law onset"
+      ]
+    },
+    {
+      "id": "s8_sorry_7_3",
+      "parent_lemma": "s8_lemma_7",
+      "description": "Handle the fact that sum diverges (no normalization)",
+      "type": "proof",
+      "complexity": "MEDIUM",
+      "proof_strategy": "Use p-series test: \u03b1 = 0.881 < 1",
+      "missing_pieces": [
+        "Alternative normalization scheme"
+      ]
+    },
+    {
+      "id": "s8_sorry_9_1",
+      "parent_lemma": "s8_lemma_9",
+      "description": "Establish f(g) = C\u00b7g^(-ln \u03c3\u2082) rigorously",
+      "type": "proof",
+      "complexity": "EXTREME",
+      "proof_strategy": "Prove power law from first principles (requires breakthrough)",
+      "missing_pieces": [
+        "Rigorous proof of power law",
+        "Derivation from prime distribution theory",
+        "Connection to zeta function zeros"
+      ]
+    },
+    {
+      "id": "s8_sorry_9_2",
+      "parent_lemma": "s8_lemma_9",
+      "description": "Prove \u2211 f(g) diverges",
+      "type": "proof",
+      "complexity": "MEDIUM",
+      "proof_strategy": "Use p-series test: \u03b1 < 1 implies divergence",
+      "missing_pieces": [
+        "Rigorous proof of power law first"
+      ]
+    },
+    {
+      "id": "s8_sorry_9_3",
+      "parent_lemma": "s8_lemma_9",
+      "description": "What does divergence of gap frequencies mean?",
+      "type": "derivation",
+      "complexity": "HIGH",
+      "proof_strategy": "Measure theory / probability interpretation",
+      "missing_pieces": [
+        "Rigorous connection to infinitude"
+      ]
+    },
+    {
+      "id": "s8_sorry_10_1",
+      "parent_lemma": "s8_lemma_10",
+      "description": "Connect \u2211 f(g) to \u03c0\u2082(x)",
+      "type": "derivation",
+      "complexity": "EXTREME",
+      "proof_strategy": "Use Tauberian theorems or analytic continuation",
+      "missing_pieces": [
+        "Rigorous mathematical framework",
+        "Tauberian conditions",
+        "Analytic continuation of gap distribution"
+      ]
+    },
+    {
+      "id": "s8_sorry_10_2",
+      "parent_lemma": "s8_lemma_10",
+      "description": "Define measure on twin prime gaps",
+      "type": "definition",
+      "complexity": "HIGH",
+      "proof_strategy": "Construct probability measure from frequency data",
+      "missing_pieces": [
+        "Convergence proof"
+      ]
+    },
+    {
+      "id": "s8_sorry_10_3",
+      "parent_lemma": "s8_lemma_10",
+      "description": "Complete proof: divergence \u2192 infinitude",
+      "type": "proof",
+      "complexity": "EXTREME",
+      "proof_strategy": "Equivalent to proving twin prime conjecture",
+      "missing_pieces": [
+        "Proof of twin prime conjecture"
+      ]
+    },
+    {
+      "id": "s8_sorry_11_1",
+      "parent_lemma": "s8_lemma_11",
+      "description": "Define and compute twin prime constant C\u2082",
+      "type": "definition",
+      "complexity": "MEDIUM",
+      "proof_strategy": "Euler product and convergence analysis",
+      "missing_pieces": [
+        "Rigorous convergence proof"
+      ]
+    },
+    {
+      "id": "s8_sorry_11_2",
+      "parent_lemma": "s8_lemma_11",
+      "description": "Apply Selberg sieve to twin prime problem",
+      "type": "proof",
+      "complexity": "EXTREME",
+      "proof_strategy": "Develop improved sieve techniques",
+      "missing_pieces": [
+        "Exact asymptotic formula",
+        "Elimination of error terms",
+        "Connection to circle method"
+      ]
+    },
+    {
+      "id": "s8_sorry_11_3",
+      "parent_lemma": "s8_lemma_11",
+      "description": "Apply circle method to twin prime problem",
+      "type": "proof",
+      "complexity": "EXTREME",
+      "proof_strategy": "Decompose integral into major/minor arcs",
+      "missing_pieces": [
+        "Minor arc bound improvement",
+        "Weyl-type estimates",
+        "Gauss sum analysis"
+      ]
+    },
+    {
+      "id": "s8_sorry_11_4",
+      "parent_lemma": "s8_lemma_11",
+      "description": "Derive \u03c0\u2082(x) ~ 2C\u2082\u00b7x/(ln x)\u00b2",
+      "type": "proof",
+      "complexity": "EXTREME",
+      "proof_strategy": "Complete circle method analysis",
+      "missing_pieces": [
+        "Complete proof (open problem)"
+      ]
+    },
+    {
+      "id": "s8_sorry_12_1",
+      "parent_lemma": "s8_lemma_12",
+      "description": "Riemann's explicit formula for \u03c0(x)",
+      "type": "derivation",
+      "complexity": "HIGH",
+      "proof_strategy": "Use contour integration and residue theorem",
+      "missing_pieces": [
+        "Adaptation to twin primes"
+      ]
+    },
+    {
+      "id": "s8_sorry_12_2",
+      "parent_lemma": "s8_lemma_12",
+      "description": "Explicit formula for \u03c0\u2082(x) using zeta zeros",
+      "type": "derivation",
+      "complexity": "EXTREME",
+      "proof_strategy": "Adapt Riemann's method to twin primes",
+      "missing_pieces": [
+        "Complete derivation"
+      ]
+    },
+    {
+      "id": "s8_sorry_12_3",
+      "parent_lemma": "s8_lemma_12",
+      "description": "Connection between zeta zeros and random matrix theory",
+      "type": "proof",
+      "complexity": "EXTREME",
+      "proof_strategy": "Random matrix theory and operator theory",
+      "missing_pieces": [
+        "Rigorous proof of connection"
+      ]
+    },
+    {
+      "id": "s8_sorry_12_4",
+      "parent_lemma": "s8_lemma_12",
+      "description": "Derive twin prime gap distribution from zero correlations",
+      "type": "derivation",
+      "complexity": "EXTREME",
+      "proof_strategy": "Use random matrix theory + explicit formulas",
+      "missing_pieces": [
+        "Complete derivation"
+      ]
+    }
+  ],
+  "priority_order": [
+    "s8_sorry_7_1",
+    "s8_sorry_7_3",
+    "s8_sorry_9_2",
+    "s8_sorry_11_1",
+    "s8_sorry_7_2",
+    "s8_sorry_9_3",
+    "s8_sorry_10_2",
+    "s8_sorry_12_1",
+    "s8_sorry_9_1",
+    "s8_sorry_10_1",
+    "s8_sorry_10_3",
+    "s8_sorry_11_2",
+    "s8_sorry_11_3",
+    "s8_sorry_11_4",
+    "s8_sorry_12_2",
+    "s8_sorry_12_3",
+    "s8_sorry_12_4"
+  ]
+}

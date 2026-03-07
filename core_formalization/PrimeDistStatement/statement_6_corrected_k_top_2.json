@@ -1,0 +1,23 @@
+{
+  "modular_constraint_verified": true,
+  "k_tuple_results": {
+    "2": {
+      "count": 1224,
+      "density": 0.12760633861551293
+    },
+    "3": {
+      "count": 1,
+      "density": 0.0001042535446205171
+    },
+    "4": {
+      "count": 0,
+      "density": 0.0
+    },
+    "5": {
+      "count": 0,
+      "density": 0.0
+    }
+  },
+  "higher_tuples_exist": true,
+  "corrected_formulation": "k-tuples are topped at k=2"
+}

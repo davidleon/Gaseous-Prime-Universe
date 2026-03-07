@@ -1,0 +1,47 @@
+[
+  {
+    "task_type": "error_correction",
+    "input": {
+      "code": "theorem add_zero (n : Nat) : n + 0 = n := rfl",
+      "error_type": "type_mismatch",
+      "error_message": "type mismatch"
+    },
+    "output": {
+      "corrected_code": "theorem add_zero (n : Nat) : n + 0 = n := by\n  induction n with\n  | zero => rfl\n  | succ n ih => sorry",
+      "explanation": "Cannot use rfl directly because n + 0 and n are not definitionally equal. Need induction."
+    },
+    "metadata": {
+      "id": "error_001"
+    }
+  },
+  {
+    "task_type": "error_correction",
+    "input": {
+      "code": "theorem mul_comm (a b : Nat) : a * b = b * a := by\n  induction b with\n  | zero => rfl\n  | succ b ih => rw [Nat.mul_succ, ih]",
+      "error_type": "missing_step",
+      "error_message": "goals accomplished"
+    },
+    "output": {
+      "corrected_code": "theorem mul_comm (a b : Nat) : a * b = b * a := by\n  induction b with\n  | zero => rw [Nat.zero_mul]\n  | succ b ih => rw [Nat.mul_succ, ih, Nat.succ_mul]",
+      "explanation": "Missing the final rewrite to prove succ(a * b) = succ(b * a). Need to apply Nat.succ_mul."
+    },
+    "metadata": {
+      "id": "error_002"
+    }
+  },
+  {
+    "task_type": "error_correction",
+    "input": {
+      "code": "example : ∀ n : Nat, n + 1 = 1 + n := by\n  intro n\n  rw [Nat.add_comm]",
+      "error_type": "wrong_theorem",
+      "error_message": "failed to rewrite"
+    },
+    "output": {
+      "corrected_code": "example : ∀ n : Nat, n + 1 = 1 + n := by\n  intro n\n  rw [Nat.add_comm n 1]",
+      "explanation": "Nat.add_comm requires explicit arguments or use simp to automatically apply commutativity."
+    },
+    "metadata": {
+      "id": "error_003"
+    }
+  }
+]

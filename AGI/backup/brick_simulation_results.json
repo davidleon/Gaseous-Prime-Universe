@@ -1,0 +1,369 @@
+{
+  "total_simulations": 7,
+  "insights": [
+    {
+      "brick_number": 3,
+      "brick_name": "Adelic Bridge",
+      "theorem_name": "AdelicSpectralEquipartition",
+      "formalism": "\u03b3_p = \u03b3_q for all prime completions",
+      "expected_insight": "Decay constants are approximately equal across all prime completions",
+      "simulation_result": {
+        "insight": "Decay constants are approximately equal across all prime completions: \u03b3_p \u2248 \u03b3_q",
+        "mean_gamma": 0.3450610054615938,
+        "std_gamma": 0.17892076854277147,
+        "coeff_variation": 0.5185192348913091,
+        "equipartition_holds": false
+      }
+    },
+    {
+      "brick_number": 5,
+      "brick_name": "Truth Duality",
+      "theorem_name": "CheegerIITInequality",
+      "formalism": "\u03b3 \u2265 \u03a6\u00b2/8",
+      "expected_insight": "Spectral gap is bounded below by integration measure squared",
+      "simulation_result": {
+        "insight": "Spectral gap is bounded below by integration measure squared: \u03b3 \u2265 \u03a6\u00b2/8",
+        "results": [
+          {
+            "n_nodes": 10,
+            "gamma": 3.3202142771092698,
+            "phi_iit": 1.934904439788322,
+            "rhs": 0.46798189888907,
+            "inequality_holds": true
+          },
+          {
+            "n_nodes": 20,
+            "gamma": 8.016118542070547,
+            "phi_iit": 3.0002420093948348,
+            "rhs": 1.1251815143671944,
+            "inequality_holds": true
+          },
+          {
+            "n_nodes": 50,
+            "gamma": 21.482836231303278,
+            "phi_iit": 4.8949375895708185,
+            "rhs": 2.995051750724172,
+            "inequality_holds": true
+          },
+          {
+            "n_nodes": 100,
+            "gamma": 44.96848645047627,
+            "phi_iit": 7.022097029371894,
+            "rhs": 6.163730836239197,
+            "inequality_holds": true
+          }
+        ],
+        "all_inequalities_hold": true
+      }
+    },
+    {
+      "brick_number": 13,
+      "brick_name": "Contraction",
+      "theorem_name": "UniversalContraction",
+      "formalism": "E[d(T(x), 1)] < d(x, 1)",
+      "expected_insight": "Contraction mapping reduces expected distance to fixed point",
+      "simulation_result": {
+        "insight": "Contraction mapping reduces expected distance to fixed point: E[d(T(x), 1)] < d(x, 1)",
+        "results": [
+          {
+            "contraction_factor": 0.1,
+            "E_initial": 4.140177151031991,
+            "E_final": 4.140177380929089e-10,
+            "inequality_holds": true
+          },
+          {
+            "contraction_factor": 0.3,
+            "E_initial": 4.007002629197382,
+            "E_final": 2.3660949825082488e-05,
+            "inequality_holds": true
+          },
+          {
+            "contraction_factor": 0.5,
+            "E_initial": 4.0807669623826115,
+            "E_final": 0.003985123986701769,
+            "inequality_holds": true
+          },
+          {
+            "contraction_factor": 0.7,
+            "E_initial": 4.242552465620645,
+            "E_final": 0.1198416064121755,
+            "inequality_holds": true
+          }
+        ],
+        "all_contractions_hold": true
+      }
+    },
+    {
+      "brick_number": 14,
+      "brick_name": "Ergodic",
+      "theorem_name": "PrimeErgodicity",
+      "formalism": "{p^n} closure = C_Q (Kronecker Density)",
+      "expected_insight": "Prime powers are dense in finite fields",
+      "simulation_result": {
+        "insight": "Prime powers are dense in finite fields: {p^n} has high density in Z/QZ",
+        "results": [
+          {
+            "p": 2,
+            "Q": 7,
+            "density": 0.42857142857142855,
+            "unique_values": 3,
+            "deviation_from_uniform": 0.16326530612244897,
+            "is_dense": false,
+            "is_equidistributed": true
+          },
+          {
+            "p": 2,
+            "Q": 11,
+            "density": 0.9090909090909091,
+            "unique_values": 10,
+            "deviation_from_uniform": 0.016528925619834704,
+            "is_dense": true,
+            "is_equidistributed": true
+          },
+          {
+            "p": 2,
+            "Q": 13,
+            "density": 0.9230769230769231,
+            "unique_values": 12,
+            "deviation_from_uniform": 0.02366863905325444,
+            "is_dense": true,
+            "is_equidistributed": true
+          },
+          {
+            "p": 2,
+            "Q": 17,
+            "density": 0.47058823529411764,
+            "unique_values": 8,
+            "deviation_from_uniform": 0.06228373702422146,
+            "is_dense": false,
+            "is_equidistributed": true
+          },
+          {
+            "p": 3,
+            "Q": 7,
+            "density": 0.8571428571428571,
+            "unique_values": 6,
+            "deviation_from_uniform": 0.040816326530612256,
+            "is_dense": true,
+            "is_equidistributed": true
+          },
+          {
+            "p": 3,
+            "Q": 11,
+            "density": 0.45454545454545453,
+            "unique_values": 5,
+            "deviation_from_uniform": 0.09917355371900825,
+            "is_dense": false,
+            "is_equidistributed": true
+          },
+          {
+            "p": 3,
+            "Q": 13,
+            "density": 0.23076923076923078,
+            "unique_values": 3,
+            "deviation_from_uniform": 0.11834319526627216,
+            "is_dense": false,
+            "is_equidistributed": true
+          },
+          {
+            "p": 3,
+            "Q": 17,
+            "density": 0.9411764705882353,
+            "unique_values": 16,
+            "deviation_from_uniform": 0.027681660899653984,
+            "is_dense": true,
+            "is_equidistributed": true
+          },
+          {
+            "p": 5,
+            "Q": 7,
+            "density": 0.8571428571428571,
+            "unique_values": 6,
+            "deviation_from_uniform": 0.040816326530612256,
+            "is_dense": true,
+            "is_equidistributed": true
+          },
+          {
+            "p": 5,
+            "Q": 11,
+            "density": 0.45454545454545453,
+            "unique_values": 5,
+            "deviation_from_uniform": 0.09917355371900825,
+            "is_dense": false,
+            "is_equidistributed": true
+          },
+          {
+            "p": 5,
+            "Q": 13,
+            "density": 0.3076923076923077,
+            "unique_values": 4,
+            "deviation_from_uniform": 0.10650887573964497,
+            "is_dense": false,
+            "is_equidistributed": true
+          },
+          {
+            "p": 5,
+            "Q": 17,
+            "density": 0.9411764705882353,
+            "unique_values": 16,
+            "deviation_from_uniform": 0.027681660899653984,
+            "is_dense": true,
+            "is_equidistributed": true
+          },
+          {
+            "p": 7,
+            "Q": 7,
+            "density": 0.14285714285714285,
+            "unique_values": 1,
+            "deviation_from_uniform": 0.24489795918367344,
+            "is_dense": false,
+            "is_equidistributed": true
+          },
+          {
+            "p": 7,
+            "Q": 11,
+            "density": 0.9090909090909091,
+            "unique_values": 10,
+            "deviation_from_uniform": 0.016528925619834704,
+            "is_dense": true,
+            "is_equidistributed": true
+          },
+          {
+            "p": 7,
+            "Q": 13,
+            "density": 0.9230769230769231,
+            "unique_values": 12,
+            "deviation_from_uniform": 0.02366863905325444,
+            "is_dense": true,
+            "is_equidistributed": true
+          },
+          {
+            "p": 7,
+            "Q": 17,
+            "density": 0.9411764705882353,
+            "unique_values": 16,
+            "deviation_from_uniform": 0.027681660899653984,
+            "is_dense": true,
+            "is_equidistributed": true
+          }
+        ],
+        "average_density": 0.6682325027913263
+      }
+    },
+    {
+      "brick_number": 15,
+      "brick_name": "Mixing",
+      "theorem_name": "MixingSpectralGap",
+      "formalism": "D_N < C/N (Erd\u0151s-Tur\u00e1n Equidistribution)",
+      "expected_insight": "Discrepancy decays as 1/\u221aN",
+      "simulation_result": {
+        "insight": "Discrepancy decays as 1/\u221aN: D_N < C/\u221aN (Erd\u0151s-Tur\u00e1n equidistribution)",
+        "results": [
+          {
+            "N": 100,
+            "D_N": 0.7,
+            "C_sqrt_N": 1.0,
+            "inequality_holds": true
+          },
+          {
+            "N": 200,
+            "D_N": 0.49497474683058323,
+            "C_sqrt_N": 0.7071067811865475,
+            "inequality_holds": true
+          },
+          {
+            "N": 500,
+            "D_N": 0.31304951684997057,
+            "C_sqrt_N": 0.4472135954999579,
+            "inequality_holds": true
+          },
+          {
+            "N": 1000,
+            "D_N": 0.22135943621178655,
+            "C_sqrt_N": 0.31622776601683794,
+            "inequality_holds": true
+          }
+        ],
+        "all_inequalities_hold": true
+      }
+    },
+    {
+      "brick_number": 30,
+      "brick_name": "Northcott",
+      "theorem_name": "NorthcottOrbit",
+      "formalism": "h_A(n) \u2264 B implies Orbit is Finite",
+      "expected_insight": "Bounded height implies finite orbit",
+      "simulation_result": {
+        "insight": "Bounded height implies finite orbit: h_A(n) \u2264 B \u21d2 orbit is finite",
+        "results": [
+          {
+            "B": 5,
+            "points_with_h_le_B": 99,
+            "finite_orbits": 99,
+            "total_orbits": 99,
+            "all_finite": true
+          },
+          {
+            "B": 10,
+            "points_with_h_le_B": 99,
+            "finite_orbits": 99,
+            "total_orbits": 99,
+            "all_finite": true
+          },
+          {
+            "B": 20,
+            "points_with_h_le_B": 99,
+            "finite_orbits": 99,
+            "total_orbits": 99,
+            "all_finite": true
+          },
+          {
+            "B": 50,
+            "points_with_h_le_B": 99,
+            "finite_orbits": 99,
+            "total_orbits": 99,
+            "all_finite": true
+          }
+        ],
+        "all_orbits_finite": true
+      }
+    },
+    {
+      "brick_number": 32,
+      "brick_name": "6-adic Tree",
+      "theorem_name": "LasotaYorkeHateley",
+      "formalism": "||P f||_s \u2264 (5/6)||f||_s + C||f||_w",
+      "expected_insight": "Dyadic-triadic coupling provides quasi-compactness",
+      "simulation_result": {
+        "insight": "Dyadic-triadic coupling provides quasi-compactness: ||P f||_s \u2264 (5/6)||f||_s + C||f||_w",
+        "results": [
+          {
+            "n_points": 100,
+            "norm_strong": 117.30110821580821,
+            "norm_weak": 0.8316066558655922,
+            "norm_Pf_strong": 44.10989894572283,
+            "rhs": 99.4141368249047,
+            "inequality_holds": true
+          },
+          {
+            "n_points": 200,
+            "norm_strong": 228.40794949133544,
+            "norm_weak": 0.8075937678545628,
+            "norm_Pf_strong": 93.77594546866345,
+            "rhs": 191.95514544515532,
+            "inequality_holds": true
+          },
+          {
+            "n_points": 500,
+            "norm_strong": 599.3930827852234,
+            "norm_weak": 0.8419027347173416,
+            "norm_Pf_strong": 222.0801123849992,
+            "rhs": 501.1780411237876,
+            "inequality_holds": true
+          }
+        ],
+        "all_inequalities_hold": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "lemma1_excitation": {
+    "test_cases": 100,
+    "initial_entropy": 230.25850929940458,
+    "initial_energy": 100.0
+  },
+  "lemma1_dissipation": {
+    "all_positive": 

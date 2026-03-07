@@ -1,0 +1,146 @@
+{
+  "timestamp": "2026-03-07T05:09:02.490160",
+  "method": "Infinite Logic Descendent Algorithm (ILDA)",
+  "summary": {
+    "total_theorems": 4,
+    "verified": 4
+  },
+  "results": {
+    "theorem_1": {
+      "name": "Information Optimality",
+      "verified": true,
+      "excitation": {
+        "axiom": "Markov Property",
+        "description": "P(s_i | s_1,...,s_n) = P(s_i | s_1,...,s_{i-1})",
+        "proof_entropy": 56.47277761308516
+      },
+      "dissipation": {
+        "truncation_point": 5,
+        "prefix_entropy": 39.86313713864835,
+        "completion_entropy": 23.253496664211536,
+        "mutual_information": 11.626748332105763,
+        "entropy_gradient": -11.626748332105763
+      },
+      "precipitation": {
+        "mi_truncation": 11.626748332105763,
+        "theoretical_improvement": 0.25,
+        "verified": true
+      }
+    },
+    "theorem_2": {
+      "name": "Geodesic Optimality",
+      "verified": true,
+      "excitation": {
+        "axiom": "Proof Manifold Metric",
+        "description": "d(P\u2081, P\u2082) = minimum insertions/deletions",
+        "proof_length": 10
+      },
+      "dissipation": {
+        "truncation_point": 5,
+        "distance": 5,
+        "energy": 5,
+        "action_gradient": -1,
+        "geodesic": true
+      },
+      "precipitation": {
+        "actual_distance": 5,
+        "lower_bound": 5,
+        "achieves_minimum": true,
+        "verified": true
+      }
+    },
+    "theorem_4": {
+      "name": "Sample Complexity",
+      "verified": true,
+      "excitation": {
+        "axiom": "Hypothesis Space Structure",
+        "description": "|H| depends on partial proof structure",
+        "lengths": [
+          5,
+          10,
+          15,
+          20
+        ]
+      },
+      "dissipation": {
+        "lengths": [
+          5,
+          10,
+          15,
+          20
+        ],
+        "m_trunc": [
+          11.60964047443681,
+          33.219280948873624,
+          58.60335893412778,
+          86.43856189774725
+        ],
+        "m_arbitrary": [
+          160.0,
+          10240.0,
+          491520.0,
+          20971520.0
+        ],
+        "ratios": [
+          0.07256025296523007,
+          0.00324407040516344,
+          0.00011922883897731075,
+          4.121711821448672e-06
+        ],
+        "spectral_gap": [
+          2.321928094887362,
+          3.321928094887362,
+          3.9068905956085187,
+          4.321928094887363
+        ]
+      },
+      "precipitation": {
+        "asymptotic_behavior": "m_trunc / m_arbitrary \u2192 0",
+        "verified": true,
+        "improvement": 5.6803989140221754e-05
+      }
+    },
+    "theorem_5": {
+      "name": "Diffusion Convergence",
+      "verified": true,
+      "excitation": {
+        "axiom": "Diffusion as Energy Dissipation",
+        "description": "S(P + \u03b5) = S(P) + \u0394S(\u03b5)",
+        "proof_entropy": 56.47277761308516
+      },
+      "dissipation": {
+        "epsilons": [
+          0.5,
+          0.3,
+          0.1,
+          0.05,
+          0.01,
+          0.001
+        ],
+        "errors": [
+          0.06766764161830635,
+          0.04060058497098381,
+          0.013533528323661271,
+          0.0067667641618306355,
+          0.0013533528323661271,
+          0.0001353352832366127
+        ],
+        "entropy_changes": [
+          2.5,
+          1.5,
+          0.5,
+          0.25,
+          0.05,
+          0.005
+        ],
+        "convergence_rate": 2.0
+      },
+      "precipitation": {
+        "final_epsilon": 0.001,
+        "final_error": 0.0001353352832366127,
+        "convergence": "error \u2192 0 as \u03b5 \u2192 0",
+        "verified": true
+      }
+    }
+  }
+}

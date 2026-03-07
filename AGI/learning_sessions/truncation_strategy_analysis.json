@@ -1,0 +1,224 @@
+{
+  "timestamp": "2026-03-07T05:31:44.538055",
+  "method": "Infinite Logic Descendent Algorithm (ILDA)",
+  "analysis": {
+    "excitation": {
+      "axiom_1": "Information Gain: Each truncation point adds new information",
+      "axiom_2": "Diminishing Returns: Marginal gain decreases as k increases",
+      "axiom_3": "Optimal Strategy: Maximize information per training sample",
+      "proof_length": 20
+    },
+    "dissipation": {
+      "mutual_info_per_point": [
+        0.772329751303047,
+        0.6391511932854699,
+        0.5446595026060941,
+        0.471366053180552,
+        0.4114809445885169,
+        0.36084880671453023,
+        0.3169892539091411,
+        0.27830238657093975,
+        0.24369580448359907,
+        0.2123903430347439,
+        0.18381069589156396,
+        0.1575199690827349,
+        0.13317855801757728,
+        0.11051724646602179,
+        0.08931900521218805,
+        0.06940631839298128,
+        0.05063213787398679,
+        0.03287328656766986,
+        0.016025555786645995
+      ],
+      "marginal_gains": [
+        0.772329751303047,
+        -0.13317855801757716,
+        -0.0944916906793758,
+        -0.07329344942554206,
+        -0.05988510859203511,
+        -0.05063213787398668,
+        -0.04385955280538911,
+        -0.03868686733820137,
+        -0.03460658208734069,
+        -0.031305461448855154,
+        -0.028579647143179954,
+        -0.026290726808829046,
+        -0.024341411065157637,
+        -0.022661311551555485,
+        -0.02119824125383374,
+        -0.01991268681920677,
+        -0.018774180518994488,
+        -0.017758851306316936,
+        -0.016847730781023862
+      ],
+      "diminishing_returns": false,
+      "strategies_tested": 5
+    },
+    "precipitation": {
+      "best_strategy": "uniform",
+      "best_points": [
+        1,
+        4,
+        8,
+        12,
+        16
+      ],
+      "best_efficiency": 0.10916062408499591,
+      "all_results": [
+        {
+          "name": "linear",
+          "points": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          "mutual_info": 5.094496812968003,
+          "generalization": 1.1687577250482923,
+          "efficiency": 0.06151356447622591
+        },
+        {
+          "name": "exponential",
+          "points": [
+            1,
+            2,
+            4,
+            8,
+            16
+          ],
+          "mutual_info": 2.23055570273299,
+          "generalization": 0.27099919234518,
+          "efficiency": 0.054199838469036
+        },
+        {
+          "name": "arithmetic",
+          "points": [
+            2,
+            4,
+            6,
+            8,
+            10,
+            12,
+            14,
+            16,
+            18
+          ],
+          "mutual_info": 2.332375603295643,
+          "generalization": 0.7774585344318811,
+          "efficiency": 0.08638428160354233
+        },
+        {
+          "name": "adaptive",
+          "points": [
+            1,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          "mutual_info": 1.6156125245944168,
+          "generalization": 0.13344946181656436,
+          "efficiency": 0.013344946181656436
+        },
+        {
+          "name": "uniform",
+          "points": [
+            1,
+            4,
+            8,
+            12,
+            16
+          ],
+          "mutual_info": 1.7489244785302551,
+          "generalization": 0.5458031204249796,
+          "efficiency": 0.10916062408499591
+        }
+      ]
+    }
+  },
+  "theoretical_optimal_points": {
+    "5_points": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "10_points": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "15_points": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "19_points": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ]
+  },
+  "conclusion": {
+    "best_strategy": "uniform",
+    "optimal_num_points": 5,
+    "efficiency": 0.10916062408499591,
+    "recommendation": "Use uniform spacing with ~log(n) points for optimal balance. For n=20, best strategy is uniform with points [1, 4, 8, 12, 16]"
+  }
+}

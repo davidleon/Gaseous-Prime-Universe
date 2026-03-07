@@ -1,0 +1,1093 @@
+{
+  "iteration": 2,
+  "total_sorries": 30,
+  "total_sub_lemmas": 120,
+  "difficulty_distribution": {
+    "trivial": 31,
+    "easy": 31,
+    "medium": 55,
+    "hard": 3
+  },
+  "breakdowns": [
+    {
+      "original_lemma": "unknown",
+      "original_line": 80,
+      "context": "  - PMLA + spectral gap \u2192 complete convergence\n\n  - Information dissipates to ground state\n\n  - Crystallization = complete logical understanding\n\n  - Universal for any PMLA-compliant operator\n\n  \n\n  sorry -- Formal link between the PMLA and the manifold's Spectral Gap.\n\n\n\n/- ============================================================================\n\n   SECTION 2: ILDA UNIVERSALITY THEOREMS\n\n   ============================================================================\n\n\n",
+      "sub_lemmas": [
+        {
+          "name": "structure_well_defined",
+          "description": "Structure is well-defined",
+          "statement": "\u2203 (S : Structure), S is valid",
+          "proof_strategy": "Direct application of definition",
+          "difficulty": "trivial"
+        },
+        {
+          "name": "properties_hold",
+          "description": "Key properties hold",
+          "statement": "\u2200 (x : Structure), property x holds",
+          "proof_strategy": "Simple induction or direct proof using basic properties",
+          "difficulty": "easy"
+        },
+        {
+          "name": "invariant_preserved",
+          "description": "Invariant is preserved",
+          "statement": "\u2200 (x y : Structure), x \u2192 y preserves invariant",
+          "proof_strategy": "Use inductive hypothesis + case analysis",
+          "difficulty": "medium"
+        },
+        {
+          "name": "conclusion_reached",
+          "description": "Conclusion reached",
+          "statement": "\u2200 (x : Structure), conclusion x is true",
+          "proof_strategy": "Use inductive hypothesis + case analysis",
+          "difficulty": "medium"
+        }
+      ],
+      "ilda_iteration": 2
+    },
+    {
+      "original_lemma": "unknown",
+      "original_line": 175,
+      "context": "  // ILDA: Key insight:\n\n  - \u211d\u00b3 encoding preserves TM structure\n\n  - Three components uniquely identify TM\n\n  - Injective encoding \u2192 lossless representation\n\n  \n\n  sorry\n\n\n\n/-! Lemma 1.2: TM Decoding Exists\n\n-/\n\n\n\n-- Decode \u211d\u00b3 back to TM state\n",
+      "sub_lemmas": [
+        {
+          "name": "encode_component_extraction",
+          "description": "Extract components from \u211d\u00b3 encoding",
+          "statement": "\u2203 (extract : \u211d\u00b3 \u2192 \u211d \u00d7 \u211d \u00d7 \u211d), extract e = (e.1, e.2, e.3)",
+          "proof_strategy": "Direct application of definition",
+          "difficulty": "trivial"
+        },
+        {
+          "name": "component_equality_implies_tm_equality",
+          "description": "Component equality \u2192 TM equality",
+          "statement": "\u2200 (tm\u2081 tm\u2082 : TuringMachineState), tm\u2081.tape.length = tm\u2082.tape.length \u2227 tm\u2081.head_position = tm\u2082.head_position \u2227 tm\u2081.current_state = tm\u2082.current_state \u2192 tm\u2081 = tm\u2082",
+          "proof_strategy": "Simple induction or direct proof using basic properties",
+          "difficulty": "easy"
+        },
+        {
+          "name": "encode_preserves_tape_length",
+          "description": "Encoding preserves tape length",
+          "statement": "\u2200 (tm : TuringMachineState), (tm_encode tm).1 = tm.tape.length.toFloat",
+          "proof_strategy": "Direct application of definition",
+          "difficulty": "trivial"
+        },
+        {
+          "name": "encode_injective_by_components",
+          "description": "Encoding is injective via components",
+          "statement": "\u2200 (tm\u2081 tm\u2082 : TuringMachineState), tm_encode tm\u2081 = tm_encode tm\u2082 \u2192 tm\u2081 = tm\u2082",
+          "proof_strategy": "Simple induction or direct proof using basic properties",
+          "difficulty": "easy"
+        }
+      ],
+      "ilda_iteration": 2
+    },
+    {
+      "original_lemma": "unknown",
+      "original_line": 219,
+      "context": "  // ILDA: Key insight:\n\n  - decode \u2218 encode = identity\n\n  - Encoding is bijective\n\n  - Lossless round-trip guaranteed\n\n  \n\n  sorry\n\n\n\n/-! Lemma 1.3: TM Step Preserves Encoding\n\n-/\n\n\n\n-- Lemma: TM transition corresponds to ILDA step\n",
+      "sub_lemmas": [
+        {
+          "name": "structure_well_defined",
+          "description": "Structure is well-defined",
+          "statement": "\u2203 (S : Structure), S is valid",
+          "proof_strategy": "Direct application of definition",
+          "difficulty": "trivial"
+        },
+        {
+          "name": "properties_hold",
+          "description": "Key properties hold",
+          "statement": "\u2200 (x : Structure), property x holds",
+          "proof_strategy": "Simple induction or direct proof using basic properties",
+          "difficulty": "easy"
+        },
+        {
+          "name": "invariant_preserved",
+          "description": "Invariant is preserved",
+          "statement": "\u2200 (x y : Structure), x \u2192 y preserves invariant",
+          "proof_strategy": "Use inductive hypothesis + case analysis",
+          "difficulty": "medium"
+        },
+        {
+          "name": "conclusion_reached",
+          "description": "Conclusion reached",
+          "statement": "\u2200 (x : Structure), conclusion x is true",
+          "proof_strategy": "Use inductive hypothesis + case analysis",
+          "difficulty": "medium"
+        }
+      ],
+      "ilda_iteration": 2
+    },
+    {
+      "original_lemma": "unknown",
+      "original_line": 257,
+      "context": "  // ILDA: Key insight:\n\n  - TM step = ILDA step (via encoding)\n\n  - Transition preserved through encoding\n\n  - Universal step simulation\n\n  \n\n  sorry\n\n\n\n/-! Lemma 1.4: ILDA Simulates TM Computation\n\n-/\n\n\n\n-- Lemma: n ILDA steps = n TM steps\n",
+      "sub_lemmas": [
+        {
+          "name": "simulation_base_case",
+          "description": "Simulation base case (n=0)",
+          "statement": "\u2200 (tm : TuringMachineState), ilda_simulation (tm_encode tm) 0 = tm_encode tm",
+          "proof_strategy": "Simple induction or direct proof using basic properties",
+          "difficulty": "easy"
+        },
+        {
+          "name": "simulation_inductive_step",
+          "description": "Simulation inductive step (n \u2192 n+1)",
+          "statement": "\u2200 (tm : TuringMachineState) (n : \u2115), ilda_simulation (tm_encode tm) (n+1) = step_encoding (ilda_simulation (tm_encode tm) n)",
+          "proof_strategy": "Use inductive hypothesis + case analysis",
+          "difficulty": "medium"
+        },
+        {
+          "name": "tm_iteration_base",
+          "description": "TM iteration base case",
+          "statement": "\u2200 (tm : TuringMachineState), iterate 0 transition tm = tm",
+          "proof_strategy": "Direct application of definition",
+          "difficulty": "trivial"
+        },
+        {
+          "name": "simulation_by_induction",
+          "description": "Simulation correctness by induction",
+          "statement": "\u2200 (tm : TuringMachineState) (n : \u2115), ilda_simulation (tm_encode tm) n = tm_encode (iterate n transition tm)",
+          "proof_strategy": "Complex induction with multiple cases + auxiliary lemmas",
+          "difficulty": "hard"
+        }
+      ],
+      "ilda_iteration": 2
+    },
+    {
+      "original_lemma": "unknown",
+      "original_line": 297,
+      "context": "  // ILDA: Key insight:\n\n  - ILDA simulates TM step-by-step\n\n  - n steps \u2192 n steps (via encoding)\n\n  - Complete simulation for any computation\n\n  \n\n  sorry\n\n\n\n/-! Lemma 1.5: ILDA is Turing-Complete\n\n-/\n\n\n\n-- Main theorem: ILDA simulates any TM\n",
+      "sub_lemmas": [
+        {
+          "name": "simulation_base_case",
+          "description": "Simulation base case (n=0)",
+          "statement": "\u2200 (tm : TuringMachineState), ilda_simulation (tm_encode tm) 0 = tm_encode tm",
+          "proof_strategy": "Simple induction or direct proof using basic properties",
+          "difficulty": "easy"
+        },
+        {
+          "name": "simulation_inductive_step",
+          "description": "Simulation inductive step (n \u2192 n+1)",
+          "statement": "\u2200 (tm : TuringMachineState) (n : \u2115), ilda_simulation (tm_encode tm) (n+1) = step_encoding (ilda_simulation (tm_encode tm) n)",
+          "proof_strategy": "Use inductive hypothesis + case analysis",
+          "difficulty": "medium"
+        },
+        {
+          "name": "tm_iteration_base",
+          "description": "TM iteration base case",
+          "statement": "\u2200 (tm : TuringMachineState), iterate 0 transition tm = tm",
+          "proof_strategy": "Direct application of definition",
+          "difficulty": "trivial"
+        },
+        {
+          "name": "simulation_by_induction",
+          "description": "Simulation correctness by induction",
+          "statement": "\u2200 (tm : TuringMachineState) (n : \u2115), ilda_simulation (tm_encode tm) n = tm_encode (iterate n transition tm)",
+          "proof_strategy": "Complex induction with multiple cases + auxiliary lemmas",
+          "difficulty": "hard"
+        }
+      ],
+      "ilda_iteration": 2
+    },
+    {
+      "original_lemma": "unknown",
+      "original_line": 348,
+      "context": "  let encoding (tm : TuringMachineState) (i j k : \u211d) : \u211d\u00b3 :=\n\n    tm_encode tm\n\n  \n\n  -- Show simulation correctness using lemmas\n\n  intro TM transition n_steps h_step\n\n  sorry\n\n\n\n/-!\n\n\n\nTheorem 2: ILDA Decomposes Any Proof Structure\n\n\n",
+      "sub_lemmas": [
+        {
+          "name": "simulation_base_case",
+          "description": "Simulation base case (n=0)",
+          "statement": "\u2200 (tm : TuringMachineState), ilda_simulation (tm_encode tm) 0 = tm_encode tm",
+          "proof_strategy": "Simple induction or direct proof using basic properties",
+          "difficulty": "easy"
+        },
+        {
+          "name": "simulation_inductive_step",
+          "description": "Simulation inductive step (n \u2192 n+1)",
+          "statement": "\u2200 (tm : TuringMachineState) (n : \u2115), ilda_simulation (tm_encode tm) (n+1) = step_encoding (ilda_simulation (tm_encode tm) n)",
+          "proof_strategy": "Use inductive hypothesis + case analysis",
+          "difficulty": "medium"
+        },
+        {
+          "name": "tm_iteration_base",
+          "description": "TM iteration base case",
+          "statement": "\u2200 (tm : TuringMachineState), iterate 0 transition tm = tm",
+          "proof_strategy": "Direct application of definition",
+          "difficulty": "trivial"
+        },
+        {
+          "name": "simulation_by_induction",
+          "description": "Simulation correctness by induction",
+          "statement": "\u2200 (tm : TuringMachineState) (n : \u2115), ilda_simulation (tm_encode tm) n = tm_encode (iterate n transition tm)",
+          "proof_strategy": "Complex induction with multiple cases + auxiliary lemmas",
+          "difficulty": "hard"
+        }
+      ],
+      "ilda_iteration": 2
+    },
+    {
+      "original_lemma": "unknown",
+      "original_line": 488,
+      "context": "\n\n  - Well-founded decomposition possible\n\n\n\n  \n\n\n\n  sorry\n\n\n\n\n\n\n\n/-! Lemma 2.2: ILDA Collects All Nodes\n\n\n",
+      "sub_lemmas": [
+        {
+          "name": "structure_well_defined",
+          "description": "Structure is well-defined",
+          "statement": "\u2203 (S : Structure), S is valid",
+          "proof_strategy": "Direct application of definition",
+          "difficulty": "trivial"
+        },
+        {
+          "name": "properties_hold",
+          "description": "Key properties hold",
+          "statement": "\u2200 (x : Structure), property x holds",
+          "proof_strategy": "Simple induction or direct proof using basic properties",
+          "difficulty": "easy"
+        },
+        {
+          "name": "invariant_preserved",
+          "description": "Invariant is preserved",
+          "statement": "\u2200 (x y : Structure), x \u2192 y preserves invariant",
+          "proof_strategy": "Use inductive hypothesis + case analysis",
+          "difficulty": "medium"
+        },
+        {
+          "name": "conclusion_reached",
+          "description": "Conclusion reached",
+          "statement": "\u2200 (x : Structure), conclusion x is true",
+          "proof_strategy": "Use inductive hypothesis + case analysis",
+          "difficulty": "medium"
+        }
+      ],
+      "ilda_iteration": 2
+    },
+    {
+      "original_lemma": "unknown",
+      "original_line": 564,
+      "context": "\n\n  - Every node visited and recorded\n\n\n\n  \n\n\n\n  sorry\n\n\n\n\n\n\n\n/-! Lemma 2.3: Leaf Nodes are Irreducible\n\n\n",
+      "sub_lemmas": [
+        {
+          "name": "structure_well_defined",
+          "description": "Structure is well-defined",
+          "statement": "\u2203 (S : Structure), S is valid",
+          "proof_strategy": "Direct application of definition",
+          "difficulty": "trivial"
+        },
+        {
+          "name": "properties_hold",
+          "description": "Key properties hold",
+          "statement": "\u2200 (x : Structure), property x holds",
+          "proof_strategy": "Simple induction or direct proof using basic properties",
+          "difficulty": "easy"
+        },
+        {
+          "name": "invariant_preserved",
+          "description": "Invariant is preserved",
+          "statement": "\u2200 (x y : Structure), x \u2192 y preserves invariant",
+          "proof_strategy": "Use inductive hypothesis + case analysis",
+          "difficulty": "medium"
+        },
+        {
+          "name": "conclusion_reached",
+          "description": "Conclusion reached",
+          "statement": "\u2200 (x : Structure), conclusion x is true",
+          "proof_strategy": "Use inductive hypothesis + case analysis",
+          "difficulty": "medium"
+        }
+      ],
+      "ilda_iteration": 2
+    },
+    {
+      "original_lemma": "unknown",
+      "original_line": 636,
+      "context": "\n\n  - Foundation of proof tree\n\n\n\n  \n\n\n\n  sorry\n\n\n\n\n\n\n\n/-! Lemma 2.4: ILDA Extracts All Leaves\n\n\n",
+      "sub_lemmas": [
+        {
+          "name": "structure_well_defined",
+          "description": "Structure is well-defined",
+          "statement": "\u2203 (S : Structure), S is valid",
+          "proof_strategy": "Direct application of definition",
+          "difficulty": "trivial"
+        },
+        {
+          "name": "properties_hold",
+          "description": "Key properties hold",
+          "statement": "\u2200 (x : Structure), property x holds",
+          "proof_strategy": "Simple induction or direct proof using basic properties",
+          "difficulty": "easy"
+        },
+        {
+          "name": "invariant_preserved",
+          "description": "Invariant is preserved",
+          "statement": "\u2200 (x y : Structure), x \u2192 y preserves invariant",
+          "proof_strategy": "Use inductive hypothesis + case analysis",
+          "difficulty": "medium"
+        },
+        {
+          "name": "conclusion_reached",
+          "description": "Conclusion reached",
+          "statement": "\u2200 (x : Structure), conclusion x is true",
+          "proof_strategy": "Use inductive hypothesis + case analysis",
+          "difficulty": "medium"
+        }
+      ],
+      "ilda_iteration": 2
+    },
+    {
+      "original_lemma": "unknown",
+      "original_line": 708,
+      "context": "\n\n  - Pure irreducible components\n\n\n\n  \n\n\n\n  sorry\n\n\n\n\n\n\n\n/-! Lemma 2.5: ILDA Decomposition is Complete\n\n\n",
+      "sub_lemmas": [
+        {
+          "name": "structure_well_defined",
+          "description": "Structure is well-defined",
+          "statement": "\u2203 (S : Structure), S is valid",
+          "proof_strategy": "Direct application of definition",
+          "difficulty": "trivial"
+        },
+        {
+          "name": "properties_hold",
+          "description": "Key properties hold",
+          "statement": "\u2200 (x : Structure), property x holds",
+          "proof_strategy": "Simple induction or direct proof using basic properties",
+          "difficulty": "easy"
+        },
+        {
+          "name": "invariant_preserved",
+          "description": "Invariant is preserved",
+          "statement": "\u2200 (x y : Structure), x \u2192 y preserves invariant",
+          "proof_strategy": "Use inductive hypothesis + case analysis",
+          "difficulty": "medium"
+        },
+        {
+          "name": "conclusion_reached",
+          "description": "Conclusion reached",
+          "statement": "\u2200 (x : Structure), conclusion x is true",
+          "proof_strategy": "Use inductive hypothesis + case analysis",
+          "difficulty": "medium"
+        }
+      ],
+      "ilda_iteration": 2
+    },
+    {
+      "original_lemma": "unknown",
+      "original_line": 814,
+      "context": "\n\n      exact ilda_extracts_leaves_only proof node h_in_decomp\n\n\n\n    \u00b7 -- Node is axiom (by Lemma 2.3)\n\n\n\n      sorry\n\n\n\n/-!\n\nTheorem 3: ILDA is Complete for First-Order Logic\n\n\n\nStatement: ILDA can analyze and decompose any first-order logic\n",
+      "sub_lemmas": [
+        {
+          "name": "structure_well_defined",
+          "description": "Structure is well-defined",
+          "statement": "\u2203 (S : Structure), S is valid",
+          "proof_strategy": "Direct application of definition",
+          "difficulty": "trivial"
+        },
+        {
+          "name": "properties_hold",
+          "description": "Key properties hold",
+          "statement": "\u2200 (x : Structure), property x holds",
+          "proof_strategy": "Simple induction or direct proof using basic properties",
+          "difficulty": "easy"
+        },
+        {
+          "name": "invariant_preserved",
+          "description": "Invariant is preserved",
+          "statement": "\u2200 (x y : Structure), x \u2192 y preserves invariant",
+          "proof_strategy": "Use inductive hypothesis + case analysis",
+          "difficulty": "medium"
+        },
+        {
+          "name": "conclusion_reached",
+          "description": "Conclusion reached",
+          "statement": "\u2200 (x : Structure), conclusion x is true",
+          "proof_strategy": "Use inductive hypothesis + case analysis",
+          "difficulty": "medium"
+        }
+      ],
+      "ilda_iteration": 2
+    },
+    {
+      "original_lemma": "unknown",
+      "original_line": 890,
+      "context": "  - ILDA can analyze any FOL formula\n\n  - Recursive analysis handles nested structure\n\n  - Complete extraction of logical components\n\n  - Universal for first-order logic\n\n  \n\n  sorry\n\n\n\n/-!\n\nTheorem 4: ILDA Simulates Lambda Calculus\n\n\n\nStatement: ILDA can simulate lambda calculus terms, showing it\n",
+      "sub_lemmas": [
+        {
+          "name": "structure_well_defined",
+          "description": "Structure is well-defined",
+          "statement": "\u2203 (S : Structure), S is valid",
+          "proof_strategy": "Direct application of definition",
+          "difficulty": "trivial"
+        },
+        {
+          "name": "properties_hold",
+          "description": "Key properties hold",
+          "statement": "\u2200 (x : Structure), property x holds",
+          "proof_strategy": "Simple induction or direct proof using basic properties",
+          "difficulty": "easy"
+        },
+        {
+          "name": "invariant_preserved",
+          "description": "Invariant is preserved",
+          "statement": "\u2200 (x y : Structure), x \u2192 y preserves invariant",
+          "proof_strategy": "Use inductive hypothesis + case analysis",
+          "difficulty": "medium"
+        },
+        {
+          "name": "conclusion_reached",
+          "description": "Conclusion reached",
+          "statement": "\u2200 (x : Structure), conclusion x is true",
+          "proof_strategy": "Use inductive hypothesis + case analysis",
+          "difficulty": "medium"
+        }
+      ],
+      "ilda_iteration": 2
+    },
+    {
+      "original_lemma": "unknown",
+      "original_line": 972,
+      "context": "  - ILDA simulates lambda calculus\n\n  - Beta-reduction = dissipation phase\n\n  - Normalization = precipitation phase\n\n  - Universal for functional computation\n\n  \n\n  sorry\n\n\n\n/-!\n\nTheorem 5: ILDA Universal Knowledge Extraction\n\n\n\nStatement: ILDA can extract knowledge from any information source,\n",
+      "sub_lemmas": [
+        {
+          "name": "structure_well_defined",
+          "description": "Structure is well-defined",
+          "statement": "\u2203 (S : Structure), S is valid",
+          "proof_strategy": "Direct application of definition",
+          "difficulty": "trivial"
+        },
+        {
+          "name": "properties_hold",
+          "description": "Key properties hold",
+          "statement": "\u2200 (x : Structure), property x holds",
+          "proof_strategy": "Simple induction or direct proof using basic properties",
+          "difficulty": "easy"
+        },
+        {
+          "name": "invariant_preserved",
+          "description": "Invariant is preserved",
+          "statement": "\u2200 (x y : Structure), x \u2192 y preserves invariant",
+          "proof_strategy": "Use inductive hypothesis + case analysis",
+          "difficulty": "medium"
+        },
+        {
+          "name": "conclusion_reached",
+          "description": "Conclusion reached",
+          "statement": "\u2200 (x : Structure), conclusion x is true",
+          "proof_strategy": "Use inductive hypothesis + case analysis",
+          "difficulty": "medium"
+        }
+      ],
+      "ilda_iteration": 2
+    },
+    {
+      "original_lemma": "unknown",
+      "original_line": 1046,
+      "context": "  - ILDA = universal knowledge extractor\n\n  - Three phases = complete extraction process\n\n  - Works for any knowledge structure\n\n  - Fundamental to intelligence\n\n  \n\n  sorry\n\n\n\n/-!\n\nTheorem 6: ILDA is Universally Decomposable\n\n\n\nStatement: Any mathematical structure can be decomposed using ILDA,\n",
+      "sub_lemmas": [
+        {
+          "name": "structure_well_defined",
+          "description": "Structure is well-defined",
+          "statement": "\u2203 (S : Structure), S is valid",
+          "proof_strategy": "Direct application of definition",
+          "difficulty": "trivial"
+        },
+        {
+          "name": "properties_hold",
+          "description": "Key properties hold",
+          "statement": "\u2200 (x : Structure), property x holds",
+          "proof_strategy": "Simple induction or direct proof using basic properties",
+          "difficulty": "easy"
+        },
+        {
+          "name": "invariant_preserved",
+          "description": "Invariant is preserved",
+          "statement": "\u2200 (x y : Structure), x \u2192 y preserves invariant",
+          "proof_strategy": "Use inductive hypothesis + case analysis",
+          "difficulty": "medium"
+        },
+        {
+          "name": "conclusion_reached",
+          "description": "Conclusion reached",
+          "statement": "\u2200 (x : Structure), conclusion x is true",
+          "proof_strategy": "Use inductive hypothesis + case analysis",
+          "difficulty": "medium"
+        }
+      ],
+      "ilda_iteration": 2
+    },
+    {
+      "original_lemma": "unknown",
+      "original_line": 1123,
+      "context": "  - ILDA = universal decomposition operator\n\n  - Works for any mathematical structure\n\n  - Atomic components = fundamental building blocks\n\n  - Complete decomposition = complete understanding\n\n  \n\n  sorry\n\n\n\n/- ============================================================================\n\n   SECTION 3: ILDA PROVES ITSELF: SELF-REFERENTIAL UNIVERSALITY PROOF\n\n   ============================================================================\n\n\n",
+      "sub_lemmas": [
+        {
+          "name": "structure_well_defined",
+          "description": "Structure is well-defined",
+          "statement": "\u2203 (S : Structure), S is valid",
+          "proof_strategy": "Direct application of definition",
+          "difficulty": "trivial"
+        },
+        {
+          "name": "properties_hold",
+          "description": "Key properties hold",
+          "statement": "\u2200 (x : Structure), property x holds",
+          "proof_strategy": "Simple induction or direct proof using basic properties",
+          "difficulty": "easy"
+        },
+        {
+          "name": "invariant_preserved",
+          "description": "Invariant is preserved",
+          "statement": "\u2200 (x y : Structure), x \u2192 y preserves invariant",
+          "proof_strategy": "Use inductive hypothesis + case analysis",
+          "difficulty": "medium"
+        },
+        {
+          "name": "conclusion_reached",
+          "description": "Conclusion reached",
+          "statement": "\u2200 (x : Structure), conclusion x is true",
+          "proof_strategy": "Use inductive hypothesis + case analysis",
+          "difficulty": "medium"
+        }
+      ],
+      "ilda_iteration": 2
+    },
+    {
+      "original_lemma": "unknown",
+      "original_line": 1589,
+      "context": "  \n\n  constructor\n\n  \u00b7 -- Turing completeness\n\n    intro TM\n\n    -- By Theorem 1, ILDA simulates any TM\n\n    sorry\n\n  \u00b7 -- Proof decomposition\n\n    intro proof\n\n    -- By Theorem 2, ILDA decomposes any proof\n\n    sorry\n\n  \u00b7 -- FOL completeness\n",
+      "sub_lemmas": [
+        {
+          "name": "structure_well_defined",
+          "description": "Structure is well-defined",
+          "statement": "\u2203 (S : Structure), S is valid",
+          "proof_strategy": "Direct application of definition",
+          "difficulty": "trivial"
+        },
+        {
+          "name": "properties_hold",
+          "description": "Key properties hold",
+          "statement": "\u2200 (x : Structure), property x holds",
+          "proof_strategy": "Simple induction or direct proof using basic properties",
+          "difficulty": "easy"
+        },
+        {
+          "name": "invariant_preserved",
+          "description": "Invariant is preserved",
+          "statement": "\u2200 (x y : Structure), x \u2192 y preserves invariant",
+          "proof_strategy": "Use inductive hypothesis + case analysis",
+          "difficulty": "medium"
+        },
+        {
+          "name": "conclusion_reached",
+          "description": "Conclusion reached",
+          "statement": "\u2200 (x : Structure), conclusion x is true",
+          "proof_strategy": "Use inductive hypothesis + case analysis",
+          "difficulty": "medium"
+        }
+      ],
+      "ilda_iteration": 2
+    },
+    {
+      "original_lemma": "unknown",
+      "original_line": 1593,
+      "context": "    -- By Theorem 1, ILDA simulates any TM\n\n    sorry\n\n  \u00b7 -- Proof decomposition\n\n    intro proof\n\n    -- By Theorem 2, ILDA decomposes any proof\n\n    sorry\n\n  \u00b7 -- FOL completeness\n\n    intro formula\n\n    -- By Theorem 3, ILDA analyzes any FOL formula\n\n    sorry\n\n  \u00b7 -- Lambda completeness\n",
+      "sub_lemmas": [
+        {
+          "name": "structure_well_defined",
+          "description": "Structure is well-defined",
+          "statement": "\u2203 (S : Structure), S is valid",
+          "proof_strategy": "Direct application of definition",
+          "difficulty": "trivial"
+        },
+        {
+          "name": "properties_hold",
+          "description": "Key properties hold",
+          "statement": "\u2200 (x : Structure), property x holds",
+          "proof_strategy": "Simple induction or direct proof using basic properties",
+          "difficulty": "easy"
+        },
+        {
+          "name": "invariant_preserved",
+          "description": "Invariant is preserved",
+          "statement": "\u2200 (x y : Structure), x \u2192 y preserves invariant",
+          "proof_strategy": "Use inductive hypothesis + case analysis",
+          "difficulty": "medium"
+        },
+        {
+          "name": "conclusion_reached",
+          "description": "Conclusion reached",
+          "statement": "\u2200 (x : Structure), conclusion x is true",
+          "proof_strategy": "Use inductive hypothesis + case analysis",
+          "difficulty": "medium"
+        }
+      ],
+      "ilda_iteration": 2
+    },
+    {
+      "original_lemma": "unknown",
+      "original_line": 1597,
+      "context": "    -- By Theorem 2, ILDA decomposes any proof\n\n    sorry\n\n  \u00b7 -- FOL completeness\n\n    intro formula\n\n    -- By Theorem 3, ILDA analyzes any FOL formula\n\n    sorry\n\n  \u00b7 -- Lambda completeness\n\n    intro term\n\n    -- By Theorem 4, ILDA reduces any lambda term\n\n    sorry\n\n  \u00b7 -- Knowledge extraction\n",
+      "sub_lemmas": [
+        {
+          "name": "structure_well_defined",
+          "description": "Structure is well-defined",
+          "statement": "\u2203 (S : Structure), S is valid",
+          "proof_strategy": "Direct application of definition",
+          "difficulty": "trivial"
+        },
+        {
+          "name": "properties_hold",
+          "description": "Key properties hold",
+          "statement": "\u2200 (x : Structure), property x holds",
+          "proof_strategy": "Simple induction or direct proof using basic properties",
+          "difficulty": "easy"
+        },
+        {
+          "name": "invariant_preserved",
+          "description": "Invariant is preserved",
+          "statement": "\u2200 (x y : Structure), x \u2192 y preserves invariant",
+          "proof_strategy": "Use inductive hypothesis + case analysis",
+          "difficulty": "medium"
+        },
+        {
+          "name": "conclusion_reached",
+          "description": "Conclusion reached",
+          "statement": "\u2200 (x : Structure), conclusion x is true",
+          "proof_strategy": "Use inductive hypothesis + case analysis",
+          "difficulty": "medium"
+        }
+      ],
+      "ilda_iteration": 2
+    },
+    {
+      "original_lemma": "unknown",
+      "original_line": 1601,
+      "context": "    -- By Theorem 3, ILDA analyzes any FOL formula\n\n    sorry\n\n  \u00b7 -- Lambda completeness\n\n    intro term\n\n    -- By Theorem 4, ILDA reduces any lambda term\n\n    sorry\n\n  \u00b7 -- Knowledge extraction\n\n    intro source\n\n    -- By Theorem 5, ILDA extracts all knowledge\n\n    sorry\n\n  \u00b7 -- Structural decomposition\n",
+      "sub_lemmas": [
+        {
+          "name": "structure_well_defined",
+          "description": "Structure is well-defined",
+          "statement": "\u2203 (S : Structure), S is valid",
+          "proof_strategy": "Direct application of definition",
+          "difficulty": "trivial"
+        },
+        {
+          "name": "properties_hold",
+          "description": "Key properties hold",
+          "statement": "\u2200 (x : Structure), property x holds",
+          "proof_strategy": "Simple induction or direct proof using basic properties",
+          "difficulty": "easy"
+        },
+        {
+          "name": "invariant_preserved",
+          "description": "Invariant is preserved",
+          "statement": "\u2200 (x y : Structure), x \u2192 y preserves invariant",
+          "proof_strategy": "Use inductive hypothesis + case analysis",
+          "difficulty": "medium"
+        },
+        {
+          "name": "conclusion_reached",
+          "description": "Conclusion reached",
+          "statement": "\u2200 (x : Structure), conclusion x is true",
+          "proof_strategy": "Use inductive hypothesis + case analysis",
+          "difficulty": "medium"
+        }
+      ],
+      "ilda_iteration": 2
+    },
+    {
+      "original_lemma": "unknown",
+      "original_line": 1605,
+      "context": "    -- By Theorem 4, ILDA reduces any lambda term\n\n    sorry\n\n  \u00b7 -- Knowledge extraction\n\n    intro source\n\n    -- By Theorem 5, ILDA extracts all knowledge\n\n    sorry\n\n  \u00b7 -- Structural decomposition\n\n    intro structure\n\n    -- By Theorem 6, ILDA decomposes any structure\n\n    sorry\n\n  \u00b7 -- Self-referential universality\n",
+      "sub_lemmas": [
+        {
+          "name": "structure_well_defined",
+          "description": "Structure is well-defined",
+          "statement": "\u2203 (S : Structure), S is valid",
+          "proof_strategy": "Direct application of definition",
+          "difficulty": "trivial"
+        },
+        {
+          "name": "properties_hold",
+          "description": "Key properties hold",
+          "statement": "\u2200 (x : Structure), property x holds",
+          "proof_strategy": "Simple induction or direct proof using basic properties",
+          "difficulty": "easy"
+        },
+        {
+          "name": "invariant_preserved",
+          "description": "Invariant is preserved",
+          "statement": "\u2200 (x y : Structure), x \u2192 y preserves invariant",
+          "proof_strategy": "Use inductive hypothesis + case analysis",
+          "difficulty": "medium"
+        },
+        {
+          "name": "conclusion_reached",
+          "description": "Conclusion reached",
+          "statement": "\u2200 (x : Structure), conclusion x is true",
+          "proof_strategy": "Use inductive hypothesis + case analysis",
+          "difficulty": "medium"
+        }
+      ],
+      "ilda_iteration": 2
+    },
+    {
+      "original_lemma": "unknown",
+      "original_line": 1609,
+      "context": "    -- By Theorem 5, ILDA extracts all knowledge\n\n    sorry\n\n  \u00b7 -- Structural decomposition\n\n    intro structure\n\n    -- By Theorem 6, ILDA decomposes any structure\n\n    sorry\n\n  \u00b7 -- Self-referential universality\n\n    intro domain\n\n    -- By Theorem 7, ILDA proves ILDA using ILDA\n\n    sorry\n\n  \u00b7 -- Fundamental computation structure\n",
+      "sub_lemmas": [
+        {
+          "name": "structure_well_defined",
+          "description": "Structure is well-defined",
+          "statement": "\u2203 (S : Structure), S is valid",
+          "proof_strategy": "Direct application of definition",
+          "difficulty": "trivial"
+        },
+        {
+          "name": "properties_hold",
+          "description": "Key properties hold",
+          "statement": "\u2200 (x : Structure), property x holds",
+          "proof_strategy": "Simple induction or direct proof using basic properties",
+          "difficulty": "easy"
+        },
+        {
+          "name": "invariant_preserved",
+          "description": "Invariant is preserved",
+          "statement": "\u2200 (x y : Structure), x \u2192 y preserves invariant",
+          "proof_strategy": "Use inductive hypothesis + case analysis",
+          "difficulty": "medium"
+        },
+        {
+          "name": "conclusion_reached",
+          "description": "Conclusion reached",
+          "statement": "\u2200 (x : Structure), conclusion x is true",
+          "proof_strategy": "Use inductive hypothesis + case analysis",
+          "difficulty": "medium"
+        }
+      ],
+      "ilda_iteration": 2
+    },
+    {
+      "original_lemma": "unknown",
+      "original_line": 1613,
+      "context": "    -- By Theorem 6, ILDA decomposes any structure\n\n    sorry\n\n  \u00b7 -- Self-referential universality\n\n    intro domain\n\n    -- By Theorem 7, ILDA proves ILDA using ILDA\n\n    sorry\n\n  \u00b7 -- Fundamental computation structure\n\n    intro computation_model\n\n    -- By Theorem 8, ILDA = structure of universal computation\n\n    sorry\n\n  \u00b7 -- G\u00f6delian completeness\n",
+      "sub_lemmas": [
+        {
+          "name": "structure_well_defined",
+          "description": "Structure is well-defined",
+          "statement": "\u2203 (S : Structure), S is valid",
+          "proof_strategy": "Direct application of definition",
+          "difficulty": "trivial"
+        },
+        {
+          "name": "properties_hold",
+          "description": "Key properties hold",
+          "statement": "\u2200 (x : Structure), property x holds",
+          "proof_strategy": "Simple induction or direct proof using basic properties",
+          "difficulty": "easy"
+        },
+        {
+          "name": "invariant_preserved",
+          "description": "Invariant is preserved",
+          "statement": "\u2200 (x y : Structure), x \u2192 y preserves invariant",
+          "proof_strategy": "Use inductive hypothesis + case analysis",
+          "difficulty": "medium"
+        },
+        {
+          "name": "conclusion_reached",
+          "description": "Conclusion reached",
+          "statement": "\u2200 (x : Structure), conclusion x is true",
+          "proof_strategy": "Use inductive hypothesis + case analysis",
+          "difficulty": "medium"
+        }
+      ],
+      "ilda_iteration": 2
+    },
+    {
+      "original_lemma": "unknown",
+      "original_line": 1617,
+      "context": "    -- By Theorem 7, ILDA proves ILDA using ILDA\n\n    sorry\n\n  \u00b7 -- Fundamental computation structure\n\n    intro computation_model\n\n    -- By Theorem 8, ILDA = structure of universal computation\n\n    sorry\n\n  \u00b7 -- G\u00f6delian completeness\n\n    intro system h_ilda\n\n    -- By Theorem 9, ILDA achieves G\u00f6delian completeness\n\n    sorry\n\n\n",
+      "sub_lemmas": [
+        {
+          "name": "structure_well_defined",
+          "description": "Structure is well-defined",
+          "statement": "\u2203 (S : Structure), S is valid",
+          "proof_strategy": "Direct application of definition",
+          "difficulty": "trivial"
+        },
+        {
+          "name": "properties_hold",
+          "description": "Key properties hold",
+          "statement": "\u2200 (x : Structure), property x holds",
+          "proof_strategy": "Simple induction or direct proof using basic properties",
+          "difficulty": "easy"
+        },
+        {
+          "name": "invariant_preserved",
+          "description": "Invariant is preserved",
+          "statement": "\u2200 (x y : Structure), x \u2192 y preserves invariant",
+          "proof_strategy": "Use inductive hypothesis + case analysis",
+          "difficulty": "medium"
+        },
+        {
+          "name": "conclusion_reached",
+          "description": "Conclusion reached",
+          "statement": "\u2200 (x : Structure), conclusion x is true",
+          "proof_strategy": "Use inductive hypothesis + case analysis",
+          "difficulty": "medium"
+        }
+      ],
+      "ilda_iteration": 2
+    },
+    {
+      "original_lemma": "unknown",
+      "original_line": 1621,
+      "context": "    -- By Theorem 8, ILDA = structure of universal computation\n\n    sorry\n\n  \u00b7 -- G\u00f6delian completeness\n\n    intro system h_ilda\n\n    -- By Theorem 9, ILDA achieves G\u00f6delian completeness\n\n    sorry\n\n\n\n/-!\n\nProfound Theorem: ILDA is Fundamentally Universal\n\n\n\nStatement: ILDA is universal across computation, logic, proof,\n",
+      "sub_lemmas": [
+        {
+          "name": "structure_well_defined",
+          "description": "Structure is well-defined",
+          "statement": "\u2203 (S : Structure), S is valid",
+          "proof_strategy": "Direct application of definition",
+          "difficulty": "trivial"
+        },
+        {
+          "name": "properties_hold",
+          "description": "Key properties hold",
+          "statement": "\u2200 (x : Structure), property x holds",
+          "proof_strategy": "Simple induction or direct proof using basic properties",
+          "difficulty": "easy"
+        },
+        {
+          "name": "invariant_preserved",
+          "description": "Invariant is preserved",
+          "statement": "\u2200 (x y : Structure), x \u2192 y preserves invariant",
+          "proof_strategy": "Use inductive hypothesis + case analysis",
+          "difficulty": "medium"
+        },
+        {
+          "name": "conclusion_reached",
+          "description": "Conclusion reached",
+          "statement": "\u2200 (x : Structure), conclusion x is true",
+          "proof_strategy": "Use inductive hypothesis + case analysis",
+          "difficulty": "medium"
+        }
+      ],
+      "ilda_iteration": 2
+    },
+    {
+      "original_lemma": "unknown",
+      "original_line": 1693,
+      "context": "  \n\n  constructor\n\n  \u00b7 -- Turing completeness\n\n    intro TM\n\n    -- By Theorem 1, ILDA simulates any TM\n\n    sorry\n\n  \u00b7 -- Proof decomposition\n\n    intro proof\n\n    -- By Theorem 2, ILDA decomposes any proof\n\n    sorry\n\n  \u00b7 -- FOL completeness\n",
+      "sub_lemmas": [
+        {
+          "name": "structure_well_defined",
+          "description": "Structure is well-defined",
+          "statement": "\u2203 (S : Structure), S is valid",
+          "proof_strategy": "Direct application of definition",
+          "difficulty": "trivial"
+        },
+        {
+          "name": "properties_hold",
+          "description": "Key properties hold",
+          "statement": "\u2200 (x : Structure), property x holds",
+          "proof_strategy": "Simple induction or direct proof using basic properties",
+          "difficulty": "easy"
+        },
+        {
+          "name": "invariant_preserved",
+          "description": "Invariant is preserved",
+          "statement": "\u2200 (x y : Structure), x \u2192 y preserves invariant",
+          "proof_strategy": "Use inductive hypothesis + case analysis",
+          "difficulty": "medium"
+        },
+        {
+          "name": "conclusion_reached",
+          "description": "Conclusion reached",
+          "statement": "\u2200 (x : Structure), conclusion x is true",
+          "proof_strategy": "Use inductive hypothesis + case analysis",
+          "difficulty": "medium"
+        }
+      ],
+      "ilda_iteration": 2
+    },
+    {
+      "original_lemma": "unknown",
+      "original_line": 1697,
+      "context": "    -- By Theorem 1, ILDA simulates any TM\n\n    sorry\n\n  \u00b7 -- Proof decomposition\n\n    intro proof\n\n    -- By Theorem 2, ILDA decomposes any proof\n\n    sorry\n\n  \u00b7 -- FOL completeness\n\n    intro formula\n\n    -- By Theorem 3, ILDA analyzes any FOL formula\n\n    sorry\n\n  \u00b7 -- Lambda completeness\n",
+      "sub_lemmas": [
+        {
+          "name": "structure_well_defined",
+          "description": "Structure is well-defined",
+          "statement": "\u2203 (S : Structure), S is valid",
+          "proof_strategy": "Direct application of definition",
+          "difficulty": "trivial"
+        },
+        {
+          "name": "properties_hold",
+          "description": "Key properties hold",
+          "statement": "\u2200 (x : Structure), property x holds",
+          "proof_strategy": "Simple induction or direct proof using basic properties",
+          "difficulty": "easy"
+        },
+        {
+          "name": "invariant_preserved",
+          "description": "Invariant is preserved",
+          "statement": "\u2200 (x y : Structure), x \u2192 y preserves invariant",
+          "proof_strategy": "Use inductive hypothesis + case analysis",
+          "difficulty": "medium"
+        },
+        {
+          "name": "conclusion_reached",
+          "description": "Conclusion reached",
+          "statement": "\u2200 (x : Structure), conclusion x is true",
+          "proof_strategy": "Use inductive hypothesis + case analysis",
+          "difficulty": "medium"
+        }
+      ],
+      "ilda_iteration": 2
+    },
+    {
+      "original_lemma": "unknown",
+      "original_line": 1701,
+      "context": "    -- By Theorem 2, ILDA decomposes any proof\n\n    sorry\n\n  \u00b7 -- FOL completeness\n\n    intro formula\n\n    -- By Theorem 3, ILDA analyzes any FOL formula\n\n    sorry\n\n  \u00b7 -- Lambda completeness\n\n    intro term\n\n    -- By Theorem 4, ILDA reduces any lambda term\n\n    sorry\n\n  \u00b7 -- Knowledge extraction\n",
+      "sub_lemmas": [
+        {
+          "name": "structure_well_defined",
+          "description": "Structure is well-defined",
+          "statement": "\u2203 (S : Structure), S is valid",
+          "proof_strategy": "Direct application of definition",
+          "difficulty": "trivial"
+        },
+        {
+          "name": "properties_hold",
+          "description": "Key properties hold",
+          "statement": "\u2200 (x : Structure), property x holds",
+          "proof_strategy": "Simple induction or direct proof using basic properties",
+          "difficulty": "easy"
+        },
+        {
+          "name": "invariant_preserved",
+          "description": "Invariant is preserved",
+          "statement": "\u2200 (x y : Structure), x \u2192 y preserves invariant",
+          "proof_strategy": "Use inductive hypothesis + case analysis",
+          "difficulty": "medium"
+        },
+        {
+          "name": "conclusion_reached",
+          "description": "Conclusion reached",
+          "statement": "\u2200 (x : Structure), conclusion x is true",
+          "proof_strategy": "Use inductive hypothesis + case analysis",
+          "difficulty": "medium"
+        }
+      ],
+      "ilda_iteration": 2
+    },
+    {
+      "original_lemma": "unknown",
+      "original_line": 1705,
+      "context": "    -- By Theorem 3, ILDA analyzes any FOL formula\n\n    sorry\n\n  \u00b7 -- Lambda completeness\n\n    intro term\n\n    -- By Theorem 4, ILDA reduces any lambda term\n\n    sorry\n\n  \u00b7 -- Knowledge extraction\n\n    intro source\n\n    -- By Theorem 5, ILDA extracts all knowledge\n\n    sorry\n\n  \u00b7 -- Structural decomposition\n",
+      "sub_lemmas": [
+        {
+          "name": "structure_well_defined",
+          "description": "Structure is well-defined",
+          "statement": "\u2203 (S : Structure), S is valid",
+          "proof_strategy": "Direct application of definition",
+          "difficulty": "trivial"
+        },
+        {
+          "name": "properties_hold",
+          "description": "Key properties hold",
+          "statement": "\u2200 (x : Structure), property x holds",
+          "proof_strategy": "Simple induction or direct proof using basic properties",
+          "difficulty": "easy"
+        },
+        {
+          "name": "invariant_preserved",
+          "description": "Invariant is preserved",
+          "statement": "\u2200 (x y : Structure), x \u2192 y preserves invariant",
+          "proof_strategy": "Use inductive hypothesis + case analysis",
+          "difficulty": "medium"
+        },
+        {
+          "name": "conclusion_reached",
+          "description": "Conclusion reached",
+          "statement": "\u2200 (x : Structure), conclusion x is true",
+          "proof_strategy": "Use inductive hypothesis + case analysis",
+          "difficulty": "medium"
+        }
+      ],
+      "ilda_iteration": 2
+    },
+    {
+      "original_lemma": "unknown",
+      "original_line": 1709,
+      "context": "    -- By Theorem 4, ILDA reduces any lambda term\n\n    sorry\n\n  \u00b7 -- Knowledge extraction\n\n    intro source\n\n    -- By Theorem 5, ILDA extracts all knowledge\n\n    sorry\n\n  \u00b7 -- Structural decomposition\n\n    intro structure\n\n    -- By Theorem 6, ILDA decomposes any structure\n\n    sorry\n\n\n",
+      "sub_lemmas": [
+        {
+          "name": "structure_well_defined",
+          "description": "Structure is well-defined",
+          "statement": "\u2203 (S : Structure), S is valid",
+          "proof_strategy": "Direct application of definition",
+          "difficulty": "trivial"
+        },
+        {
+          "name": "properties_hold",
+          "description": "Key properties hold",
+          "statement": "\u2200 (x : Structure), property x holds",
+          "proof_strategy": "Simple induction or direct proof using basic properties",
+          "difficulty": "easy"
+        },
+        {
+          "name": "invariant_preserved",
+          "description": "Invariant is preserved",
+          "statement": "\u2200 (x y : Structure), x \u2192 y preserves invariant",
+          "proof_strategy": "Use inductive hypothesis + case analysis",
+          "difficulty": "medium"
+        },
+        {
+          "name": "conclusion_reached",
+          "description": "Conclusion reached",
+          "statement": "\u2200 (x : Structure), conclusion x is true",
+          "proof_strategy": "Use inductive hypothesis + case analysis",
+          "difficulty": "medium"
+        }
+      ],
+      "ilda_iteration": 2
+    },
+    {
+      "original_lemma": "unknown",
+      "original_line": 1713,
+      "context": "    -- By Theorem 5, ILDA extracts all knowledge\n\n    sorry\n\n  \u00b7 -- Structural decomposition\n\n    intro structure\n\n    -- By Theorem 6, ILDA decomposes any structure\n\n    sorry\n\n\n\nend GPU.Universal\n",
+      "sub_lemmas": [
+        {
+          "name": "structure_well_defined",
+          "description": "Structure is well-defined",
+          "statement": "\u2203 (S : Structure), S is valid",
+          "proof_strategy": "Direct application of definition",
+          "difficulty": "trivial"
+        },
+        {
+          "name": "properties_hold",
+          "description": "Key properties hold",
+          "statement": "\u2200 (x : Structure), property x holds",
+          "proof_strategy": "Simple induction or direct proof using basic properties",
+          "difficulty": "easy"
+        },
+        {
+          "name": "invariant_preserved",
+          "description": "Invariant is preserved",
+          "statement": "\u2200 (x y : Structure), x \u2192 y preserves invariant",
+          "proof_strategy": "Use inductive hypothesis + case analysis",
+          "difficulty": "medium"
+        },
+        {
+          "name": "conclusion_reached",
+          "description": "Conclusion reached",
+          "statement": "\u2200 (x : Structure), conclusion x is true",
+          "proof_strategy": "Use inductive hypothesis + case analysis",
+          "difficulty": "medium"
+        }
+      ],
+      "ilda_iteration": 2
+    }
+  ]
+}

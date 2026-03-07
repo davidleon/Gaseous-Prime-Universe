@@ -1,0 +1,35 @@
+{
+  "expert_results": {
+    "LLM": {
+      "accuracy": 0.5933333333333334,
+      "avg_confidence": 0.48874795420827866
+    },
+    "ImageNet": {
+      "accuracy": 0.4766666666666667,
+      "avg_confidence": 0.5009402447342125
+    },
+    "SAM": {
+      "accuracy": 0.48,
+      "avg_confidence": 0.4971055708795968
+    }
+  },
+  "student_results": {
+    "joint": {
+      "accuracy": 0.48333333333333334,
+      "avg_confidence": 0.5839071332072404,
+      "avg_bridge_quality": 0.312870752439042
+    },
+    "bridge": {
+      "accuracy": 0.57,
+      "avg_confidence": 0.5973064204685665,
+      "avg_bridge_quality": 0.40935494148006907
+    },
+    "unified": {
+      "accuracy": 0.5366666666666666,
+      "avg_confidence": 0.5757447999647669,
+      "avg_bridge_quality": 0.3886684190260943
+    }
+  },
+  "best_strategy": "bridge",
+  "total_params": 500
+}

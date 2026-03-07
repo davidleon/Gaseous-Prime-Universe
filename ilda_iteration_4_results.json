@@ -1,0 +1,171 @@
+{
+  "iteration": 4,
+  "input_iteration": 3,
+  "total_atomic_proofs": 0,
+  "patterns_discovered": 4,
+  "invariants_discovered": 6,
+  "insights_generated": 5,
+  "complexity_reduction": 0.58,
+  "simulation_analysis": {
+    "proof_length_distribution": {
+      "1-line": 110,
+      "2-5 lines": 113,
+      "5-10 lines": 6,
+      "10+ lines": 3
+    },
+    "top_keywords": {
+      "encode": 232,
+      "decode": 232,
+      "induction": 232,
+      "base": 232,
+      "step": 232,
+      "equal": 232,
+      "prove": 232,
+      "show": 232,
+      "definition": 232,
+      "lemma": 232
+    },
+    "mathematical_domains": {
+      "encoding": 24,
+      "simulation": 24,
+      "induction": 12
+    }
+  },
+  "patterns": [
+    {
+      "name": "State Transition System",
+      "description": "System with well-defined state transitions",
+      "pattern_type": "structural",
+      "frequency": 24,
+      "examples": [
+        "simulation_n_plus_1_def",
+        "step_applies_to_encoding",
+        "inductive_step_valid",
+        "inductive_step_correctness",
+        "induction_base"
+      ],
+      "mathematical_form": "S \u2192 T(S) \u2192 T(T(S)) \u2192 ..."
+    },
+    {
+      "name": "Recursive Definition",
+      "description": "Definition in terms of smaller instances",
+      "pattern_type": "structural",
+      "frequency": 12,
+      "examples": [
+        "simulation_n_plus_1_def",
+        "induction_hypothesis",
+        "induction_step",
+        "induction_complete",
+        "simulation_n_plus_1_def"
+      ],
+      "mathematical_form": "f(0) = x\u2080, f(n+1) = g(f(n))"
+    },
+    {
+      "name": "Induction Base-Step Structure",
+      "description": "Proof by induction with base case and inductive step",
+      "pattern_type": "inductive",
+      "frequency": 6,
+      "examples": [
+        "induction_base",
+        "induction_step",
+        "induction_base",
+        "induction_step",
+        "induction_base"
+      ],
+      "mathematical_form": "P(0) \u2227 (\u2200n, P(n) \u2192 P(n+1)) \u2192 \u2200n, P(n)"
+    },
+    {
+      "name": "Bijection Preservation",
+      "description": "Property preserved under bijection",
+      "pattern_type": "combinatorial",
+      "frequency": 3,
+      "examples": [
+        "step_applies_to_encoding",
+        "step_applies_to_encoding",
+        "step_applies_to_encoding"
+      ],
+      "mathematical_form": "\u2203f: A \u2192 B bijection, P(A) \u2194 P(B)"
+    }
+  ],
+  "invariants": [
+    {
+      "name": "Length Preservation",
+      "description": "Length of structure preserved under transformation",
+      "invariant_type": "preserved",
+      "mathematical_property": "length(f(x)) = length(x)",
+      "verification_method": "Check length equality before/after transformation"
+    },
+    {
+      "name": "Type Preservation",
+      "description": "Type of structure preserved under transformation",
+      "invariant_type": "preserved",
+      "mathematical_property": "type(f(x)) = type(x)",
+      "verification_method": "Check type equality"
+    },
+    {
+      "name": "Identity Preservation",
+      "description": "Identity property preserved under transformation",
+      "invariant_type": "preserved",
+      "mathematical_property": "f(identity) = identity",
+      "verification_method": "Apply transformation to identity element"
+    },
+    {
+      "name": "Monotonicity",
+      "description": "Monotonic relationship preserved",
+      "invariant_type": "monotonic",
+      "mathematical_property": "x \u2264 y \u2192 f(x) \u2264 f(y)",
+      "verification_method": "Check order preservation"
+    },
+    {
+      "name": "Symmetry",
+      "description": "Symmetric operation commutes",
+      "invariant_type": "symmetric",
+      "mathematical_property": "f(x, y) = f(y, x)",
+      "verification_method": "Check commutativity"
+    },
+    {
+      "name": "Associativity",
+      "description": "Operation is associative",
+      "invariant_type": "preserved",
+      "mathematical_property": "f(f(x, y), z) = f(x, f(y, z))",
+      "verification_method": "Check associativity"
+    }
+  ],
+  "insights": [
+    {
+      "insight_type": "strategy",
+      "description": "Standard induction template: prove base case (n=0), then inductive step (n \u2192 n+1)",
+      "mathematical_formulation": "P(0) \u2227 (\u2200n, P(n) \u2192 P(n+1)) \u2192 \u2200n, P(n)",
+      "application_scope": "All proofs involving natural numbers or iteration",
+      "difficulty_reduction": 0.7
+    },
+    {
+      "insight_type": "theorem",
+      "description": "Use invariants to simplify proofs: show property preserved at each step",
+      "mathematical_formulation": "P(x) \u2227 P(x) \u2192 P(T(x)) \u2192 \u2200n, P(T\u207f(x))",
+      "application_scope": "All recursive/iterative proofs",
+      "difficulty_reduction": 0.5
+    },
+    {
+      "insight_type": "strategy",
+      "description": "Prove simulation by establishing correspondence at each step",
+      "mathematical_formulation": "\u2200n, encode(simulation\u207f(x)) = iterate\u207f(transition, decode(encode(x)))",
+      "application_scope": "Turing completeness, simulation proofs",
+      "difficulty_reduction": 0.7
+    },
+    {
+      "insight_type": "theorem",
+      "description": "Recursive definition is well-defined by well-founded recursion",
+      "mathematical_formulation": "\u2200x, f(x) = body(f|x) where body is well-founded",
+      "application_scope": "All recursive definitions",
+      "difficulty_reduction": 0.6
+    },
+    {
+      "insight_type": "strategy",
+      "description": "Follow geodesic path: use minimal steps to reach conclusion",
+      "mathematical_formulation": "\u2203 path P, length(P) minimal \u2227 P reaches target",
+      "application_scope": "All proofs, especially complex ones",
+      "difficulty_reduction": 0.4
+    }
+  ]
+}

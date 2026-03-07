@@ -1,0 +1,253 @@
+{
+  "test_2": {
+    "statement": "Statement 2 (Fractal Scale Invariance)",
+    "avg_difference": 0.00786748077839052,
+    "max_difference": 0.01686578558951557,
+    "threshold": 0.05,
+    "passes": true,
+    "results": [
+      {
+        "base_scale": 10000,
+        "factor": 1.618033988749895,
+        "normalized_base": 1.131950831715873,
+        "normalized_scaled": 1.1254662574980736,
+        "difference": 0.006484574217799466
+      },
+      {
+        "base_scale": 10000,
+        "factor": 2.414213562373095,
+        "normalized_base": 1.131950831715873,
+        "normalized_scaled": 1.1236175433923088,
+        "difference": 0.00833328832356428
+      },
+      {
+        "base_scale": 10000,
+        "factor": 2.0,
+        "normalized_base": 1.131950831715873,
+        "normalized_scaled": 1.1200844421918361,
+        "difference": 0.011866389524036958
+      },
+      {
+        "base_scale": 10000,
+        "factor": 3.0,
+        "normalized_base": 1.131950831715873,
+        "normalized_scaled": 1.1150850461263575,
+        "difference": 0.01686578558951557
+      },
+      {
+        "base_scale": 100000,
+        "factor": 1.618033988749895,
+        "normalized_base": 1.1043198105999443,
+        "normalized_scaled": 1.0996865822025466,
+        "difference": 0.004633228397397771
+      },
+      {
+        "base_scale": 100000,
+        "factor": 2.414213562373095,
+        "normalized_base": 1.1043198105999443,
+        "normalized_scaled": 1.0954174187156533,
+        "difference": 0.008902391884290983
+      },
+      {
+        "base_scale": 100000,
+        "factor": 2.0,
+        "normalized_base": 1.1043198105999443,
+        "normalized_scaled": 1.0975700522860732,
+        "difference": 0.006749758313871146
+      },
+      {
+        "base_scale": 100000,
+        "factor": 3.0,
+        "normalized_base": 1.1043198105999443,
+        "normalized_scaled": 1.0928738232711197,
+        "difference": 0.011445987328824625
+      },
+      {
+        "base_scale": 1000000,
+        "factor": 1.618033988749895,
+        "normalized_base": 1.0844899477790797,
+        "normalized_scaled": 1.081482800535569,
+        "difference": 0.0030071472435106994
+      },
+      {
+        "base_scale": 1000000,
+        "factor": 2.414213562373095,
+        "normalized_base": 1.0844899477790797,
+        "normalized_scaled": 1.079066176961735,
+        "difference": 0.005423770817344797
+      },
+      {
+        "base_scale": 1000000,
+        "factor": 2.0,
+        "normalized_base": 1.0844899477790797,
+        "normalized_scaled": 1.080408961485814,
+        "difference": 0.004080986293265809
+      },
+      {
+        "base_scale": 1000000,
+        "factor": 3.0,
+        "normalized_base": 1.0844899477790797,
+        "normalized_scaled": 1.0778734863718156,
+        "difference": 0.006616461407264129
+      }
+    ]
+  },
+  "test_6": {
+    "statement": "Statement 6 (k-tuple Metal Ratio Correspondence)",
+    "avg_ratio": 0.2918364556418327,
+    "ratio_std": 0.0851946604354362,
+    "passes": false,
+    "results": {
+      "2": {
+        "avg_spacing": 1.0189963878352766,
+        "std_spacing": 0.7013365316176625,
+        "metal_ratio": 2.414213562373095,
+        "ratio": 0.4220821238505659,
+        "k_tuples_count": 999
+      },
+      "3": {
+        "avg_spacing": 1.0193478960472129,
+        "std_spacing": 0.7016002940877593,
+        "metal_ratio": 3.302775637731995,
+        "ratio": 0.30863370929646183,
+        "k_tuples_count": 998
+      },
+      "4": {
+        "avg_spacing": 1.0183571430007377,
+        "std_spacing": 0.7012549790852113,
+        "metal_ratio": 4.23606797749979,
+        "ratio": 0.24040151112064825,
+        "k_tuples_count": 997
+      },
+      "5": {
+        "avg_spacing": 1.0189325434975656,
+        "std_spacing": 0.7013722364031384,
+        "metal_ratio": 5.192582403567252,
+        "ratio": 0.19622847829965473,
+        "k_tuples_count": 996
+      }
+    }
+  },
+  "test_7": {
+    "statement": "Statement 7 (Unified Scaling Law)",
+    "avg_variance": 0.008722165036684961,
+    "passes": true,
+    "results": [
+      {
+        "scale": 10000,
+        "m": 1,
+        "pi_pm": 1229,
+        "x_pow": 10000.0,
+        "normalized": 1.131950831715873
+      },
+      {
+        "scale": 10000,
+        "m": 2,
+        "pi_pm": 25,
+        "x_pow": 100.0,
+        "normalized": 1.151292546497023
+      },
+      {
+        "scale": 10000,
+        "m": 3,
+        "pi_pm": 8,
+        "x_pow": 21.544346900318832,
+        "normalized": 1.1400163473156701
+      },
+      {
+        "scale": 10000,
+        "m": 4,
+        "pi_pm": 4,
+        "x_pow": 10.0,
+        "normalized": 0.9210340371976183
+      },
+      {
+        "scale": 10000,
+        "m": 5,
+        "pi_pm": 3,
+        "x_pow": 6.309573444801933,
+        "normalized": 0.8758443453476886
+      },
+      {
+        "scale": 100000,
+        "m": 1,
+        "pi_pm": 9592,
+        "x_pow": 100000.0,
+        "normalized": 1.1043198105999443
+      },
+      {
+        "scale": 100000,
+        "m": 2,
+        "pi_pm": 65,
+        "x_pow": 316.22776601683796,
+        "normalized": 1.1832296775344175
+      },
+      {
+        "scale": 100000,
+        "m": 3,
+        "pi_pm": 14,
+        "x_pow": 46.41588833612778,
+        "normalized": 1.1575128135892216
+      },
+      {
+        "scale": 100000,
+        "m": 4,
+        "pi_pm": 7,
+        "x_pow": 17.78279410038923,
+        "normalized": 1.132983908488088
+      },
+      {
+        "scale": 100000,
+        "m": 5,
+        "pi_pm": 4,
+        "x_pow": 10.000000000000002,
+        "normalized": 0.9210340371976182
+      },
+      {
+        "scale": 1000000,
+        "m": 1,
+        "pi_pm": 78498,
+        "x_pow": 1000000.0,
+        "normalized": 1.0844899477790797
+      },
+      {
+        "scale": 1000000,
+        "m": 2,
+        "pi_pm": 168,
+        "x_pow": 1000.0,
+        "normalized": 1.160502886868999
+      },
+      {
+        "scale": 1000000,
+        "m": 3,
+        "pi_pm": 25,
+        "x_pow": 99.99999999999997,
+        "normalized": 1.1512925464970232
+      },
+      {
+        "scale": 1000000,
+        "m": 4,
+        "pi_pm": 11,
+        "x_pow": 31.622776601683793,
+        "normalized": 1.201433211034947
+      },
+      {
+        "scale": 1000000,
+        "m": 5,
+        "pi_pm": 6,
+        "x_pow": 15.848931924611136,
+        "normalized": 1.0460397425149455
+      }
+    ]
+  },
+  "test_8": {
+    "statement": "Statement 8 (Twin Prime Silver Ratio Aggregation)",
+    "silver_ratio": 2.414213562373095,
+    "avg_gap": 0.16128659089289524,
+    "median_gap": 0.1540775679766827,
+    "std_gap": 0.03294660389561533,
+    "diff_from_silver": 2.2529269714802,
+    "twin_count": 8169,
+    "passes": false
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "timestamp": "20260307_043838",
+  "total_training_samples": 16,
+  "total_error_samples": 3,
+  "task_types": [
+    "nl2code",
+    "proof_completion"
+  ],
+  "categories": [
+    "multiplication",
+    "addition",
+    "analysis",
+    "combinatorics",
+    "number_theory",
+    "set_theory"
+  ],
+  "output_dir": "/home/davidl/Gaseous Prime Universe/AGI/learning_sessions"
+}

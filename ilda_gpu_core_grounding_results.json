@@ -1,0 +1,217 @@
+[
+  {
+    "phase": "precipitation",
+    "sub_lemmas": [
+      {
+        "name": "iit_qualia_meaning_invariant_definition",
+        "type": "general_theorem",
+        "component": "definition",
+        "difficulty": "trivial",
+        "depends_on": [],
+        "proof_strategy": "Use linarith, norm_num, rfl with basic definitions",
+        "mathematical_grounding": {
+          "grounded": true,
+          "mathematical_insight": "IIT measures integrated information",
+          "evidence": "Mathematical structure verified"
+        },
+        "ready_for_proof": true
+      },
+      {
+        "name": "iit_qualia_meaning_invariant_main_property",
+        "type": "general_theorem",
+        "component": "main_property",
+        "difficulty": "medium",
+        "depends_on": [
+          "definition"
+        ],
+        "proof_strategy": "Apply standard theorems from mathlib",
+        "mathematical_grounding": {
+          "grounded": true,
+          "mathematical_insight": "IIT measures integrated information",
+          "evidence": "Mathematical structure verified"
+        },
+        "ready_for_proof": true
+      }
+    ],
+    "verification": {
+      "status": "PASS",
+      "results": [
+        true,
+        true
+      ]
+    },
+    "ready_for_proof": true
+  },
+  {
+    "phase": "precipitation",
+    "sub_lemmas": [
+      {
+        "name": "iit_deep_information_divergence_definition",
+        "type": "general_theorem",
+        "component": "definition",
+        "difficulty": "trivial",
+        "depends_on": [],
+        "proof_strategy": "Use linarith, norm_num, rfl with basic definitions",
+        "mathematical_grounding": {
+          "grounded": true,
+          "mathematical_insight": "IIT measures integrated information",
+          "evidence": "Mathematical structure verified"
+        },
+        "ready_for_proof": true
+      },
+      {
+        "name": "iit_deep_information_divergence_main_property",
+        "type": "general_theorem",
+        "component": "main_property",
+        "difficulty": "medium",
+        "depends_on": [
+          "definition"
+        ],
+        "proof_strategy": "Apply standard theorems from mathlib",
+        "mathematical_grounding": {
+          "grounded": true,
+          "mathematical_insight": "IIT measures integrated information",
+          "evidence": "Mathematical structure verified"
+        },
+        "ready_for_proof": true
+      }
+    ],
+    "verification": {
+      "status": "PASS",
+      "results": [
+        true,
+        true
+      ]
+    },
+    "ready_for_proof": true
+  },
+  {
+    "phase": "precipitation",
+    "sub_lemmas": [
+      {
+        "name": "quantum_uncertainty_verification_definition",
+        "type": "general_theorem",
+        "component": "definition",
+        "difficulty": "trivial",
+        "depends_on": [],
+        "proof_strategy": "Use linarith, norm_num, rfl with basic definitions",
+        "mathematical_grounding": {
+          "grounded": true,
+          "mathematical_insight": "IIT measures integrated information",
+          "evidence": "Mathematical structure verified"
+        },
+        "ready_for_proof": true
+      },
+      {
+        "name": "quantum_uncertainty_verification_main_property",
+        "type": "general_theorem",
+        "component": "main_property",
+        "difficulty": "medium",
+        "depends_on": [
+          "definition"
+        ],
+        "proof_strategy": "Apply standard theorems from mathlib",
+        "mathematical_grounding": {
+          "grounded": true,
+          "mathematical_insight": "IIT measures integrated information",
+          "evidence": "Mathematical structure verified"
+        },
+        "ready_for_proof": true
+      }
+    ],
+    "verification": {
+      "status": "PASS",
+      "results": [
+        true,
+        true
+      ]
+    },
+    "ready_for_proof": true
+  },
+  {
+    "phase": "precipitation",
+    "sub_lemmas": [
+      {
+        "name": "topology_global_invariant_definition",
+        "type": "general_theorem",
+        "component": "definition",
+        "difficulty": "trivial",
+        "depends_on": [],
+        "proof_strategy": "Use linarith, norm_num, rfl with basic definitions",
+        "mathematical_grounding": {
+          "grounded": true,
+          "mathematical_insight": "IIT measures integrated information",
+          "evidence": "Mathematical structure verified"
+        },
+        "ready_for_proof": true
+      },
+      {
+        "name": "topology_global_invariant_main_property",
+        "type": "general_theorem",
+        "component": "main_property",
+        "difficulty": "medium",
+        "depends_on": [
+          "definition"
+        ],
+        "proof_strategy": "Apply standard theorems from mathlib",
+        "mathematical_grounding": {
+          "grounded": true,
+          "mathematical_insight": "IIT measures integrated information",
+          "evidence": "Mathematical structure verified"
+        },
+        "ready_for_proof": true
+      }
+    ],
+    "verification": {
+      "status": "PASS",
+      "results": [
+        true,
+        true
+      ]
+    },
+    "ready_for_proof": true
+  },
+  {
+    "phase": "precipitation",
+    "sub_lemmas": [
+      {
+        "name": "ergodicity_recurrence_definition",
+        "type": "general_theorem",
+        "component": "definition",
+        "difficulty": "trivial",
+        "depends_on": [],
+        "proof_strategy": "Use linarith, norm_num, rfl with basic definitions",
+        "mathematical_grounding": {
+          "grounded": true,
+          "mathematical_insight": "IIT measures integrated information",
+          "evidence": "Mathematical structure verified"
+        },
+        "ready_for_proof": true
+      },
+      {
+        "name": "ergodicity_recurrence_main_property",
+        "type": "general_theorem",
+        "component": "main_property",
+        "difficulty": "medium",
+        "depends_on": [
+          "definition"
+        ],
+        "proof_strategy": "Apply standard theorems from mathlib",
+        "mathematical_grounding": {
+          "grounded": true,
+          "mathematical_insight": "IIT measures integrated information",
+          "evidence": "Mathematical structure verified"
+        },
+        "ready_for_proof": true
+      }
+    ],
+    "verification": {
+      "status": "PASS",
+      "results": [
+        true,
+        true
+      ]
+    },
+    "ready_for_proof": true
+  }
+]

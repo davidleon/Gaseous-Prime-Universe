@@ -7,8 +7,8 @@ namespace GPU.Spectral
 PROVEN: Retrieval of the Spectral Profile.
 Defined as a direct projection from the Adelic manifold structure.
 -/
-def GetProfile (M : InformationManifold) (p : ℕ) : SpectralProfile :=
-  M.profiles p
+noncomputable def GetProfile (M : InformationManifold) (p : ℕ) (h : Nat.Prime p) : SpectralProfile :=
+  M.profiles (Sum.inl ⟨p, h⟩)
 
 /--
 The Spectral Gap Constant (gamma).

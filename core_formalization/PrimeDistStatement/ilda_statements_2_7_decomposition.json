@@ -1,0 +1,160 @@
+{
+  "statement_2": {
+    "statement": "Statement 2",
+    "lemmas": [
+      {
+        "lemma": "scale_invariance_golden",
+        "scale": 10000,
+        "normalized_x": 1.131950831715873,
+        "normalized_scaled": 1.1254662574980736,
+        "difference": 0.006484574217799466
+      },
+      {
+        "lemma": "scale_invariance_golden",
+        "scale": 100000,
+        "normalized_x": 1.1043198105999443,
+        "normalized_scaled": 1.0996865822025466,
+        "difference": 0.004633228397397771
+      },
+      {
+        "lemma": "scale_invariance_golden",
+        "scale": 1000000,
+        "normalized_x": 1.0844899477790797,
+        "normalized_scaled": 1.081482800535569,
+        "difference": 0.0030071472435106994
+      }
+    ],
+    "max_difference": 0.006484574217799466,
+    "avg_difference": 0.004708316619569312,
+    "validation": "PASSED"
+  },
+  "statement_7": {
+    "statement": "Statement 7",
+    "lemmas": [
+      {
+        "lemma": "normalized_prime_power",
+        "scale": 10000,
+        "m": 1,
+        "pi_pm": 1229,
+        "x_pow": 10000.0,
+        "normalized": 1.131950831715873
+      },
+      {
+        "lemma": "normalized_prime_power",
+        "scale": 10000,
+        "m": 2,
+        "pi_pm": 25,
+        "x_pow": 100.0,
+        "normalized": 1.151292546497023
+      },
+      {
+        "lemma": "normalized_prime_power",
+        "scale": 10000,
+        "m": 3,
+        "pi_pm": 8,
+        "x_pow": 21.544346900318832,
+        "normalized": 1.1400163473156701
+      },
+      {
+        "lemma": "normalized_prime_power",
+        "scale": 10000,
+        "m": 4,
+        "pi_pm": 4,
+        "x_pow": 10.0,
+        "normalized": 0.9210340371976183
+      },
+      {
+        "lemma": "normalized_prime_power",
+        "scale": 10000,
+        "m": 5,
+        "pi_pm": 3,
+        "x_pow": 6.309573444801933,
+        "normalized": 0.8758443453476886
+      },
+      {
+        "lemma": "normalized_prime_power",
+        "scale": 100000,
+        "m": 1,
+        "pi_pm": 9592,
+        "x_pow": 100000.0,
+        "normalized": 1.1043198105999443
+      },
+      {
+        "lemma": "normalized_prime_power",
+        "scale": 100000,
+        "m": 2,
+        "pi_pm": 65,
+        "x_pow": 316.22776601683796,
+        "normalized": 1.1832296775344175
+      },
+      {
+        "lemma": "normalized_prime_power",
+        "scale": 100000,
+        "m": 3,
+        "pi_pm": 14,
+        "x_pow": 46.41588833612778,
+        "normalized": 1.1575128135892216
+      },
+      {
+        "lemma": "normalized_prime_power",
+        "scale": 100000,
+        "m": 4,
+        "pi_pm": 7,
+        "x_pow": 17.78279410038923,
+        "normalized": 1.132983908488088
+      },
+      {
+        "lemma": "normalized_prime_power",
+        "scale": 100000,
+        "m": 5,
+        "pi_pm": 4,
+        "x_pow": 10.000000000000002,
+        "normalized": 0.9210340371976182
+      },
+      {
+        "lemma": "normalized_prime_power",
+        "scale": 1000000,
+        "m": 1,
+        "pi_pm": 78498,
+        "x_pow": 1000000.0,
+        "normalized": 1.0844899477790797
+      },
+      {
+        "lemma": "normalized_prime_power",
+        "scale": 1000000,
+        "m": 2,
+        "pi_pm": 168,
+        "x_pow": 1000.0,
+        "normalized": 1.160502886868999
+      },
+      {
+        "lemma": "normalized_prime_power",
+        "scale": 1000000,
+        "m": 3,
+        "pi_pm": 25,
+        "x_pow": 99.99999999999997,
+        "normalized": 1.1512925464970232
+      },
+      {
+        "lemma": "normalized_prime_power",
+        "scale": 1000000,
+        "m": 4,
+        "pi_pm": 11,
+        "x_pow": 31.622776601683793,
+        "normalized": 1.201433211034947
+      },
+      {
+        "lemma": "normalized_prime_power",
+        "scale": 1000000,
+        "m": 5,
+        "pi_pm": 6,
+        "x_pow": 15.848931924611136,
+        "normalized": 1.0460397425149455
+      }
+    ],
+    "global_mean": 1.0908651126785438,
+    "global_std": 0.099792711728848,
+    "global_variance": 0.009958585314196957,
+    "validation": "PASSED"
+  }
+}

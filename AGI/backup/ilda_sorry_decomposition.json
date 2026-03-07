@@ -1,0 +1,581 @@
+{
+  "sorry_gaps": [
+    {
+      "theorem_name": "Lemma 1 (sub)",
+      "sorry_type": "SorryType.MEASURE_THEORY",
+      "location": "Line 69 (case 1)",
+      "description": "Handle P_A_\u03ba = 0 \u2227 P_B_\u03ba = 0 case",
+      "current_state": "split_ifs <;> sorry",
+      "what_is_needed": "Show KL = 0 when both distributions are zero",
+      "complexity": "Complexity.TRIVIAL",
+      "dependencies": [],
+      "recommended_approach": "Direct calculation: 0 * log(0/0) = 0 by convention",
+      "estimated_effort": "10 minutes",
+      "confidence": 0.95
+    },
+    {
+      "theorem_name": "Lemma 1 (sub)",
+      "sorry_type": "SorryType.MEASURE_THEORY",
+      "location": "Line 69 (case 2)",
+      "description": "Handle P_B_\u03ba = 0 case",
+      "current_state": "split_ifs <;> sorry",
+      "what_is_needed": "Show KL = \u221e when Q = 0 and P > 0",
+      "complexity": "Complexity.EASY",
+      "dependencies": [],
+      "recommended_approach": "Direct limit: lim_{q\u21920} p log(p/q) = \u221e",
+      "estimated_effort": "15 minutes",
+      "confidence": 0.95
+    },
+    {
+      "theorem_name": "Lemma 3",
+      "sorry_type": "SorryType.EXISTENCE_PROOF",
+      "location": "Lines 112-146",
+      "description": "Prove structural key properties (invariant, lifts dimension, quantizes)",
+      "current_state": "invariant := sorry, lifts_dim := sorry, quantizes := fun E => sorry",
+      "what_is_needed": "Verify each property for specific \u03ba values",
+      "complexity": "Complexity.EASY",
+      "dependencies": [],
+      "recommended_approach": "\n            1. Invariant: Show \u03ba unchanged under coordinate transforms\n            2. Lifts dimension: Prove d(M_U) \u2265 d(M_A) + d(M_B) - 1\n            3. Quantizes: Show E_n = n\u03ba for energy levels\n            ",
+      "estimated_effort": "2-3 hours",
+      "confidence": 0.85
+    },
+    {
+      "theorem_name": "Theorem 3",
+      "sorry_type": "SorryType.LIMIT_CALCULATION",
+      "location": "Lines 266-279",
+      "description": "Prove lim_{\u03b2\u21921} LSE_\u03b2 = (x+y)/2",
+      "current_state": "sorry",
+      "what_is_needed": "Rigorous limit calculation for addition",
+      "complexity": "Complexity.EASY",
+      "dependencies": [],
+      "recommended_approach": "\n            1. Apply L'H\u00f4pital's rule to ((x^\u03b2 + y^\u03b2)/2)^(1/\u03b2)\n            2. Take log, differentiate, evaluate at \u03b2=1\n            3. Result: log((x+y)/2) \u2192 LSE = (x+y)/2\n            ",
+      "estimated_effort": "30 minutes",
+      "confidence": 0.95
+    },
+    {
+      "theorem_name": "Theorem 8",
+      "sorry_type": "SorryType.NUMERICAL_VERIFICATION",
+      "location": "Lines 463-480",
+      "description": "Prove E_n = n\u00d7\u03ba for energy levels",
+      "current_state": "sorry",
+      "what_is_needed": "Verify quantization formula holds for all n",
+      "complexity": "Complexity.EASY",
+      "dependencies": [],
+      "recommended_approach": "\n            1. Define energy levels via Schr\u00f6dinger equation\n            2. Show eigenvalues are linearly spaced: E_n = n\u03ba\n            3. Verify with numerical computation for n=1..10\n            4. Prove by induction using ladder operators\n            ",
+      "estimated_effort": "1-2 hours",
+      "confidence": 0.9
+    },
+    {
+      "theorem_name": "Theorem 3",
+      "sorry_type": "SorryType.ALGEBRAIC_MANIPULATION",
+      "location": "Lines 266-279",
+      "description": "Verify IsJoin conditions for LSE",
+      "current_state": "sorry",
+      "what_is_needed": "Check both projection conditions",
+      "complexity": "Complexity.EASY",
+      "dependencies": [
+        "Theorem 3 (limit proofs)"
+      ],
+      "recommended_approach": "\n            1. Use proven limits for \u03b2\u21920 and \u03b2\u21921\n            2. Verify Tendsto conditions hold\n            3. Check uniqueness of \u03ba = 0.5\n            ",
+      "estimated_effort": "30 minutes",
+      "confidence": 0.95
+    },
+    {
+      "theorem_name": "Lemma 1",
+      "sorry_type": "SorryType.MEASURE_THEORY",
+      "location": "Line 69",
+      "description": "Prove D_KL(P || Q) \u2265 0 (Gibbs inequality)",
+      "current_state": "split_ifs <;> sorry",
+      "what_is_needed": "Rigorous proof of Gibbs inequality using log-sum inequality",
+      "complexity": "Complexity.MEDIUM",
+      "dependencies": [],
+      "recommended_approach": "\n            1. Prove log-sum inequality: \u2211 a_i log(a_i/b_i) \u2265 0\n            2. Apply to KL divergence definition\n            3. Handle edge cases (P=0, Q=0)\n            4. Use measure theory for continuous distributions\n            ",
+      "estimated_effort": "2-4 hours",
+      "confidence": 0.9
+    },
+    {
+      "theorem_name": "Theorem 3",
+      "sorry_type": "SorryType.LIMIT_CALCULATION",
+      "location": "Lines 266-279",
+      "description": "Prove lim_{\u03b2\u21920} LSE_\u03b2 = \u221a(xy)",
+      "current_state": "sorry",
+      "what_is_needed": "Rigorous limit calculation for multiplication",
+      "complexity": "Complexity.MEDIUM",
+      "dependencies": [],
+      "recommended_approach": "\n            1. Use log expansion: log(LSE) = (1/\u03b2)\u00b7log((x^\u03b2 + y^\u03b2)/2)\n            2. Apply limit: lim_{\u03b2\u21920} (x^\u03b2 - 1)/\u03b2 = log(x)\n            3. Result: (log x + log y)/2 \u2192 LSE = \u221a(xy)\n            ",
+      "estimated_effort": "1 hour",
+      "confidence": 0.9
+    },
+    {
+      "theorem_name": "Lemma 2",
+      "sorry_type": "SorryType.MEASURE_THEORY",
+      "location": "Line 84",
+      "description": "Prove D_KL(P || Q) = 0 \u2194 P = Q",
+      "current_state": "split_ifs <;> sorry",
+      "what_is_needed": "Proof of equality condition for KL divergence",
+      "complexity": "Complexity.MEDIUM",
+      "dependencies": [
+        "Lemma 1"
+      ],
+      "recommended_approach": "\n            1. (\u2192) Use Jensen's inequality: log E[X] \u2265 E[log X]\n            2. Equality iff X is constant almost everywhere\n            3. (\u2190) Direct calculation: if P=Q, then KL=0\n            ",
+      "estimated_effort": "1-2 hours",
+      "confidence": 0.9
+    },
+    {
+      "theorem_name": "Theorem 1",
+      "sorry_type": "SorryType.EXISTENCE_PROOF",
+      "location": "Lines 159-181",
+      "description": "Construct explicit join manifold M_U",
+      "current_state": "sorry",
+      "what_is_needed": "Explicit construction of M_U = M_A \u22c8_\u03ba M_B",
+      "complexity": "Complexity.MEDIUM",
+      "dependencies": [
+        "Lemma 3"
+      ],
+      "recommended_approach": "\n            1. Define M_U(\u03ba, x, y) = \u03ba\u00b7M_A(x, y) + (1-\u03ba)\u00b7M_B(x, y)\n            2. Verify projection properties at \u03ba=0,1\n            3. Show continuity in \u03ba\n            4. Prove IsJoin conditions hold\n            ",
+      "estimated_effort": "3-4 hours",
+      "confidence": 0.8
+    },
+    {
+      "theorem_name": "Theorem 4",
+      "sorry_type": "SorryType.INEQUALITY_PROOF",
+      "location": "Lines 293-318",
+      "description": "Prove IP(M_U) < IP(M_A) + IP(M_B)",
+      "current_state": "sorry",
+      "what_is_needed": "Show join reduces total integrity penalty",
+      "complexity": "Complexity.MEDIUM",
+      "dependencies": [
+        "Theorem 1"
+      ],
+      "recommended_approach": "\n            1. Define integrity penalty: IP(M) = \u222b |deviation| d\u03bc\n            2. Show join averages deviations\n            3. Use triangle inequality for integrals\n            4. Prove strict inequality for non-trivial joins\n            ",
+      "estimated_effort": "2-3 hours",
+      "confidence": 0.75
+    },
+    {
+      "theorem_name": "Theorem 7",
+      "sorry_type": "SorryType.TOPOLOGICAL_ARGUMENT",
+      "location": "Lines 431-433",
+      "description": "Prove d_U \u2265 max(d_A, d_B) + 1",
+      "current_state": "sorry",
+      "what_is_needed": "Show join increases manifold dimension",
+      "complexity": "Complexity.MEDIUM",
+      "dependencies": [
+        "Theorem 1"
+      ],
+      "recommended_approach": "\n            1. Analyze tangent spaces: T_U = span(T_A, T_B)\n            2. Show T_U has dimension at least max(dim T_A, dim T_B) + 1\n            3. Use structural key \u03ba to lift dimension\n            4. Prove strict inequality for non-trivial joins\n            ",
+      "estimated_effort": "2-3 hours",
+      "confidence": 0.75
+    },
+    {
+      "theorem_name": "Theorem 9",
+      "sorry_type": "SorryType.INFORMATION_THEORETIC",
+      "location": "Lines 496-503",
+      "description": "Prove I_gain \u2264 D_KL(P_A || P_B)",
+      "current_state": "sorry",
+      "what_is_needed": "Show information gain bounded by KL divergence",
+      "complexity": "Complexity.MEDIUM",
+      "dependencies": [
+        "Lemma 1"
+      ],
+      "recommended_approach": "\n            1. Define information gain: I_gain = H(P_A) - H(P_A|M_U)\n            2. Use data processing inequality\n            3. Show I_gain \u2264 I(P_A; M_B) = D_KL(P_A || P_B)\n            4. Verify with mutual information identities\n            ",
+      "estimated_effort": "2-3 hours",
+      "confidence": 0.85
+    },
+    {
+      "theorem_name": "Theorem 10",
+      "sorry_type": "SorryType.CONVERGENCE_ANALYSIS",
+      "location": "Lines 515-522",
+      "description": "Prove \u0393_t \u2264 \u0393_0 \u00d7 exp(-\u03bbt)",
+      "current_state": "sorry",
+      "what_is_needed": "Derive exponential convergence bound",
+      "complexity": "Complexity.MEDIUM",
+      "dependencies": [
+        "Theorem 5"
+      ],
+      "recommended_approach": "\n            1. Model grokking as gradient descent on loss L\n            2. Show dL/dt = -\u03bbL (exponential decay)\n            3. Integrate: L(t) = L\u2080\u00b7exp(-\u03bbt)\n            4. Relate loss to metric tension: \u0393 \u221d L\n            5. Verify with numerical simulation\n            ",
+      "estimated_effort": "2-3 hours",
+      "confidence": 0.8
+    },
+    {
+      "theorem_name": "Theorem 6",
+      "sorry_type": "SorryType.INFORMATION_THEORETIC",
+      "location": "Lines 388-405",
+      "description": "Prove IsJoin \u2192 \u0393(M_A, M_B) \u2192 0",
+      "current_state": "sorry",
+      "what_is_needed": "Show successful join eliminates metric tension",
+      "complexity": "Complexity.MEDIUM",
+      "dependencies": [
+        "Theorem 1",
+        "Theorem 3"
+      ],
+      "recommended_approach": "\n            1. Use KL divergence properties\n            2. Show M_U minimizes KL to both M_A and M_B\n            3. Apply data processing inequality\n            4. Conclude: \u0393(M_A, M_B) \u2264 \u0393(M_A, M_U) + \u0393(M_U, M_B) \u2192 0\n            ",
+      "estimated_effort": "2-3 hours",
+      "confidence": 0.8
+    },
+    {
+      "theorem_name": "Theorem 2",
+      "sorry_type": "SorryType.UNIQUENESS_PROOF",
+      "location": "Lines 193-222",
+      "description": "Prove join is unique up to isometric transformation",
+      "current_state": "sorry",
+      "what_is_needed": "Show any two joins are isometric",
+      "complexity": "Complexity.HARD",
+      "dependencies": [
+        "Theorem 1"
+      ],
+      "recommended_approach": "\n            1. Assume two joins M_U and M_U'\n            2. Construct isometry \u03c6: M_U \u2192 M_U'\n            3. Show \u03c6 preserves metric structure\n            4. Prove \u03c6 is unique given projection constraints\n            ",
+      "estimated_effort": "4-6 hours",
+      "confidence": 0.7
+    },
+    {
+      "theorem_name": "Theorem 5 (sub)",
+      "sorry_type": "SorryType.CONVERGENCE_ANALYSIS",
+      "location": "Lines 353-370",
+      "description": "Prove asymptotic stability of converged state",
+      "current_state": "sorry (needs extended iterations)",
+      "what_is_needed": "Show system reaches fixed point",
+      "complexity": "Complexity.HARD",
+      "dependencies": [
+        "Theorem 5 (convergence)"
+      ],
+      "recommended_approach": "\n            1. Analyze Lyapunov function V(t) = \u0393(t)\n            2. Show dV/dt < 0 for \u0393 > 0\n            3. Prove \u0393(t) \u2192 0 as t \u2192 \u221e\n            4. Verify numerical stability with 5000+ iterations\n            ",
+      "estimated_effort": "4-6 hours",
+      "confidence": 0.6
+    },
+    {
+      "theorem_name": "Theorem 5",
+      "sorry_type": "SorryType.CONVERGENCE_ANALYSIS",
+      "location": "Lines 353-370",
+      "description": "Prove ECI protocol converges to 100x+ improvement",
+      "current_state": "sorry",
+      "what_is_needed": "Show exponential convergence with rate \u03bb",
+      "complexity": "Complexity.VERY_HARD",
+      "dependencies": [
+        "Theorem 6",
+        "Theorem 10"
+      ],
+      "recommended_approach": "\n            1. Define improvement metric I(t) = 1/\u0393(t)\n            2. Show \u0393(t) satisfies differential equation: d\u0393/dt = -\u03bb\u0393\n            3. Solve: \u0393(t) = \u0393\u2080\u00b7exp(-\u03bbt)\n            4. Prove I(t) \u2192 \u221e, find t when I(t) \u2265 100\n            ",
+      "estimated_effort": "1-2 days",
+      "confidence": 0.5
+    }
+  ],
+  "analysis": {
+    "dependency_graph": {
+      "Lemma 1: Prove D_KL(P || Q) \u2265 0 (Gibbs ": [],
+      "Lemma 1 (sub): Handle P_A_\u03ba = 0 \u2227 P_B_\u03ba = 0 c": [],
+      "Lemma 1 (sub): Handle P_B_\u03ba = 0 case": [],
+      "Lemma 2: Prove D_KL(P || Q) = 0 \u2194 P = Q": [
+        "Lemma 1"
+      ],
+      "Lemma 3: Prove structural key propertie": [],
+      "Theorem 1: Construct explicit join manifo": [
+        "Lemma 3"
+      ],
+      "Theorem 2: Prove join is unique up to iso": [
+        "Theorem 1"
+      ],
+      "Theorem 3: Prove lim_{\u03b2\u21921} LSE_\u03b2 = (x+y)/": [],
+      "Theorem 3: Prove lim_{\u03b2\u21920} LSE_\u03b2 = \u221a(xy)": [],
+      "Theorem 3: Verify IsJoin conditions for L": [
+        "Theorem 3 (limit proofs)"
+      ],
+      "Theorem 4: Prove IP(M_U) < IP(M_A) + IP(M": [
+        "Theorem 1"
+      ],
+      "Theorem 5: Prove ECI protocol converges t": [
+        "Theorem 6",
+        "Theorem 10"
+      ],
+      "Theorem 5 (sub): Prove asymptotic stability of ": [
+        "Theorem 5 (convergence)"
+      ],
+      "Theorem 6: Prove IsJoin \u2192 \u0393(M_A, M_B) \u2192 0": [
+        "Theorem 1",
+        "Theorem 3"
+      ],
+      "Theorem 7: Prove d_U \u2265 max(d_A, d_B) + 1": [
+        "Theorem 1"
+      ],
+      "Theorem 8: Prove E_n = n\u00d7\u03ba for energy lev": [],
+      "Theorem 9: Prove I_gain \u2264 D_KL(P_A || P_B": [
+        "Lemma 1"
+      ],
+      "Theorem 10: Prove \u0393_t \u2264 \u0393_0 \u00d7 exp(-\u03bbt)": [
+        "Theorem 5"
+      ]
+    },
+    "recommendations": {
+      "trivial": [
+        {
+          "theorem_name": "Lemma 1 (sub)",
+          "sorry_type": "SorryType.MEASURE_THEORY",
+          "location": "Line 69 (case 1)",
+          "description": "Handle P_A_\u03ba = 0 \u2227 P_B_\u03ba = 0 case",
+          "current_state": "split_ifs <;> sorry",
+          "what_is_needed": "Show KL = 0 when both distributions are zero",
+          "complexity": "Complexity.TRIVIAL",
+          "dependencies": [],
+          "recommended_approach": "Direct calculation: 0 * log(0/0) = 0 by convention",
+          "estimated_effort": "10 minutes",
+          "confidence": 0.95
+        }
+      ],
+      "easy": [
+        {
+          "theorem_name": "Lemma 1 (sub)",
+          "sorry_type": "SorryType.MEASURE_THEORY",
+          "location": "Line 69 (case 2)",
+          "description": "Handle P_B_\u03ba = 0 case",
+          "current_state": "split_ifs <;> sorry",
+          "what_is_needed": "Show KL = \u221e when Q = 0 and P > 0",
+          "complexity": "Complexity.EASY",
+          "dependencies": [],
+          "recommended_approach": "Direct limit: lim_{q\u21920} p log(p/q) = \u221e",
+          "estimated_effort": "15 minutes",
+          "confidence": 0.95
+        },
+        {
+          "theorem_name": "Lemma 3",
+          "sorry_type": "SorryType.EXISTENCE_PROOF",
+          "location": "Lines 112-146",
+          "description": "Prove structural key properties (invariant, lifts dimension, quantizes)",
+          "current_state": "invariant := sorry, lifts_dim := sorry, quantizes := fun E => sorry",
+          "what_is_needed": "Verify each property for specific \u03ba values",
+          "complexity": "Complexity.EASY",
+          "dependencies": [],
+          "recommended_approach": "\n            1. Invariant: Show \u03ba unchanged under coordinate transforms\n            2. Lifts dimension: Prove d(M_U) \u2265 d(M_A) + d(M_B) - 1\n            3. Quantizes: Show E_n = n\u03ba for energy levels\n            ",
+          "estimated_effort": "2-3 hours",
+          "confidence": 0.85
+        },
+        {
+          "theorem_name": "Theorem 3",
+          "sorry_type": "SorryType.LIMIT_CALCULATION",
+          "location": "Lines 266-279",
+          "description": "Prove lim_{\u03b2\u21921} LSE_\u03b2 = (x+y)/2",
+          "current_state": "sorry",
+          "what_is_needed": "Rigorous limit calculation for addition",
+          "complexity": "Complexity.EASY",
+          "dependencies": [],
+          "recommended_approach": "\n            1. Apply L'H\u00f4pital's rule to ((x^\u03b2 + y^\u03b2)/2)^(1/\u03b2)\n            2. Take log, differentiate, evaluate at \u03b2=1\n            3. Result: log((x+y)/2) \u2192 LSE = (x+y)/2\n            ",
+          "estimated_effort": "30 minutes",
+          "confidence": 0.95
+        },
+        {
+          "theorem_name": "Theorem 8",
+          "sorry_type": "SorryType.NUMERICAL_VERIFICATION",
+          "location": "Lines 463-480",
+          "description": "Prove E_n = n\u00d7\u03ba for energy levels",
+          "current_state": "sorry",
+          "what_is_needed": "Verify quantization formula holds for all n",
+          "complexity": "Complexity.EASY",
+          "dependencies": [],
+          "recommended_approach": "\n            1. Define energy levels via Schr\u00f6dinger equation\n            2. Show eigenvalues are linearly spaced: E_n = n\u03ba\n            3. Verify with numerical computation for n=1..10\n            4. Prove by induction using ladder operators\n            ",
+          "estimated_effort": "1-2 hours",
+          "confidence": 0.9
+        },
+        {
+          "theorem_name": "Theorem 3",
+          "sorry_type": "SorryType.ALGEBRAIC_MANIPULATION",
+          "location": "Lines 266-279",
+          "description": "Verify IsJoin conditions for LSE",
+          "current_state": "sorry",
+          "what_is_needed": "Check both projection conditions",
+          "complexity": "Complexity.EASY",
+          "dependencies": [
+            "Theorem 3 (limit proofs)"
+          ],
+          "recommended_approach": "\n            1. Use proven limits for \u03b2\u21920 and \u03b2\u21921\n            2. Verify Tendsto conditions hold\n            3. Check uniqueness of \u03ba = 0.5\n            ",
+          "estimated_effort": "30 minutes",
+          "confidence": 0.95
+        }
+      ],
+      "medium": [
+        {
+          "theorem_name": "Lemma 1",
+          "sorry_type": "SorryType.MEASURE_THEORY",
+          "location": "Line 69",
+          "description": "Prove D_KL(P || Q) \u2265 0 (Gibbs inequality)",
+          "current_state": "split_ifs <;> sorry",
+          "what_is_needed": "Rigorous proof of Gibbs inequality using log-sum inequality",
+          "complexity": "Complexity.MEDIUM",
+          "dependencies": [],
+          "recommended_approach": "\n            1. Prove log-sum inequality: \u2211 a_i log(a_i/b_i) \u2265 0\n            2. Apply to KL divergence definition\n            3. Handle edge cases (P=0, Q=0)\n            4. Use measure theory for continuous distributions\n            ",
+          "estimated_effort": "2-4 hours",
+          "confidence": 0.9
+        },
+        {
+          "theorem_name": "Theorem 3",
+          "sorry_type": "SorryType.LIMIT_CALCULATION",
+          "location": "Lines 266-279",
+          "description": "Prove lim_{\u03b2\u21920} LSE_\u03b2 = \u221a(xy)",
+          "current_state": "sorry",
+          "what_is_needed": "Rigorous limit calculation for multiplication",
+          "complexity": "Complexity.MEDIUM",
+          "dependencies": [],
+          "recommended_approach": "\n            1. Use log expansion: log(LSE) = (1/\u03b2)\u00b7log((x^\u03b2 + y^\u03b2)/2)\n            2. Apply limit: lim_{\u03b2\u21920} (x^\u03b2 - 1)/\u03b2 = log(x)\n            3. Result: (log x + log y)/2 \u2192 LSE = \u221a(xy)\n            ",
+          "estimated_effort": "1 hour",
+          "confidence": 0.9
+        },
+        {
+          "theorem_name": "Lemma 2",
+          "sorry_type": "SorryType.MEASURE_THEORY",
+          "location": "Line 84",
+          "description": "Prove D_KL(P || Q) = 0 \u2194 P = Q",
+          "current_state": "split_ifs <;> sorry",
+          "what_is_needed": "Proof of equality condition for KL divergence",
+          "complexity": "Complexity.MEDIUM",
+          "dependencies": [
+            "Lemma 1"
+          ],
+          "recommended_approach": "\n            1. (\u2192) Use Jensen's inequality: log E[X] \u2265 E[log X]\n            2. Equality iff X is constant almost everywhere\n            3. (\u2190) Direct calculation: if P=Q, then KL=0\n            ",
+          "estimated_effort": "1-2 hours",
+          "confidence": 0.9
+        },
+        {
+          "theorem_name": "Theorem 1",
+          "sorry_type": "SorryType.EXISTENCE_PROOF",
+          "location": "Lines 159-181",
+          "description": "Construct explicit join manifold M_U",
+          "current_state": "sorry",
+          "what_is_needed": "Explicit construction of M_U = M_A \u22c8_\u03ba M_B",
+          "complexity": "Complexity.MEDIUM",
+          "dependencies": [
+            "Lemma 3"
+          ],
+          "recommended_approach": "\n            1. Define M_U(\u03ba, x, y) = \u03ba\u00b7M_A(x, y) + (1-\u03ba)\u00b7M_B(x, y)\n            2. Verify projection properties at \u03ba=0,1\n            3. Show continuity in \u03ba\n            4. Prove IsJoin conditions hold\n            ",
+          "estimated_effort": "3-4 hours",
+          "confidence": 0.8
+        },
+        {
+          "theorem_name": "Theorem 4",
+          "sorry_type": "SorryType.INEQUALITY_PROOF",
+          "location": "Lines 293-318",
+          "description": "Prove IP(M_U) < IP(M_A) + IP(M_B)",
+          "current_state": "sorry",
+          "what_is_needed": "Show join reduces total integrity penalty",
+          "complexity": "Complexity.MEDIUM",
+          "dependencies": [
+            "Theorem 1"
+          ],
+          "recommended_approach": "\n            1. Define integrity penalty: IP(M) = \u222b |deviation| d\u03bc\n            2. Show join averages deviations\n            3. Use triangle inequality for integrals\n            4. Prove strict inequality for non-trivial joins\n            ",
+          "estimated_effort": "2-3 hours",
+          "confidence": 0.75
+        },
+        {
+          "theorem_name": "Theorem 7",
+          "sorry_type": "SorryType.TOPOLOGICAL_ARGUMENT",
+          "location": "Lines 431-433",
+          "description": "Prove d_U \u2265 max(d_A, d_B) + 1",
+          "current_state": "sorry",
+          "what_is_needed": "Show join increases manifold dimension",
+          "complexity": "Complexity.MEDIUM",
+          "dependencies": [
+            "Theorem 1"
+          ],
+          "recommended_approach": "\n            1. Analyze tangent spaces: T_U = span(T_A, T_B)\n            2. Show T_U has dimension at least max(dim T_A, dim T_B) + 1\n            3. Use structural key \u03ba to lift dimension\n            4. Prove strict inequality for non-trivial joins\n            ",
+          "estimated_effort": "2-3 hours",
+          "confidence": 0.75
+        },
+        {
+          "theorem_name": "Theorem 9",
+          "sorry_type": "SorryType.INFORMATION_THEORETIC",
+          "location": "Lines 496-503",
+          "description": "Prove I_gain \u2264 D_KL(P_A || P_B)",
+          "current_state": "sorry",
+          "what_is_needed": "Show information gain bounded by KL divergence",
+          "complexity": "Complexity.MEDIUM",
+          "dependencies": [
+            "Lemma 1"
+          ],
+          "recommended_approach": "\n            1. Define information gain: I_gain = H(P_A) - H(P_A|M_U)\n            2. Use data processing inequality\n            3. Show I_gain \u2264 I(P_A; M_B) = D_KL(P_A || P_B)\n            4. Verify with mutual information identities\n            ",
+          "estimated_effort": "2-3 hours",
+          "confidence": 0.85
+        },
+        {
+          "theorem_name": "Theorem 10",
+          "sorry_type": "SorryType.CONVERGENCE_ANALYSIS",
+          "location": "Lines 515-522",
+          "description": "Prove \u0393_t \u2264 \u0393_0 \u00d7 exp(-\u03bbt)",
+          "current_state": "sorry",
+          "what_is_needed": "Derive exponential convergence bound",
+          "complexity": "Complexity.MEDIUM",
+          "dependencies": [
+            "Theorem 5"
+          ],
+          "recommended_approach": "\n            1. Model grokking as gradient descent on loss L\n            2. Show dL/dt = -\u03bbL (exponential decay)\n            3. Integrate: L(t) = L\u2080\u00b7exp(-\u03bbt)\n            4. Relate loss to metric tension: \u0393 \u221d L\n            5. Verify with numerical simulation\n            ",
+          "estimated_effort": "2-3 hours",
+          "confidence": 0.8
+        },
+        {
+          "theorem_name": "Theorem 6",
+          "sorry_type": "SorryType.INFORMATION_THEORETIC",
+          "location": "Lines 388-405",
+          "description": "Prove IsJoin \u2192 \u0393(M_A, M_B) \u2192 0",
+          "current_state": "sorry",
+          "what_is_needed": "Show successful join eliminates metric tension",
+          "complexity": "Complexity.MEDIUM",
+          "dependencies": [
+            "Theorem 1",
+            "Theorem 3"
+          ],
+          "recommended_approach": "\n            1. Use KL divergence properties\n            2. Show M_U minimizes KL to both M_A and M_B\n            3. Apply data processing inequality\n            4. Conclude: \u0393(M_A, M_B) \u2264 \u0393(M_A, M_U) + \u0393(M_U, M_B) \u2192 0\n            ",
+          "estimated_effort": "2-3 hours",
+          "confidence": 0.8
+        }
+      ],
+      "hard": [
+        {
+          "theorem_name": "Theorem 2",
+          "sorry_type": "SorryType.UNIQUENESS_PROOF",
+          "location": "Lines 193-222",
+          "description": "Prove join is unique up to isometric transformation",
+          "current_state": "sorry",
+          "what_is_needed": "Show any two joins are isometric",
+          "complexity": "Complexity.HARD",
+          "dependencies": [
+            "Theorem 1"
+          ],
+          "recommended_approach": "\n            1. Assume two joins M_U and M_U'\n            2. Construct isometry \u03c6: M_U \u2192 M_U'\n            3. Show \u03c6 preserves metric structure\n            4. Prove \u03c6 is unique given projection constraints\n            ",
+          "estimated_effort": "4-6 hours",
+          "confidence": 0.7
+        },
+        {
+          "theorem_name": "Theorem 5 (sub)",
+          "sorry_type": "SorryType.CONVERGENCE_ANALYSIS",
+          "location": "Lines 353-370",
+          "description": "Prove asymptotic stability of converged state",
+          "current_state": "sorry (needs extended iterations)",
+          "what_is_needed": "Show system reaches fixed point",
+          "complexity": "Complexity.HARD",
+          "dependencies": [
+            "Theorem 5 (convergence)"
+          ],
+          "recommended_approach": "\n            1. Analyze Lyapunov function V(t) = \u0393(t)\n            2. Show dV/dt < 0 for \u0393 > 0\n            3. Prove \u0393(t) \u2192 0 as t \u2192 \u221e\n            4. Verify numerical stability with 5000+ iterations\n            ",
+          "estimated_effort": "4-6 hours",
+          "confidence": 0.6
+        }
+      ],
+      "very_hard": [
+        {
+          "theorem_name": "Theorem 5",
+          "sorry_type": "SorryType.CONVERGENCE_ANALYSIS",
+          "location": "Lines 353-370",
+          "description": "Prove ECI protocol converges to 100x+ improvement",
+          "current_state": "sorry",
+          "what_is_needed": "Show exponential convergence with rate \u03bb",
+          "complexity": "Complexity.VERY_HARD",
+          "dependencies": [
+            "Theorem 6",
+            "Theorem 10"
+          ],
+          "recommended_approach": "\n            1. Define improvement metric I(t) = 1/\u0393(t)\n            2. Show \u0393(t) satisfies differential equation: d\u0393/dt = -\u03bb\u0393\n            3. Solve: \u0393(t) = \u0393\u2080\u00b7exp(-\u03bbt)\n            4. Prove I(t) \u2192 \u221e, find t when I(t) \u2265 100\n            ",
+          "estimated_effort": "1-2 days",
+          "confidence": 0.5
+        }
+      ]
+    }
+  },
+  "summary": {
+    "total_sorries": 18,
+    "by_type": {
+      

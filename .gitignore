@@ -285,3 +285,5 @@ dist/
 # For example:
 # simulation_output/
 # experimental_data/
+AGI/data
+MNIST/

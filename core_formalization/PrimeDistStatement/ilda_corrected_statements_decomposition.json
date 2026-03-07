@@ -1,0 +1,152 @@
+{
+  "statement_1_corrected": {
+    "description": "Gap frequency f(g) \u221d g^(-\u03c3\u2081)",
+    "coupling_constant": "-\u03c3\u2081",
+    "coupling_value": -1.618033988749895,
+    "lemmas": [
+      {
+        "name": "gap_definition",
+        "statement": "Gap between consecutive primes p_n and p_{n+1} is g_n = p_{n+1} - p_n",
+        "concrete_objects": {
+          "sample_gap_1": 1,
+          "sample_gap_2": 2,
+          "sample_gap_3": 2
+        }
+      },
+      {
+        "name": "gap_frequency",
+        "statement": "Gap frequency f(g) = count(g) / total_gaps",
+        "concrete_objects": {
+          "total_gaps": 9591,
+          "unique_gaps": 34,
+          "most_frequent_gap": 6,
+          "max_frequency": 0.2022729642373058
+        }
+      },
+      {
+        "name": "power_law_fit",
+        "statement": "log(f(g)) = -1.445756 * log(g) + -1.010165",
+        "concrete_objects": {
+          "exponent": -1.4457557618802086,
+          "intercept": -1.0101645862854962,
+          "sigma1": 1.618033988749895,
+          "expected_exponent": -1.618033988749895,
+          "measured_vs_expected": 0.1722782268696863
+        }
+      },
+      {
+        "name": "sigma1_coupling_verification",
+        "statement": "Gap distribution exponent \u2248 -\u03c3\u2081 = -1.618034",
+        "concrete_objects": {
+          "measured_exponent": -1.4457557618802086,
+          "expected_exponent": -1.618033988749895,
+          "difference": 0.1722782268696863,
+          "relative_error": 10.647379972703153
+        }
+      }
+    ]
+  },
+  "statement_4_corrected": {
+    "description": "Oscillations S(f) \u221d f^(-ln \u03c3\u2082)",
+    "coupling_constant": "-ln(\u03c3\u2082)",
+    "coupling_value": -0.8813735870195429,
+    "lemmas": [
+      {
+        "name": "oscillation_definition",
+        "statement": "Oscillation = \u03c0(x) - x/ln(x) (residual from PNT)",
+        "concrete_objects": {
+          "sample_x_1": 1000.0,
+          "sample_pi_1": 168,
+          "sample_pnt_1": 144.76482730108395,
+          "sample_residual_1": 23.235172698916045
+        }
+      },
+      {
+        "name": "residual_calculation",
+        "statement": "Residuals have variance 54738.80",
+        "concrete_objects": {
+          "variance": 54738.797071605346,
+          "max_residual": 906.1103619349633,
+          "min_residual": 23.235172698916045
+        }
+      },
+      {
+        "name": "scaling_analysis",
+        "statement": "Oscillation exponent \u03b1 = -0.936028",
+        "concrete_objects": {
+          "exponent": -0.9360277043420578,
+          "ln_sigma2": 0.8813735870195429,
+          "expected_exponent": -0.8813735870195429,
+          "measured_vs_expected": 0.054654117322514906
+        }
+      },
+      {
+        "name": "ln_sigma2_coupling_verification",
+        "statement": "Oscillation exponent \u2248 -ln(\u03c3\u2082) = -0.881374",
+        "concrete_objects": {
+          "measured_exponent": -0.9360277043420578,
+          "expected_exponent": -0.8813735870195429,
+          "difference": 0.054654117322514906,
+          "relative_error": 6.2010160194763175
+        }
+      }
+    ]
+  },
+  "statement_8_corrected": {
+    "description": "Twin prime gaps f(g) \u221d g^(-ln \u03c3\u2082)",
+    "coupling_constant": "-ln(\u03c3\u2082)",
+    "coupling_value": -0.8813735870195429,
+    "lemmas": [
+      {
+        "name": "twin_prime_definition",
+        "statement": "Twin primes are primes p, p+2 where both are prime",
+        "concrete_objects": {
+          "total_twin_primes": 1224,
+          "first_twin_prime": 3,
+          "second_twin_prime": 5,
+          "sample_twin_gap": 2
+        }
+      },
+      {
+        "name": "twin_gap_distribution",
+        "statement": "Twin prime gap frequency f(g) = count(g) / total_twin_gaps",
+        "concrete_objects": {
+          "total_twin_gaps": 1223,
+          "unique_twin_gaps": 63,
+          "most_frequent_twin_gap": 30,
+          "max_frequency": 0.0973017170891251
+        }
+      },
+      {
+        "name": "twin_gap_power_law",
+        "statement": "log(f(g)) = -0.868682 * log(g) + constant",
+        "concrete_objects": {
+          "exponent": -0.8686815586847286,
+          "ln_sigma2": 0.8813735870195429,
+          "expected_exponent": -0.8813735870195429,
+          "measured_vs_expected": 0.01269202833481431
+        }
+      },
+      {
+        "name": "ln_sigma2_twin_coupling_verification",
+        "statement": "Twin gap distribution exponent \u2248 -ln(\u03c3\u2082) = -0.881374",
+        "concrete_objects": {
+          "measured_exponent": -0.8686815586847286,
+          "expected_exponent": -0.8813735870195429,
+          "difference": 0.01269202833481431,
+          "relative_error": 1.4400282152468094,
+          "highly_significant": true
+        }
+      }
+    ]
+  },
+  "summary": {
+    "total_statements": 3,
+    "total_lemmas": 12,
+    "coupling_constants": [
+      "-\u03c3\u2081",
+      "-ln(\u03c3\u2082)"
+    ],
+    "profound_discovery": "Heterogeneous coupling: different phenomena use different metal ratio derivatives"
+  }
+}

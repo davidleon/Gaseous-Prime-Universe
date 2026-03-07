@@ -1,0 +1,162 @@
+[
+  {
+    "task_type": "nl2code",
+    "input": "Prove that for all natural numbers n, n + 0 = n",
+    "output": "theorem add_zero (n : Nat) : n + 0 = n := by",
+    "metadata": {
+      "id": "sample_001",
+      "category": "addition",
+      "difficulty": "easy"
+    }
+  },
+  {
+    "task_type": "proof_completion",
+    "input": "theorem add_zero (n : Nat) : n + 0 = n := by",
+    "output": "  induction n with\n  | zero => rfl\n  | succ n ih => rw [Nat.add_succ, ih]",
+    "metadata": {
+      "id": "sample_001",
+      "category": "addition",
+      "difficulty": "easy"
+    }
+  },
+  {
+    "task_type": "nl2code",
+    "input": "Prove that for all natural numbers m n, m + n = n + m",
+    "output": "theorem add_comm (m n : Nat) : m + n = n + m := by",
+    "metadata": {
+      "id": "sample_002",
+      "category": "addition",
+      "difficulty": "medium"
+    }
+  },
+  {
+    "task_type": "proof_completion",
+    "input": "theorem add_comm (m n : Nat) : m + n = n + m := by",
+    "output": "  induction n with\n  | zero => rw [Nat.add_zero]\n  | succ n ih => rw [Nat.add_succ, ih, Nat.succ_add]",
+    "metadata": {
+      "id": "sample_002",
+      "category": "addition",
+      "difficulty": "medium"
+    }
+  },
+  {
+    "task_type": "nl2code",
+    "input": "Prove that for all natural numbers n, 0 * n = 0",
+    "output": "theorem zero_mul (n : Nat) : 0 * n = 0 := by",
+    "metadata": {
+      "id": "sample_003",
+      "category": "multiplication",
+      "difficulty": "easy"
+    }
+  },
+  {
+    "task_type": "proof_completion",
+    "input": "theorem zero_mul (n : Nat) : 0 * n = 0 := by",
+    "output": "  induction n with\n  | zero => rfl\n  | succ n ih => rw [Nat.mul_succ, ih, Nat.zero_add]",
+    "metadata": {
+      "id": "sample_003",
+      "category": "multiplication",
+      "difficulty": "easy"
+    }
+  },
+  {
+    "task_type": "nl2code",
+    "input": "Prove that the square root of 2 is irrational",
+    "output": "theorem sqrt_two_irrational : ¬∃ p q : Nat, p * p = 2 * (q * q) := by",
+    "metadata": {
+      "id": "sample_004",
+      "category": "number_theory",
+      "difficulty": "hard"
+    }
+  },
+  {
+    "task_type": "proof_completion",
+    "input": "theorem sqrt_two_irrational : ¬∃ p q : Nat, p * p = 2 * (q * q) := by",
+    "output": "  rintro ⟨p, q, h⟩\n  have := Nat.prime_two.dvd_mul.1 (by rw [←h]; apply Nat.dvd_mul_right _ p)\n  obtain ⟨k, hk⟩ := this\n  have := Nat.prime_two.dvd_mul.1 (by rw [←h, hk]; apply Nat.dvd_mul_right _ q)\n  obtain ⟨l, hl⟩ := this\n  rw [←hk, ←hl, mul_comm] at h\n  linarith",
+    "metadata": {
+      "id": "sample_004",
+      "category": "number_theory",
+      "difficulty": "hard"
+    }
+  },
+  {
+    "task_type": "nl2code",
+    "input": "Prove that for any sets A and B, A ∩ B ⊆ A",
+    "output": "theorem inter_subset_left (A B : Set α) : A ∩ B ⊆ A := by",
+    "metadata": {
+      "id": "sample_005",
+      "category": "set_theory",
+      "difficulty": "easy"
+    }
+  },
+  {
+    "task_type": "proof_completion",
+    "input": "theorem inter_subset_left (A B : Set α) : A ∩ B ⊆ A := by",
+    "output": "  intro x h\n  exact h.1",
+    "metadata": {
+      "id": "sample_005",
+      "category": "set_theory",
+      "difficulty": "easy"
+    }
+  },
+  {
+    "task_type": "nl2code",
+    "input": "Prove De Morgan's law: complement of (A ∪ B) = complement of A ∩ complement of B",
+    "output": "theorem complement_union (A B : Set α) : (A ∪ B)ᶜ = Aᶜ ∩ Bᶜ := by",
+    "metadata": {
+      "id": "sample_006",
+      "category": "set_theory",
+      "difficulty": "medium"
+    }
+  },
+  {
+    "task_type": "proof_completion",
+    "input": "theorem complement_union (A B : Set α) : (A ∪ B)ᶜ = Aᶜ ∩ Bᶜ := by",
+    "output": "  ext x\n  constructor\n  · intro h\n    constructor\n    · intro ha\n      apply h\n      left\n      assumption\n    · intro hb\n      apply h\n      right\n      assumption\n  · intro h ha hb\n    apply h\n    cases ha\n    · left\n      assumption\n    · right\n      assumption",
+    "metadata": {
+      "id": "sample_006",
+      "category": "set_theory",
+      "difficulty": "medium"
+    }
+  },
+  {
+    "task_type": "nl2code",
+    "input": "Prove that for any real numbers x and y, |x + y| ≤ |x| + |y|",
+    "output": "theorem abs_add (x y : ℝ) : |x + y| ≤ |x| + |y| := by",
+    "metadata": {
+      "id": "sample_007",
+      "category": "analysis",
+      "difficulty": "hard"
+    }
+  },
+  {
+    "task_type": "proof_completion",
+    "input": "theorem abs_add (x y : ℝ) : |x + y| ≤ |x| + |y| := by",
+    "output": "  cases (le_total 0 (x + y)) with\n  | h1 =>\n    calc\n      |x + y| = x + y := by rw [abs_of_nonneg h1]\n      _ ≤ |x| + y := by sorry\n      _ ≤ |x| + |y| := by sorry\n  | h1 =>\n    have h2 : -(x + y) ≥ 0 := by linarith\n    calc\n      |x + y| = -(x + y) := by rw [abs_of_nonpos h1]\n      _ = (-x) + (-y) := by ring\n      _ ≤ |x| + |y| := by sorry",
+    "metadata": {
+      "id": "sample_007",
+      "category": "analysis",
+      "difficulty": "hard"
+    }
+  },
+  {
+    "task_type": "nl2code",
+    "input": "Prove that for any natural number n, the sum of the first n natural numbers is n(n+1)/2",
+    "output": "theorem sum_nat (n : Nat) : ∑ i in Finset.range (n + 1), i = n * (n + 1) / 2 := by",
+    "metadata": {
+      "id": "sample_008",
+      "category": "combinatorics",
+      "difficulty": "medium"
+    }
+  },
+  {
+    "task_type": "proof_completion",
+    "input": "theorem sum_nat (n : Nat) : ∑ i in Finset.range (n + 1), i = n * (n + 1) / 2 := by",
+    "output": "  induction n with\n  | zero =>\n    rw [Finset.range_zero, Finset.sum_empty, Nat.zero_mul]\n    rfl\n  | succ n ih =>\n    rw [Finset.range_succ, Finset.sum_insert, ih, Nat.add_succ_div_two]\n    · linarith\n    · intro h\n      rw [Finset.mem_range] at h\n      linarith",
+    "metadata": {
+      "id": "sample_008",
+      "category": "combinatorics",
+      "difficulty": "medium"
+    }
+  }
+]

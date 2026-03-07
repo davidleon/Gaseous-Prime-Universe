@@ -1,0 +1,22 @@
+{
+  "statement_1": {
+    "mean_gap": 8.11970684039088,
+    "median_gap": 6.0,
+    "power_law_exponent": -0.7660372375905306,
+    "power_law_r2": 0.1579143948102881
+  },
+  "statement_4": {
+    "residual_variance": 54738.797071605346,
+    "dominant_frequency": 0.0,
+    "scaling_exponent": 0.9360277043420572
+  },
+  "statement_6": {
+    "twin_density": 0.16680227827502034,
+    "triplet_density": 0.0008136696501220504,
+    "exponential_base": 0.0048780487804878075
+  },
+  "statement_8": {
+    "mean_twin_gap": 48.65686274509804,
+    "power_law_exponent": -0.4124231285522276
+  }
+}

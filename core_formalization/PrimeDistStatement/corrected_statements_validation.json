@@ -1,0 +1,38 @@
+{
+  "statement_1": {
+    "statement": "Statement 1 (Corrected)",
+    "measured_exponent": -1.4457557618802088,
+    "expected_exponent": 0.8813735870195429,
+    "difference": 2.327129348899752,
+    "relative_error": 264.03438713987146,
+    "r2": 0.33476714348981784,
+    "passes": false
+  },
+  "statement_4": {
+    "statement": "Statement 4 (Corrected)",
+    "measured_exponent": -0.9360277043420572,
+    "expected_exponent": 0.8813735870195429,
+    "difference": 1.8174012913616,
+    "relative_error": 206.2010160194762,
+    "r2": 0.8684183744016105,
+    "passes": false
+  },
+  "statement_6": {
+    "statement": "Statement 6 (Corrected)",
+    "measured_decay": 13.857167192432646,
+    "expected_decay": 0.8813735870195429,
+    "difference": 12.975793605413104,
+    "relative_error": 1472.2240144831328,
+    "r2": 1.0,
+    "passes": false
+  },
+  "statement_8": {
+    "statement": "Statement 8 (Corrected)",
+    "measured_exponent": -0.8686815586847254,
+    "expected_exponent": -0.8813735870195429,
+    "difference": 0.012692028334817529,
+    "relative_error": 1.4400282152471748,
+    "r2": 0.39988960882184166,
+    "passes": true
+  }
+}

@@ -29,7 +29,153 @@ We verify the presence of the algorithm through numerical extraction:
 
 ---
 
-### 4. Strategic Implication: The "Brick-Building" Protocol
+### 4. Automated ILDA Execution: Python Script Workflow
+
+ILDA can be executed automatically using the enhanced context script (`core_tools/ilda_enhanced_context.py`). The workflow is:
+
+#### 4.1 Input Specification
+
+```bash
+python3 core_tools/ilda_enhanced_context.py <ConjectureName> "<SorryStatement>" [LeanFilePath]
+```
+
+**Parameters:**
+- `ConjectureName`: Name of the conjecture (e.g., Collatz, Bunkbed, GRH)
+- `SorryStatement`: The theorem/lemma statement containing the `sorry` to analyze
+- `LeanFilePath`: (Optional) Path to the Lean file containing the sorry
+
+**Example:**
+```bash
+python3 core_tools/ilda_enhanced_context.py Collatz \
+  "Prove collatz3n1Bounded: PadicNorm 3 (3 * n + 1) ≤ max (PadicNorm 3 n) 1 for odd n" \
+  core_formalization/Conjectures/Collatz/OmegaManifoldAttack.lean
+```
+
+#### 4.2 Working Folder Structure
+
+The script creates a working folder for each conjecture:
+
+```
+core_tools/ilda_agent_analysis/
+└── <ConjectureName>/
+    ├── <ConjectureName>_ilda_simulation.py      # Generated Python simulation
+    ├── <ConjectureName>_ilda_visualization.png   # ILDA trajectory visualization
+    ├── <ConjectureName>_ilda_results.json       # Simulation results & lemmas
+    └── <ConjectureName>_ilda_validation.txt     # Validation report
+```
+
+#### 4.3 Python Script Generation
+
+The script automatically generates a Python simulation that:
+
+1. **Excitation Phase**: Creates concrete mathematical objects specific to the conjecture
+   - Parses the Lean sorry statement to extract theorem structure
+   - Initializes appropriate mathematical structures (p-adic norms, graphs, etc.)
+   - Sets initial entropy and energy states
+
+2. **Dissipation Phase**: Simulates entropy gradient flow
+   - Applies Statement 8 power law: `f(g) = g^(-ln σ₂)` where `ln σ₂ = 0.881374`
+   - Computes spectral gap `γ = S * ln σ₂` at each step
+   - Tracks entropy decay over 100 iterations
+
+3. **Precipitation Phase**: Identifies crystallization
+   - Checks if entropy converged to ground state (`S < 0.05`)
+   - Verifies uniqueness of ground state
+   - Validates spectral gap properties
+
+#### 4.4 Output Files
+
+**`<ConjectureName>_ilda_simulation.py`:**
+- Complete ILDA simulation script
+- Concrete mathematical objects for the specific conjecture
+- Three-phase ILDA implementation
+
+**`<ConjectureName>_ilda_results.json`:**
+```json
+{
+  "sorry_statement": "Theorem/lemma statement with sorry",
+  "insights": {
+    "initial_entropy": 0.01,
+    "final_entropy": 0.01,
+    "decay_rate": 0.0,
+    "average_spectral_gap": 0.008814,
+    "convergence_step": 0
+  },
+  "lemmas": [
+    {
+      "name": "excitation_axiomatic_base",
+      "phase": "excitation",
+      "statement": "Axiomatic foundation from GPU Core",
+      "proof_strategy": "Use Statement 8 with ln σ₂ = 0.881374",
+      "confidence": "high"
+    }
+  ],
+  "trajectory": [
+    {"entropy": 0.01, "spectral_gap": 0.008814},
+    ...
+  ]
+}
+```
+
+**`<ConjectureName>_ilda_validation.txt`:**
+```
+ILDA VALIDATION REPORT
+======================
+
+Script: core_tools/ilda_agent_analysis/Collatz/Collatz_ilda_simulation.py
+Status: ✓ PASSED
+
+Phase I (Excitation): ✓ Axiomatic emergence identified
+Phase II (Dissipation): ✓ Entropy gradient measured (γ = 0.008814)
+Phase III (Precipitation): ✓ Truth grounded at S = 0.01
+
+Lemmas Generated: 5
+  ✓ excitation_axiomatic_base (confidence: high)
+  ✓ dissipation_spectral_gap (confidence: high)
+  ✓ dissipation_decay_bounded (confidence: high)
+  ✓ precipitation_convergence (confidence: medium)
+  ✓ precipitation_uniqueness (confidence: medium)
+
+Next Steps:
+  1. Prove excitation_axiomatic_base using GPU Core Statement 8
+  2. Verify spectral gap > 0 using spectral analysis
+  3. Apply power law decay bound
+  4. Prove convergence using Omega completeness
+  5. Establish uniqueness via contradiction
+```
+
+#### 4.5 Lean File Integration
+
+When a Lean file path is provided, the script:
+
+1. **Parses the Lean file** to extract:
+   - Theorem/lemma names
+   - Sorry statements
+   - Type signatures
+   - Hypotheses and conclusions
+
+2. **Feeds context to the agent**:
+   ```
+   @{LeanFile}: core_formalization/Conjectures/Collatz/OmegaManifoldAttack.lean
+   Theorem: collatz3n1Bounded
+   Statement: PadicNorm 3 (3 * n + 1) ≤ max (PadicNorm 3 n) 1
+   Hypotheses: n : ℕ, hn : Odd n
+   ```
+
+3. **Generates problem-specific simulations** based on the parsed context
+
+#### 4.6 Validation
+
+The script automatically validates:
+- ✓ Simulation script executes without errors
+- ✓ All three ILDA phases complete successfully
+- ✓ Mathematical insights are extracted
+- ✓ Lemmas are generated with proof strategies
+- ✓ Results files are saved correctly
+
+---
+
+### 5. Strategic Implication: The "Brick-Building" Protocol
 ILDA transforms "Impossible" problems into a pipeline of **Universal Bricks**:
 1.  **Extract**: Use ILDA to find a universal property (e.g., Acoustic Stability).
 2.  **Harden**: Turn the property into a problem-agnostic tool in `core_tools/`.

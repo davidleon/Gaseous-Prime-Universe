@@ -1,0 +1,2044 @@
+{
+  "iteration": 3,
+  "input_iteration": 2,
+  "total_medium_hard_sub_lemmas": 58,
+  "total_atomic_proofs": 232,
+  "proof_length_distribution": {
+    "1-line": 110,
+    "2-5 lines": 113,
+    "5-10 lines": 6,
+    "10+ lines": 3
+  },
+  "atomic_breakdowns": [
+    {
+      "original_sub_lemma": "invariant_preserved",
+      "original_difficulty": "medium",
+      "atomic_proofs": [
+        {
+          "name": "property_1_trivial",
+          "description": "Basic property 1",
+          "statement": "\u2200 (x : Type), property_1 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_2_trivial",
+          "description": "Basic property 2",
+          "statement": "\u2200 (x : Type), property_2 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_3_simple",
+          "description": "Simple property 3",
+          "statement": "\u2200 (x : Type), property_3 x holds",
+          "proof_hint": "Simple induction",
+          "proof_length": "2-5 lines"
+        },
+        {
+          "name": "property_4_complete",
+          "description": "Complete property",
+          "statement": "\u2200 (x : Type), property_4 x holds",
+          "proof_hint": "Combine previous lemmas",
+          "proof_length": "2-5 lines"
+        }
+      ],
+      "ilda_iteration": 3
+    },
+    {
+      "original_sub_lemma": "conclusion_reached",
+      "original_difficulty": "medium",
+      "atomic_proofs": [
+        {
+          "name": "property_1_trivial",
+          "description": "Basic property 1",
+          "statement": "\u2200 (x : Type), property_1 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_2_trivial",
+          "description": "Basic property 2",
+          "statement": "\u2200 (x : Type), property_2 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_3_simple",
+          "description": "Simple property 3",
+          "statement": "\u2200 (x : Type), property_3 x holds",
+          "proof_hint": "Simple induction",
+          "proof_length": "2-5 lines"
+        },
+        {
+          "name": "property_4_complete",
+          "description": "Complete property",
+          "statement": "\u2200 (x : Type), property_4 x holds",
+          "proof_hint": "Combine previous lemmas",
+          "proof_length": "2-5 lines"
+        }
+      ],
+      "ilda_iteration": 3
+    },
+    {
+      "original_sub_lemma": "invariant_preserved",
+      "original_difficulty": "medium",
+      "atomic_proofs": [
+        {
+          "name": "property_1_trivial",
+          "description": "Basic property 1",
+          "statement": "\u2200 (x : Type), property_1 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_2_trivial",
+          "description": "Basic property 2",
+          "statement": "\u2200 (x : Type), property_2 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_3_simple",
+          "description": "Simple property 3",
+          "statement": "\u2200 (x : Type), property_3 x holds",
+          "proof_hint": "Simple induction",
+          "proof_length": "2-5 lines"
+        },
+        {
+          "name": "property_4_complete",
+          "description": "Complete property",
+          "statement": "\u2200 (x : Type), property_4 x holds",
+          "proof_hint": "Combine previous lemmas",
+          "proof_length": "2-5 lines"
+        }
+      ],
+      "ilda_iteration": 3
+    },
+    {
+      "original_sub_lemma": "conclusion_reached",
+      "original_difficulty": "medium",
+      "atomic_proofs": [
+        {
+          "name": "property_1_trivial",
+          "description": "Basic property 1",
+          "statement": "\u2200 (x : Type), property_1 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_2_trivial",
+          "description": "Basic property 2",
+          "statement": "\u2200 (x : Type), property_2 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_3_simple",
+          "description": "Simple property 3",
+          "statement": "\u2200 (x : Type), property_3 x holds",
+          "proof_hint": "Simple induction",
+          "proof_length": "2-5 lines"
+        },
+        {
+          "name": "property_4_complete",
+          "description": "Complete property",
+          "statement": "\u2200 (x : Type), property_4 x holds",
+          "proof_hint": "Combine previous lemmas",
+          "proof_length": "2-5 lines"
+        }
+      ],
+      "ilda_iteration": 3
+    },
+    {
+      "original_sub_lemma": "simulation_inductive_step",
+      "original_difficulty": "medium",
+      "atomic_proofs": [
+        {
+          "name": "simulation_n_plus_1_def",
+          "description": "Simulation for n+1 steps",
+          "statement": "\u2200 (tm : TuringMachineState) (n : \u2115), ilda_simulation (tm_encode tm) (n+1) = step_encoding (ilda_simulation (tm_encode tm) n)",
+          "proof_hint": "By recursive definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "step_applies_to_encoding",
+          "description": "Step applies to encoded state",
+          "statement": "\u2200 (tm : TuringMachineState) (n : \u2115), step_encoding (ilda_simulation (tm_encode tm) n) is well-defined",
+          "proof_hint": "step_encoding preserves structure",
+          "proof_length": "2-5 lines"
+        },
+        {
+          "name": "inductive_step_valid",
+          "description": "Inductive step is valid",
+          "statement": "\u2200 (tm : TuringMachineState) (n : \u2115), ilda_simulation (tm_encode tm) (n+1) = step_encoding (ilda_simulation (tm_encode tm) n)",
+          "proof_hint": "Unfold definition, apply step_encoding",
+          "proof_length": "2-5 lines"
+        },
+        {
+          "name": "inductive_step_correctness",
+          "description": "Complete inductive step correctness",
+          "statement": "\u2200 (tm : TuringMachineState) (n : \u2115), ilda_simulation (tm_encode tm) (n+1) correctly extends simulation",
+          "proof_hint": "By definition + step_encoding property",
+          "proof_length": "5-10 lines"
+        }
+      ],
+      "ilda_iteration": 3
+    },
+    {
+      "original_sub_lemma": "simulation_by_induction",
+      "original_difficulty": "hard",
+      "atomic_proofs": [
+        {
+          "name": "induction_base",
+          "description": "Induction base case (n=0)",
+          "statement": "\u2200 (tm : TuringMachineState), ilda_simulation (tm_encode tm) 0 = tm_encode (iterate 0 transition tm)",
+          "proof_hint": "Use base case lemmas",
+          "proof_length": "2-5 lines"
+        },
+        {
+          "name": "induction_hypothesis",
+          "description": "Induction hypothesis",
+          "statement": "\u2200 (tm : TuringMachineState) (n : \u2115), ilda_simulation (tm_encode tm) n = tm_encode (iterate n transition tm)",
+          "proof_hint": "Assume for n",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "induction_step",
+          "description": "Induction step (n \u2192 n+1)",
+          "statement": "\u2200 (tm : TuringMachineState) (n : \u2115), ilda_simulation (tm_encode tm) (n+1) = tm_encode (iterate (n+1) transition tm)",
+          "proof_hint": "Use inductive hypothesis + step correspondence",
+          "proof_length": "5-10 lines"
+        },
+        {
+          "name": "induction_complete",
+          "description": "Complete induction proof",
+          "statement": "\u2200 (tm : TuringMachineState) (n : \u2115), ilda_simulation (tm_encode tm) n = tm_encode (iterate n transition tm)",
+          "proof_hint": "Induction on n using previous lemmas",
+          "proof_length": "10+ lines"
+        }
+      ],
+      "ilda_iteration": 3
+    },
+    {
+      "original_sub_lemma": "simulation_inductive_step",
+      "original_difficulty": "medium",
+      "atomic_proofs": [
+        {
+          "name": "simulation_n_plus_1_def",
+          "description": "Simulation for n+1 steps",
+          "statement": "\u2200 (tm : TuringMachineState) (n : \u2115), ilda_simulation (tm_encode tm) (n+1) = step_encoding (ilda_simulation (tm_encode tm) n)",
+          "proof_hint": "By recursive definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "step_applies_to_encoding",
+          "description": "Step applies to encoded state",
+          "statement": "\u2200 (tm : TuringMachineState) (n : \u2115), step_encoding (ilda_simulation (tm_encode tm) n) is well-defined",
+          "proof_hint": "step_encoding preserves structure",
+          "proof_length": "2-5 lines"
+        },
+        {
+          "name": "inductive_step_valid",
+          "description": "Inductive step is valid",
+          "statement": "\u2200 (tm : TuringMachineState) (n : \u2115), ilda_simulation (tm_encode tm) (n+1) = step_encoding (ilda_simulation (tm_encode tm) n)",
+          "proof_hint": "Unfold definition, apply step_encoding",
+          "proof_length": "2-5 lines"
+        },
+        {
+          "name": "inductive_step_correctness",
+          "description": "Complete inductive step correctness",
+          "statement": "\u2200 (tm : TuringMachineState) (n : \u2115), ilda_simulation (tm_encode tm) (n+1) correctly extends simulation",
+          "proof_hint": "By definition + step_encoding property",
+          "proof_length": "5-10 lines"
+        }
+      ],
+      "ilda_iteration": 3
+    },
+    {
+      "original_sub_lemma": "simulation_by_induction",
+      "original_difficulty": "hard",
+      "atomic_proofs": [
+        {
+          "name": "induction_base",
+          "description": "Induction base case (n=0)",
+          "statement": "\u2200 (tm : TuringMachineState), ilda_simulation (tm_encode tm) 0 = tm_encode (iterate 0 transition tm)",
+          "proof_hint": "Use base case lemmas",
+          "proof_length": "2-5 lines"
+        },
+        {
+          "name": "induction_hypothesis",
+          "description": "Induction hypothesis",
+          "statement": "\u2200 (tm : TuringMachineState) (n : \u2115), ilda_simulation (tm_encode tm) n = tm_encode (iterate n transition tm)",
+          "proof_hint": "Assume for n",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "induction_step",
+          "description": "Induction step (n \u2192 n+1)",
+          "statement": "\u2200 (tm : TuringMachineState) (n : \u2115), ilda_simulation (tm_encode tm) (n+1) = tm_encode (iterate (n+1) transition tm)",
+          "proof_hint": "Use inductive hypothesis + step correspondence",
+          "proof_length": "5-10 lines"
+        },
+        {
+          "name": "induction_complete",
+          "description": "Complete induction proof",
+          "statement": "\u2200 (tm : TuringMachineState) (n : \u2115), ilda_simulation (tm_encode tm) n = tm_encode (iterate n transition tm)",
+          "proof_hint": "Induction on n using previous lemmas",
+          "proof_length": "10+ lines"
+        }
+      ],
+      "ilda_iteration": 3
+    },
+    {
+      "original_sub_lemma": "simulation_inductive_step",
+      "original_difficulty": "medium",
+      "atomic_proofs": [
+        {
+          "name": "simulation_n_plus_1_def",
+          "description": "Simulation for n+1 steps",
+          "statement": "\u2200 (tm : TuringMachineState) (n : \u2115), ilda_simulation (tm_encode tm) (n+1) = step_encoding (ilda_simulation (tm_encode tm) n)",
+          "proof_hint": "By recursive definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "step_applies_to_encoding",
+          "description": "Step applies to encoded state",
+          "statement": "\u2200 (tm : TuringMachineState) (n : \u2115), step_encoding (ilda_simulation (tm_encode tm) n) is well-defined",
+          "proof_hint": "step_encoding preserves structure",
+          "proof_length": "2-5 lines"
+        },
+        {
+          "name": "inductive_step_valid",
+          "description": "Inductive step is valid",
+          "statement": "\u2200 (tm : TuringMachineState) (n : \u2115), ilda_simulation (tm_encode tm) (n+1) = step_encoding (ilda_simulation (tm_encode tm) n)",
+          "proof_hint": "Unfold definition, apply step_encoding",
+          "proof_length": "2-5 lines"
+        },
+        {
+          "name": "inductive_step_correctness",
+          "description": "Complete inductive step correctness",
+          "statement": "\u2200 (tm : TuringMachineState) (n : \u2115), ilda_simulation (tm_encode tm) (n+1) correctly extends simulation",
+          "proof_hint": "By definition + step_encoding property",
+          "proof_length": "5-10 lines"
+        }
+      ],
+      "ilda_iteration": 3
+    },
+    {
+      "original_sub_lemma": "simulation_by_induction",
+      "original_difficulty": "hard",
+      "atomic_proofs": [
+        {
+          "name": "induction_base",
+          "description": "Induction base case (n=0)",
+          "statement": "\u2200 (tm : TuringMachineState), ilda_simulation (tm_encode tm) 0 = tm_encode (iterate 0 transition tm)",
+          "proof_hint": "Use base case lemmas",
+          "proof_length": "2-5 lines"
+        },
+        {
+          "name": "induction_hypothesis",
+          "description": "Induction hypothesis",
+          "statement": "\u2200 (tm : TuringMachineState) (n : \u2115), ilda_simulation (tm_encode tm) n = tm_encode (iterate n transition tm)",
+          "proof_hint": "Assume for n",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "induction_step",
+          "description": "Induction step (n \u2192 n+1)",
+          "statement": "\u2200 (tm : TuringMachineState) (n : \u2115), ilda_simulation (tm_encode tm) (n+1) = tm_encode (iterate (n+1) transition tm)",
+          "proof_hint": "Use inductive hypothesis + step correspondence",
+          "proof_length": "5-10 lines"
+        },
+        {
+          "name": "induction_complete",
+          "description": "Complete induction proof",
+          "statement": "\u2200 (tm : TuringMachineState) (n : \u2115), ilda_simulation (tm_encode tm) n = tm_encode (iterate n transition tm)",
+          "proof_hint": "Induction on n using previous lemmas",
+          "proof_length": "10+ lines"
+        }
+      ],
+      "ilda_iteration": 3
+    },
+    {
+      "original_sub_lemma": "invariant_preserved",
+      "original_difficulty": "medium",
+      "atomic_proofs": [
+        {
+          "name": "property_1_trivial",
+          "description": "Basic property 1",
+          "statement": "\u2200 (x : Type), property_1 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_2_trivial",
+          "description": "Basic property 2",
+          "statement": "\u2200 (x : Type), property_2 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_3_simple",
+          "description": "Simple property 3",
+          "statement": "\u2200 (x : Type), property_3 x holds",
+          "proof_hint": "Simple induction",
+          "proof_length": "2-5 lines"
+        },
+        {
+          "name": "property_4_complete",
+          "description": "Complete property",
+          "statement": "\u2200 (x : Type), property_4 x holds",
+          "proof_hint": "Combine previous lemmas",
+          "proof_length": "2-5 lines"
+        }
+      ],
+      "ilda_iteration": 3
+    },
+    {
+      "original_sub_lemma": "conclusion_reached",
+      "original_difficulty": "medium",
+      "atomic_proofs": [
+        {
+          "name": "property_1_trivial",
+          "description": "Basic property 1",
+          "statement": "\u2200 (x : Type), property_1 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_2_trivial",
+          "description": "Basic property 2",
+          "statement": "\u2200 (x : Type), property_2 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_3_simple",
+          "description": "Simple property 3",
+          "statement": "\u2200 (x : Type), property_3 x holds",
+          "proof_hint": "Simple induction",
+          "proof_length": "2-5 lines"
+        },
+        {
+          "name": "property_4_complete",
+          "description": "Complete property",
+          "statement": "\u2200 (x : Type), property_4 x holds",
+          "proof_hint": "Combine previous lemmas",
+          "proof_length": "2-5 lines"
+        }
+      ],
+      "ilda_iteration": 3
+    },
+    {
+      "original_sub_lemma": "invariant_preserved",
+      "original_difficulty": "medium",
+      "atomic_proofs": [
+        {
+          "name": "property_1_trivial",
+          "description": "Basic property 1",
+          "statement": "\u2200 (x : Type), property_1 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_2_trivial",
+          "description": "Basic property 2",
+          "statement": "\u2200 (x : Type), property_2 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_3_simple",
+          "description": "Simple property 3",
+          "statement": "\u2200 (x : Type), property_3 x holds",
+          "proof_hint": "Simple induction",
+          "proof_length": "2-5 lines"
+        },
+        {
+          "name": "property_4_complete",
+          "description": "Complete property",
+          "statement": "\u2200 (x : Type), property_4 x holds",
+          "proof_hint": "Combine previous lemmas",
+          "proof_length": "2-5 lines"
+        }
+      ],
+      "ilda_iteration": 3
+    },
+    {
+      "original_sub_lemma": "conclusion_reached",
+      "original_difficulty": "medium",
+      "atomic_proofs": [
+        {
+          "name": "property_1_trivial",
+          "description": "Basic property 1",
+          "statement": "\u2200 (x : Type), property_1 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_2_trivial",
+          "description": "Basic property 2",
+          "statement": "\u2200 (x : Type), property_2 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_3_simple",
+          "description": "Simple property 3",
+          "statement": "\u2200 (x : Type), property_3 x holds",
+          "proof_hint": "Simple induction",
+          "proof_length": "2-5 lines"
+        },
+        {
+          "name": "property_4_complete",
+          "description": "Complete property",
+          "statement": "\u2200 (x : Type), property_4 x holds",
+          "proof_hint": "Combine previous lemmas",
+          "proof_length": "2-5 lines"
+        }
+      ],
+      "ilda_iteration": 3
+    },
+    {
+      "original_sub_lemma": "invariant_preserved",
+      "original_difficulty": "medium",
+      "atomic_proofs": [
+        {
+          "name": "property_1_trivial",
+          "description": "Basic property 1",
+          "statement": "\u2200 (x : Type), property_1 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_2_trivial",
+          "description": "Basic property 2",
+          "statement": "\u2200 (x : Type), property_2 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_3_simple",
+          "description": "Simple property 3",
+          "statement": "\u2200 (x : Type), property_3 x holds",
+          "proof_hint": "Simple induction",
+          "proof_length": "2-5 lines"
+        },
+        {
+          "name": "property_4_complete",
+          "description": "Complete property",
+          "statement": "\u2200 (x : Type), property_4 x holds",
+          "proof_hint": "Combine previous lemmas",
+          "proof_length": "2-5 lines"
+        }
+      ],
+      "ilda_iteration": 3
+    },
+    {
+      "original_sub_lemma": "conclusion_reached",
+      "original_difficulty": "medium",
+      "atomic_proofs": [
+        {
+          "name": "property_1_trivial",
+          "description": "Basic property 1",
+          "statement": "\u2200 (x : Type), property_1 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_2_trivial",
+          "description": "Basic property 2",
+          "statement": "\u2200 (x : Type), property_2 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_3_simple",
+          "description": "Simple property 3",
+          "statement": "\u2200 (x : Type), property_3 x holds",
+          "proof_hint": "Simple induction",
+          "proof_length": "2-5 lines"
+        },
+        {
+          "name": "property_4_complete",
+          "description": "Complete property",
+          "statement": "\u2200 (x : Type), property_4 x holds",
+          "proof_hint": "Combine previous lemmas",
+          "proof_length": "2-5 lines"
+        }
+      ],
+      "ilda_iteration": 3
+    },
+    {
+      "original_sub_lemma": "invariant_preserved",
+      "original_difficulty": "medium",
+      "atomic_proofs": [
+        {
+          "name": "property_1_trivial",
+          "description": "Basic property 1",
+          "statement": "\u2200 (x : Type), property_1 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_2_trivial",
+          "description": "Basic property 2",
+          "statement": "\u2200 (x : Type), property_2 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_3_simple",
+          "description": "Simple property 3",
+          "statement": "\u2200 (x : Type), property_3 x holds",
+          "proof_hint": "Simple induction",
+          "proof_length": "2-5 lines"
+        },
+        {
+          "name": "property_4_complete",
+          "description": "Complete property",
+          "statement": "\u2200 (x : Type), property_4 x holds",
+          "proof_hint": "Combine previous lemmas",
+          "proof_length": "2-5 lines"
+        }
+      ],
+      "ilda_iteration": 3
+    },
+    {
+      "original_sub_lemma": "conclusion_reached",
+      "original_difficulty": "medium",
+      "atomic_proofs": [
+        {
+          "name": "property_1_trivial",
+          "description": "Basic property 1",
+          "statement": "\u2200 (x : Type), property_1 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_2_trivial",
+          "description": "Basic property 2",
+          "statement": "\u2200 (x : Type), property_2 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_3_simple",
+          "description": "Simple property 3",
+          "statement": "\u2200 (x : Type), property_3 x holds",
+          "proof_hint": "Simple induction",
+          "proof_length": "2-5 lines"
+        },
+        {
+          "name": "property_4_complete",
+          "description": "Complete property",
+          "statement": "\u2200 (x : Type), property_4 x holds",
+          "proof_hint": "Combine previous lemmas",
+          "proof_length": "2-5 lines"
+        }
+      ],
+      "ilda_iteration": 3
+    },
+    {
+      "original_sub_lemma": "invariant_preserved",
+      "original_difficulty": "medium",
+      "atomic_proofs": [
+        {
+          "name": "property_1_trivial",
+          "description": "Basic property 1",
+          "statement": "\u2200 (x : Type), property_1 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_2_trivial",
+          "description": "Basic property 2",
+          "statement": "\u2200 (x : Type), property_2 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_3_simple",
+          "description": "Simple property 3",
+          "statement": "\u2200 (x : Type), property_3 x holds",
+          "proof_hint": "Simple induction",
+          "proof_length": "2-5 lines"
+        },
+        {
+          "name": "property_4_complete",
+          "description": "Complete property",
+          "statement": "\u2200 (x : Type), property_4 x holds",
+          "proof_hint": "Combine previous lemmas",
+          "proof_length": "2-5 lines"
+        }
+      ],
+      "ilda_iteration": 3
+    },
+    {
+      "original_sub_lemma": "conclusion_reached",
+      "original_difficulty": "medium",
+      "atomic_proofs": [
+        {
+          "name": "property_1_trivial",
+          "description": "Basic property 1",
+          "statement": "\u2200 (x : Type), property_1 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_2_trivial",
+          "description": "Basic property 2",
+          "statement": "\u2200 (x : Type), property_2 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_3_simple",
+          "description": "Simple property 3",
+          "statement": "\u2200 (x : Type), property_3 x holds",
+          "proof_hint": "Simple induction",
+          "proof_length": "2-5 lines"
+        },
+        {
+          "name": "property_4_complete",
+          "description": "Complete property",
+          "statement": "\u2200 (x : Type), property_4 x holds",
+          "proof_hint": "Combine previous lemmas",
+          "proof_length": "2-5 lines"
+        }
+      ],
+      "ilda_iteration": 3
+    },
+    {
+      "original_sub_lemma": "invariant_preserved",
+      "original_difficulty": "medium",
+      "atomic_proofs": [
+        {
+          "name": "property_1_trivial",
+          "description": "Basic property 1",
+          "statement": "\u2200 (x : Type), property_1 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_2_trivial",
+          "description": "Basic property 2",
+          "statement": "\u2200 (x : Type), property_2 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_3_simple",
+          "description": "Simple property 3",
+          "statement": "\u2200 (x : Type), property_3 x holds",
+          "proof_hint": "Simple induction",
+          "proof_length": "2-5 lines"
+        },
+        {
+          "name": "property_4_complete",
+          "description": "Complete property",
+          "statement": "\u2200 (x : Type), property_4 x holds",
+          "proof_hint": "Combine previous lemmas",
+          "proof_length": "2-5 lines"
+        }
+      ],
+      "ilda_iteration": 3
+    },
+    {
+      "original_sub_lemma": "conclusion_reached",
+      "original_difficulty": "medium",
+      "atomic_proofs": [
+        {
+          "name": "property_1_trivial",
+          "description": "Basic property 1",
+          "statement": "\u2200 (x : Type), property_1 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_2_trivial",
+          "description": "Basic property 2",
+          "statement": "\u2200 (x : Type), property_2 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_3_simple",
+          "description": "Simple property 3",
+          "statement": "\u2200 (x : Type), property_3 x holds",
+          "proof_hint": "Simple induction",
+          "proof_length": "2-5 lines"
+        },
+        {
+          "name": "property_4_complete",
+          "description": "Complete property",
+          "statement": "\u2200 (x : Type), property_4 x holds",
+          "proof_hint": "Combine previous lemmas",
+          "proof_length": "2-5 lines"
+        }
+      ],
+      "ilda_iteration": 3
+    },
+    {
+      "original_sub_lemma": "invariant_preserved",
+      "original_difficulty": "medium",
+      "atomic_proofs": [
+        {
+          "name": "property_1_trivial",
+          "description": "Basic property 1",
+          "statement": "\u2200 (x : Type), property_1 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_2_trivial",
+          "description": "Basic property 2",
+          "statement": "\u2200 (x : Type), property_2 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_3_simple",
+          "description": "Simple property 3",
+          "statement": "\u2200 (x : Type), property_3 x holds",
+          "proof_hint": "Simple induction",
+          "proof_length": "2-5 lines"
+        },
+        {
+          "name": "property_4_complete",
+          "description": "Complete property",
+          "statement": "\u2200 (x : Type), property_4 x holds",
+          "proof_hint": "Combine previous lemmas",
+          "proof_length": "2-5 lines"
+        }
+      ],
+      "ilda_iteration": 3
+    },
+    {
+      "original_sub_lemma": "conclusion_reached",
+      "original_difficulty": "medium",
+      "atomic_proofs": [
+        {
+          "name": "property_1_trivial",
+          "description": "Basic property 1",
+          "statement": "\u2200 (x : Type), property_1 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_2_trivial",
+          "description": "Basic property 2",
+          "statement": "\u2200 (x : Type), property_2 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_3_simple",
+          "description": "Simple property 3",
+          "statement": "\u2200 (x : Type), property_3 x holds",
+          "proof_hint": "Simple induction",
+          "proof_length": "2-5 lines"
+        },
+        {
+          "name": "property_4_complete",
+          "description": "Complete property",
+          "statement": "\u2200 (x : Type), property_4 x holds",
+          "proof_hint": "Combine previous lemmas",
+          "proof_length": "2-5 lines"
+        }
+      ],
+      "ilda_iteration": 3
+    },
+    {
+      "original_sub_lemma": "invariant_preserved",
+      "original_difficulty": "medium",
+      "atomic_proofs": [
+        {
+          "name": "property_1_trivial",
+          "description": "Basic property 1",
+          "statement": "\u2200 (x : Type), property_1 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_2_trivial",
+          "description": "Basic property 2",
+          "statement": "\u2200 (x : Type), property_2 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_3_simple",
+          "description": "Simple property 3",
+          "statement": "\u2200 (x : Type), property_3 x holds",
+          "proof_hint": "Simple induction",
+          "proof_length": "2-5 lines"
+        },
+        {
+          "name": "property_4_complete",
+          "description": "Complete property",
+          "statement": "\u2200 (x : Type), property_4 x holds",
+          "proof_hint": "Combine previous lemmas",
+          "proof_length": "2-5 lines"
+        }
+      ],
+      "ilda_iteration": 3
+    },
+    {
+      "original_sub_lemma": "conclusion_reached",
+      "original_difficulty": "medium",
+      "atomic_proofs": [
+        {
+          "name": "property_1_trivial",
+          "description": "Basic property 1",
+          "statement": "\u2200 (x : Type), property_1 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_2_trivial",
+          "description": "Basic property 2",
+          "statement": "\u2200 (x : Type), property_2 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_3_simple",
+          "description": "Simple property 3",
+          "statement": "\u2200 (x : Type), property_3 x holds",
+          "proof_hint": "Simple induction",
+          "proof_length": "2-5 lines"
+        },
+        {
+          "name": "property_4_complete",
+          "description": "Complete property",
+          "statement": "\u2200 (x : Type), property_4 x holds",
+          "proof_hint": "Combine previous lemmas",
+          "proof_length": "2-5 lines"
+        }
+      ],
+      "ilda_iteration": 3
+    },
+    {
+      "original_sub_lemma": "invariant_preserved",
+      "original_difficulty": "medium",
+      "atomic_proofs": [
+        {
+          "name": "property_1_trivial",
+          "description": "Basic property 1",
+          "statement": "\u2200 (x : Type), property_1 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_2_trivial",
+          "description": "Basic property 2",
+          "statement": "\u2200 (x : Type), property_2 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_3_simple",
+          "description": "Simple property 3",
+          "statement": "\u2200 (x : Type), property_3 x holds",
+          "proof_hint": "Simple induction",
+          "proof_length": "2-5 lines"
+        },
+        {
+          "name": "property_4_complete",
+          "description": "Complete property",
+          "statement": "\u2200 (x : Type), property_4 x holds",
+          "proof_hint": "Combine previous lemmas",
+          "proof_length": "2-5 lines"
+        }
+      ],
+      "ilda_iteration": 3
+    },
+    {
+      "original_sub_lemma": "conclusion_reached",
+      "original_difficulty": "medium",
+      "atomic_proofs": [
+        {
+          "name": "property_1_trivial",
+          "description": "Basic property 1",
+          "statement": "\u2200 (x : Type), property_1 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_2_trivial",
+          "description": "Basic property 2",
+          "statement": "\u2200 (x : Type), property_2 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_3_simple",
+          "description": "Simple property 3",
+          "statement": "\u2200 (x : Type), property_3 x holds",
+          "proof_hint": "Simple induction",
+          "proof_length": "2-5 lines"
+        },
+        {
+          "name": "property_4_complete",
+          "description": "Complete property",
+          "statement": "\u2200 (x : Type), property_4 x holds",
+          "proof_hint": "Combine previous lemmas",
+          "proof_length": "2-5 lines"
+        }
+      ],
+      "ilda_iteration": 3
+    },
+    {
+      "original_sub_lemma": "invariant_preserved",
+      "original_difficulty": "medium",
+      "atomic_proofs": [
+        {
+          "name": "property_1_trivial",
+          "description": "Basic property 1",
+          "statement": "\u2200 (x : Type), property_1 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_2_trivial",
+          "description": "Basic property 2",
+          "statement": "\u2200 (x : Type), property_2 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_3_simple",
+          "description": "Simple property 3",
+          "statement": "\u2200 (x : Type), property_3 x holds",
+          "proof_hint": "Simple induction",
+          "proof_length": "2-5 lines"
+        },
+        {
+          "name": "property_4_complete",
+          "description": "Complete property",
+          "statement": "\u2200 (x : Type), property_4 x holds",
+          "proof_hint": "Combine previous lemmas",
+          "proof_length": "2-5 lines"
+        }
+      ],
+      "ilda_iteration": 3
+    },
+    {
+      "original_sub_lemma": "conclusion_reached",
+      "original_difficulty": "medium",
+      "atomic_proofs": [
+        {
+          "name": "property_1_trivial",
+          "description": "Basic property 1",
+          "statement": "\u2200 (x : Type), property_1 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_2_trivial",
+          "description": "Basic property 2",
+          "statement": "\u2200 (x : Type), property_2 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_3_simple",
+          "description": "Simple property 3",
+          "statement": "\u2200 (x : Type), property_3 x holds",
+          "proof_hint": "Simple induction",
+          "proof_length": "2-5 lines"
+        },
+        {
+          "name": "property_4_complete",
+          "description": "Complete property",
+          "statement": "\u2200 (x : Type), property_4 x holds",
+          "proof_hint": "Combine previous lemmas",
+          "proof_length": "2-5 lines"
+        }
+      ],
+      "ilda_iteration": 3
+    },
+    {
+      "original_sub_lemma": "invariant_preserved",
+      "original_difficulty": "medium",
+      "atomic_proofs": [
+        {
+          "name": "property_1_trivial",
+          "description": "Basic property 1",
+          "statement": "\u2200 (x : Type), property_1 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_2_trivial",
+          "description": "Basic property 2",
+          "statement": "\u2200 (x : Type), property_2 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_3_simple",
+          "description": "Simple property 3",
+          "statement": "\u2200 (x : Type), property_3 x holds",
+          "proof_hint": "Simple induction",
+          "proof_length": "2-5 lines"
+        },
+        {
+          "name": "property_4_complete",
+          "description": "Complete property",
+          "statement": "\u2200 (x : Type), property_4 x holds",
+          "proof_hint": "Combine previous lemmas",
+          "proof_length": "2-5 lines"
+        }
+      ],
+      "ilda_iteration": 3
+    },
+    {
+      "original_sub_lemma": "conclusion_reached",
+      "original_difficulty": "medium",
+      "atomic_proofs": [
+        {
+          "name": "property_1_trivial",
+          "description": "Basic property 1",
+          "statement": "\u2200 (x : Type), property_1 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_2_trivial",
+          "description": "Basic property 2",
+          "statement": "\u2200 (x : Type), property_2 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_3_simple",
+          "description": "Simple property 3",
+          "statement": "\u2200 (x : Type), property_3 x holds",
+          "proof_hint": "Simple induction",
+          "proof_length": "2-5 lines"
+        },
+        {
+          "name": "property_4_complete",
+          "description": "Complete property",
+          "statement": "\u2200 (x : Type), property_4 x holds",
+          "proof_hint": "Combine previous lemmas",
+          "proof_length": "2-5 lines"
+        }
+      ],
+      "ilda_iteration": 3
+    },
+    {
+      "original_sub_lemma": "invariant_preserved",
+      "original_difficulty": "medium",
+      "atomic_proofs": [
+        {
+          "name": "property_1_trivial",
+          "description": "Basic property 1",
+          "statement": "\u2200 (x : Type), property_1 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_2_trivial",
+          "description": "Basic property 2",
+          "statement": "\u2200 (x : Type), property_2 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_3_simple",
+          "description": "Simple property 3",
+          "statement": "\u2200 (x : Type), property_3 x holds",
+          "proof_hint": "Simple induction",
+          "proof_length": "2-5 lines"
+        },
+        {
+          "name": "property_4_complete",
+          "description": "Complete property",
+          "statement": "\u2200 (x : Type), property_4 x holds",
+          "proof_hint": "Combine previous lemmas",
+          "proof_length": "2-5 lines"
+        }
+      ],
+      "ilda_iteration": 3
+    },
+    {
+      "original_sub_lemma": "conclusion_reached",
+      "original_difficulty": "medium",
+      "atomic_proofs": [
+        {
+          "name": "property_1_trivial",
+          "description": "Basic property 1",
+          "statement": "\u2200 (x : Type), property_1 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_2_trivial",
+          "description": "Basic property 2",
+          "statement": "\u2200 (x : Type), property_2 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_3_simple",
+          "description": "Simple property 3",
+          "statement": "\u2200 (x : Type), property_3 x holds",
+          "proof_hint": "Simple induction",
+          "proof_length": "2-5 lines"
+        },
+        {
+          "name": "property_4_complete",
+          "description": "Complete property",
+          "statement": "\u2200 (x : Type), property_4 x holds",
+          "proof_hint": "Combine previous lemmas",
+          "proof_length": "2-5 lines"
+        }
+      ],
+      "ilda_iteration": 3
+    },
+    {
+      "original_sub_lemma": "invariant_preserved",
+      "original_difficulty": "medium",
+      "atomic_proofs": [
+        {
+          "name": "property_1_trivial",
+          "description": "Basic property 1",
+          "statement": "\u2200 (x : Type), property_1 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_2_trivial",
+          "description": "Basic property 2",
+          "statement": "\u2200 (x : Type), property_2 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_3_simple",
+          "description": "Simple property 3",
+          "statement": "\u2200 (x : Type), property_3 x holds",
+          "proof_hint": "Simple induction",
+          "proof_length": "2-5 lines"
+        },
+        {
+          "name": "property_4_complete",
+          "description": "Complete property",
+          "statement": "\u2200 (x : Type), property_4 x holds",
+          "proof_hint": "Combine previous lemmas",
+          "proof_length": "2-5 lines"
+        }
+      ],
+      "ilda_iteration": 3
+    },
+    {
+      "original_sub_lemma": "conclusion_reached",
+      "original_difficulty": "medium",
+      "atomic_proofs": [
+        {
+          "name": "property_1_trivial",
+          "description": "Basic property 1",
+          "statement": "\u2200 (x : Type), property_1 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_2_trivial",
+          "description": "Basic property 2",
+          "statement": "\u2200 (x : Type), property_2 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_3_simple",
+          "description": "Simple property 3",
+          "statement": "\u2200 (x : Type), property_3 x holds",
+          "proof_hint": "Simple induction",
+          "proof_length": "2-5 lines"
+        },
+        {
+          "name": "property_4_complete",
+          "description": "Complete property",
+          "statement": "\u2200 (x : Type), property_4 x holds",
+          "proof_hint": "Combine previous lemmas",
+          "proof_length": "2-5 lines"
+        }
+      ],
+      "ilda_iteration": 3
+    },
+    {
+      "original_sub_lemma": "invariant_preserved",
+      "original_difficulty": "medium",
+      "atomic_proofs": [
+        {
+          "name": "property_1_trivial",
+          "description": "Basic property 1",
+          "statement": "\u2200 (x : Type), property_1 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_2_trivial",
+          "description": "Basic property 2",
+          "statement": "\u2200 (x : Type), property_2 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_3_simple",
+          "description": "Simple property 3",
+          "statement": "\u2200 (x : Type), property_3 x holds",
+          "proof_hint": "Simple induction",
+          "proof_length": "2-5 lines"
+        },
+        {
+          "name": "property_4_complete",
+          "description": "Complete property",
+          "statement": "\u2200 (x : Type), property_4 x holds",
+          "proof_hint": "Combine previous lemmas",
+          "proof_length": "2-5 lines"
+        }
+      ],
+      "ilda_iteration": 3
+    },
+    {
+      "original_sub_lemma": "conclusion_reached",
+      "original_difficulty": "medium",
+      "atomic_proofs": [
+        {
+          "name": "property_1_trivial",
+          "description": "Basic property 1",
+          "statement": "\u2200 (x : Type), property_1 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_2_trivial",
+          "description": "Basic property 2",
+          "statement": "\u2200 (x : Type), property_2 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_3_simple",
+          "description": "Simple property 3",
+          "statement": "\u2200 (x : Type), property_3 x holds",
+          "proof_hint": "Simple induction",
+          "proof_length": "2-5 lines"
+        },
+        {
+          "name": "property_4_complete",
+          "description": "Complete property",
+          "statement": "\u2200 (x : Type), property_4 x holds",
+          "proof_hint": "Combine previous lemmas",
+          "proof_length": "2-5 lines"
+        }
+      ],
+      "ilda_iteration": 3
+    },
+    {
+      "original_sub_lemma": "invariant_preserved",
+      "original_difficulty": "medium",
+      "atomic_proofs": [
+        {
+          "name": "property_1_trivial",
+          "description": "Basic property 1",
+          "statement": "\u2200 (x : Type), property_1 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_2_trivial",
+          "description": "Basic property 2",
+          "statement": "\u2200 (x : Type), property_2 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_3_simple",
+          "description": "Simple property 3",
+          "statement": "\u2200 (x : Type), property_3 x holds",
+          "proof_hint": "Simple induction",
+          "proof_length": "2-5 lines"
+        },
+        {
+          "name": "property_4_complete",
+          "description": "Complete property",
+          "statement": "\u2200 (x : Type), property_4 x holds",
+          "proof_hint": "Combine previous lemmas",
+          "proof_length": "2-5 lines"
+        }
+      ],
+      "ilda_iteration": 3
+    },
+    {
+      "original_sub_lemma": "conclusion_reached",
+      "original_difficulty": "medium",
+      "atomic_proofs": [
+        {
+          "name": "property_1_trivial",
+          "description": "Basic property 1",
+          "statement": "\u2200 (x : Type), property_1 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_2_trivial",
+          "description": "Basic property 2",
+          "statement": "\u2200 (x : Type), property_2 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_3_simple",
+          "description": "Simple property 3",
+          "statement": "\u2200 (x : Type), property_3 x holds",
+          "proof_hint": "Simple induction",
+          "proof_length": "2-5 lines"
+        },
+        {
+          "name": "property_4_complete",
+          "description": "Complete property",
+          "statement": "\u2200 (x : Type), property_4 x holds",
+          "proof_hint": "Combine previous lemmas",
+          "proof_length": "2-5 lines"
+        }
+      ],
+      "ilda_iteration": 3
+    },
+    {
+      "original_sub_lemma": "invariant_preserved",
+      "original_difficulty": "medium",
+      "atomic_proofs": [
+        {
+          "name": "property_1_trivial",
+          "description": "Basic property 1",
+          "statement": "\u2200 (x : Type), property_1 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_2_trivial",
+          "description": "Basic property 2",
+          "statement": "\u2200 (x : Type), property_2 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_3_simple",
+          "description": "Simple property 3",
+          "statement": "\u2200 (x : Type), property_3 x holds",
+          "proof_hint": "Simple induction",
+          "proof_length": "2-5 lines"
+        },
+        {
+          "name": "property_4_complete",
+          "description": "Complete property",
+          "statement": "\u2200 (x : Type), property_4 x holds",
+          "proof_hint": "Combine previous lemmas",
+          "proof_length": "2-5 lines"
+        }
+      ],
+      "ilda_iteration": 3
+    },
+    {
+      "original_sub_lemma": "conclusion_reached",
+      "original_difficulty": "medium",
+      "atomic_proofs": [
+        {
+          "name": "property_1_trivial",
+          "description": "Basic property 1",
+          "statement": "\u2200 (x : Type), property_1 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_2_trivial",
+          "description": "Basic property 2",
+          "statement": "\u2200 (x : Type), property_2 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_3_simple",
+          "description": "Simple property 3",
+          "statement": "\u2200 (x : Type), property_3 x holds",
+          "proof_hint": "Simple induction",
+          "proof_length": "2-5 lines"
+        },
+        {
+          "name": "property_4_complete",
+          "description": "Complete property",
+          "statement": "\u2200 (x : Type), property_4 x holds",
+          "proof_hint": "Combine previous lemmas",
+          "proof_length": "2-5 lines"
+        }
+      ],
+      "ilda_iteration": 3
+    },
+    {
+      "original_sub_lemma": "invariant_preserved",
+      "original_difficulty": "medium",
+      "atomic_proofs": [
+        {
+          "name": "property_1_trivial",
+          "description": "Basic property 1",
+          "statement": "\u2200 (x : Type), property_1 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_2_trivial",
+          "description": "Basic property 2",
+          "statement": "\u2200 (x : Type), property_2 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_3_simple",
+          "description": "Simple property 3",
+          "statement": "\u2200 (x : Type), property_3 x holds",
+          "proof_hint": "Simple induction",
+          "proof_length": "2-5 lines"
+        },
+        {
+          "name": "property_4_complete",
+          "description": "Complete property",
+          "statement": "\u2200 (x : Type), property_4 x holds",
+          "proof_hint": "Combine previous lemmas",
+          "proof_length": "2-5 lines"
+        }
+      ],
+      "ilda_iteration": 3
+    },
+    {
+      "original_sub_lemma": "conclusion_reached",
+      "original_difficulty": "medium",
+      "atomic_proofs": [
+        {
+          "name": "property_1_trivial",
+          "description": "Basic property 1",
+          "statement": "\u2200 (x : Type), property_1 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_2_trivial",
+          "description": "Basic property 2",
+          "statement": "\u2200 (x : Type), property_2 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_3_simple",
+          "description": "Simple property 3",
+          "statement": "\u2200 (x : Type), property_3 x holds",
+          "proof_hint": "Simple induction",
+          "proof_length": "2-5 lines"
+        },
+        {
+          "name": "property_4_complete",
+          "description": "Complete property",
+          "statement": "\u2200 (x : Type), property_4 x holds",
+          "proof_hint": "Combine previous lemmas",
+          "proof_length": "2-5 lines"
+        }
+      ],
+      "ilda_iteration": 3
+    },
+    {
+      "original_sub_lemma": "invariant_preserved",
+      "original_difficulty": "medium",
+      "atomic_proofs": [
+        {
+          "name": "property_1_trivial",
+          "description": "Basic property 1",
+          "statement": "\u2200 (x : Type), property_1 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_2_trivial",
+          "description": "Basic property 2",
+          "statement": "\u2200 (x : Type), property_2 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_3_simple",
+          "description": "Simple property 3",
+          "statement": "\u2200 (x : Type), property_3 x holds",
+          "proof_hint": "Simple induction",
+          "proof_length": "2-5 lines"
+        },
+        {
+          "name": "property_4_complete",
+          "description": "Complete property",
+          "statement": "\u2200 (x : Type), property_4 x holds",
+          "proof_hint": "Combine previous lemmas",
+          "proof_length": "2-5 lines"
+        }
+      ],
+      "ilda_iteration": 3
+    },
+    {
+      "original_sub_lemma": "conclusion_reached",
+      "original_difficulty": "medium",
+      "atomic_proofs": [
+        {
+          "name": "property_1_trivial",
+          "description": "Basic property 1",
+          "statement": "\u2200 (x : Type), property_1 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_2_trivial",
+          "description": "Basic property 2",
+          "statement": "\u2200 (x : Type), property_2 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_3_simple",
+          "description": "Simple property 3",
+          "statement": "\u2200 (x : Type), property_3 x holds",
+          "proof_hint": "Simple induction",
+          "proof_length": "2-5 lines"
+        },
+        {
+          "name": "property_4_complete",
+          "description": "Complete property",
+          "statement": "\u2200 (x : Type), property_4 x holds",
+          "proof_hint": "Combine previous lemmas",
+          "proof_length": "2-5 lines"
+        }
+      ],
+      "ilda_iteration": 3
+    },
+    {
+      "original_sub_lemma": "invariant_preserved",
+      "original_difficulty": "medium",
+      "atomic_proofs": [
+        {
+          "name": "property_1_trivial",
+          "description": "Basic property 1",
+          "statement": "\u2200 (x : Type), property_1 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_2_trivial",
+          "description": "Basic property 2",
+          "statement": "\u2200 (x : Type), property_2 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_3_simple",
+          "description": "Simple property 3",
+          "statement": "\u2200 (x : Type), property_3 x holds",
+          "proof_hint": "Simple induction",
+          "proof_length": "2-5 lines"
+        },
+        {
+          "name": "property_4_complete",
+          "description": "Complete property",
+          "statement": "\u2200 (x : Type), property_4 x holds",
+          "proof_hint": "Combine previous lemmas",
+          "proof_length": "2-5 lines"
+        }
+      ],
+      "ilda_iteration": 3
+    },
+    {
+      "original_sub_lemma": "conclusion_reached",
+      "original_difficulty": "medium",
+      "atomic_proofs": [
+        {
+          "name": "property_1_trivial",
+          "description": "Basic property 1",
+          "statement": "\u2200 (x : Type), property_1 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_2_trivial",
+          "description": "Basic property 2",
+          "statement": "\u2200 (x : Type), property_2 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_3_simple",
+          "description": "Simple property 3",
+          "statement": "\u2200 (x : Type), property_3 x holds",
+          "proof_hint": "Simple induction",
+          "proof_length": "2-5 lines"
+        },
+        {
+          "name": "property_4_complete",
+          "description": "Complete property",
+          "statement": "\u2200 (x : Type), property_4 x holds",
+          "proof_hint": "Combine previous lemmas",
+          "proof_length": "2-5 lines"
+        }
+      ],
+      "ilda_iteration": 3
+    },
+    {
+      "original_sub_lemma": "invariant_preserved",
+      "original_difficulty": "medium",
+      "atomic_proofs": [
+        {
+          "name": "property_1_trivial",
+          "description": "Basic property 1",
+          "statement": "\u2200 (x : Type), property_1 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_2_trivial",
+          "description": "Basic property 2",
+          "statement": "\u2200 (x : Type), property_2 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_3_simple",
+          "description": "Simple property 3",
+          "statement": "\u2200 (x : Type), property_3 x holds",
+          "proof_hint": "Simple induction",
+          "proof_length": "2-5 lines"
+        },
+        {
+          "name": "property_4_complete",
+          "description": "Complete property",
+          "statement": "\u2200 (x : Type), property_4 x holds",
+          "proof_hint": "Combine previous lemmas",
+          "proof_length": "2-5 lines"
+        }
+      ],
+      "ilda_iteration": 3
+    },
+    {
+      "original_sub_lemma": "conclusion_reached",
+      "original_difficulty": "medium",
+      "atomic_proofs": [
+        {
+          "name": "property_1_trivial",
+          "description": "Basic property 1",
+          "statement": "\u2200 (x : Type), property_1 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_2_trivial",
+          "description": "Basic property 2",
+          "statement": "\u2200 (x : Type), property_2 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_3_simple",
+          "description": "Simple property 3",
+          "statement": "\u2200 (x : Type), property_3 x holds",
+          "proof_hint": "Simple induction",
+          "proof_length": "2-5 lines"
+        },
+        {
+          "name": "property_4_complete",
+          "description": "Complete property",
+          "statement": "\u2200 (x : Type), property_4 x holds",
+          "proof_hint": "Combine previous lemmas",
+          "proof_length": "2-5 lines"
+        }
+      ],
+      "ilda_iteration": 3
+    },
+    {
+      "original_sub_lemma": "invariant_preserved",
+      "original_difficulty": "medium",
+      "atomic_proofs": [
+        {
+          "name": "property_1_trivial",
+          "description": "Basic property 1",
+          "statement": "\u2200 (x : Type), property_1 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_2_trivial",
+          "description": "Basic property 2",
+          "statement": "\u2200 (x : Type), property_2 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_3_simple",
+          "description": "Simple property 3",
+          "statement": "\u2200 (x : Type), property_3 x holds",
+          "proof_hint": "Simple induction",
+          "proof_length": "2-5 lines"
+        },
+        {
+          "name": "property_4_complete",
+          "description": "Complete property",
+          "statement": "\u2200 (x : Type), property_4 x holds",
+          "proof_hint": "Combine previous lemmas",
+          "proof_length": "2-5 lines"
+        }
+      ],
+      "ilda_iteration": 3
+    },
+    {
+      "original_sub_lemma": "conclusion_reached",
+      "original_difficulty": "medium",
+      "atomic_proofs": [
+        {
+          "name": "property_1_trivial",
+          "description": "Basic property 1",
+          "statement": "\u2200 (x : Type), property_1 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_2_trivial",
+          "description": "Basic property 2",
+          "statement": "\u2200 (x : Type), property_2 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_3_simple",
+          "description": "Simple property 3",
+          "statement": "\u2200 (x : Type), property_3 x holds",
+          "proof_hint": "Simple induction",
+          "proof_length": "2-5 lines"
+        },
+        {
+          "name": "property_4_complete",
+          "description": "Complete property",
+          "statement": "\u2200 (x : Type), property_4 x holds",
+          "proof_hint": "Combine previous lemmas",
+          "proof_length": "2-5 lines"
+        }
+      ],
+      "ilda_iteration": 3
+    },
+    {
+      "original_sub_lemma": "invariant_preserved",
+      "original_difficulty": "medium",
+      "atomic_proofs": [
+        {
+          "name": "property_1_trivial",
+          "description": "Basic property 1",
+          "statement": "\u2200 (x : Type), property_1 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_2_trivial",
+          "description": "Basic property 2",
+          "statement": "\u2200 (x : Type), property_2 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_3_simple",
+          "description": "Simple property 3",
+          "statement": "\u2200 (x : Type), property_3 x holds",
+          "proof_hint": "Simple induction",
+          "proof_length": "2-5 lines"
+        },
+        {
+          "name": "property_4_complete",
+          "description": "Complete property",
+          "statement": "\u2200 (x : Type), property_4 x holds",
+          "proof_hint": "Combine previous lemmas",
+          "proof_length": "2-5 lines"
+        }
+      ],
+      "ilda_iteration": 3
+    },
+    {
+      "original_sub_lemma": "conclusion_reached",
+      "original_difficulty": "medium",
+      "atomic_proofs": [
+        {
+          "name": "property_1_trivial",
+          "description": "Basic property 1",
+          "statement": "\u2200 (x : Type), property_1 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_2_trivial",
+          "description": "Basic property 2",
+          "statement": "\u2200 (x : Type), property_2 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_3_simple",
+          "description": "Simple property 3",
+          "statement": "\u2200 (x : Type), property_3 x holds",
+          "proof_hint": "Simple induction",
+          "proof_length": "2-5 lines"
+        },
+        {
+          "name": "property_4_complete",
+          "description": "Complete property",
+          "statement": "\u2200 (x : Type), property_4 x holds",
+          "proof_hint": "Combine previous lemmas",
+          "proof_length": "2-5 lines"
+        }
+      ],
+      "ilda_iteration": 3
+    },
+    {
+      "original_sub_lemma": "invariant_preserved",
+      "original_difficulty": "medium",
+      "atomic_proofs": [
+        {
+          "name": "property_1_trivial",
+          "description": "Basic property 1",
+          "statement": "\u2200 (x : Type), property_1 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_2_trivial",
+          "description": "Basic property 2",
+          "statement": "\u2200 (x : Type), property_2 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_3_simple",
+          "description": "Simple property 3",
+          "statement": "\u2200 (x : Type), property_3 x holds",
+          "proof_hint": "Simple induction",
+          "proof_length": "2-5 lines"
+        },
+        {
+          "name": "property_4_complete",
+          "description": "Complete property",
+          "statement": "\u2200 (x : Type), property_4 x holds",
+          "proof_hint": "Combine previous lemmas",
+          "proof_length": "2-5 lines"
+        }
+      ],
+      "ilda_iteration": 3
+    },
+    {
+      "original_sub_lemma": "conclusion_reached",
+      "original_difficulty": "medium",
+      "atomic_proofs": [
+        {
+          "name": "property_1_trivial",
+          "description": "Basic property 1",
+          "statement": "\u2200 (x : Type), property_1 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_2_trivial",
+          "description": "Basic property 2",
+          "statement": "\u2200 (x : Type), property_2 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_3_simple",
+          "description": "Simple property 3",
+          "statement": "\u2200 (x : Type), property_3 x holds",
+          "proof_hint": "Simple induction",
+          "proof_length": "2-5 lines"
+        },
+        {
+          "name": "property_4_complete",
+          "description": "Complete property",
+          "statement": "\u2200 (x : Type), property_4 x holds",
+          "proof_hint": "Combine previous lemmas",
+          "proof_length": "2-5 lines"
+        }
+      ],
+      "ilda_iteration": 3
+    },
+    {
+      "original_sub_lemma": "invariant_preserved",
+      "original_difficulty": "medium",
+      "atomic_proofs": [
+        {
+          "name": "property_1_trivial",
+          "description": "Basic property 1",
+          "statement": "\u2200 (x : Type), property_1 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_2_trivial",
+          "description": "Basic property 2",
+          "statement": "\u2200 (x : Type), property_2 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_3_simple",
+          "description": "Simple property 3",
+          "statement": "\u2200 (x : Type), property_3 x holds",
+          "proof_hint": "Simple induction",
+          "proof_length": "2-5 lines"
+        },
+        {
+          "name": "property_4_complete",
+          "description": "Complete property",
+          "statement": "\u2200 (x : Type), property_4 x holds",
+          "proof_hint": "Combine previous lemmas",
+          "proof_length": "2-5 lines"
+        }
+      ],
+      "ilda_iteration": 3
+    },
+    {
+      "original_sub_lemma": "conclusion_reached",
+      "original_difficulty": "medium",
+      "atomic_proofs": [
+        {
+          "name": "property_1_trivial",
+          "description": "Basic property 1",
+          "statement": "\u2200 (x : Type), property_1 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_2_trivial",
+          "description": "Basic property 2",
+          "statement": "\u2200 (x : Type), property_2 x holds",
+          "proof_hint": "By definition",
+          "proof_length": "1-line"
+        },
+        {
+          "name": "property_3_simple",
+          "description": "Simple property 3",
+          "statement": "\u2200 (x : Type), property_3 x holds",
+          "proof_hint": "Simple induction",
+          "proof_length": "2-5 lines"
+        },
+        {
+          "name": "property_4_complete",
+          "description": "Complete property",
+          "statement": "\u2200 (x : Type), property_4 x holds",
+          "proof_hint": "Combine previous lemmas",
+          "proof_length": "2-5 lines"
+        }
+      ],
+      "ilda_iteration": 3
+    }
+  ]
+}

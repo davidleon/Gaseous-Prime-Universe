@@ -1,0 +1,53 @@
+ILDA Atomic Lemmas Outline
+================================================================================
+
+## Lemma Groups
+
+### Group 1: Metal Ratio Properties
+- Lemma 1.1: metalRatio_positive: ∀ k, k > 0 → metalRatio(k) > 0
+- Lemma 1.2: metalRatio_gt_k: ∀ k, k > 0 → metalRatio(k) > k
+- Lemma 1.3: metalRatio_fixed_point: ∀ k, k > 0 → metalRatio(k) = k + 1/metalRatio(k)
+- Lemma 1.4: metalRatio_monotonic: ∀ k₁ k₂, k₁ < k₂ → metalRatio(k₁) < metalRatio(k₂)
+
+### Group 2: Entropy Dynamics
+- Lemma 2.1: entropy_gradient_negative: ∀ S γ, S > 0 ∧ γ > 0 → entropy_gradient(S, γ) < 0
+- Lemma 2.2: entropy_dissipation_converges: ∀ S₀ γ > 0, lim_{n→∞} S_n = 0
+- Lemma 2.3: crystallization_finite: ∀ S₀ γ > 0, ∃ N, ∀ n ≥ N, S_n < threshold
+- Lemma 2.4: entropy_decay_rate: ∀ n, S_{n+1} = S_n · exp(-γ)
+
+### Group 3: Prime Gap Normalization
+- Lemma 3.1: normalized_gap_bounded: ∀ p_n p_{n+1}, |δ_n| ≤ C
+- Lemma 3.2: normalized_gap_variance: Var(δ_n) < 1.0
+- Lemma 3.3: golden_basin_probability: Pr[|δ_n - σ₁| < 0.5] > 0.2
+- Lemma 3.4: silver_basin_probability: Pr[|δ_{2,n} - σ₂| < 0.5] > 0.1
+
+### Group 4: Scale Invariance
+- Lemma 4.1: normalized_counting_bounded: ∀ x, |Π(x)| ≤ 1 + ε
+- Lemma 4.2: scale_invariance_asymptotic: lim_{x→∞} |Π(σx) - Π(x)| = 0
+- Lemma 4.3: ks_convergence: KS(Π(σx), Π(x)) → 0 as x → ∞
+- Lemma 4.4: renormalization_fixed_point: Π(σx) = Π(x) for σ = σ_k
+
+### Group 5: Fixed-Point PNT
+- Lemma 5.1: fixed_point_pnt_well_defined: ∀ x > 1, ln(x) > 1/σ → denominator > 0
+- Lemma 5.2: fixed_point_improvement: |π(x) - π̂(x)| < |π(x) - π_PNT(x)|
+- Lemma 5.3: improvement_factor_bounded: 2.0 < improvement_factor < 2.5
+- Lemma 5.4: rh_optimal_bound: |π(x) - π̂(x)| = O(√x ln x)
+
+### Group 6: GUE Distribution
+- Lemma 6.1: gue_density_positive: ∀ s, gueDistribution(s) ≥ 0
+- Lemma 6.2: gue_density_normalized: ∫ gueDistribution(s) ds = 1
+- Lemma 6.3: gue_mode_at_golden: gueDistribution(s) maximum at s ≈ σ₁
+- Lemma 6.4: gap_gue_convergence: GapDistribution → GUE as n → ∞
+
+### Group 7: k-Tuple Patterns
+- Lemma 7.1: k_tuple_spacing_bounded: ∀ k p_prev p_curr, |r_k| ≤ C_k
+- Lemma 7.2: k_tuple_metal_convergence: lim_{p→∞} r_k = σ_k
+- Lemma 7.3: k_tuple_variance: Var(r_k) → 0 as p → ∞
+- Lemma 7.4: k_tuple_dimension: σ_k = (k + √(k²+4))/2
+
+### Group 8: Complex Dimensions
+- Lemma 8.1: julia_dimension_bounded: 0 ≤ D_p ≤ 1
+- Lemma 8.2: complex_dimension_formula: ρ = D_p + i·(2πk)/ln(σ_p)
+- Lemma 8.3: oscillation_period: T = ln(σ_p)
+- Lemma 8.4: oscillation_amplitude: |Δψ(x)| ≤ C·x^{D_p}
+

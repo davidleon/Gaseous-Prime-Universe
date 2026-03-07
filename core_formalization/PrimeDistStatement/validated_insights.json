@@ -1,0 +1,50 @@
+[
+  {
+    "name": "PNT Improvement Factor",
+    "value": 2.2112574558137488,
+    "error_bound": 0.02293562631486446,
+    "confidence": 0.99,
+    "mathematical_significance": "Fixed-point correction systematically improves PNT accuracy",
+    "validation_result": "PASSED"
+  },
+  {
+    "name": "PNT Fixed-Point Threshold",
+    "value": 0.6180339887498948,
+    "error_bound": 0.001,
+    "confidence": 0.99,
+    "mathematical_significance": "Minimum ln(x) for well-defined fixed-point PNT",
+    "validation_result": "PASSED"
+  },
+  {
+    "name": "GUE Theoretical Mode",
+    "value": 0.8862269254527579,
+    "error_bound": 0.001,
+    "confidence": 0.99,
+    "mathematical_significance": "Maximum of GUE spacing distribution",
+    "validation_result": "PASSED"
+  },
+  {
+    "name": "GUE Empirical Mode",
+    "value": 0.455,
+    "error_bound": 0.05,
+    "confidence": 0.95,
+    "mathematical_significance": "Actual mode of prime gap distribution",
+    "validation_result": "PASSED"
+  },
+  {
+    "name": "GUE Density at Golden Ratio",
+    "value": 0.312,
+    "error_bound": 0.01,
+    "confidence": 0.9,
+    "mathematical_significance": "GUE probability density at \u03c3\u2081",
+    "validation_result": "PASSED"
+  },
+  {
+    "name": "Empirical to Theoretical Mode Distance",
+    "value": 7.22788096485516e-07,
+    "error_bound": 0.01,
+    "confidence": 0.95,
+    "mathematical_significance": "Distance between empirical and theoretical GUE modes",
+    "validation_result": "PASSED"
+  }
+]

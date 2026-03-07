@@ -1,0 +1,233 @@
+{
+  "axiom_1_unimodal_gue": {
+    "description": "Unimodality inequality for GUE density",
+    "lemmas": [
+      {
+        "name": "gue_density_at_mode",
+        "statement": "P(\u221a\u03c0/2) = 0.9367973044",
+        "proof_method": "Direct computation",
+        "concrete_objects": {
+          "s0": 0.8862269254527579,
+          "P_s0": 0.9367973043891067
+        },
+        "verification_data": {
+          "calculation": "(32/\u03c0\u00b2)(0.8862269255)\u00b2exp(-4(0.8862269255)\u00b2/\u03c0) = 0.9367973044",
+          "expected": "0.937...",
+          "match": true
+        }
+      },
+      {
+        "name": "gue_derivative_zero_at_mode",
+        "statement": "P'(\u221a\u03c0/2) = 5.296951203657203e-16",
+        "proof_method": "Derivative evaluation",
+        "concrete_objects": {
+          "s0": 0.8862269254527579,
+          "P_prime_s0": 5.296951203657203e-16
+        },
+        "verification_data": {
+          "calculation": "(32/\u03c0\u00b2)(20.8862269255 - 80.8862269255\u00b3/\u03c0)exp(...) = 5.296951203657203e-16",
+          "threshold": 1e-10,
+          "is_zero": true
+        }
+      },
+      {
+        "name": "gue_derivative_positive_before_mode",
+        "statement": "P'(s) > 0 for all s \u2208 (0, \u221a\u03c0/2)",
+        "proof_method": "Sign analysis of polynomial 2s - 8s\u00b3/\u03c0",
+        "concrete_objects": {
+          "test_points": [
+            0.1,
+            0.3,
+            0.5,
+            0.7,
+            0.88
+          ],
+          "derivatives": [
+            0.6320995863908654,
+            1.5359555923757526,
+            1.6076703474717902,
+            0.9148403954050257,
+            0.029811255005912494
+          ],
+          "mode": 0.8862269254527579
+        },
+        "verification_data": {
+          "all_positive": true,
+          "minimum_derivative": 0.029811255005912494,
+          "theorem": "For s \u2208 (0, \u221a\u03c0/2): 2s - 8s\u00b3/\u03c0 = 2s(1 - 4s\u00b2/\u03c0) > 0 since s < \u221a\u03c0/2"
+        }
+      },
+      {
+        "name": "gue_derivative_negative_after_mode",
+        "statement": "P'(s) < 0 for all s > \u221a\u03c0/2",
+        "proof_method": "Sign analysis of polynomial 2s - 8s\u00b3/\u03c0",
+        "concrete_objects": {
+          "test_points": [
+            0.9,
+            1.0,
+            1.2,
+            1.5,
+            2.0
+          ],
+          "derivatives": [
+            -0.06517815317826992,
+            -0.49597852559483924,
+            -1.0367764042127536,
+            -1.033806210309218,
+            -0.325914661323757
+          ],
+          "mode": 0.8862269254527579
+        },
+        "verification_data": {
+          "all_negative": true,
+          "maximum_derivative": -0.06517815317826992,
+          "theorem": "For s > \u221a\u03c0/2: 2s - 8s\u00b3/\u03c0 = 2s(1 - 4s\u00b2/\u03c0) < 0 since s > \u221a\u03c0/2"
+        }
+      },
+      {
+        "name": "gue_mode_is_global_maximum",
+        "statement": "P(\u221a\u03c0/2) > P(s) for all s \u2260 \u221a\u03c0/2",
+        "proof_method": "First derivative test + unimodality",
+        "concrete_objects": {
+          "s0": 0.8862269254527579,
+          "P_s0": 0.9367973043891067,
+          "theorem": "By derivative sign: increasing before \u221a\u03c0/2, decreasing after \u221a\u03c0/2"
+        },
+        "verification_data": {
+          "verified_before": true,
+          "verified_after": true,
+          "global_max": true
+        }
+      }
+    ]
+  },
+  "axiom_2_gue_unimodal_property": {
+    "description": "Base case of unimodality (reflexive)",
+    "lemmas": [
+      {
+        "name": "gue_unimodal_reflexive",
+        "statement": "P(\u221a\u03c0/2) \u2264 P(\u221a\u03c0/2) (equality holds)",
+        "proof_method": "Reflexivity of \u2264",
+        "concrete_objects": {
+          "s0": 0.8862269254527579,
+          "P_s0": 0.9367973043891067
+        },
+        "verification_data": {
+          "left": 0.9367973043891067,
+          "right": 0.9367973043891067,
+          "equality": true
+        }
+      }
+    ]
+  },
+  "axiom_3_derivative_negative_after_mode": {
+    "description": "Monotonicity after mode",
+    "lemmas": [
+      {
+        "name": "gue_monotonic_decrease_after_mode",
+        "statement": "P(s) is strictly decreasing for s > \u221a\u03c0/2",
+        "proof_method": "P'(s) < 0 implies monotonic decrease",
+        "concrete_objects": {
+          "test_points": [
+            0.9,
+            1.0,
+            1.2,
+            1.5,
+            2.0
+          ],
+          "values": [
+            0.9363471996860364,
+            0.9075892109166814,
+            0.7463611357542589,
+            0.41578680904628407,
+            0.07962814352725955
+          ],
+          "mode": 0.8862269254527579,
+          "P_mode": 0.9367973043891067
+        },
+        "verification_data": {
+          "strictly_decreasing": true,
+          "all_less_than_mode": true,
+          "theorem": "P'(s) < 0 for s > \u221a\u03c0/2 \u21d2 P(s) is strictly decreasing"
+        }
+      },
+      {
+        "name": "gue_concrete_inequality_after_mode",
+        "statement": "P(s) < P(\u221a\u03c0/2) for s > \u221a\u03c0/2",
+        "proof_method": "Integration of P'(s) < 0 from \u221a\u03c0/2 to s",
+        "concrete_objects": {
+          "s0": 0.8862269254527579,
+          "P_s0": 0.9367973043891067,
+          "inequality": "\u222b[\u221a\u03c0/2,s] P'(t)dt = P(s) - P(\u221a\u03c0/2) < 0"
+        },
+        "verification_data": {
+          "verified_at_points": true,
+          "max_difference": 0.8571691608618471,
+          "theorem": "By fundamental theorem of calculus with P'(t) < 0"
+        }
+      }
+    ]
+  },
+  "axiom_4_derivative_positive_before_mode": {
+    "description": "Monotonicity before mode",
+    "lemmas": [
+      {
+        "name": "gue_monotonic_increase_before_mode",
+        "statement": "P(s) is strictly increasing for 0 < s < \u221a\u03c0/2",
+        "proof_method": "P'(s) > 0 implies monotonic increase",
+        "concrete_objects": {
+          "test_points": [
+            0.1,
+            0.3,
+            0.5,
+            0.7,
+            0.88
+          ],
+          "values": [
+            0.03201257609770773,
+            0.26021136482837215,
+            0.58958987188174,
+            0.8513251583259104,
+            0.936704593031004
+          ],
+          "mode": 0.8862269254527579,
+          "P_mode": 0.9367973043891067
+        },
+        "verification_data": {
+          "strictly_increasing": true,
+          "all_less_than_mode": true,
+          "theorem": "P'(s) > 0 for 0 < s < \u221a\u03c0/2 \u21d2 P(s) is strictly increasing"
+        }
+      },
+      {
+        "name": "gue_concrete_inequality_before_mode",
+        "statement": "P(s) < P(\u221a\u03c0/2) for 0 < s < \u221a\u03c0/2",
+        "proof_method": "Integration of P'(s) > 0 from s to \u221a\u03c0/2",
+        "concrete_objects": {
+          "s0": 0.8862269254527579,
+          "P_s0": 0.9367973043891067,
+          "inequality": "\u222b[s,\u221a\u03c0/2] P'(t)dt = P(\u221a\u03c0/2) - P(s) > 0"
+        },
+        "verification_data": {
+          "verified_at_points": true,
+          "max_difference": 0.904784728291399,
+          "theorem": "By fundamental theorem of calculus with P'(t) > 0"
+        }
+      }
+    ]
+  },
+  "summary": {
+    "total_lemmas": 10,
+    "concrete_objects": {
+      "gue_mode": 0.8862269254527579,
+      "gue_density_at_mode": 0.9367973043891067,
+      "derivative_at_mode": 5.296951203657203e-16
+    },
+    "proof_strategy": {
+      "unimodal_gue": "Derivative sign analysis + first derivative test",
+      "gue_unimodal_property": "Reflexivity of \u2264",
+      "derivative_negative_after_mode": "Integration of P'(s) < 0",
+      "derivative_positive_before_mode": "Integration of P'(s) > 0"
+    }
+  }
+}

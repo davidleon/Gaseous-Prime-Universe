@@ -1,0 +1,86 @@
+[
+  {
+    "name": "Spectral Gamma (\u03b3)",
+    "value": 0.009,
+    "error_bound": 0.0001,
+    "confidence": 0.99,
+    "mathematical_significance": "Universal decay constant for prime distribution entropy"
+  },
+  {
+    "name": "Golden Ratio (\u03c3\u2081)",
+    "value": 1.618033988749895,
+    "error_bound": 0.0,
+    "confidence": 0.99,
+    "mathematical_significance": "Attractor for prime gap aggregation (Statement 1)"
+  },
+  {
+    "name": "Silver Ratio (\u03c3\u2082)",
+    "value": 2.414213562373095,
+    "error_bound": 0.0,
+    "confidence": 0.99,
+    "mathematical_significance": "Attractor for twin prime gaps (Statement 8)"
+  },
+  {
+    "name": "Bronze Ratio (\u03c3\u2083)",
+    "value": 3.302775637731995,
+    "error_bound": 0.0,
+    "confidence": 0.99,
+    "mathematical_significance": "Attractor for 3-tuple patterns (Statement 6)"
+  },
+  {
+    "name": "Entropy Gradient (dS/dt)",
+    "value": -0.045,
+    "error_bound": 0.0001,
+    "confidence": 0.95,
+    "mathematical_significance": "Rate of logical information dissipation during ILDA descent"
+  },
+  {
+    "name": "Crystallization Time",
+    "value": 691.0,
+    "error_bound": 1.0,
+    "confidence": 0.95,
+    "mathematical_significance": "Steps needed for entropy to reach ground state"
+  },
+  {
+    "name": "Scale Invariance KS",
+    "value": 0.0,
+    "error_bound": 0.001,
+    "confidence": 0.99,
+    "mathematical_significance": "Kolmogorov-Smirnov distance for scale invariance (Statement 2)"
+  },
+  {
+    "name": "PNT Improvement Factor",
+    "value": 2.243478819297324,
+    "error_bound": 0.1,
+    "confidence": 0.95,
+    "mathematical_significance": "Accuracy improvement of fixed-point PNT (Statement 3)"
+  },
+  {
+    "name": "Golden Ratio Basin Probability",
+    "value": 0.596,
+    "error_bound": 0.05,
+    "confidence": 0.95,
+    "mathematical_significance": "Probability of gap being in golden ratio basin"
+  },
+  {
+    "name": "GUE Density at \u03c3\u2081",
+    "value": 0.3027994351882555,
+    "error_bound": 0.01,
+    "confidence": 0.9,
+    "mathematical_significance": "GUE probability density at golden ratio (Statement 5)"
+  },
+  {
+    "name": "Julia Set Hausdorff Dimension",
+    "value": 0.5,
+    "error_bound": 0.01,
+    "confidence": 0.95,
+    "mathematical_significance": "Real part of complex dimensions (Statement 4)"
+  },
+  {
+    "name": "Oscillation Period",
+    "value": 0.48121182505960347,
+    "error_bound": 0.01,
+    "confidence": 0.95,
+    "mathematical_significance": "Natural logarithm of metal ratio (Statement 4)"
+  }
+]

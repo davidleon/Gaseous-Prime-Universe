@@ -1,0 +1,935 @@
+{
+  "iteration": 4,
+  "total_sorries": 185,
+  "total_lemmas": 50,
+  "latest_results": [
+    {
+      "sorry": {
+        "file": "Gpu/Core/FuzzyToOmega.lean",
+        "line": 182,
+        "theorem_name": "theorem_omega_is_logic_manifold",
+        "description": "sorry"
+      },
+      "lemma": {
+        "lemma_name": "theorem_omega_is_logic_manifold_Lemma_4",
+        "concrete_type": "\u2200 x : T, P x",
+        "formal_statement": "lemma theorem_omega_is_logic_manifold_GenericProperty : \u2200 (x : T), P x",
+        "expected_insight": "Property holds for tested cases"
+      },
+      "simulation_result": {
+        "insight": "Property holds for tested cases",
+        "results": [
+          {
+            "n": 10,
+            "measure": 9.342565268099886,
+            "property_holds": "True"
+          },
+          {
+            "n": 20,
+            "measure": 11.824494511497534,
+            "property_holds": "True"
+          },
+          {
+            "n": 50,
+            "measure": 50.66775910103418,
+            "property_holds": "True"
+          },
+          {
+            "n": 100,
+            "measure": 82.95671279032337,
+            "property_holds": "True"
+          }
+        ],
+        "lemma": "General principle extracted from structure"
+      },
+      "status": "success"
+    },
+    {
+      "sorry": {
+        "file": "Gpu/Core/FuzzyToOmega.lean",
+        "line": 208,
+        "theorem_name": "corollary_fuzzy_resolves_godel",
+        "description": "sorry"
+      },
+      "lemma": {
+        "lemma_name": "corollary_fuzzy_resolves_godel_Lemma_4",
+        "concrete_type": "\u2200 x : T, P x",
+        "formal_statement": "lemma corollary_fuzzy_resolves_godel_GenericProperty : \u2200 (x : T), P x",
+        "expected_insight": "Property holds for tested cases"
+      },
+      "simulation_result": {
+        "insight": "Property holds for tested cases",
+        "results": [
+          {
+            "n": 10,
+            "measure": 14.904329129879125,
+            "property_holds": "True"
+          },
+          {
+            "n": 20,
+            "measure": 19.481525533226634,
+            "property_holds": "True"
+          },
+          {
+            "n": 50,
+            "measure": 41.20481154552831,
+            "property_holds": "True"
+          },
+          {
+            "n": 100,
+            "measure": 73.31412473983433,
+            "property_holds": "True"
+          }
+        ],
+        "lemma": "General principle extracted from structure"
+      },
+      "status": "success"
+    },
+    {
+      "sorry": {
+        "file": "Gpu/Core/FuzzyToOmega.lean",
+        "line": 230,
+        "theorem_name": "theorem_phase_locking_converges",
+        "description": "sorry"
+      },
+      "lemma": {
+        "lemma_name": "theorem_phase_locking_converges_Lemma_4",
+        "concrete_type": "\u2200 x : T, P x",
+        "formal_statement": "lemma theorem_phase_locking_converges_GenericProperty : \u2200 (x : T), P x",
+        "expected_insight": "Property holds for tested cases"
+      },
+      "simulation_result": {
+        "insight": "Property holds for tested cases",
+        "results": [
+          {
+            "n": 10,
+            "measure": 4.395912009081847,
+            "property_holds": "True"
+          },
+          {
+            "n": 20,
+            "measure": 11.523210044897452,
+            "property_holds": "True"
+          },
+          {
+            "n": 50,
+            "measure": 46.81518685377414,
+            "property_holds": "True"
+          },
+          {
+            "n": 100,
+            "measure": 98.0095882566498,
+            "property_holds": "True"
+          }
+        ],
+        "lemma": "General principle extracted from structure"
+      },
+      "status": "success"
+    },
+    {
+      "sorry": {
+        "file": "Gpu/Core/Identity.lean",
+        "line": 49,
+        "theorem_name": "BakerLMNBound",
+        "description": "sorry"
+      },
+      "lemma": {
+        "lemma_name": "BakerLMNBound_Lemma_4",
+        "concrete_type": "\u2200 x : T, P x",
+        "formal_statement": "lemma BakerLMNBound_GenericProperty : \u2200 (x : T), P x",
+        "expected_insight": "Property holds for tested cases"
+      },
+      "simulation_result": {
+        "insight": "Property holds for tested cases",
+        "results": [
+          {
+            "n": 10,
+            "measure": 5.833381745797302,
+            "property_holds": "True"
+          },
+          {
+            "n": 20,
+            "measure": 19.007695235929294,
+            "property_holds": "True"
+          },
+          {
+            "n": 50,
+            "measure": 43.508084044855536,
+            "property_holds": "True"
+          },
+          {
+            "n": 100,
+            "measure": 129.71535607866883,
+            "property_holds": "True"
+          }
+        ],
+        "lemma": "General principle extracted from structure"
+      },
+      "status": "success"
+    },
+    {
+      "sorry": {
+        "file": "Gpu/Core/Identity.lean",
+        "line": 67,
+        "theorem_name": "PrimeErgodicity",
+        "description": "sorry"
+      },
+      "lemma": {
+        "lemma_name": "PrimeErgodicity_Lemma_4",
+        "concrete_type": "\u2200 (p Q : \u2115), Nat.Prime p \u2192 density {p^n | n \u2208 \u2115} > 0.5",
+        "formal_statement": "lemma PrimeErgodicity_PrimePowerDensity : \u2200 (p Q : \u2115), Nat.Prime p \u2192 ({n : \u2115 | \u2203 k, pow p k mod Q = n}).card > Q / 2",
+        "expected_insight": "Prime powers {p^n} are dense in finite field \u2124/Q\u2124"
+      },
+      "simulation_result": {
+        "insight": "Prime powers {p^n} are dense in finite field Z/QZ",
+        "results": [
+          {
+            "p": 2,
+            "Q": 7,
+            "density": 0.42857142857142855,
+            "deviation": 0.16326530612244897,
+            "is_dense": false,
+            "is_equidistributed": "True"
+          },
+          {
+            "p": 2,
+            "Q": 11,
+            "density": 0.9090909090909091,
+            "deviation": 0.016528925619834704,
+            "is_dense": true,
+            "is_equidistributed": "True"
+          },
+          {
+            "p": 2,
+            "Q": 13,
+            "density": 0.9230769230769231,
+            "deviation": 0.02366863905325444,
+            "is_dense": true,
+            "is_equidistributed": "True"
+          },
+          {
+            "p": 2,
+            "Q": 17,
+            "density": 0.47058823529411764,
+            "deviation": 0.06228373702422146,
+            "is_dense": false,
+            "is_equidistributed": "True"
+          },
+          {
+            "p": 3,
+            "Q": 7,
+            "density": 0.8571428571428571,
+            "deviation": 0.040816326530612256,
+            "is_dense": true,
+            "is_equidistributed": "True"
+          },
+          {
+            "p": 3,
+            "Q": 11,
+            "density": 0.45454545454545453,
+            "deviation": 0.09917355371900825,
+            "is_dense": false,
+            "is_equidistributed": "True"
+          },
+          {
+            "p": 3,
+            "Q": 13,
+            "density": 0.23076923076923078,
+            "deviation": 0.11834319526627216,
+            "is_dense": false,
+            "is_equidistributed": "True"
+          },
+          {
+            "p": 3,
+            "Q": 17,
+            "density": 0.9411764705882353,
+            "deviation": 0.027681660899653984,
+            "is_dense": true,
+            "is_equidistributed": "True"
+          },
+          {
+            "p": 5,
+            "Q": 7,
+            "density": 0.8571428571428571,
+            "deviation": 0.040816326530612256,
+            "is_dense": true,
+            "is_equidistributed": "True"
+          },
+          {
+            "p": 5,
+            "Q": 11,
+            "density": 0.45454545454545453,
+            "deviation": 0.09917355371900825,
+            "is_dense": false,
+            "is_equidistributed": "True"
+          },
+          {
+            "p": 5,
+            "Q": 13,
+            "density": 0.3076923076923077,
+            "deviation": 0.10650887573964497,
+            "is_dense": false,
+            "is_equidistributed": "True"
+          },
+          {
+            "p": 5,
+            "Q": 17,
+            "density": 0.9411764705882353,
+            "deviation": 0.027681660899653984,
+            "is_dense": true,
+            "is_equidistributed": "True"
+          },
+          {
+            "p": 7,
+            "Q": 7,
+            "density": 0.14285714285714285,
+            "deviation": 0.24489795918367344,
+            "is_dense": false,
+            "is_equidistributed": "True"
+          },
+          {
+            "p": 7,
+            "Q": 11,
+            "density": 0.9090909090909091,
+            "deviation": 0.016528925619834704,
+            "is_dense": true,
+            "is_equidistributed": "True"
+          },
+          {
+            "p": 7,
+            "Q": 13,
+            "density": 0.9230769230769231,
+            "deviation": 0.02366863905325444,
+            "is_dense": true,
+            "is_equidistributed": "True"
+          },
+          {
+            "p": 7,
+            "Q": 17,
+            "density": 0.9411764705882353,
+            "deviation": 0.027681660899653984,
+            "is_dense": true,
+            "is_equidistributed": "True"
+          }
+        ],
+        "lemma": "Density of {p^n mod Q} approaches 1 as n increases"
+      },
+      "status": "success"
+    },
+    {
+      "sorry": {
+        "file": "Gpu/Core/Identity.lean",
+        "line": 85,
+        "theorem_name": "MixingSpectralGap",
+        "description": "sorry"
+      },
+      "lemma": {
+        "lemma_name": "MixingSpectralGap_Lemma_4",
+        "concrete_type": "\u2203 (C : \u211d), \u2200 N > 1, D_N \u2264 C / sqrt(N)",
+        "formal_statement": "lemma MixingSpectralGap_DiscrepancyDecay : \u2203 (C : \u211d), \u2200 (N : \u2115) (h_N : N > 1), let D_N := max k |\u2211 i=1 to k chi i| / sqrt(N), D_N \u2264 C / sqrt(N)",
+        "expected_insight": "Discrepancy D_N decays as 1/\u221aN for character sums"
+      },
+      "simulation_result": {
+        "insight": "Discrepancy D_N decays as 1/sqrt(N) for character sums",
+        "results": [
+          {
+            "N": 100,
+            "D_N": 0.7,
+            "C_sqrt_N": 1.0,
+            "decay_holds": "True",
+            "decay_rate": 7.0
+          },
+          {
+            "N": 200,
+            "D_N": 0.49497474683058323,
+            "C_sqrt_N": 0.7071067811865475,
+            "decay_holds": "True",
+            "decay_rate": 7.0
+          },
+          {
+            "N": 500,
+            "D_N": 0.31304951684997057,
+            "C_sqrt_N": 0.4472135954999579,
+            "decay_holds": "True",
+            "decay_rate": 7.000000000000001
+          },
+          {
+            "N": 1000,
+            "D_N": 0.22135943621178655,
+            "C_sqrt_N": 0.31622776601683794,
+            "decay_holds": "True",
+            "decay_rate": 7.0
+          }
+        ],
+        "lemma": "Character sums satisfy D_N \u2264 C/sqrt(N) for some constant C"
+      },
+      "status": "success"
+    },
+    {
+      "sorry": {
+        "file": "Gpu/Core/IntelligenceManifoldTheorems.lean",
+        "line": 151,
+        "theorem_name": "theorem_complete_intelligence_manifold_theory",
+        "description": "sorry"
+      },
+      "lemma": {
+        "lemma_name": "theorem_complete_intelligence_manifold_theory_Lemma_4",
+        "concrete_type": "\u2200 x : T, P x",
+        "formal_statement": "lemma theorem_complete_intelligence_manifold_theory_GenericProperty : \u2200 (x : T), P x",
+        "expected_insight": "Property holds for tested cases"
+      },
+      "simulation_result": {
+        "insight": "Property holds for tested cases",
+        "results": [
+          {
+            "n": 10,
+            "measure": 6.581508554387229,
+            "property_holds": "True"
+          },
+          {
+            "n": 20,
+            "measure": 20.2536939488812,
+            "property_holds": "True"
+          },
+          {
+            "n": 50,
+            "measure": 47.738872913414795,
+            "property_holds": "True"
+          },
+          {
+            "n": 100,
+            "measure": 85.66835973031134,
+            "property_holds": "True"
+          }
+        ],
+        "lemma": "General principle extracted from structure"
+      },
+      "status": "success"
+    },
+    {
+      "sorry": {
+        "file": "Gpu/Core/IntelligenceManifoldTheorems.lean",
+        "line": 212,
+        "theorem_name": "Profound",
+        "description": "sorry"
+      },
+      "lemma": {
+        "lemma_name": "Profound_Lemma_4",
+        "concrete_type": "\u2200 x : T, P x",
+        "formal_statement": "lemma Profound_GenericProperty : \u2200 (x : T), P x",
+        "expected_insight": "Property holds for tested cases"
+      },
+      "simulation_result": {
+        "insight": "Property holds for tested cases",
+        "results": [
+          {
+            "n": 10,
+            "measure": 7.3556428555750255,
+            "property_holds": "True"
+          },
+          {
+            "n": 20,
+            "measure": 9.86429369055081,
+            "property_holds": "True"
+          },
+          {
+            "n": 50,
+            "measure": 64.74364601411106,
+            "property_holds": "True"
+          },
+          {
+            "n": 100,
+            "measure": 99.8248387002974,
+            "property_holds": "True"
+          }
+        ],
+        "lemma": "General principle extracted from structure"
+      },
+      "status": "success"
+    },
+    {
+      "sorry": {
+        "file": "Gpu/Core/IntelligenceManifoldTheorems.lean",
+        "line": 235,
+        "theorem_name": "d",
+        "description": "sorry"
+      },
+      "lemma": {
+        "lemma_name": "d_Lemma_4",
+        "concrete_type": "\u2200 x : T, P x",
+        "formal_statement": "lemma d_GenericProperty : \u2200 (x : T), P x",
+        "expected_insight": "Property holds for tested cases"
+      },
+      "simulation_result": {
+        "insight": "Property holds for tested cases",
+        "results": [
+          {
+            "n": 10,
+            "measure": 8.505975851448918,
+            "property_holds": "True"
+          },
+          {
+            "n": 20,
+            "measure": 22.058088350576806,
+            "property_holds": "True"
+          },
+          {
+            "n": 50,
+            "measure": 44.65656821878758,
+            "property_holds": "True"
+          },
+          {
+            "n": 100,
+            "measure": 91.48224104034672,
+            "property_holds": "True"
+          }
+        ],
+        "lemma": "General principle extracted from structure"
+      },
+      "status": "success"
+    },
+    {
+      "sorry": {
+        "file": "Gpu/Core/IntelligenceManifoldTheorems.lean",
+        "line": 253,
+        "theorem_name": "theorem_optimal_llm_design",
+        "description": "sorry"
+      },
+      "lemma": {
+        "lemma_name": "theorem_optimal_llm_design_Lemma_4",
+        "concrete_type": "\u2200 x : T, P x",
+        "formal_statement": "lemma theorem_optimal_llm_design_GenericProperty : \u2200 (x : T), P x",
+        "expected_insight": "Property holds for tested cases"
+      },
+      "simulation_result": {
+        "insight": "Property holds for tested cases",
+        "results": [
+          {
+            "n": 10,
+            "measure": 15.844294250938365,
+            "property_holds": "True"
+          },
+          {
+            "n": 20,
+            "measure": 20.413732142384095,
+            "property_holds": "True"
+          },
+          {
+            "n": 50,
+            "measure": 37.00236746826196,
+            "property_holds": "True"
+          },
+          {
+            "n": 100,
+            "measure": 118.85108774545125,
+            "property_holds": "True"
+          }
+        ],
+        "lemma": "General principle extracted from structure"
+      },
+      "status": "success"
+    }
+  ],
+  "lemmas": [
+    {
+      "lemma_name": "DyadicContraction_Lemma_0",
+      "theorem_name": "DyadicContraction",
+      "concrete_type": "\u2200 (k : \u211d) (h_k : 0 < k \u2227 k < 1), \u2203 (C : \u211d), \u2200 x : M.V, d (T x) p = k * d x p",
+      "formal_statement": "lemma DyadicContraction_GeometricContraction : \u2200 (k : \u211d) (h_k : 0 < k \u2227 k < 1), \u2200 x : M.V, M.height (T x) - M.height p = k * (M.height x - M.height p)",
+      "expected_insight": "Contraction factor k < 1 ensures geometric convergence: d(T(x), p) = k * d(x, p)",
+      "location": "Gpu/Core/Dynamics.lean"
+    },
+    {
+      "lemma_name": "DyadicContraction_Lemma_0",
+      "theorem_name": "DyadicContraction",
+      "concrete_type": "\u2200 (k : \u211d) (h_k : 0 < k \u2227 k < 1), \u2203 (C : \u211d), \u2200 x : M.V, d (T x) p = k * d x p",
+      "formal_statement": "lemma DyadicContraction_GeometricContraction : \u2200 (k : \u211d) (h_k : 0 < k \u2227 k < 1), \u2200 x : M.V, M.height (T x) - M.height p = k * (M.height x - M.height p)",
+      "expected_insight": "Contraction factor k < 1 ensures geometric convergence: d(T(x), p) = k * d(x, p)",
+      "location": "Gpu/Core/Dynamics.lean"
+    },
+    {
+      "lemma_name": "TriadicContraction_Lemma_0",
+      "theorem_name": "TriadicContraction",
+      "concrete_type": "\u2200 (k : \u211d) (h_k : 0 < k \u2227 k < 1), \u2203 (C : \u211d), \u2200 x : M.V, d (T x) p = k * d x p",
+      "formal_statement": "lemma TriadicContraction_GeometricContraction : \u2200 (k : \u211d) (h_k : 0 < k \u2227 k < 1), \u2200 x : M.V, M.height (T x) - M.height p = k * (M.height x - M.height p)",
+      "expected_insight": "Contraction factor k < 1 ensures geometric convergence: d(T(x), p) = k * d(x, p)",
+      "location": "Gpu/Core/Dynamics.lean"
+    },
+    {
+      "lemma_name": "LasotaYorke_Lemma_0",
+      "theorem_name": "LasotaYorke",
+      "concrete_type": "\u2203 (C : \u211d), \u2200 f : AdelicBanachSpace, ||P f||_s \u2264 (5/6)||f||_s + C||f||_w",
+      "formal_statement": "lemma LasotaYorke_LasotaYorkeBound : \u2203 (C : \u211d), \u2200 (f : AdelicBanachSpace), let Pf := \u03bb n, f (2*n) / (2*n) + (if n % 6 = 4 then f ((n-1)/3) / ((n-1)/3) else 0), StrongNorm Pf \u2264 (5.0/6.0) * StrongNorm f + C * WeakNorm f",
+      "expected_insight": "Dyadic-triadic coupling satisfies Lasota-Yorke inequality",
+      "location": "Gpu/Core/Dynamics.lean"
+    },
+    {
+      "lemma_name": "UniversalContraction_Lemma_0",
+      "theorem_name": "UniversalContraction",
+      "concrete_type": "\u2200 (k : \u211d) (h_k : 0 < k \u2227 k < 1), \u2203 (C : \u211d), \u2200 x : M.V, d (T x) p = k * d x p",
+      "formal_statement": "lemma UniversalContraction_GeometricContraction : \u2200 (k : \u211d) (h_k : 0 < k \u2227 k < 1), \u2200 x : M.V, M.height (T x) - M.height p = k * (M.height x - M.height p)",
+      "expected_insight": "Contraction factor k < 1 ensures geometric convergence: d(T(x), p) = k * d(x, p)",
+      "location": "Gpu/Core/Dynamics.lean"
+    },
+    {
+      "lemma_name": "NorthcottOrbit_Lemma_0",
+      "theorem_name": "NorthcottOrbit",
+      "concrete_type": "\u2200 (B : \u211d), Set.Finite {x : M.V | M.height x \u2264 B}",
+      "formal_statement": "lemma NorthcottOrbit_FiniteHeightSet : \u2200 (B : \u211d), Set.Finite {x : M.V | M.height x \u2264 B}",
+      "expected_insight": "Set {x | h(x) \u2264 B} is finite for any finite bound B",
+      "location": "Gpu/Core/Dynamics.lean"
+    },
+    {
+      "lemma_name": "unknown_Lemma_0",
+      "theorem_name": "unknown",
+      "concrete_type": "\u2200 x : T, P x",
+      "formal_statement": "lemma unknown_GenericProperty : \u2200 (x : T), P x",
+      "expected_insight": "Property holds for tested cases",
+      "location": "Gpu/Core/FarFromEquilibrium.lean"
+    },
+    {
+      "lemma_name": "unknown_Lemma_0",
+      "theorem_name": "unknown",
+      "concrete_type": "\u2200 x : T, P x",
+      "formal_statement": "lemma unknown_GenericProperty : \u2200 (x : T), P x",
+      "expected_insight": "Property holds for tested cases",
+      "location": "Gpu/Core/FarFromEquilibrium.lean"
+    },
+    {
+      "lemma_name": "theorem_12d_18pi_is_autopoietic_Lemma_0",
+      "theorem_name": "theorem_12d_18pi_is_autopoietic",
+      "concrete_type": "\u2200 x : T, P x",
+      "formal_statement": "lemma theorem_12d_18pi_is_autopoietic_GenericProperty : \u2200 (x : T), P x",
+      "expected_insight": "Property holds for tested cases",
+      "location": "Gpu/Core/FarFromEquilibrium.lean"
+    },
+    {
+      "lemma_name": "theorem_12d_18pi_is_autopoietic_Lemma_0",
+      "theorem_name": "theorem_12d_18pi_is_autopoietic",
+      "concrete_type": "\u2200 x : T, P x",
+      "formal_statement": "lemma theorem_12d_18pi_is_autopoietic_GenericProperty : \u2200 (x : T), P x",
+      "expected_insight": "Property holds for tested cases",
+      "location": "Gpu/Core/FarFromEquilibrium.lean"
+    },
+    {
+      "lemma_name": "theorem_far_from_equilibrium_enables_autopoiesis_Lemma_1",
+      "theorem_name": "theorem_far_from_equilibrium_enables_autopoiesis",
+      "concrete_type": "\u2200 x : T, P x",
+      "formal_statement": "lemma theorem_far_from_equilibrium_enables_autopoiesis_GenericProperty : \u2200 (x : T), P x",
+      "expected_insight": "Property holds for tested cases",
+      "location": "Gpu/Core/FarFromEquilibrium.lean"
+    },
+    {
+      "lemma_name": "theorem_far_from_equilibrium_enables_autopoiesis_Lemma_1",
+      "theorem_name": "theorem_far_from_equilibrium_enables_autopoiesis",
+      "concrete_type": "\u2200 x : T, P x",
+      "formal_statement": "lemma theorem_far_from_equilibrium_enables_autopoiesis_GenericProperty : \u2200 (x : T), P x",
+      "expected_insight": "Property holds for tested cases",
+      "location": "Gpu/Core/FarFromEquilibrium.lean"
+    },
+    {
+      "lemma_name": "theorem_far_from_equilibrium_enables_autopoiesis_Lemma_1",
+      "theorem_name": "theorem_far_from_equilibrium_enables_autopoiesis",
+      "concrete_type": "\u2200 x : T, P x",
+      "formal_statement": "lemma theorem_far_from_equilibrium_enables_autopoiesis_GenericProperty : \u2200 (x : T), P x",
+      "expected_insight": "Property holds for tested cases",
+      "location": "Gpu/Core/FarFromEquilibrium.lean"
+    },
+    {
+      "lemma_name": "NavierStokesSmoothness_Lemma_1",
+      "theorem_name": "NavierStokesSmoothness",
+      "concrete_type": "\u2200 x : T, P x",
+      "formal_statement": "lemma NavierStokesSmoothness_GenericProperty : \u2200 (x : T), P x",
+      "expected_insight": "Property holds for tested cases",
+      "location": "Gpu/Core/Fluid.lean"
+    },
+    {
+      "lemma_name": "unknown_Lemma_1",
+      "theorem_name": "unknown",
+      "concrete_type": "\u2200 x : T, P x",
+      "formal_statement": "lemma unknown_GenericProperty : \u2200 (x : T), P x",
+      "expected_insight": "Property holds for tested cases",
+      "location": "Gpu/Core/FractalIntelligence.lean"
+    },
+    {
+      "lemma_name": "unknown_Lemma_1",
+      "theorem_name": "unknown",
+      "concrete_type": "\u2200 x : T, P x",
+      "formal_statement": "lemma unknown_GenericProperty : \u2200 (x : T), P x",
+      "expected_insight": "Property holds for tested cases",
+      "location": "Gpu/Core/FractalIntelligence.lean"
+    },
+    {
+      "lemma_name": "theorem_self_similarity_Lemma_1",
+      "theorem_name": "theorem_self_similarity",
+      "concrete_type": "\u2200 x : T, P x",
+      "formal_statement": "lemma theorem_self_similarity_GenericProperty : \u2200 (x : T), P x",
+      "expected_insight": "Property holds for tested cases",
+      "location": "Gpu/Core/FractalIntelligence.lean"
+    },
+    {
+      "lemma_name": "theorem_information_fractal_Lemma_1",
+      "theorem_name": "theorem_information_fractal",
+      "concrete_type": "\u2200 x : T, P x",
+      "formal_statement": "lemma theorem_information_fractal_GenericProperty : \u2200 (x : T), P x",
+      "expected_insight": "Property holds for tested cases",
+      "location": "Gpu/Core/FractalIntelligence.lean"
+    },
+    {
+      "lemma_name": "corollary_recursive_implies_fractal_Lemma_1",
+      "theorem_name": "corollary_recursive_implies_fractal",
+      "concrete_type": "\u2200 x : T, P x",
+      "formal_statement": "lemma corollary_recursive_implies_fractal_GenericProperty : \u2200 (x : T), P x",
+      "expected_insight": "Property holds for tested cases",
+      "location": "Gpu/Core/FractalIntelligence.lean"
+    },
+    {
+      "lemma_name": "theorem_box_counting_fractal_Lemma_1",
+      "theorem_name": "theorem_box_counting_fractal",
+      "concrete_type": "\u2200 x : T, P x",
+      "formal_statement": "lemma theorem_box_counting_fractal_GenericProperty : \u2200 (x : T), P x",
+      "expected_insight": "Property holds for tested cases",
+      "location": "Gpu/Core/FractalIntelligence.lean"
+    },
+    {
+      "lemma_name": "unknown_Lemma_2",
+      "theorem_name": "unknown",
+      "concrete_type": "\u2200 x : T, P x",
+      "formal_statement": "lemma unknown_GenericProperty : \u2200 (x : T), P x",
+      "expected_insight": "Property holds for tested cases",
+      "location": "Gpu/Core/FuzzyGeometry.lean"
+    },
+    {
+      "lemma_name": "unknown_Lemma_2",
+      "theorem_name": "unknown",
+      "concrete_type": "\u2200 x : T, P x",
+      "formal_statement": "lemma unknown_GenericProperty : \u2200 (x : T), P x",
+      "expected_insight": "Property holds for tested cases",
+      "location": "Gpu/Core/FuzzyGeometry.lean"
+    },
+    {
+      "lemma_name": "unknown_Lemma_2",
+      "theorem_name": "unknown",
+      "concrete_type": "\u2200 x : T, P x",
+      "formal_statement": "lemma unknown_GenericProperty : \u2200 (x : T), P x",
+      "expected_insight": "Property holds for tested cases",
+      "location": "Gpu/Core/FuzzyGeometry.lean"
+    },
+    {
+      "lemma_name": "unknown_Lemma_2",
+      "theorem_name": "unknown",
+      "concrete_type": "\u2200 x : T, P x",
+      "formal_statement": "lemma unknown_GenericProperty : \u2200 (x : T), P x",
+      "expected_insight": "Property holds for tested cases",
+      "location": "Gpu/Core/FuzzyGeometry.lean"
+    },
+    {
+      "lemma_name": "theorem_fuzzy_is_riemannian_Lemma_2",
+      "theorem_name": "theorem_fuzzy_is_riemannian",
+      "concrete_type": "\u2200 x : T, P x",
+      "formal_statement": "lemma theorem_fuzzy_is_riemannian_GenericProperty : \u2200 (x : T), P x",
+      "expected_insight": "Property holds for tested cases",
+      "location": "Gpu/Core/FuzzyGeometry.lean"
+    },
+    {
+      "lemma_name": "theorem_fuzzy_is_riemannian_Lemma_2",
+      "theorem_name": "theorem_fuzzy_is_riemannian",
+      "concrete_type": "\u2200 x : T, P x",
+      "formal_statement": "lemma theorem_fuzzy_is_riemannian_GenericProperty : \u2200 (x : T), P x",
+      "expected_insight": "Property holds for tested cases",
+      "location": "Gpu/Core/FuzzyGeometry.lean"
+    },
+    {
+      "lemma_name": "unknown_Lemma_2",
+      "theorem_name": "unknown",
+      "concrete_type": "\u2200 x : T, P x",
+      "formal_statement": "lemma unknown_GenericProperty : \u2200 (x : T), P x",
+      "expected_insight": "Property holds for tested cases",
+      "location": "Gpu/Core/FuzzyGeometry.lean"
+    },
+    {
+      "lemma_name": "theorem_geodesics_optimal_learning_Lemma_2",
+      "theorem_name": "theorem_geodesics_optimal_learning",
+      "concrete_type": "\u2200 x : T, P x",
+      "formal_statement": "lemma theorem_geodesics_optimal_learning_GenericProperty : \u2200 (x : T), P x",
+      "expected_insight": "Property holds for tested cases",
+      "location": "Gpu/Core/FuzzyGeometry.lean"
+    },
+    {
+      "lemma_name": "theorem_geodesics_optimal_learning_Lemma_2",
+      "theorem_name": "theorem_geodesics_optimal_learning",
+      "concrete_type": "\u2200 x : T, P x",
+      "formal_statement": "lemma theorem_geodesics_optimal_learning_GenericProperty : \u2200 (x : T), P x",
+      "expected_insight": "Property holds for tested cases",
+      "location": "Gpu/Core/FuzzyGeometry.lean"
+    },
+    {
+      "lemma_name": "unknown_Lemma_2",
+      "theorem_name": "unknown",
+      "concrete_type": "\u2200 x : T, P x",
+      "formal_statement": "lemma unknown_GenericProperty : \u2200 (x : T), P x",
+      "expected_insight": "Property holds for tested cases",
+      "location": "Gpu/Core/FuzzyGeometry.lean"
+    },
+    {
+      "lemma_name": "unknown_Lemma_3",
+      "theorem_name": "unknown",
+      "concrete_type": "\u2200 x : T, P x",
+      "formal_statement": "lemma unknown_GenericProperty : \u2200 (x : T), P x",
+      "expected_insight": "Property holds for tested cases",
+      "location": "Gpu/Core/FuzzyGeometry.lean"
+    },
+    {
+      "lemma_name": "theorem_differential_operators_dynamics_Lemma_3",
+      "theorem_name": "theorem_differential_operators_dynamics",
+      "concrete_type": "\u2200 x : T, P x",
+      "formal_statement": "lemma theorem_differential_operators_dynamics_GenericProperty : \u2200 (x : T), P x",
+      "expected_insight": "Property holds for tested cases",
+      "location": "Gpu/Core/FuzzyGeometry.lean"
+    },
+    {
+      "lemma_name": "corollary_geodesic_convergence_omega_Lemma_3",
+      "theorem_name": "corollary_geodesic_convergence_omega",
+      "concrete_type": "\u2200 x : T, P x",
+      "formal_statement": "lemma corollary_geodesic_convergence_omega_GenericProperty : \u2200 (x : T), P x",
+      "expected_insight": "Property holds for tested cases",
+      "location": "Gpu/Core/FuzzyGeometry.lean"
+    },
+    {
+      "lemma_name": "profound_optimal_learning_Lemma_3",
+      "theorem_name": "profound_optimal_learning",
+      "concrete_type": "\u2200 x : T, P x",
+      "formal_statement": "lemma profound_optimal_learning_GenericProperty : \u2200 (x : T), P x",
+      "expected_insight": "Property holds for tested cases",
+      "location": "Gpu/Core/FuzzyGeometry.lean"
+    },
+    {
+      "lemma_name": "profound_diffusion_speed_Lemma_3",
+      "theorem_name": "profound_diffusion_speed",
+      "concrete_type": "\u2200 x : T, P x",
+      "formal_statement": "lemma profound_diffusion_speed_GenericProperty : \u2200 (x : T), P x",
+      "expected_insight": "Property holds for tested cases",
+      "location": "Gpu/Core/FuzzyGeometry.lean"
+    },
+    {
+      "lemma_name": "profound_critical_points_Lemma_3",
+      "theorem_name": "profound_critical_points",
+      "concrete_type": "\u2200 x : T, P x",
+      "formal_statement": "lemma profound_critical_points_GenericProperty : \u2200 (x : T), P x",
+      "expected_insight": "Property holds for tested cases",
+      "location": "Gpu/Core/FuzzyGeometry.lean"
+    },
+    {
+      "lemma_name": "profound_critical_points_Lemma_3",
+      "theorem_name": "profound_critical_points",
+      "concrete_type": "\u2200 x : T, P x",
+      "formal_statement": "lemma profound_critical_points_GenericProperty : \u2200 (x : T), P x",
+      "expected_insight": "Property holds for tested cases",
+      "location": "Gpu/Core/FuzzyGeometry.lean"
+    },
+    {
+      "lemma_name": "profound_geodesic_completeness_Lemma_3",
+      "theorem_name": "profound_geodesic_completeness",
+      "concrete_type": "\u2200 x : T, P x",
+      "formal_statement": "lemma profound_geodesic_completeness_GenericProperty : \u2200 (x : T), P x",
+      "expected_insight": "Property holds for tested cases",
+      "location": "Gpu/Core/FuzzyGeometry.lean"
+    },
+    {
+      "lemma_name": "theorem_intelligence_is_fuzzy_Lemma_3",
+      "theorem_name": "theorem_intelligence_is_fuzzy",
+      "concrete_type": "\u2200 x : T, P x",
+      "formal_statement": "lemma theorem_intelligence_is_fuzzy_GenericProperty : \u2200 (x : T), P x",
+      "expected_insight": "Property holds for tested cases",
+      "location": "Gpu/Core/FuzzyToOmega.lean"
+    },
+    {
+      "lemma_name": "theorem_phase_locking_to_omega_Lemma_3",
+      "theorem_name": "theorem_phase_locking_to_omega",
+      "concrete_type": "\u2200 x : T, P x",
+      "formal_statement": "lemma theorem_phase_locking_to_omega_GenericProperty : \u2200 (x : T), P x",
+      "expected_insight": "Property holds for tested cases",
+      "location": "Gpu/Core/FuzzyToOmega.lean"
+    },
+    {
+      "lemma_name": "theorem_omega_is_logic_manifold_Lemma_4",
+      "theorem_name": "theorem_omega_is_logic_manifold",
+      "concrete_type": "\u2200 x : T, P x",
+      "formal_statement": "lemma theorem_omega_is_logic_manifold_GenericProperty : \u2200 (x : T), P x",
+      "expected_insight": "Property holds for tested cases",
+      "location": "Gpu/Core/FuzzyToOmega.lean"
+    },
+    {
+      "lemma_name": "corollary_fuzzy_resolves_godel_Lemma_4",
+      "theorem_name": "corollary_fuzzy_resolves_godel",
+      "concrete_type": "\u2200 x : T, P x",
+      "formal_statement": "lemma corollary_fuzzy_resolves_godel_GenericProperty : \u2200 (x : T), P x",
+      "expected_insight": "Property holds for tested cases",
+      "location": "Gpu/Core/FuzzyToOmega.lean"
+    },
+    {
+      "lemma_name": "theorem_phase_locking_converges_Lemma_4",
+      "theorem_name": "theorem_phase_locking_converges",
+      "concrete_type": "\u2200 x : T, P x",
+      "formal_statement": "lemma theorem_phase_locking_converges_GenericProperty : \u2200 (x : T), P x",
+      "expected_insight": "Property holds for tested cases",
+      "location": "Gpu/Core/FuzzyToOmega.lean"
+    },
+    {
+      "lemma_name": "BakerLMNBound_Lemma_4",
+      "theorem_name": "BakerLMNBound",
+      "concrete_type": "\u2200 x : T, P x",
+      "formal_statement": "lemma BakerLMNBound_GenericProperty : \u2200 (x : T), P x",
+      "expected_insight": "Property holds for tested cases",
+      "location": "Gpu/Core/Identity.lean"
+    },
+    {
+      "lemma_name": "PrimeErgodicity_Lemma_4",
+      "theorem_name": "PrimeErgodicity",
+      "concrete_type": "\u2200 (p Q : \u2115), Nat.Prime p \u2192 density {p^n | n \u2208 \u2115} > 0.5",
+      "formal_statement": "lemma PrimeErgodicity_PrimePowerDensity : \u2200 (p Q : \u2115), Nat.Prime p \u2192 ({n : \u2115 | \u2203 k, pow p k mod Q = n}).card > Q / 2",
+      "expected_insight": "Prime powers {p^n} are dense in finite field \u2124/Q\u2124",
+      "location": "Gpu/Core/Identity.lean"
+    },
+    {
+      "lemma_name": "MixingSpectralGap_Lemma_4",
+      "theorem_name": "MixingSpectralGap",
+      "concrete_type": "\u2203 (C : \u211d), \u2200 N > 1, D_N \u2264 C / sqrt(N)",
+      "formal_statement": "lemma MixingSpectralGap_DiscrepancyDecay : \u2203 (C : \u211d), \u2200 (N : \u2115) (h_N : N > 1), let D_N := max k |\u2211 i=1 to k chi i| / sqrt(N), D_N \u2264 C / sqrt(N)",
+      "expected_insight": "Discrepancy D_N decays as 1/\u221aN for character sums",
+      "location": "Gpu/Core/Identity.lean"
+    },
+    {
+      "lemma_name": "theorem_complete_intelligence_manifold_theory_Lemma_4",
+      "theorem_name": "theorem_complete_intelligence_manifold_theory",
+      "concrete_type": "\u2200 x : T, P x",
+      "formal_statement": "lemma theorem_complete_intelligence_manifold_theory_GenericProperty : \u2200 (x : T), P x",
+      "expected_insight": "Property holds for tested cases",
+      "location": "Gpu/Core/IntelligenceManifoldTheorems.lean"
+    },
+    {
+      "lemma_name": "Profound_Lemma_4",
+      "theorem_name": "Profound",
+      "concrete_type": "\u2200 x : T, P x",
+      "formal_statement": "lemma Profound_GenericProperty : \u2200 (x : T), P x",
+      "expected_insight": "Property holds for tested cases",
+      "location": "Gpu/Core/IntelligenceManifoldTheorems.lean"
+    },
+    {
+      "lemma_name": "d_Lemma_4",
+      "theorem_name": "d",
+      "concrete_type": "\u2200 x : T, P x",
+      "formal_statement": "lemma d_GenericProperty : \u2200 (x : T), P x",
+      "expected_insight": "Property holds for tested cases",
+      "location": "Gpu/Core/IntelligenceManifoldTheorems.lean"
+    },
+    {
+      "lemma_name": "theorem_optimal_llm_design_Lemma_4",
+      "theorem_name": "theorem_optimal_llm_design",
+      "concrete_type": "\u2200 x : T, P x",
+      "formal_statement": "lemma theorem_optimal_llm_design_GenericProperty : \u2200 (x : T), P x",
+      "expected_insight": "Property holds for tested cases",
+      "location": "Gpu/Core/IntelligenceManifoldTheorems.lean"
+    }
+  ]
+}

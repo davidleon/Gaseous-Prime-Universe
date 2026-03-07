@@ -1,0 +1,274 @@
+{
+  "summary": {
+    "total_sorries": 5,
+    "passed": 0,
+    "failed": 5,
+    "total_lemmas": 14,
+    "grounded_lemmas": 1,
+    "grounding_rate": 0.07142857142857142
+  },
+  "results": [
+    {
+      "phase": "precipitation",
+      "sub_lemmas": [
+        {
+          "name": "golden_ratio_attractor_existence_of_gap",
+          "type": "attractor_theorem",
+          "component": "existence_of_gap",
+          "difficulty": "trivial",
+          "depends_on": [],
+          "proof_strategy": "Use linarith, norm_num, rfl with basic assumptions",
+          "numerical_grounding": {
+            "grounded": false,
+            "evidence": "No numerical grounding available"
+          }
+        },
+        {
+          "name": "golden_ratio_attractor_basin_membership",
+          "type": "attractor_theorem",
+          "component": "basin_membership",
+          "difficulty": "easy",
+          "depends_on": [
+            "existence_of_gap"
+          ],
+          "proof_strategy": "Apply standard theorems from Mathlib (e.g., div_pos, Real.log_pos.mpr)",
+          "numerical_grounding": {
+            "grounded": false,
+            "evidence": "No numerical grounding available"
+          }
+        },
+        {
+          "name": "golden_ratio_attractor_probability_bound",
+          "type": "attractor_theorem",
+          "component": "probability_bound",
+          "difficulty": "medium",
+          "depends_on": [
+            "existence_of_gap",
+            "basin_membership"
+          ],
+          "proof_strategy": "Use ILDA axioms from GPU.Core with statistical theorems",
+          "numerical_grounding": {
+            "grounded": false,
+            "evidence": "No numerical grounding available"
+          }
+        },
+        {
+          "name": "golden_ratio_attractor_binomial_verification",
+          "type": "attractor_theorem",
+          "component": "binomial_verification",
+          "difficulty": "medium",
+          "depends_on": [
+            "existence_of_gap",
+            "basin_membership",
+            "probability_bound"
+          ],
+          "proof_strategy": "Use ILDA axioms from GPU.Core with statistical theorems",
+          "numerical_grounding": {
+            "p_value": 2.710351343668318e-05,
+            "evidence": "253/1000 gaps in basin",
+            "grounded": true
+          }
+        }
+      ],
+      "verification": {
+        "status": "PARTIAL",
+        "results": [
+          false,
+          false,
+          false,
+          true
+        ]
+      },
+      "ready_for_proof": false
+    },
+    {
+      "phase": "precipitation",
+      "sub_lemmas": [
+        {
+          "name": "basin_prob_greater_than_null_definition_check",
+          "type": "general_theorem",
+          "component": "definition_check",
+          "difficulty": "trivial",
+          "depends_on": [],
+          "proof_strategy": "Use linarith, norm_num, rfl with basic assumptions",
+          "numerical_grounding": {
+            "grounded": false,
+            "evidence": "No numerical grounding available"
+          }
+        },
+        {
+          "name": "basin_prob_greater_than_null_main_statement",
+          "type": "general_theorem",
+          "component": "main_statement",
+          "difficulty": "hard",
+          "depends_on": [
+            "definition_check"
+          ],
+          "proof_strategy": "Requires research-level development",
+          "numerical_grounding": {
+            "grounded": false,
+            "evidence": "No numerical grounding available"
+          }
+        }
+      ],
+      "verification": {
+        "status": "PARTIAL",
+        "results": [
+          false,
+          false
+        ]
+      },
+      "ready_for_proof": false
+    },
+    {
+      "phase": "precipitation",
+      "sub_lemmas": [
+        {
+          "name": "scale_invariance_theorem_normalized_counting",
+          "type": "invariance_theorem",
+          "component": "normalized_counting",
+          "difficulty": "hard",
+          "depends_on": [],
+          "proof_strategy": "Requires research-level development",
+          "numerical_grounding": {
+            "grounded": false,
+            "evidence": "No numerical grounding available"
+          }
+        },
+        {
+          "name": "scale_invariance_theorem_scale_transformation",
+          "type": "invariance_theorem",
+          "component": "scale_transformation",
+          "difficulty": "easy",
+          "depends_on": [
+            "normalized_counting"
+          ],
+          "proof_strategy": "Apply standard theorems from Mathlib (e.g., div_pos, Real.log_pos.mpr)",
+          "numerical_grounding": {
+            "grounded": false,
+            "evidence": "No numerical grounding available"
+          }
+        },
+        {
+          "name": "scale_invariance_theorem_limit_equality",
+          "type": "invariance_theorem",
+          "component": "limit_equality",
+          "difficulty": "medium",
+          "depends_on": [
+            "normalized_counting",
+            "scale_transformation"
+          ],
+          "proof_strategy": "Use ILDA axioms from GPU.Core with statistical theorems",
+          "numerical_grounding": {
+            "grounded": false,
+            "evidence": "No numerical grounding available"
+          }
+        },
+        {
+          "name": "scale_invariance_theorem_ks_verification",
+          "type": "invariance_theorem",
+          "component": "ks_verification",
+          "difficulty": "medium",
+          "depends_on": [
+            "normalized_counting",
+            "scale_transformation",
+            "limit_equality"
+          ],
+          "proof_strategy": "Use ILDA axioms from GPU.Core with statistical theorems",
+          "numerical_grounding": {
+            "grounded": false,
+            "evidence": "No numerical grounding available"
+          }
+        }
+      ],
+      "verification": {
+        "status": "PARTIAL",
+        "results": [
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "ready_for_proof": false
+    },
+    {
+      "phase": "precipitation",
+      "sub_lemmas": [
+        {
+          "name": "fixed_point_pnt_superior_definition_check",
+          "type": "general_theorem",
+          "component": "definition_check",
+          "difficulty": "trivial",
+          "depends_on": [],
+          "proof_strategy": "Use linarith, norm_num, rfl with basic assumptions",
+          "numerical_grounding": {
+            "grounded": false,
+            "evidence": "No numerical grounding available"
+          }
+        },
+        {
+          "name": "fixed_point_pnt_superior_main_statement",
+          "type": "general_theorem",
+          "component": "main_statement",
+          "difficulty": "hard",
+          "depends_on": [
+            "definition_check"
+          ],
+          "proof_strategy": "Requires research-level development",
+          "numerical_grounding": {
+            "grounded": false,
+            "evidence": "No numerical grounding available"
+          }
+        }
+      ],
+      "verification": {
+        "status": "PARTIAL",
+        "results": [
+          false,
+          false
+        ]
+      },
+      "ready_for_proof": false
+    },
+    {
+      "phase": "precipitation",
+      "sub_lemmas": [
+        {
+          "name": "twin_prime_silver_theorem_definition_check",
+          "type": "general_theorem",
+          "component": "definition_check",
+          "difficulty": "trivial",
+          "depends_on": [],
+          "proof_strategy": "Use linarith, norm_num, rfl with basic assumptions",
+          "numerical_grounding": {
+            "grounded": false,
+            "evidence": "No numerical grounding available"
+          }
+        },
+        {
+          "name": "twin_prime_silver_theorem_main_statement",
+          "type": "general_theorem",
+          "component": "main_statement",
+          "difficulty": "hard",
+          "depends_on": [
+            "definition_check"
+          ],
+          "proof_strategy": "Requires research-level development",
+          "numerical_grounding": {
+            "grounded": false,
+            "evidence": "No numerical grounding available"
+          }
+        }
+      ],
+      "verification": {
+        "status": "PARTIAL",
+        "results": [
+          false,
+          false
+        ]
+      },
+      "ready_for_proof": false
+    }
+  ]
+}

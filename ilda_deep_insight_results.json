@@ -1,0 +1,254 @@
+[
+  {
+    "phase": "precipitation",
+    "sub_lemmas": [
+      {
+        "name": "prime_power_unified_scaling_prime_power_counting",
+        "type": "scaling_theorem",
+        "component": "prime_power_counting",
+        "difficulty": "trivial",
+        "depends_on": [],
+        "insight_applied": true,
+        "mathematical_depth": "deep - connects prime powers to metal ratios",
+        "proof_strategy": "Use linarith, norm_num, rfl with basic assumptions",
+        "mathematical_grounding": {
+          "grounded": false,
+          "evidence": "No deep grounding",
+          "mathematical_depth": "shallow"
+        }
+      },
+      {
+        "name": "prime_power_unified_scaling_pnt_formulation",
+        "type": "scaling_theorem",
+        "component": "pnt_formulation",
+        "difficulty": "easy",
+        "depends_on": [
+          "prime_power_counting"
+        ],
+        "insight_applied": true,
+        "mathematical_depth": "deep - connects prime powers to metal ratios",
+        "proof_strategy": "Apply standard theorems from Mathlib",
+        "mathematical_grounding": {
+          "grounded": false,
+          "evidence": "No deep grounding",
+          "mathematical_depth": "shallow"
+        }
+      },
+      {
+        "name": "prime_power_unified_scaling_metal_ratio_governance",
+        "type": "scaling_theorem",
+        "component": "metal_ratio_governance",
+        "difficulty": "medium",
+        "depends_on": [
+          "prime_power_counting",
+          "pnt_formulation"
+        ],
+        "insight_applied": true,
+        "mathematical_depth": "deep - connects prime powers to metal ratios",
+        "proof_strategy": "Use ILDA axioms with statistical theorems and variance bounds",
+        "mathematical_grounding": {
+          "grounded": false,
+          "evidence": "No deep grounding",
+          "mathematical_depth": "shallow"
+        }
+      },
+      {
+        "name": "prime_power_unified_scaling_error_bound_verification",
+        "type": "scaling_theorem",
+        "component": "error_bound_verification",
+        "difficulty": "medium",
+        "depends_on": [
+          "prime_power_counting",
+          "pnt_formulation",
+          "metal_ratio_governance"
+        ],
+        "insight_applied": true,
+        "mathematical_depth": "deep - connects prime powers to metal ratios",
+        "proof_strategy": "Use ILDA axioms with statistical theorems and variance bounds",
+        "mathematical_grounding": {
+          "grounded": false,
+          "evidence": "No deep grounding",
+          "mathematical_depth": "shallow"
+        }
+      }
+    ],
+    "verification": {
+      "status": "PARTIAL",
+      "results": [
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    "ready_for_proof": false
+  },
+  {
+    "phase": "precipitation",
+    "sub_lemmas": [
+      {
+        "name": "normalized_gaps_bounded_variance_gap_normalization",
+        "type": "variance_theorem",
+        "component": "gap_normalization",
+        "difficulty": "medium",
+        "depends_on": [],
+        "insight_applied": true,
+        "mathematical_depth": "deep - reveals statistical regularity in primes",
+        "proof_strategy": "Use ILDA axioms with statistical theorems and variance bounds",
+        "mathematical_grounding": {
+          "grounded": false,
+          "evidence": "No deep grounding",
+          "mathematical_depth": "shallow"
+        }
+      },
+      {
+        "name": "normalized_gaps_bounded_variance_variance_computation",
+        "type": "variance_theorem",
+        "component": "variance_computation",
+        "difficulty": "easy",
+        "depends_on": [
+          "gap_normalization"
+        ],
+        "insight_applied": true,
+        "mathematical_depth": "deep - reveals statistical regularity in primes",
+        "proof_strategy": "Apply standard theorems from Mathlib",
+        "mathematical_grounding": {
+          "grounded": true,
+          "evidence": "Variance = 0.625 < 1.0, Stationarity \u0394 = 0.0015",
+          "mathematical_depth": "deep - reveals statistical regularity"
+        }
+      },
+      {
+        "name": "normalized_gaps_bounded_variance_boundedness_proof",
+        "type": "variance_theorem",
+        "component": "boundedness_proof",
+        "difficulty": "medium",
+        "depends_on": [
+          "gap_normalization",
+          "variance_computation"
+        ],
+        "insight_applied": true,
+        "mathematical_depth": "deep - reveals statistical regularity in primes",
+        "proof_strategy": "Use ILDA axioms with statistical theorems and variance bounds",
+        "mathematical_grounding": {
+          "grounded": false,
+          "evidence": "No deep grounding",
+          "mathematical_depth": "shallow"
+        }
+      },
+      {
+        "name": "normalized_gaps_bounded_variance_stationarity_verification",
+        "type": "variance_theorem",
+        "component": "stationarity_verification",
+        "difficulty": "medium",
+        "depends_on": [
+          "gap_normalization",
+          "variance_computation",
+          "boundedness_proof"
+        ],
+        "insight_applied": true,
+        "mathematical_depth": "deep - reveals statistical regularity in primes",
+        "proof_strategy": "Use ILDA axioms with statistical theorems and variance bounds",
+        "mathematical_grounding": {
+          "grounded": false,
+          "evidence": "No deep grounding",
+          "mathematical_depth": "shallow"
+        }
+      }
+    ],
+    "verification": {
+      "status": "PARTIAL",
+      "results": [
+        false,
+        true,
+        false,
+        false
+      ]
+    },
+    "ready_for_proof": false
+  },
+  {
+    "phase": "precipitation",
+    "sub_lemmas": [
+      {
+        "name": "ilda_second_law_entropy_definition",
+        "type": "entropy_theorem",
+        "component": "entropy_definition",
+        "difficulty": "trivial",
+        "depends_on": [],
+        "insight_applied": true,
+        "mathematical_depth": "deep - information thermodynamics of primes",
+        "proof_strategy": "Use linarith, norm_num, rfl with basic assumptions",
+        "mathematical_grounding": {
+          "grounded": true,
+          "evidence": "Entropy decreases from 4.248 to 3.597",
+          "mathematical_depth": "deep - information thermodynamics"
+        }
+      },
+      {
+        "name": "ilda_second_law_descent_trajectory",
+        "type": "entropy_theorem",
+        "component": "descent_trajectory",
+        "difficulty": "hard",
+        "depends_on": [
+          "entropy_definition"
+        ],
+        "insight_applied": true,
+        "mathematical_depth": "deep - information thermodynamics of primes",
+        "proof_strategy": "Use ILDA Second Law with entropy decrease theorem",
+        "mathematical_grounding": {
+          "grounded": false,
+          "evidence": "No deep grounding",
+          "mathematical_depth": "shallow"
+        }
+      },
+      {
+        "name": "ilda_second_law_monotonic_decrease",
+        "type": "entropy_theorem",
+        "component": "monotonic_decrease",
+        "difficulty": "medium",
+        "depends_on": [
+          "entropy_definition",
+          "descent_trajectory"
+        ],
+        "insight_applied": true,
+        "mathematical_depth": "deep - information thermodynamics of primes",
+        "proof_strategy": "Use ILDA axioms with statistical theorems and variance bounds",
+        "mathematical_grounding": {
+          "grounded": false,
+          "evidence": "No deep grounding",
+          "mathematical_depth": "shallow"
+        }
+      },
+      {
+        "name": "ilda_second_law_convergence_verification",
+        "type": "entropy_theorem",
+        "component": "convergence_verification",
+        "difficulty": "medium",
+        "depends_on": [
+          "entropy_definition",
+          "descent_trajectory",
+          "monotonic_decrease"
+        ],
+        "insight_applied": true,
+        "mathematical_depth": "deep - information thermodynamics of primes",
+        "proof_strategy": "Use ILDA axioms with statistical theorems and variance bounds",
+        "mathematical_grounding": {
+          "grounded": false,
+          "evidence": "No deep grounding",
+          "mathematical_depth": "shallow"
+        }
+      }
+    ],
+    "verification": {
+      "status": "PARTIAL",
+      "results": [
+        true,
+        false,
+        false,
+        false
+      ]
+    },
+    "ready_for_proof": false
+  }
+]

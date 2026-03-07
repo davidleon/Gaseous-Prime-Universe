@@ -1,0 +1,560 @@
+{
+  "concrete_steps": [
+    {
+      "sorry_id": 10,
+      "step_number": 26,
+      "step_type": "StepType.LEMMA_PROOF",
+      "description": "Prove invariance of \u03ba under coordinate transforms",
+      "lean_code": "\n                theorem structural_key_invariant (kappa : StructuralKey) (T : Real -> Real) :\n                  kappa.invariant := forall x, T(kappa.kappa * x) = kappa.kappa * T(x) := by\n                ",
+      "prerequisites": [],
+      "verification_method": "Check coordinate transformation properties",
+      "estimated_time": "30 minutes",
+      "confidence": 0.85,
+      "difficulty": "easy"
+    },
+    {
+      "sorry_id": 10,
+      "step_number": 27,
+      "step_type": "StepType.LEMMA_PROOF",
+      "description": "Prove dimension lifting: d(M_U) >= d(M_A) + d(M_B) - 1",
+      "lean_code": "\n                theorem dimension_lifting (M_A M_B : LogicalManifold) (kappa : Real) :\n                  let M_U := kappa * M_A + (1-kappa) * M_B\n                  manifold_dim M_U >= manifold_dim M_A + manifold_dim M_B - 1 := by\n                ",
+      "prerequisites": [],
+      "verification_method": "Analyze tangent space dimensions",
+      "estimated_time": "45 minutes",
+      "confidence": 0.8,
+      "difficulty": "easy"
+    },
+    {
+      "sorry_id": 10,
+      "step_number": 28,
+      "step_type": "StepType.VERIFICATION",
+      "description": "Prove energy quantization: E_n = n\u00d7kappa",
+      "lean_code": "\n                theorem energy_quantization (kappa : StructuralKey) (n : Nat) :\n                  kappa.quantizes n = n * kappa.kappa := by\n                ",
+      "prerequisites": [],
+      "verification_method": "Verify with Schr\u00f6dinger equation eigenvalues",
+      "estimated_time": "30 minutes",
+      "confidence": 0.85,
+      "difficulty": "easy"
+    },
+    {
+      "sorry_id": 10,
+      "step_number": 29,
+      "step_type": "StepType.TACTIC_APPLICATION",
+      "description": "Combine all three properties",
+      "lean_code": "\n                constructor\n                * apply structural_key_invariant\n                * apply dimension_lifting\n                * apply energy_quantization\n                ",
+      "prerequisites": [
+        26,
+        27,
+        28
+      ],
+      "verification_method": "Check structural key satisfies all properties",
+      "estimated_time": "15 minutes",
+      "confidence": 0.85,
+      "difficulty": "easy"
+    },
+    {
+      "sorry_id": 11,
+      "step_number": 30,
+      "step_type": "StepType.TACTIC_APPLICATION",
+      "description": "Verify projection to Addition (beta -> 1)",
+      "lean_code": "\n                theorem LSE_projects_to_addition (x y : Real) :\n                  Tendsto (fun beta => LSE beta x y) (nhds 1) (nhds ((x + y) / 2)) := by\n                ",
+      "prerequisites": [],
+      "verification_method": "Use proven limit from iteration 6",
+      "estimated_time": "15 minutes",
+      "confidence": 0.95,
+      "difficulty": "easy"
+    },
+    {
+      "sorry_id": 11,
+      "step_number": 31,
+      "step_type": "StepType.TACTIC_APPLICATION",
+      "description": "Verify projection to Multiplication (beta -> 0)",
+      "lean_code": "\n                theorem LSE_projects_to_multiplication (x y : Real) :\n                  Tendsto (fun beta => LSE beta x y) (nhds 0) (nhds (Real.sqrt (x * y))) := by\n                ",
+      "prerequisites": [],
+      "verification_method": "Use proven limit from iteration 6",
+      "estimated_time": "15 minutes",
+      "confidence": 0.95,
+      "difficulty": "easy"
+    },
+    {
+      "sorry_id": 11,
+      "step_number": 32,
+      "step_type": "StepType.TACTIC_APPLICATION",
+      "description": "Verify uniqueness of \u03ba = 0.5",
+      "lean_code": "\n                theorem LSE_unique_kappa (x y : Real) :\n                  forall kappa1 kappa2, IsJoin (LSE kappa1) Addition Multiplication kappa1 ->\n                           IsJoin (LSE kappa2) Addition Multiplication kappa2 ->\n                           kappa1 = kappa2 := by\n                ",
+      "prerequisites": [
+        30,
+        31
+      ],
+      "verification_method": "Show both limits uniquely determine \u03ba",
+      "estimated_time": "30 minutes",
+      "confidence": 0.8,
+      "difficulty": "easy"
+    },
+    {
+      "sorry_id": 12,
+      "step_number": 33,
+      "step_type": "StepType.VERIFICATION",
+      "description": "Define energy levels via Schr\u00f6dinger equation",
+      "lean_code": "\n                noncomputable def energy_levels (kappa : Real) : Nat -> Real\n                  | 0 => 0\n                  | n+1 => (n+1) * kappa\n                ",
+      "prerequisites": [],
+      "verification_method": "Check definition compiles",
+      "estimated_time": "10 minutes",
+      "confidence": 0.95,
+      "difficulty": "easy"
+    },
+    {
+      "sorry_id": 12,
+      "step_number": 34,
+      "step_type": "StepType.VERIFICATION",
+      "description": "Verify quantization for n=1..10 numerically",
+      "lean_code": "\n                theorem verify_quantization (kappa : Real) :\n                  forall n in Finset (Icc 1 10), energy_levels kappa n = n * kappa := by\n                ",
+      "prerequisites": [
+        33
+      ],
+      "verification_method": "Compute and compare values",
+      "estimated_time": "20 minutes",
+      "confidence": 0.9,
+      "difficulty": "easy"
+    },
+    {
+      "sorry_id": 12,
+      "step_number": 35,
+      "step_type": "StepType.INDUCTION",
+      "description": "Prove by induction using ladder operators",
+      "lean_code": "\n                theorem quantization_by_induction (kappa : Real) :\n                  forall n : Nat, energy_levels kappa n = n * kappa := by\n                ",
+      "prerequisites": [
+        33
+      ],
+      "verification_method": "Check inductive proof",
+      "estimated_time": "30 minutes",
+      "confidence": 0.9,
+      "difficulty": "easy"
+    },
+    {
+      "sorry_id": 13,
+      "step_number": 36,
+      "step_type": "StepType.CONSTRUCTION",
+      "description": "Assume two joins M_U and M_U'",
+      "lean_code": "\n                variable (M_U M_Uprime : LogicalManifold)\n                variable (kappa kappa' : Real)\n                variable (h_join : IsJoin M_U M_A M_B kappa)\n                variable (h_join' : IsJoin M_Uprime M_A M_B kappa')\n                ",
+      "prerequisites": [],
+      "verification_method": "Setup assumptions",
+      "estimated_time": "15 minutes",
+      "confidence": 0.9,
+      "difficulty": "hard"
+    },
+    {
+      "sorry_id": 13,
+      "step_number": 37,
+      "step_type": "StepType.CONSTRUCTION",
+      "description": "Construct isometry \u03c6: M_U \u2192 M_U'",
+      "lean_code": "\n                noncomputable def join_isometry (M_U M_Uprime : LogicalManifold) :\n                  (Real -> Real -> Real) \u00d7 (Real -> Real -> Real) \u00d7 (Real -> Real)\n                ",
+      "prerequisites": [
+        36
+      ],
+      "verification_method": "Define isometry mapping",
+      "estimated_time": "30 minutes",
+      "confidence": 0.7,
+      "difficulty": "hard"
+    },
+    {
+      "sorry_id": 13,
+      "step_number": 38,
+      "step_type": "StepType.VERIFICATION",
+      "description": "Show phi preserves metric structure",
+      "lean_code": "\n                theorem isometry_preserves_metric (phi : Isometry) (M : LogicalManifold) :\n                  forall x1 x2, dist (phi x1) (phi x2) = dist x1 x2 := by\n                ",
+      "prerequisites": [
+        36
+      ],
+      "verification_method": "Verify distance preservation",
+      "estimated_time": "45 minutes",
+      "confidence": 0.75,
+      "difficulty": "hard"
+    },
+    {
+      "sorry_id": 13,
+      "step_number": 39,
+      "step_type": "StepType.VERIFICATION",
+      "description": "Prove \u03c6 is unique given projection constraints",
+      "lean_code": "\n                theorem isometry_unique (M_U M_Uprime : LogicalManifold) (phi psi : Isometry) :\n                  (forall x, proj_A (phi x) = proj_A x /\\ proj_B (phi x) = proj_B x) ->\n                  (forall x, proj_A (psi x) = proj_A x /\\ proj_B (psi x) = proj_B x) ->\n                  phi = psi := by\n                ",
+      "prerequisites": [
+        36
+      ],
+      "verification_method": "Use functional extensionality",
+      "estimated_time": "60 minutes",
+      "confidence": 0.65,
+      "difficulty": "hard"
+    },
+    {
+      "sorry_id": 13,
+      "step_number": 40,
+      "step_type": "StepType.TACTIC_APPLICATION",
+      "description": "Complete uniqueness proof",
+      "lean_code": "\n                constructor\n                * exact join_isometry M_U M_Uprime\n                * apply isometry_preserves_metric\n                * apply isometry_unique\n                ",
+      "prerequisites": [
+        36,
+        37,
+        38
+      ],
+      "verification_method": "Check complete proof",
+      "estimated_time": "30 minutes",
+      "confidence": 0.7,
+      "difficulty": "hard"
+    },
+    {
+      "sorry_id": 14,
+      "step_number": 41,
+      "step_type": "StepType.DEFINITION",
+      "description": "Define integrity penalty for manifolds",
+      "lean_code": "\n                noncomputable def integrity_penalty (M : LogicalManifold) (P : Real -> Real) : Real :=\n                  integral x, |M (P x) x - x|  -- Deviation from identity\n                ",
+      "prerequisites": [],
+      "verification_method": "Check definition compiles",
+      "estimated_time": "15 minutes",
+      "confidence": 0.9,
+      "difficulty": "medium"
+    },
+    {
+      "sorry_id": 14,
+      "step_number": 42,
+      "step_type": "StepType.LEMMA_PROOF",
+      "description": "Show join averages deviations",
+      "lean_code": "\n                lemma join_averages_deviations (M_A M_B : LogicalManifold) (kappa : Real) :\n                  forall x, |(kappa * M_A + (1-kappa) * M_B) x - x| <=\n                        kappa * |M_A x - x| + (1-kappa) * |M_B x - x| := by\n                ",
+      "prerequisites": [
+        41
+      ],
+      "verification_method": "Triangle inequality for real numbers",
+      "estimated_time": "20 minutes",
+      "confidence": 0.85,
+      "difficulty": "medium"
+    },
+    {
+      "sorry_id": 14,
+      "step_number": 43,
+      "step_type": "StepType.TACTIC_APPLICATION",
+      "description": "Apply triangle inequality for integrals",
+      "lean_code": "\n                have h_triangle : IP M_U <= kappa * IP M_A + (1-kappa) * IP M_B := by\n                  apply join_averages_deviations\n                  apply integral_triangle_inequality\n                ",
+      "prerequisites": [
+        41
+      ],
+      "verification_method": "Check integral inequality",
+      "estimated_time": "25 minutes",
+      "confidence": 0.8,
+      "difficulty": "medium"
+    },
+    {
+      "sorry_id": 14,
+      "step_number": 44,
+      "step_type": "StepType.VERIFICATION",
+      "description": "Prove strict inequality for non-trivial joins",
+      "lean_code": "\n                theorem strict_inequality (M_A M_B : LogicalManifold) (kappa : Real) (hkappa : 0 < kappa < 1) :\n                  IP M_U < kappa * IP M_A + (1-kappa) * IP M_B := by\n                ",
+      "prerequisites": [
+        41
+      ],
+      "verification_method": "Show at least one point has strict inequality",
+      "estimated_time": "30 minutes",
+      "confidence": 0.75,
+      "difficulty": "medium"
+    },
+    {
+      "sorry_id": 14,
+      "step_number": 45,
+      "step_type": "StepType.TACTIC_APPLICATION",
+      "description": "Complete inequality proof",
+      "lean_code": "\n                constructor\n                * have h_sum := h_triangle\n                  linarith [h_sum]\n                ",
+      "prerequisites": [
+        41
+      ],
+      "verification_method": "Check final inequality",
+      "estimated_time": "15 minutes",
+      "confidence": 0.85,
+      "difficulty": "medium"
+    },
+    {
+      "sorry_id": 15,
+      "step_number": 46,
+      "step_type": "StepType.DEFINITION",
+      "description": "Define tangent space of manifold",
+      "lean_code": "\n                noncomputable def tangent_space (M : LogicalManifold) (x y : Real) : Subspace Real :=\n                  { v : Real | exists t, M (x + t * v) y = M x y + t * v }\n                ",
+      "prerequisites": [],
+      "verification_method": "Check definition compiles",
+      "estimated_time": "20 minutes",
+      "confidence": 0.85,
+      "difficulty": "medium"
+    },
+    {
+      "sorry_id": 15,
+      "step_number": 47,
+      "step_type": "StepType.LEMMA_PROOF",
+      "description": "Analyze tangent space of join: T_U = span(T_A, T_B)",
+      "lean_code": "\n                lemma join_tangent_space (M_A M_B : LogicalManifold) (kappa : Real) (x y : Real) :\n                  tangent_space (kappa * M_A + (1-kappa) * M_B) x y = \n                    Submodule.span (tangent_space M_A x y \u222a tangent_space M_B x y) := by\n                ",
+      "prerequisites": [
+        46
+      ],
+      "verification_method": "Analyze derivative of join",
+      "estimated_time": "30 minutes",
+      "confidence": 0.8,
+      "difficulty": "medium"
+    },
+    {
+      "sorry_id": 15,
+      "step_number": 48,
+      "step_type": "StepType.TACTIC_APPLICATION",
+      "description": "Show dimension lower bound",
+      "lean_code": "\n                have h_dim : dimension (tangent_space M_U x y) >=\n                             dimension (tangent_space M_A x y) +\n                             dimension (tangent_space M_B x y) := by\n                  rw [join_tangent_space]\n                  apply Submodule.span_dim\n                  sorry -- This requires span dimension lemma\n                ",
+      "prerequisites": [
+        46
+      ],
+      "verification_method": "Check dimension inequality",
+      "estimated_time": "25 minutes",
+      "confidence": 0.75,
+      "difficulty": "medium"
+    },
+    {
+      "sorry_id": 15,
+      "step_number": 49,
+      "step_type": "StepType.VERIFICATION",
+      "description": "Use structural key kappa to lift dimension",
+      "lean_code": "\n                theorem dimension_lift_with_key (M_A M_B : LogicalManifold) (kappa : Real) :\n                  let M_U := kappa * M_A + (1-kappa) * M_B\n                  manifold_dim M_U >= manifold_dim M_A + manifold_dim M_B + 1 := by\n                ",
+      "prerequisites": [
+        46
+      ],
+      "verification_method": "Show \u03ba provides additional dimension",
+      "estimated_time": "30 minutes",
+      "confidence": 0.7,
+      "difficulty": "medium"
+    },
+    {
+      "sorry_id": 16,
+      "step_number": 50,
+      "step_type": "StepType.DEFINITION",
+      "description": "Define information gain from join",
+      "lean_code": "\n                noncomputable def information_gain (M_A M_U : LogicalManifold) : Real :=\n                  H M_A - H (M_A | M_U)  -- Conditional entropy\n                ",
+      "prerequisites": [],
+      "verification_method": "Check definition compiles",
+      "estimated_time": "15 minutes",
+      "confidence": 0.9,
+      "difficulty": "medium"
+    },
+    {
+      "sorry_id": 16,
+      "step_number": 51,
+      "step_type": "StepType.LEMMA_PROOF",
+      "description": "Prove I(P_A; M_U) <= I(P_A; M_B)",
+      "lean_code": "\n                lemma info_gain_bound (P_A P_B P_U : Real -> Real) :\n                  I P_A P_U <= I P_A P_B + I P_B P_U := by\n                ",
+      "prerequisites": [],
+      "verification_method": "Chain rule for mutual information",
+      "estimated_time": "30 minutes",
+      "confidence": 0.8,
+      "difficulty": "medium"
+    },
+    {
+      "sorry_id": 16,
+      "step_number": 52,
+      "step_type": "StepType.TACTIC_APPLICATION",
+      "description": "Show I(P_A; M_B) = D_KL(P_A || P_B)",
+      "lean_code": "\n                theorem mutual_info_to_KL (P_A P_B : Real -> Real) :\n                  I P_A P_B = D_KL P_A P_B := by\n                ",
+      "prerequisites": [],
+      "verification_method": "Mutual information = KL divergence identity",
+      "estimated_time": "20 minutes",
+      "confidence": 0.9,
+      "difficulty": "medium"
+    },
+    {
+      "sorry_id": 16,
+      "step_number": 53,
+      "step_type": "StepType.VERIFICATION",
+      "description": "Prove I(P_B; M_U) <= 0 (M_U is deterministic of M_B)",
+      "lean_code": "\n                lemma info_gain_nonpositive (P_B P_U : Real -> Real) :\n                  I P_B P_U <= 0 := by\n                ",
+      "prerequisites": [],
+      "verification_method": "Deterministic relationship reduces entropy",
+      "estimated_time": "25 minutes",
+      "confidence": 0.85,
+      "difficulty": "medium"
+    },
+    {
+      "sorry_id": 16,
+      "step_number": 54,
+      "step_type": "StepType.TACTIC_APPLICATION",
+      "description": "Combine to prove information-theoretic bound",
+      "lean_code": "\n                calc I_gain\n                _ = H M_A - H (M_A | M_U)\n                _ \u2264 I M_A M_B + I M_B M_U  -- info_gain_bound\n                _ = D_KL P_A P_B + I M_B M_U  -- mutual_info_to_KL\n                _ \u2264 D_KL P_A P_B  -- info_gain_nonpositive\n                ",
+      "prerequisites": [
+        50,
+        51,
+        52
+      ],
+      "verification_method": "Check inequality chain",
+      "estimated_time": "20 minutes",
+      "confidence": 0.8,
+      "difficulty": "medium"
+    },
+    {
+      "sorry_id": 17,
+      "step_number": 55,
+      "step_type": "StepType.DEFINITION",
+      "description": "Define Lyapunov function V(t) = Gamma(t)",
+      "lean_code": "\n                noncomputable def lyapunov_function (Gamma0 lambda : Real) (t : Real) : Real :=\n                  Gamma0 * Real.exp (-lambda * t)\n                ",
+      "prerequisites": [],
+      "verification_method": "Check definition compiles",
+      "estimated_time": "15 minutes",
+      "confidence": 0.9,
+      "difficulty": "hard"
+    },
+    {
+      "sorry_id": 17,
+      "step_number": 56,
+      "step_type": "StepType.VERIFICATION",
+      "description": "Show dV/dt < 0 for \u0393 > 0",
+      "lean_code": "\n                theorem lyapunov_decreasing (Gamma0 lambda t : Real) (hlambda : lambda > 0) (ht : t > 0) :\n                  HasDerivAt (fun t => lyapunov_function Gamma0 lambda t) t\n                    (-lambda * lyapunov_function Gamma0 lambda t) := by\n                ",
+      "prerequisites": [
+        55
+      ],
+      "verification_method": "Verify derivative is negative",
+      "estimated_time": "30 minutes",
+      "confidence": 0.75,
+      "difficulty": "hard"
+    },
+    {
+      "sorry_id": 17,
+      "step_number": 57,
+      "step_type": "StepType.INDUCTION",
+      "description": "Prove \u0393(t) \u2192 0 as t \u2192 \u221e",
+      "lean_code": "\n                theorem convergence_to_zero (Gamma0 lambda : Real) (hlambda : lambda > 0) :\n                  Tendsto (fun t => lyapunov_function Gamma0 lambda t) atTop (nhds 0) := by\n                ",
+      "prerequisites": [
+        55
+      ],
+      "verification_method": "Exponential decay to zero",
+      "estimated_time": "30 minutes",
+      "confidence": 0.8,
+      "difficulty": "hard"
+    },
+    {
+      "sorry_id": 17,
+      "step_number": 58,
+      "step_type": "StepType.VERIFICATION",
+      "description": "Verify numerical stability with 5000+ iterations",
+      "lean_code": "\n                theorem numerical_stability (Gamma0 lambda : Real) (hlambda : lambda > 0) :\n                  forall N >= 5000, |lyapunov_function Gamma0 lambda N - 0| < 10^(-10) := by\n                ",
+      "prerequisites": [
+        55
+      ],
+      "verification_method": "Numerical computation verification",
+      "estimated_time": "60 minutes",
+      "confidence": 0.6,
+      "difficulty": "hard"
+    },
+    {
+      "sorry_id": 17,
+      "step_number": 59,
+      "step_type": "StepType.TACTIC_APPLICATION",
+      "description": "Complete asymptotic stability proof",
+      "lean_code": "\n                constructor\n                * apply lyapunov_decreasing\n                * apply convergence_to_zero\n                * apply numerical_stability\n                ",
+      "prerequisites": [
+        55,
+        56,
+        57
+      ],
+      "verification_method": "Check complete proof",
+      "estimated_time": "30 minutes",
+      "confidence": 0.65,
+      "difficulty": "hard"
+    },
+    {
+      "sorry_id": 18,
+      "step_number": 60,
+      "step_type": "StepType.DEFINITION",
+      "description": "Define improvement metric I(t) = 1/Gamma(t)",
+      "lean_code": "\n                noncomputable def improvement_metric (Gamma : Real -> Real) (t : Real) : Real :=\n                  1 / (Gamma t + 10^(-10))  -- Avoid division by zero\n                ",
+      "prerequisites": [],
+      "verification_method": "Check definition compiles",
+      "estimated_time": "15 minutes",
+      "confidence": 0.9,
+      "difficulty": "very_hard"
+    },
+    {
+      "sorry_id": 18,
+      "step_number": 61,
+      "step_type": "StepType.LEMMA_PROOF",
+      "description": "Show \u0393(t) satisfies differential equation: d\u0393/dt = -\u03bb\u0393",
+      "lean_code": "\n                theorem tension_ODE (Gamma0 lambda : Real) (hlambda : lambda > 0) :\n                  forall t >= 0, HasDerivAt (fun t => lyapunov_function Gamma0 lambda t) t\n                    (-lambda * lyapunov_function Gamma0 lambda t) := by\n                ",
+      "prerequisites": [],
+      "verification_method": "Verify ODE solution",
+      "estimated_time": "45 minutes",
+      "confidence": 0.7,
+      "difficulty": "very_hard"
+    },
+    {
+      "sorry_id": 18,
+      "step_number": 62,
+      "step_type": "StepType.TACTIC_APPLICATION",
+      "description": "Solve ODE: \u0393(t) = \u0393\u2080\u00b7exp(-\u03bbt)",
+      "lean_code": "\"\n                theorem ODE_solution (Gamma0 lambda : Real) (hlambda : lambda > 0) :\n                  forall t >= 0, lyapunov_function Gamma0 lambda t = Gamma0 * Real.exp (-lambda * t) := by\n                ",
+      "prerequisites": [
+        60
+      ],
+      "verification_method": "Verify solution satisfies ODE",
+      "estimated_time": "30 minutes",
+      "confidence": 0.75,
+      "difficulty": "very_hard"
+    },
+    {
+      "sorry_id": 18,
+      "step_number": 63,
+      "step_type": "StepType.VERIFICATION",
+      "description": "Prove I(t) \u2192 \u221e as t \u2192 \u221e",
+      "lean_code": "\n                theorem improvement_diverges (Gamma0 lambda : Real) (hlambda : lambda > 0) (hGamma0 : Gamma0 > 0) :\n                  Tendsto (fun t => improvement_metric (lyapunov_function Gamma0 lambda t)) atTop atTop := by\n                ",
+      "prerequisites": [
+        60
+      ],
+      "verification_method": "Show 1/exp(-\u03bbt) \u2192 \u221e",
+      "estimated_time": "20 minutes",
+      "confidence": 0.8,
+      "difficulty": "very_hard"
+    },
+    {
+      "sorry_id": 18,
+      "step_number": 64,
+      "step_type": "StepType.CALCULATION",
+      "description": "Find t when I(t) \u2265 100",
+      "lean_code": "\n                theorem find_100x_time (Gamma0 lambda : Real) (hlambda : lambda > 0) (hGamma0 : Gamma0 > 0) :\n                  exists t0 : Real, improvement_metric (lyapunov_function Gamma0 lambda t0) >= 100 /                          forall t >= t0, improvement_metric (lyapunov_function Gamma0 lambda t) >= 100 := by\n                ",
+      "prerequisites": [
+        60
+      ],
+      "verification_method": "Solve exp(\u03bbt) \u2265 100/\u0393\u2080",
+      "estimated_time": "30 minutes",
+      "confidence": 0.65,
+      "difficulty": "very_hard"
+    },
+    {
+      "sorry_id": 18,
+      "step_number": 65,
+      "step_type": "StepType.TACTIC_APPLICATION",
+      "description": "Complete grokking completeness proof",
+      "lean_code": "\n                constructor\n                * exact improvement_diverges\n                * exact find_100x_time\n                * intro t0\n                  apply improvement_diverges\n                  linarith [t\u2080]\n                ",
+      "prerequisites": [
+        60,
+        61
+      ],
+      "verification_method": "Check complete proof",
+      "estimated_time": "30 minutes",
+      "confidence": 0.5,
+      "difficulty": "very_hard"
+    }
+  ],
+  "analysis": {
+    "total_estimated_time": "17.9 hours",
+    "by_difficulty": {
+      "easy": 10,
+      "hard": 10,
+      "medium": 14,
+      "very_hard": 6
+    }
+  },
+  "summary": {
+    "total_steps": 40,
+    "new_steps": 15,
+    "by_difficulty": {
+      "medium": 4,
+      "hard": 5,
+      "very_hard": 6
+    }
+  }
+}

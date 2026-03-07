@@ -1,0 +1,286 @@
+{
+  "session_id": "20260307_025842",
+  "teacher_name": "iFlow",
+  "max_iterations": 10,
+  "iteration": 10,
+  "dialogue_history": [
+    {
+      "iteration": 1,
+      "baby_prompt": "Hello!",
+      "baby_response": "pa ga",
+      "teacher_response": "{\"assessment\": \"Baby is making random sounds, needs basic vocabulary\", \"skill_score\": 0.1, \"teaching_material\": \"Let's learn about hello!. This is important in AI.\", \"examples\": [\"Hello, how are you?\", \"Machine learning teaches computers\", \"Neural networks learn patterns\", \"Deep learning has many layers\", \"Language processing understands text\"], \"next_prompt\": \"What is machine learning?\"}",
+      "teacher_data": {
+        "assessment": "Baby is making random sounds, needs basic vocabulary",
+        "skill_score": 0.1,
+        "teaching_material": "Let's learn about hello!. This is important in AI.",
+        "examples": [
+          "Hello, how are you?",
+          "Machine learning teaches computers",
+          "Neural networks learn patterns",
+          "Deep learning has many layers",
+          "Language processing understands text"
+        ],
+        "next_prompt": "What is machine learning?"
+      },
+      "skill_before": 0.0,
+      "skill_after": {
+        "skill_level": 0.1,
+        "learning_iterations": 1,
+        "vocabulary_size": 5000,
+        "max_sequence_length": 96,
+        "temperature": 0.88
+      }
+    },
+    {
+      "iteration": 2,
+      "baby_prompt": "What is machine learning?",
+      "baby_response": "da",
+      "teacher_response": "{\"assessment\": \"Baby is making random sounds, needs basic vocabulary\", \"skill_score\": 0.2, \"teaching_material\": \"Let's learn about what is machine learning. This is important in AI.\", \"examples\": [\"Hello, how are you?\", \"Machine learning teaches computers\", \"Neural networks learn patterns\", \"Deep learning has many layers\", \"Language processing understands text\"], \"next_prompt\": \"Tell me about neural networks\"}",
+      "teacher_data": {
+        "assessment": "Baby is making random sounds, needs basic vocabulary",
+        "skill_score": 0.2,
+        "teaching_material": "Let's learn about what is machine learning. This is important in AI.",
+        "examples": [
+          "Hello, how are you?",
+          "Machine learning teaches computers",
+          "Neural networks learn patterns",
+          "Deep learning has many layers",
+          "Language processing understands text"
+        ],
+        "next_prompt": "Tell me about neural networks"
+      },
+      "skill_before": 0.1,
+      "skill_after": {
+        "skill_level": 0.2,
+        "learning_iterations": 2,
+        "vocabulary_size": 9900,
+        "max_sequence_length": 142,
+        "temperature": 0.86
+      }
+    },
+    {
+      "iteration": 3,
+      "baby_prompt": "Tell me about neural networks",
+      "baby_response": "ba",
+      "teacher_response": "{\"assessment\": \"Baby is making random sounds, needs basic vocabulary\", \"skill_score\": 0.30000000000000004, \"teaching_material\": \"Let's learn about tell me about neural networks. This is important in AI.\", \"examples\": [\"Hello, how are you?\", \"Machine learning teaches computers\", \"Neural networks learn patterns\", \"Deep learning has many layers\", \"Language processing understands text\"], \"next_prompt\": \"Explain deep learning\"}",
+      "teacher_data": {
+        "assessment": "Baby is making random sounds, needs basic vocabulary",
+        "skill_score": 0.30000000000000004,
+        "teaching_material": "Let's learn about tell me about neural networks. This is important in AI.",
+        "examples": [
+          "Hello, how are you?",
+          "Machine learning teaches computers",
+          "Neural networks learn patterns",
+          "Deep learning has many layers",
+          "Language processing understands text"
+        ],
+        "next_prompt": "Explain deep learning"
+      },
+      "skill_before": 0.2,
+      "skill_after": {
+        "skill_level": 0.30000000000000004,
+        "learning_iterations": 3,
+        "vocabulary_size": 14800,
+        "max_sequence_length": 188,
+        "temperature": 0.84
+      }
+    },
+    {
+      "iteration": 4,
+      "baby_prompt": "Explain deep learning",
+      "baby_response": "ta ka ta",
+      "teacher_response": "{\"assessment\": \"Baby is forming basic sentences, getting better\", \"skill_score\": 0.55, \"teaching_material\": \"Good! Explain deep learning is a key concept. Let me explain it in more detail.\", \"examples\": [\"Neural networks use interconnected layers\", \"Deep learning extracts hierarchical features\", \"Transformers use self-attention mechanisms\", \"Reinforcement learning learns through rewards\", \"Computer vision interprets visual data\"], \"next_prompt\": \"What is natural language processing?\"}",
+      "teacher_data": {
+        "assessment": "Baby is forming basic sentences, getting better",
+        "skill_score": 0.55,
+        "teaching_material": "Good! Explain deep learning is a key concept. Let me explain it in more detail.",
+        "examples": [
+          "Neural networks use interconnected layers",
+          "Deep learning extracts hierarchical features",
+          "Transformers use self-attention mechanisms",
+          "Reinforcement learning learns through rewards",
+          "Computer vision interprets visual data"
+        ],
+        "next_prompt": "What is natural language processing?"
+      },
+      "skill_before": 0.30000000000000004,
+      "skill_after": {
+        "skill_level": 0.55,
+        "learning_iterations": 4,
+        "vocabulary_size": 27050,
+        "max_sequence_length": 304,
+        "temperature": 0.79
+      }
+    },
+    {
+      "iteration": 5,
+      "baby_prompt": "What is natural language processing?",
+      "baby_response": "pa ka ga",
+      "teacher_response": "{\"assessment\": \"Baby is forming basic sentences, getting better\", \"skill_score\": 0.6000000000000001, \"teaching_material\": \"Good! What is natural language processing? is a key concept. Let me explain it in more detail.\", \"examples\": [\"Neural networks use interconnected layers\", \"Deep learning extracts hierarchical features\", \"Transformers use self-attention mechanisms\", \"Reinforcement learning learns through rewards\", \"Computer vision interprets visual data\"], \"next_prompt\": \"How do computers learn?\"}",
+      "teacher_data": {
+        "assessment": "Baby is forming basic sentences, getting better",
+        "skill_score": 0.6000000000000001,
+        "teaching_material": "Good! What is natural language processing? is a key concept. Let me explain it in more detail.",
+        "examples": [
+          "Neural networks use interconnected layers",
+          "Deep learning extracts hierarchical features",
+          "Transformers use self-attention mechanisms",
+          "Reinforcement learning learns through rewards",
+          "Computer vision interprets visual data"
+        ],
+        "next_prompt": "How do computers learn?"
+      },
+      "skill_before": 0.55,
+      "skill_after": {
+        "skill_level": 0.6000000000000001,
+        "learning_iterations": 5,
+        "vocabulary_size": 29500,
+        "max_sequence_length": 327,
+        "temperature": 0.78
+      }
+    },
+    {
+      "iteration": 6,
+      "baby_prompt": "How do computers learn?",
+      "baby_response": "ga ba",
+      "teacher_response": "{\"assessment\": \"Baby is forming basic sentences, getting better\", \"skill_score\": 0.65, \"teaching_material\": \"Good! How do computers learn? is a key concept. Let me explain it in more detail.\", \"examples\": [\"Neural networks use interconnected layers\", \"Deep learning extracts hierarchical features\", \"Transformers use self-attention mechanisms\", \"Reinforcement learning learns through rewards\", \"Computer vision interprets visual data\"], \"next_prompt\": \"What is artificial intelligence?\"}",
+      "teacher_data": {
+        "assessment": "Baby is forming basic sentences, getting better",
+        "skill_score": 0.65,
+        "teaching_material": "Good! How do computers learn? is a key concept. Let me explain it in more detail.",
+        "examples": [
+          "Neural networks use interconnected layers",
+          "Deep learning extracts hierarchical features",
+          "Transformers use self-attention mechanisms",
+          "Reinforcement learning learns through rewards",
+          "Computer vision interprets visual data"
+        ],
+        "next_prompt": "What is artificial intelligence?"
+      },
+      "skill_before": 0.6000000000000001,
+      "skill_after": {
+        "skill_level": 0.65,
+        "learning_iterations": 6,
+        "vocabulary_size": 31950,
+        "max_sequence_length": 350,
+        "temperature": 0.77
+      }
+    },
+    {
+      "iteration": 7,
+      "baby_prompt": "What is artificial intelligence?",
+      "baby_response": "ka ta",
+      "teacher_response": "{\"assessment\": \"Baby is forming basic sentences, getting better\", \"skill_score\": 0.7000000000000001, \"teaching_material\": \"Good! What is artificial intelligence? is a key concept. Let me explain it in more detail.\", \"examples\": [\"Neural networks use interconnected layers\", \"Deep learning extracts hierarchical features\", \"Transformers use self-attention mechanisms\", \"Reinforcement learning learns through rewards\", \"Computer vision interprets visual data\"], \"next_prompt\": \"Explain computer vision\"}",
+      "teacher_data": {
+        "assessment": "Baby is forming basic sentences, getting better",
+        "skill_score": 0.7000000000000001,
+        "teaching_material": "Good! What is artificial intelligence? is a key concept. Let me explain it in more detail.",
+        "examples": [
+          "Neural networks use interconnected layers",
+          "Deep learning extracts hierarchical features",
+          "Transformers use self-attention mechanisms",
+          "Reinforcement learning learns through rewards",
+          "Computer vision interprets visual data"
+        ],
+        "next_prompt": "Explain computer vision"
+      },
+      "skill_before": 0.65,
+      "skill_after": {
+        "skill_level": 0.7000000000000001,
+        "learning_iterations": 7,
+        "vocabulary_size": 34400,
+        "max_sequence_length": 373,
+        "temperature": 0.76
+      }
+    },
+    {
+      "iteration": 8,
+      "baby_prompt": "Explain computer vision",
+      "baby_response": "na ga da",
+      "teacher_response": "{\"assessment\": \"Baby is forming basic sentences, getting better\", \"skill_score\": 0.75, \"teaching_material\": \"Good! Explain computer vision is a key concept. Let me explain it in more detail.\", \"examples\": [\"Neural networks use interconnected layers\", \"Deep learning extracts hierarchical features\", \"Transformers use self-attention mechanisms\", \"Reinforcement learning learns through rewards\", \"Computer vision interprets visual data\"], \"next_prompt\": \"What is reinforcement learning?\"}",
+      "teacher_data": {
+        "assessment": "Baby is forming basic sentences, getting better",
+        "skill_score": 0.75,
+        "teaching_material": "Good! Explain computer vision is a key concept. Let me explain it in more detail.",
+        "examples": [
+          "Neural networks use interconnected layers",
+          "Deep learning extracts hierarchical features",
+          "Transformers use self-attention mechanisms",
+          "Reinforcement learning learns through rewards",
+          "Computer vision interprets visual data"
+        ],
+        "next_prompt": "What is reinforcement learning?"
+      },
+      "skill_before": 0.7000000000000001,
+      "skill_after": {
+        "skill_level": 0.75,
+        "learning_iterations": 8,
+        "vocabulary_size": 36850,
+        "max_sequence_length": 396,
+        "temperature": 0.75
+      }
+    },
+    {
+      "iteration": 9,
+      "baby_prompt": "What is reinforcement learning?",
+      "baby_response": "ta da",
+      "teacher_response": "{\"assessment\": \"Baby is forming basic sentences, getting better\", \"skill_score\": 0.8, \"teaching_material\": \"Good! What is reinforcement learning? is a key concept. Let me explain it in more detail.\", \"examples\": [\"Neural networks use interconnected layers\", \"Deep learning extracts hierarchical features\", \"Transformers use self-attention mechanisms\", \"Reinforcement learning learns through rewards\", \"Computer vision interprets visual data\"], \"next_prompt\": \"Tell me about transformers\"}",
+      "teacher_data": {
+        "assessment": "Baby is forming basic sentences, getting better",
+        "skill_score": 0.8,
+        "teaching_material": "Good! What is reinforcement learning? is a key concept. Let me explain it in more detail.",
+        "examples": [
+          "Neural networks use interconnected layers",
+          "Deep learning extracts hierarchical features",
+          "Transformers use self-attention mechanisms",
+          "Reinforcement learning learns through rewards",
+          "Computer vision interprets visual data"
+        ],
+        "next_prompt": "Tell me about transformers"
+      },
+      "skill_before": 0.75,
+      "skill_after": {
+        "skill_level": 0.8,
+        "learning_iterations": 9,
+        "vocabulary_size": 39300,
+        "max_sequence_length": 419,
+        "temperature": 0.74
+      }
+    },
+    {
+      "iteration": 10,
+      "baby_prompt": "Tell me about transformers",
+      "baby_response": "ma na",
+      "teacher_response": "{\"assessment\": \"Baby is forming basic sentences, getting better\", \"skill_score\": 0.8500000000000001, \"teaching_material\": \"Good! Tell me about transformers is a key concept. Let me explain it in more detail.\", \"examples\": [\"Neural networks use interconnected layers\", \"Deep learning extracts hierarchical features\", \"Transformers use self-attention mechanisms\", \"Reinforcement learning learns through rewards\", \"Computer vision interprets visual data\"], \"next_prompt\": \"Summarize what you learned\"}",
+      "teacher_data": {
+        "assessment": "Baby is forming basic sentences, getting better",
+        "skill_score": 0.8500000000000001,
+        "teaching_material": "Good! Tell me about transformers is a key concept. Let me explain it in more detail.",
+        "examples": [
+          "Neural networks use interconnected layers",
+          "Deep learning extracts hierarchical features",
+          "Transformers use self-attention mechanisms",
+          "Reinforcement learning learns through rewards",
+          "Computer vision interprets visual data"
+        ],
+        "next_prompt": "Summarize what you learned"
+      },
+      "skill_before": 0.8,
+      "skill_after": {
+        "skill_level": 0.8500000000000001,
+        "learning_iterations": 10,
+        "vocabulary_size": 41750,
+        "max_sequence_length": 442,
+        "temperature": 0.73
+      }
+    }
+  ],
+  "final_skill": {
+    "skill_level": 0.8500000000000001,
+    "learning_iterations": 10,
+    "vocabulary_size": 41750,
+    "max_sequence_length": 442,
+    "temperature": 0.73
+  },
+  "timestamp": "2026-03-07T02:58:42.160256"
+}

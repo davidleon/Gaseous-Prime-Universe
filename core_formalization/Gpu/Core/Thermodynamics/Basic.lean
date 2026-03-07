@@ -19,7 +19,8 @@ structure ThermodynamicsManifold where
 /--
 Axiom: The Information Decay Equation
 dS/dt = -gamma * S + sigma(N)
-The second law of mathematics: Truth is the state of minimum logical energy.
+Newtonian Limit: Individual orbits fluctuate.
+Boltzmann Limit: Statistical stability emerges as N -> inf.
 -/
 def InformationDecayEq (M : ThermodynamicsManifold) : ℝ :=
   -M.gamma * M.S + M.sigma

@@ -1,0 +1,619 @@
+{
+  "iteration": 5,
+  "total_sorries": 185,
+  "total_lemmas": 25,
+  "latest_results": [
+    {
+      "sorry": {
+        "file": "Gpu/Core/FuzzyGeometry.lean",
+        "line": 32,
+        "theorem_name": "unknown",
+        "description": "let integral : \u211d := sorry  -- \u222b |m\u2081(x) - m\u2082(x)| dx over manifold"
+      },
+      "ilda_analysis": {
+        "excitation": {
+          "emergence": "Structural property emerges from system dynamics",
+          "critical_point": "Mathematical invariance principle",
+          "energy": "Logical flow toward equilibrium"
+        },
+        "dissipation": {
+          "entropy_gradient": "dS/dt < 0 (entropy decreasing)",
+          "spectral_filter": "Brick 2 (Spectral Flow) + Brick 15 (Mixing)",
+          "required_bricks": [
+            "SpectralFlow",
+            "MixingSpectralGap",
+            "UniversalContraction"
+          ]
+        },
+        "precipitation": {
+          "crystallization": "Property holds for all system states",
+          "omega_grounding": "Universal property of the manifold",
+          "concrete_objects": {
+            "system": "Information manifold M",
+            "state": "x \u2208 M.V",
+            "property": "P(x) holds",
+            "quantifier": "\u2200 x \u2208 M.V, P(x)"
+          }
+        }
+      },
+      "lemma": {
+        "lemma_name": "unknown_ConcreteLemma_5_0",
+        "concrete_type": "InformationManifold \u2192 UniversalProperty",
+        "formal_statement": "\u2200 (M : InformationManifold) (x : M.V), Property x",
+        "expected_insight": "Property holds for all system states",
+        "concrete_objects": {
+          "system": "Information manifold M",
+          "state": "x \u2208 M.V",
+          "property": "P(x) holds",
+          "quantifier": "\u2200 x \u2208 M.V, P(x)"
+        }
+      },
+      "simulation_result": {
+        "status": "error",
+        "error": "closing parenthesis '}' does not match opening parenthesis '(' on line 24 (<string>, line 28)",
+        "concrete_objects_verified": false
+      },
+      "status": "success"
+    },
+    {
+      "sorry": {
+        "file": "Gpu/Core/FuzzyGeometry.lean",
+        "line": 42,
+        "theorem_name": "unknown",
+        "description": "sorry"
+      },
+      "ilda_analysis": {
+        "excitation": {
+          "emergence": "Structural property emerges from system dynamics",
+          "critical_point": "Mathematical invariance principle",
+          "energy": "Logical flow toward equilibrium"
+        },
+        "dissipation": {
+          "entropy_gradient": "dS/dt < 0 (entropy decreasing)",
+          "spectral_filter": "Brick 2 (Spectral Flow) + Brick 15 (Mixing)",
+          "required_bricks": [
+            "SpectralFlow",
+            "MixingSpectralGap",
+            "UniversalContraction"
+          ]
+        },
+        "precipitation": {
+          "crystallization": "Property holds for all system states",
+          "omega_grounding": "Universal property of the manifold",
+          "concrete_objects": {
+            "system": "Information manifold M",
+            "state": "x \u2208 M.V",
+            "property": "P(x) holds",
+            "quantifier": "\u2200 x \u2208 M.V, P(x)"
+          }
+        }
+      },
+      "lemma": {
+        "lemma_name": "unknown_ConcreteLemma_5_1",
+        "concrete_type": "InformationManifold \u2192 UniversalProperty",
+        "formal_statement": "\u2200 (M : InformationManifold) (x : M.V), Property x",
+        "expected_insight": "Property holds for all system states",
+        "concrete_objects": {
+          "system": "Information manifold M",
+          "state": "x \u2208 M.V",
+          "property": "P(x) holds",
+          "quantifier": "\u2200 x \u2208 M.V, P(x)"
+        }
+      },
+      "simulation_result": {
+        "status": "error",
+        "error": "closing parenthesis '}' does not match opening parenthesis '(' on line 24 (<string>, line 28)",
+        "concrete_objects_verified": false
+      },
+      "status": "success"
+    },
+    {
+      "sorry": {
+        "file": "Gpu/Core/FuzzyGeometry.lean",
+        "line": 48,
+        "theorem_name": "unknown",
+        "description": "sorry"
+      },
+      "ilda_analysis": {
+        "excitation": {
+          "emergence": "Structural property emerges from system dynamics",
+          "critical_point": "Mathematical invariance principle",
+          "energy": "Logical flow toward equilibrium"
+        },
+        "dissipation": {
+          "entropy_gradient": "dS/dt < 0 (entropy decreasing)",
+          "spectral_filter": "Brick 2 (Spectral Flow) + Brick 15 (Mixing)",
+          "required_bricks": [
+            "SpectralFlow",
+            "MixingSpectralGap",
+            "UniversalContraction"
+          ]
+        },
+        "precipitation": {
+          "crystallization": "Property holds for all system states",
+          "omega_grounding": "Universal property of the manifold",
+          "concrete_objects": {
+            "system": "Information manifold M",
+            "state": "x \u2208 M.V",
+            "property": "P(x) holds",
+            "quantifier": "\u2200 x \u2208 M.V, P(x)"
+          }
+        }
+      },
+      "lemma": {
+        "lemma_name": "unknown_ConcreteLemma_5_2",
+        "concrete_type": "InformationManifold \u2192 UniversalProperty",
+        "formal_statement": "\u2200 (M : InformationManifold) (x : M.V), Property x",
+        "expected_insight": "Property holds for all system states",
+        "concrete_objects": {
+          "system": "Information manifold M",
+          "state": "x \u2208 M.V",
+          "property": "P(x) holds",
+          "quantifier": "\u2200 x \u2208 M.V, P(x)"
+        }
+      },
+      "simulation_result": {
+        "status": "error",
+        "error": "closing parenthesis '}' does not match opening parenthesis '(' on line 24 (<string>, line 28)",
+        "concrete_objects_verified": false
+      },
+      "status": "success"
+    },
+    {
+      "sorry": {
+        "file": "Gpu/Core/FuzzyGeometry.lean",
+        "line": 54,
+        "theorem_name": "unknown",
+        "description": "sorry"
+      },
+      "ilda_analysis": {
+        "excitation": {
+          "emergence": "Structural property emerges from system dynamics",
+          "critical_point": "Mathematical invariance principle",
+          "energy": "Logical flow toward equilibrium"
+        },
+        "dissipation": {
+          "entropy_gradient": "dS/dt < 0 (entropy decreasing)",
+          "spectral_filter": "Brick 2 (Spectral Flow) + Brick 15 (Mixing)",
+          "required_bricks": [
+            "SpectralFlow",
+            "MixingSpectralGap",
+            "UniversalContraction"
+          ]
+        },
+        "precipitation": {
+          "crystallization": "Property holds for all system states",
+          "omega_grounding": "Universal property of the manifold",
+          "concrete_objects": {
+            "system": "Information manifold M",
+            "state": "x \u2208 M.V",
+            "property": "P(x) holds",
+            "quantifier": "\u2200 x \u2208 M.V, P(x)"
+          }
+        }
+      },
+      "lemma": {
+        "lemma_name": "unknown_ConcreteLemma_5_3",
+        "concrete_type": "InformationManifold \u2192 UniversalProperty",
+        "formal_statement": "\u2200 (M : InformationManifold) (x : M.V), Property x",
+        "expected_insight": "Property holds for all system states",
+        "concrete_objects": {
+          "system": "Information manifold M",
+          "state": "x \u2208 M.V",
+          "property": "P(x) holds",
+          "quantifier": "\u2200 x \u2208 M.V, P(x)"
+        }
+      },
+      "simulation_result": {
+        "status": "error",
+        "error": "closing parenthesis '}' does not match opening parenthesis '(' on line 24 (<string>, line 28)",
+        "concrete_objects_verified": false
+      },
+      "status": "success"
+    },
+    {
+      "sorry": {
+        "file": "Gpu/Core/FuzzyGeometry.lean",
+        "line": 97,
+        "theorem_name": "theorem_fuzzy_is_riemannian",
+        "description": "sorry"
+      },
+      "ilda_analysis": {
+        "excitation": {
+          "emergence": "Structural property emerges from system dynamics",
+          "critical_point": "Mathematical invariance principle",
+          "energy": "Logical flow toward equilibrium"
+        },
+        "dissipation": {
+          "entropy_gradient": "dS/dt < 0 (entropy decreasing)",
+          "spectral_filter": "Brick 2 (Spectral Flow) + Brick 15 (Mixing)",
+          "required_bricks": [
+            "SpectralFlow",
+            "MixingSpectralGap",
+            "UniversalContraction"
+          ]
+        },
+        "precipitation": {
+          "crystallization": "Property holds for all system states",
+          "omega_grounding": "Universal property of the manifold",
+          "concrete_objects": {
+            "system": "Information manifold M",
+            "state": "x \u2208 M.V",
+            "property": "P(x) holds",
+            "quantifier": "\u2200 x \u2208 M.V, P(x)"
+          }
+        }
+      },
+      "lemma": {
+        "lemma_name": "theorem_fuzzy_is_riemannian_ConcreteLemma_5_4",
+        "concrete_type": "InformationManifold \u2192 UniversalProperty",
+        "formal_statement": "\u2200 (M : InformationManifold) (x : M.V), Property x",
+        "expected_insight": "Property holds for all system states",
+        "concrete_objects": {
+          "system": "Information manifold M",
+          "state": "x \u2208 M.V",
+          "property": "P(x) holds",
+          "quantifier": "\u2200 x \u2208 M.V, P(x)"
+        }
+      },
+      "simulation_result": {
+        "status": "error",
+        "error": "closing parenthesis '}' does not match opening parenthesis '(' on line 24 (<string>, line 28)",
+        "concrete_objects_verified": false
+      },
+      "status": "success"
+    }
+  ],
+  "lemmas": [
+    {
+      "lemma_name": "DyadicContraction_ConcreteLemma_1_0",
+      "theorem_name": "DyadicContraction",
+      "concrete_type": "CompleteMetricSpace \u2192 LipschitzMap \u2192 FixedPoint",
+      "formal_statement": "\u2200 (X : Type) [MetricSpace X] [CompleteSpace X] (T : X \u2192 X) (k : \u211d) (h_k : 0 < k \u2227 k < 1) (h_Lip : \u2200 x y : X, dist (T x) (T y) \u2264 k * dist x y), \u2203! p : X, T p = p \u2227 \u2200 x : X, dist (T x) p \u2264 k * dist x p",
+      "expected_insight": "Fixed point attracts all trajectories",
+      "location": "Gpu/Core/Dynamics.lean",
+      "concrete_objects": {
+        "space": "Complete metric space (X, d)",
+        "map": "T: X \u2192 X with Lipschitz constant k < 1",
+        "fixed_point": "p \u2208 X such that T(p) = p",
+        "distance_function": "d(T(x), p) \u2264 k\u00b7d(x, p)"
+      }
+    },
+    {
+      "lemma_name": "TriadicContraction_ConcreteLemma_1_1",
+      "theorem_name": "TriadicContraction",
+      "concrete_type": "CompleteMetricSpace \u2192 LipschitzMap \u2192 FixedPoint",
+      "formal_statement": "\u2200 (X : Type) [MetricSpace X] [CompleteSpace X] (T : X \u2192 X) (k : \u211d) (h_k : 0 < k \u2227 k < 1) (h_Lip : \u2200 x y : X, dist (T x) (T y) \u2264 k * dist x y), \u2203! p : X, T p = p \u2227 \u2200 x : X, dist (T x) p \u2264 k * dist x p",
+      "expected_insight": "Fixed point attracts all trajectories",
+      "location": "Gpu/Core/Dynamics.lean",
+      "concrete_objects": {
+        "space": "Complete metric space (X, d)",
+        "map": "T: X \u2192 X with Lipschitz constant k < 1",
+        "fixed_point": "p \u2208 X such that T(p) = p",
+        "distance_function": "d(T(x), p) \u2264 k\u00b7d(x, p)"
+      }
+    },
+    {
+      "lemma_name": "LasotaYorke_ConcreteLemma_1_2",
+      "theorem_name": "LasotaYorke",
+      "concrete_type": "InformationManifold \u2192 UniversalProperty",
+      "formal_statement": "\u2200 (M : InformationManifold) (x : M.V), Property x",
+      "expected_insight": "Property holds for all system states",
+      "location": "Gpu/Core/Dynamics.lean",
+      "concrete_objects": {
+        "system": "Information manifold M",
+        "state": "x \u2208 M.V",
+        "property": "P(x) holds",
+        "quantifier": "\u2200 x \u2208 M.V, P(x)"
+      }
+    },
+    {
+      "lemma_name": "IsPMLACompliant_ConcreteLemma_1_3",
+      "theorem_name": "IsPMLACompliant",
+      "concrete_type": "InformationManifold \u2192 UniversalProperty",
+      "formal_statement": "\u2200 (M : InformationManifold) (x : M.V), Property x",
+      "expected_insight": "Property holds for all system states",
+      "location": "Gpu/Core/Dynamics.lean",
+      "concrete_objects": {
+        "system": "Information manifold M",
+        "state": "x \u2208 M.V",
+        "property": "P(x) holds",
+        "quantifier": "\u2200 x \u2208 M.V, P(x)"
+      }
+    },
+    {
+      "lemma_name": "unknown_ConcreteLemma_1_4",
+      "theorem_name": "unknown",
+      "concrete_type": "InformationManifold \u2192 UniversalProperty",
+      "formal_statement": "\u2200 (M : InformationManifold) (x : M.V), Property x",
+      "expected_insight": "Property holds for all system states",
+      "location": "Gpu/Core/Dynamics.lean",
+      "concrete_objects": {
+        "system": "Information manifold M",
+        "state": "x \u2208 M.V",
+        "property": "P(x) holds",
+        "quantifier": "\u2200 x \u2208 M.V, P(x)"
+      }
+    },
+    {
+      "lemma_name": "unknown_ConcreteLemma_2_0",
+      "theorem_name": "unknown",
+      "concrete_type": "InformationManifold \u2192 UniversalProperty",
+      "formal_statement": "\u2200 (M : InformationManifold) (x : M.V), Property x",
+      "expected_insight": "Property holds for all system states",
+      "location": "Gpu/Core/Dynamics.lean",
+      "concrete_objects": {
+        "system": "Information manifold M",
+        "state": "x \u2208 M.V",
+        "property": "P(x) holds",
+        "quantifier": "\u2200 x \u2208 M.V, P(x)"
+      }
+    },
+    {
+      "lemma_name": "unknown_ConcreteLemma_2_1",
+      "theorem_name": "unknown",
+      "concrete_type": "InformationManifold \u2192 UniversalProperty",
+      "formal_statement": "\u2200 (M : InformationManifold) (x : M.V), Property x",
+      "expected_insight": "Property holds for all system states",
+      "location": "Gpu/Core/FarFromEquilibrium.lean",
+      "concrete_objects": {
+        "system": "Information manifold M",
+        "state": "x \u2208 M.V",
+        "property": "P(x) holds",
+        "quantifier": "\u2200 x \u2208 M.V, P(x)"
+      }
+    },
+    {
+      "lemma_name": "unknown_ConcreteLemma_2_2",
+      "theorem_name": "unknown",
+      "concrete_type": "InformationManifold \u2192 UniversalProperty",
+      "formal_statement": "\u2200 (M : InformationManifold) (x : M.V), Property x",
+      "expected_insight": "Property holds for all system states",
+      "location": "Gpu/Core/FarFromEquilibrium.lean",
+      "concrete_objects": {
+        "system": "Information manifold M",
+        "state": "x \u2208 M.V",
+        "property": "P(x) holds",
+        "quantifier": "\u2200 x \u2208 M.V, P(x)"
+      }
+    },
+    {
+      "lemma_name": "unknown_ConcreteLemma_2_3",
+      "theorem_name": "unknown",
+      "concrete_type": "InformationManifold \u2192 UniversalProperty",
+      "formal_statement": "\u2200 (M : InformationManifold) (x : M.V), Property x",
+      "expected_insight": "Property holds for all system states",
+      "location": "Gpu/Core/FarFromEquilibrium.lean",
+      "concrete_objects": {
+        "system": "Information manifold M",
+        "state": "x \u2208 M.V",
+        "property": "P(x) holds",
+        "quantifier": "\u2200 x \u2208 M.V, P(x)"
+      }
+    },
+    {
+      "lemma_name": "unknown_ConcreteLemma_2_4",
+      "theorem_name": "unknown",
+      "concrete_type": "InformationManifold \u2192 UniversalProperty",
+      "formal_statement": "\u2200 (M : InformationManifold) (x : M.V), Property x",
+      "expected_insight": "Property holds for all system states",
+      "location": "Gpu/Core/FarFromEquilibrium.lean",
+      "concrete_objects": {
+        "system": "Information manifold M",
+        "state": "x \u2208 M.V",
+        "property": "P(x) holds",
+        "quantifier": "\u2200 x \u2208 M.V, P(x)"
+      }
+    },
+    {
+      "lemma_name": "unknown_ConcreteLemma_3_0",
+      "theorem_name": "unknown",
+      "concrete_type": "InformationManifold \u2192 UniversalProperty",
+      "formal_statement": "\u2200 (M : InformationManifold) (x : M.V), Property x",
+      "expected_insight": "Property holds for all system states",
+      "location": "Gpu/Core/FarFromEquilibrium.lean",
+      "concrete_objects": {
+        "system": "Information manifold M",
+        "state": "x \u2208 M.V",
+        "property": "P(x) holds",
+        "quantifier": "\u2200 x \u2208 M.V, P(x)"
+      }
+    },
+    {
+      "lemma_name": "unknown_ConcreteLemma_3_1",
+      "theorem_name": "unknown",
+      "concrete_type": "InformationManifold \u2192 UniversalProperty",
+      "formal_statement": "\u2200 (M : InformationManifold) (x : M.V), Property x",
+      "expected_insight": "Property holds for all system states",
+      "location": "Gpu/Core/FarFromEquilibrium.lean",
+      "concrete_objects": {
+        "system": "Information manifold M",
+        "state": "x \u2208 M.V",
+        "property": "P(x) holds",
+        "quantifier": "\u2200 x \u2208 M.V, P(x)"
+      }
+    },
+    {
+      "lemma_name": "unknown_ConcreteLemma_3_2",
+      "theorem_name": "unknown",
+      "concrete_type": "InformationManifold \u2192 UniversalProperty",
+      "formal_statement": "\u2200 (M : InformationManifold) (x : M.V), Property x",
+      "expected_insight": "Property holds for all system states",
+      "location": "Gpu/Core/FarFromEquilibrium.lean",
+      "concrete_objects": {
+        "system": "Information manifold M",
+        "state": "x \u2208 M.V",
+        "property": "P(x) holds",
+        "quantifier": "\u2200 x \u2208 M.V, P(x)"
+      }
+    },
+    {
+      "lemma_name": "NavierStokesSmoothness_ConcreteLemma_3_3",
+      "theorem_name": "NavierStokesSmoothness",
+      "concrete_type": "InformationManifold \u2192 UniversalProperty",
+      "formal_statement": "\u2200 (M : InformationManifold) (x : M.V), Property x",
+      "expected_insight": "Property holds for all system states",
+      "location": "Gpu/Core/Fluid.lean",
+      "concrete_objects": {
+        "system": "Information manifold M",
+        "state": "x \u2208 M.V",
+        "property": "P(x) holds",
+        "quantifier": "\u2200 x \u2208 M.V, P(x)"
+      }
+    },
+    {
+      "lemma_name": "unknown_ConcreteLemma_3_4",
+      "theorem_name": "unknown",
+      "concrete_type": "InformationManifold \u2192 UniversalProperty",
+      "formal_statement": "\u2200 (M : InformationManifold) (x : M.V), Property x",
+      "expected_insight": "Property holds for all system states",
+      "location": "Gpu/Core/FractalIntelligence.lean",
+      "concrete_objects": {
+        "system": "Information manifold M",
+        "state": "x \u2208 M.V",
+        "property": "P(x) holds",
+        "quantifier": "\u2200 x \u2208 M.V, P(x)"
+      }
+    },
+    {
+      "lemma_name": "unknown_ConcreteLemma_4_0",
+      "theorem_name": "unknown",
+      "concrete_type": "InformationManifold \u2192 UniversalProperty",
+      "formal_statement": "\u2200 (M : InformationManifold) (x : M.V), Property x",
+      "expected_insight": "Property holds for all system states",
+      "location": "Gpu/Core/FractalIntelligence.lean",
+      "concrete_objects": {
+        "system": "Information manifold M",
+        "state": "x \u2208 M.V",
+        "property": "P(x) holds",
+        "quantifier": "\u2200 x \u2208 M.V, P(x)"
+      }
+    },
+    {
+      "lemma_name": "theorem_self_similarity_ConcreteLemma_4_1",
+      "theorem_name": "theorem_self_similarity",
+      "concrete_type": "InformationManifold \u2192 UniversalProperty",
+      "formal_statement": "\u2200 (M : InformationManifold) (x : M.V), Property x",
+      "expected_insight": "Property holds for all system states",
+      "location": "Gpu/Core/FractalIntelligence.lean",
+      "concrete_objects": {
+        "system": "Information manifold M",
+        "state": "x \u2208 M.V",
+        "property": "P(x) holds",
+        "quantifier": "\u2200 x \u2208 M.V, P(x)"
+      }
+    },
+    {
+      "lemma_name": "theorem_information_fractal_ConcreteLemma_4_2",
+      "theorem_name": "theorem_information_fractal",
+      "concrete_type": "InformationManifold \u2192 UniversalProperty",
+      "formal_statement": "\u2200 (M : InformationManifold) (x : M.V), Property x",
+      "expected_insight": "Property holds for all system states",
+      "location": "Gpu/Core/FractalIntelligence.lean",
+      "concrete_objects": {
+        "system": "Information manifold M",
+        "state": "x \u2208 M.V",
+        "property": "P(x) holds",
+        "quantifier": "\u2200 x \u2208 M.V, P(x)"
+      }
+    },
+    {
+      "lemma_name": "corollary_recursive_implies_fractal_ConcreteLemma_4_3",
+      "theorem_name": "corollary_recursive_implies_fractal",
+      "concrete_type": "InformationManifold \u2192 UniversalProperty",
+      "formal_statement": "\u2200 (M : InformationManifold) (x : M.V), Property x",
+      "expected_insight": "Property holds for all system states",
+      "location": "Gpu/Core/FractalIntelligence.lean",
+      "concrete_objects": {
+        "system": "Information manifold M",
+        "state": "x \u2208 M.V",
+        "property": "P(x) holds",
+        "quantifier": "\u2200 x \u2208 M.V, P(x)"
+      }
+    },
+    {
+      "lemma_name": "theorem_box_counting_fractal_ConcreteLemma_4_4",
+      "theorem_name": "theorem_box_counting_fractal",
+      "concrete_type": "InformationManifold \u2192 UniversalProperty",
+      "formal_statement": "\u2200 (M : InformationManifold) (x : M.V), Property x",
+      "expected_insight": "Property holds for all system states",
+      "location": "Gpu/Core/FractalIntelligence.lean",
+      "concrete_objects": {
+        "system": "Information manifold M",
+        "state": "x \u2208 M.V",
+        "property": "P(x) holds",
+        "quantifier": "\u2200 x \u2208 M.V, P(x)"
+      }
+    },
+    {
+      "lemma_name": "unknown_ConcreteLemma_5_0",
+      "theorem_name": "unknown",
+      "concrete_type": "InformationManifold \u2192 UniversalProperty",
+      "formal_statement": "\u2200 (M : InformationManifold) (x : M.V), Property x",
+      "expected_insight": "Property holds for all system states",
+      "location": "Gpu/Core/FuzzyGeometry.lean",
+      "concrete_objects": {
+        "system": "Information manifold M",
+        "state": "x \u2208 M.V",
+        "property": "P(x) holds",
+        "quantifier": "\u2200 x \u2208 M.V, P(x)"
+      }
+    },
+    {
+      "lemma_name": "unknown_ConcreteLemma_5_1",
+      "theorem_name": "unknown",
+      "concrete_type": "InformationManifold \u2192 UniversalProperty",
+      "formal_statement": "\u2200 (M : InformationManifold) (x : M.V), Property x",
+      "expected_insight": "Property holds for all system states",
+      "location": "Gpu/Core/FuzzyGeometry.lean",
+      "concrete_objects": {
+        "system": "Information manifold M",
+        "state": "x \u2208 M.V",
+        "property": "P(x) holds",
+        "quantifier": "\u2200 x \u2208 M.V, P(x)"
+      }
+    },
+    {
+      "lemma_name": "unknown_ConcreteLemma_5_2",
+      "theorem_name": "unknown",
+      "concrete_type": "InformationManifold \u2192 UniversalProperty",
+      "formal_statement": "\u2200 (M : InformationManifold) (x : M.V), Property x",
+      "expected_insight": "Property holds for all system states",
+      "location": "Gpu/Core/FuzzyGeometry.lean",
+      "concrete_objects": {
+        "system": "Information manifold M",
+        "state": "x \u2208 M.V",
+        "property": "P(x) holds",
+        "quantifier": "\u2200 x \u2208 M.V, P(x)"
+      }
+    },
+    {
+      "lemma_name": "unknown_ConcreteLemma_5_3",
+      "theorem_name": "unknown",
+      "concrete_type": "InformationManifold \u2192 UniversalProperty",
+      "formal_statement": "\u2200 (M : InformationManifold) (x : M.V), Property x",
+      "expected_insight": "Property holds for all system states",
+      "location": "Gpu/Core/FuzzyGeometry.lean",
+      "concrete_objects": {
+        "system": "Information manifold M",
+        "state": "x \u2208 M.V",
+        "property": "P(x) holds",
+        "quantifier": "\u2200 x \u2208 M.V, P(x)"
+      }
+    },
+    {
+      "lemma_name": "theorem_fuzzy_is_riemannian_ConcreteLemma_5_4",
+      "theorem_name": "theorem_fuzzy_is_riemannian",
+      "concrete_type": "InformationManifold \u2192 UniversalProperty",
+      "formal_statement": "\u2200 (M : InformationManifold) (x : M.V), Property x",
+      "expected_insight": "Property holds for all system states",
+      "location": "Gpu/Core/FuzzyGeometry.lean",
+      "concrete_objects": {
+        "system": "Information manifold M",
+        "state": "x \u2208 M.V",
+        "property": "P(x) holds",
+        "quantifier": "\u2200 x \u2208 M.V, P(x)"
+      }
+    }
+  ]
+}

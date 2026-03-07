@@ -1,0 +1,68 @@
+[
+  {
+    "line": 1068,
+    "type": "lambda_normalization",
+    "theorem": "sorry",
+    "num_lemmas": 5,
+    "output_file": "/home/davidl/Gaseous Prime Universe/core_formalization/Gpu/Core/Universal/ILDA_Iteration6_sorry.lean",
+    "lemmas": [
+      {
+        "name": "lambda_term_well_founded",
+        "description": "Lambda terms have well-founded structure",
+        "statement": "\u2200 (term : LambdaTerm), term.has_finite_structure",
+        "proof": "rfl  -- By definition of LambdaTerm structure"
+      },
+      {
+        "name": "redex_detection_complete",
+        "description": "ILDA can detect all redexes in lambda term",
+        "statement": "\u2200 (term : LambdaTerm), ilda_find_redexes term = all_redexes term",
+        "proof": "intro term <;> induction term <;> aesop  -- Structural induction"
+      },
+      {
+        "name": "beta_reduction_correct",
+        "description": "ILDA beta-reduction correctly reduces redexes",
+        "statement": "\u2200 (redex : Redex), ilda_beta_reduce redex = beta_reduce redex",
+        "proof": "intro redex <;> cases redex <;> aesop  -- Case analysis"
+      },
+      {
+        "name": "normalization_terminates",
+        "description": "Beta-reduction always terminates (Church-Rosser)",
+        "statement": "\u2200 (term : LambdaTerm), \u2203 (normal : LambdaTerm), normal = reduce_to_normal term",
+        "proof": "intro term <;> sorry  -- Requires Church-Rosser theorem"
+      },
+      {
+        "name": "ilda_completes_normalization",
+        "description": "ILDA achieves same normalization as beta-reduction",
+        "statement": "\u2200 (term : LambdaTerm), ilda_reduce_lambda term = normalize term",
+        "proof": "intro term <;> rw [normalization_terminates] <;> aesop"
+      }
+    ]
+  },
+  {
+    "line": 1688,
+    "type": "turing_completeness_reference",
+    "theorem": "sorry",
+    "num_lemmas": 3,
+    "output_file": "/home/davidl/Gaseous Prime Universe/core_formalization/Gpu/Core/Universal/ILDA_Iteration6_sorry.lean",
+    "lemmas": [
+      {
+        "name": "theorem_1_proven",
+        "description": "Theorem 1 (Turing completeness) already proven",
+        "statement": "ILDA.is_turing_complete = True",
+        "proof": "exact ilda_turing_complete  -- Reference Theorem 1"
+      },
+      {
+        "name": "simulation_exists",
+        "description": "TM simulation exists via Theorem 1",
+        "statement": "\u2200 (TM : TuringMachineState), \u2203 (sim : ILDA.Simulation), sim TM = TM_execution",
+        "proof": "intro TM <;> exact tm_simulation_from_theorem_1 TM"
+      },
+      {
+        "name": "universality_holds",
+        "description": "Turing completeness implies universality",
+        "statement": "ILDA.is_turing_complete \u2192 \u2200 (TM : TuringMachineState), ILDA.can_simulate TM",
+        "proof": "intro h TM <;> apply h TM  -- Direct implication"
+      }
+    ]
+  }
+]
